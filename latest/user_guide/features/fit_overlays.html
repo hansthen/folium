@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>FitOverlays &#8212; Folium 0.1.dev1+g290252f documentation</title>
+    <title>FitOverlays &#8212; Folium 0.1.dev1+g3ccc47c documentation</title>
   
   
   
@@ -37,7 +37,7 @@
 <link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae" />
   <script src="../../_static/vendor/fontawesome/6.5.1/js/all.min.js?digest=8d27b9dea8ad943066ae"></script>
 
-    <script src="../../_static/documentation_options.js?v=eb5ad6ef"></script>
+    <script src="../../_static/documentation_options.js?v=c76abed4"></script>
     <script src="../../_static/doctools.js?v=888ff710"></script>
     <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
@@ -449,8 +449,10 @@ document.write(`
 <li class="toctree-l2"><a class="reference internal" href="../plugins/side_by_side_layers.html">SideBySideLayers</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../plugins/tag_filter_button.html">TagFilterButton</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../plugins/terminator.html">Terminator</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../plugins/timeline.html">Timeline and TimelineSlider</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../plugins/timeslider_choropleth.html">TimeSliderChoropleth</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../plugins/timestamped_geojson.html">TimestampedGeoJson</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../plugins/treelayercontrol.html">TreeLayerControl</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../plugins/vector_tiles.html">Vector tiles using VectorGridProtobuf</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../plugins/WmsTimeDimension.html">TimestampedWmsTileLayers</a></li>
 </ul>
@@ -572,7 +574,7 @@ document.write(`
             &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no&quot; /&gt;
             &lt;style&gt;
-                #map_281b12e9fa8ac7ae76d1a40d81f14751 {
+                #map_5f695dbd789eb085770cac5f860a0cc7 {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -586,14 +588,14 @@ document.write(`
 &lt;body&gt;
 
 
-            &lt;div class=&quot;folium-map&quot; id=&quot;map_281b12e9fa8ac7ae76d1a40d81f14751&quot; &gt;&lt;/div&gt;
+            &lt;div class=&quot;folium-map&quot; id=&quot;map_5f695dbd789eb085770cac5f860a0cc7&quot; &gt;&lt;/div&gt;
 
 &lt;/body&gt;
 &lt;script&gt;
 
 
-            var map_281b12e9fa8ac7ae76d1a40d81f14751 = L.map(
-                &quot;map_281b12e9fa8ac7ae76d1a40d81f14751&quot;,
+            var map_5f695dbd789eb085770cac5f860a0cc7 = L.map(
+                &quot;map_5f695dbd789eb085770cac5f860a0cc7&quot;,
                 {
                     center: [52.0, 0.0],
                     crs: L.CRS.EPSG3857,
@@ -607,69 +609,69 @@ document.write(`
 
 
 
-            var tile_layer_aacdcd1c786cbab8b02d9be2a270d98c = L.tileLayer(
+            var tile_layer_c1dcf90d10a4e381476db6a76e1c5dff = L.tileLayer(
                 &quot;https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png&quot;,
                 {&quot;attribution&quot;: &quot;\u0026copy; \u003ca href=\&quot;https://www.openstreetmap.org/copyright\&quot;\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\&quot;https://carto.com/attributions\&quot;\u003eCARTO\u003c/a\u003e&quot;, &quot;detectRetina&quot;: false, &quot;maxNativeZoom&quot;: 20, &quot;maxZoom&quot;: 20, &quot;minZoom&quot;: 0, &quot;noWrap&quot;: false, &quot;opacity&quot;: 1, &quot;subdomains&quot;: &quot;abcd&quot;, &quot;tms&quot;: false}
             );
 
 
-            tile_layer_aacdcd1c786cbab8b02d9be2a270d98c.addTo(map_281b12e9fa8ac7ae76d1a40d81f14751);
+            tile_layer_c1dcf90d10a4e381476db6a76e1c5dff.addTo(map_5f695dbd789eb085770cac5f860a0cc7);
 
 
-            var feature_group_7b9e9e81923f4216702d9bde8c5f3ed2 = L.featureGroup(
+            var feature_group_c9d8723b696f70e32a471bab86aec6c5 = L.featureGroup(
                 {}
             );
 
 
-            var marker_d77ab51fdc2a6ee197b2610a3466893e = L.marker(
+            var marker_f0197d196ad39b260ca82801288da1e4 = L.marker(
                 [52.0, 5.0],
                 {}
-            ).addTo(feature_group_7b9e9e81923f4216702d9bde8c5f3ed2);
+            ).addTo(feature_group_c9d8723b696f70e32a471bab86aec6c5);
 
 
-            feature_group_7b9e9e81923f4216702d9bde8c5f3ed2.addTo(map_281b12e9fa8ac7ae76d1a40d81f14751);
+            feature_group_c9d8723b696f70e32a471bab86aec6c5.addTo(map_5f695dbd789eb085770cac5f860a0cc7);
 
 
-            var feature_group_6d8f4bf7165f01a0aec1f28ecc89e4b5 = L.featureGroup(
+            var feature_group_ce3d93de7d25f74d7a2b95c89a284d20 = L.featureGroup(
                 {}
             );
 
 
-            var marker_006eac7b134af45306b9e1eb81026773 = L.marker(
+            var marker_5f086761fd00fee7d4afa58dc018a2b9 = L.marker(
                 [52.0, 5.1],
                 {}
-            ).addTo(feature_group_6d8f4bf7165f01a0aec1f28ecc89e4b5);
+            ).addTo(feature_group_ce3d93de7d25f74d7a2b95c89a284d20);
 
 
         function customFlyToBounds() {
             let bounds = L.latLngBounds([]);
-            map_281b12e9fa8ac7ae76d1a40d81f14751.eachLayer(function(layer) {
+            map_5f695dbd789eb085770cac5f860a0cc7.eachLayer(function(layer) {
                 if (typeof layer.getBounds === &#x27;function&#x27;) {
                     bounds.extend(layer.getBounds());
                 }
             });
             if (bounds.isValid()) {
-                map_281b12e9fa8ac7ae76d1a40d81f14751.fitBounds(bounds, {&quot;padding&quot;: [0, 0]});
+                map_5f695dbd789eb085770cac5f860a0cc7.fitBounds(bounds, {&quot;padding&quot;: [0, 0]});
             }
         }
-        map_281b12e9fa8ac7ae76d1a40d81f14751.on(&#x27;overlayadd&#x27;, customFlyToBounds);
+        map_5f695dbd789eb085770cac5f860a0cc7.on(&#x27;overlayadd&#x27;, customFlyToBounds);
         customFlyToBounds();
 
 
-            var layer_control_7e9d8ff9073f3f852679d918121e91c9_layers = {
+            var layer_control_e4cdcf8bae0078d3455b33fe37054832_layers = {
                 base_layers : {
-                    &quot;cartodbpositron&quot; : tile_layer_aacdcd1c786cbab8b02d9be2a270d98c,
+                    &quot;cartodbpositron&quot; : tile_layer_c1dcf90d10a4e381476db6a76e1c5dff,
                 },
                 overlays :  {
-                    &quot;macro_element_7b9e9e81923f4216702d9bde8c5f3ed2&quot; : feature_group_7b9e9e81923f4216702d9bde8c5f3ed2,
-                    &quot;macro_element_6d8f4bf7165f01a0aec1f28ecc89e4b5&quot; : feature_group_6d8f4bf7165f01a0aec1f28ecc89e4b5,
+                    &quot;macro_element_c9d8723b696f70e32a471bab86aec6c5&quot; : feature_group_c9d8723b696f70e32a471bab86aec6c5,
+                    &quot;macro_element_ce3d93de7d25f74d7a2b95c89a284d20&quot; : feature_group_ce3d93de7d25f74d7a2b95c89a284d20,
                 },
             };
-            let layer_control_7e9d8ff9073f3f852679d918121e91c9 = L.control.layers(
-                layer_control_7e9d8ff9073f3f852679d918121e91c9_layers.base_layers,
-                layer_control_7e9d8ff9073f3f852679d918121e91c9_layers.overlays,
+            let layer_control_e4cdcf8bae0078d3455b33fe37054832 = L.control.layers(
+                layer_control_e4cdcf8bae0078d3455b33fe37054832_layers.base_layers,
+                layer_control_e4cdcf8bae0078d3455b33fe37054832_layers.overlays,
                 {&quot;autoZIndex&quot;: true, &quot;collapsed&quot;: true, &quot;position&quot;: &quot;topright&quot;}
-            ).addTo(map_281b12e9fa8ac7ae76d1a40d81f14751);
+            ).addTo(map_5f695dbd789eb085770cac5f860a0cc7);
 
 
 &lt;/script&gt;
@@ -754,7 +756,7 @@ document.write(`
     <div class="footer-items__start">
       
         <div class="footer-item"><!-- This will display the version of the docs -->
-Folium version 0.1.dev1.dev+g290252f</div>
+Folium version 0.1.dev1.dev+g3ccc47c</div>
       
         <div class="footer-item">
 
