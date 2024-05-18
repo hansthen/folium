@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>SemiCircle &#8212; Folium 0.1.dev1+g4b860c0 documentation</title>
+    <title>SemiCircle &#8212; Folium 0.1.dev1851+g5086929 documentation</title>
   
   
   
@@ -37,7 +37,7 @@
 <link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae" />
   <script src="../../_static/vendor/fontawesome/6.5.1/js/all.min.js?digest=8d27b9dea8ad943066ae"></script>
 
-    <script src="../../_static/documentation_options.js?v=cf1791ab"></script>
+    <script src="../../_static/documentation_options.js?v=e885c205"></script>
     <script src="../../_static/doctools.js?v=9a2dae69"></script>
     <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
@@ -440,6 +440,8 @@ document.write(`
 <li class="toctree-l2"><a class="reference internal" href="measure_control.html">MeasureControl</a></li>
 <li class="toctree-l2"><a class="reference internal" href="mouse_position.html">MousePosition</a></li>
 <li class="toctree-l2"><a class="reference internal" href="pattern.html">Pattern plugins</a></li>
+<li class="toctree-l2"><a class="reference internal" href="polygon_encoded.html">PolygonFromEncoded</a></li>
+<li class="toctree-l2"><a class="reference internal" href="polyline_encoded.html">PolyLineFromEncoded</a></li>
 <li class="toctree-l2"><a class="reference internal" href="polyline_offset.html">PolylineOffset</a></li>
 <li class="toctree-l2"><a class="reference internal" href="polyline_textpath.html">PolyLineTextPath</a></li>
 <li class="toctree-l2"><a class="reference internal" href="realtime.html">Realtime</a></li>
@@ -585,7 +587,7 @@ document.write(`
             &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no&quot; /&gt;
             &lt;style&gt;
-                #map_3604575af572c39d07e2117b7a568605 {
+                #map_03b7dc55086a74d373f9ca0670103f37 {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -600,14 +602,14 @@ document.write(`
 &lt;body&gt;
 
 
-            &lt;div class=&quot;folium-map&quot; id=&quot;map_3604575af572c39d07e2117b7a568605&quot; &gt;&lt;/div&gt;
+            &lt;div class=&quot;folium-map&quot; id=&quot;map_03b7dc55086a74d373f9ca0670103f37&quot; &gt;&lt;/div&gt;
 
 &lt;/body&gt;
 &lt;script&gt;
 
 
-            var map_3604575af572c39d07e2117b7a568605 = L.map(
-                &quot;map_3604575af572c39d07e2117b7a568605&quot;,
+            var map_03b7dc55086a74d373f9ca0670103f37 = L.map(
+                &quot;map_03b7dc55086a74d373f9ca0670103f37&quot;,
                 {
                     center: [45.0, 3.0],
                     crs: L.CRS.EPSG3857,
@@ -621,55 +623,55 @@ document.write(`
 
 
 
-            var tile_layer_2009110a6ecc5631b97c4a54e52ca674 = L.tileLayer(
+            var tile_layer_0b9cc6722776f7868d955e6f47a365d5 = L.tileLayer(
                 &quot;https://tile.openstreetmap.org/{z}/{x}/{y}.png&quot;,
                 {&quot;attribution&quot;: &quot;\u0026copy; \u003ca href=\&quot;https://www.openstreetmap.org/copyright\&quot;\u003eOpenStreetMap\u003c/a\u003e contributors&quot;, &quot;detectRetina&quot;: false, &quot;maxNativeZoom&quot;: 19, &quot;maxZoom&quot;: 19, &quot;minZoom&quot;: 0, &quot;noWrap&quot;: false, &quot;opacity&quot;: 1, &quot;subdomains&quot;: &quot;abc&quot;, &quot;tms&quot;: false}
             );
 
 
-            tile_layer_2009110a6ecc5631b97c4a54e52ca674.addTo(map_3604575af572c39d07e2117b7a568605);
+            tile_layer_0b9cc6722776f7868d955e6f47a365d5.addTo(map_03b7dc55086a74d373f9ca0670103f37);
 
 
-            var semi_circle_0081c1f5eb9948d807481088218eecf5 = L.semiCircle(
+            var semi_circle_c94fe415750bc3e3913c373e90368838 = L.semiCircle(
                 [45.0, 3.0],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;green&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;green&quot;, &quot;fillOpacity&quot;: 0.2, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 0, &quot;radius&quot;: 400000, &quot;startAngle&quot;: 50, &quot;stopAngle&quot;: 200, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
                 )
-                .addTo(map_3604575af572c39d07e2117b7a568605);
+                .addTo(map_03b7dc55086a74d373f9ca0670103f37);
 
 
-        var popup_f5dd63e3a827f634c482dd10aa9479b5 = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
-
-
-
-                var html_c8053ef7ab266c0e56f4920963d936b7 = $(`&lt;div id=&quot;html_c8053ef7ab266c0e56f4920963d936b7&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;start angle - 50 degrees, stop angle - 200 degrees&lt;/div&gt;`)[0];
-                popup_f5dd63e3a827f634c482dd10aa9479b5.setContent(html_c8053ef7ab266c0e56f4920963d936b7);
+        var popup_cb3606b09d48187bbfa369683f380882 = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
 
 
 
-        semi_circle_0081c1f5eb9948d807481088218eecf5.bindPopup(popup_f5dd63e3a827f634c482dd10aa9479b5)
+                var html_327590236b7bf6557f04c2e290d54e51 = $(`&lt;div id=&quot;html_327590236b7bf6557f04c2e290d54e51&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;start angle - 50 degrees, stop angle - 200 degrees&lt;/div&gt;`)[0];
+                popup_cb3606b09d48187bbfa369683f380882.setContent(html_327590236b7bf6557f04c2e290d54e51);
+
+
+
+        semi_circle_c94fe415750bc3e3913c373e90368838.bindPopup(popup_cb3606b09d48187bbfa369683f380882)
         ;
 
 
 
 
-            var semi_circle_8b809525819d5eb862965dec89363426 = L.semiCircle(
+            var semi_circle_859c3c7f11d60637af20145658d860d0 = L.semiCircle(
                 [46.5, 9.5],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;red&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;red&quot;, &quot;fillOpacity&quot;: 0.2, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 0, &quot;radius&quot;: 200000, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
                 )
                     .setDirection(360, 90)
-                .addTo(map_3604575af572c39d07e2117b7a568605);
+                .addTo(map_03b7dc55086a74d373f9ca0670103f37);
 
 
-        var popup_17820cbf5fc2e3f265a8d16389680162 = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
-
-
-
-                var html_a1e43810e1804e2017dc0c9896c94633 = $(`&lt;div id=&quot;html_a1e43810e1804e2017dc0c9896c94633&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;Direction - 0 degrees, arc 90 degrees&lt;/div&gt;`)[0];
-                popup_17820cbf5fc2e3f265a8d16389680162.setContent(html_a1e43810e1804e2017dc0c9896c94633);
+        var popup_209945dd1dd7398a4c76d4ca1052d395 = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
 
 
 
-        semi_circle_8b809525819d5eb862965dec89363426.bindPopup(popup_17820cbf5fc2e3f265a8d16389680162)
+                var html_d16cc8a3292bc24ad289944267fe6d9a = $(`&lt;div id=&quot;html_d16cc8a3292bc24ad289944267fe6d9a&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;Direction - 0 degrees, arc 90 degrees&lt;/div&gt;`)[0];
+                popup_209945dd1dd7398a4c76d4ca1052d395.setContent(html_d16cc8a3292bc24ad289944267fe6d9a);
+
+
+
+        semi_circle_859c3c7f11d60637af20145658d860d0.bindPopup(popup_209945dd1dd7398a4c76d4ca1052d395)
         ;
 
 
@@ -748,7 +750,7 @@ document.write(`
     <div class="footer-items__start">
       
         <div class="footer-item"><!-- This will display the version of the docs -->
-Folium version 0.1.dev1.dev+g4b860c0</div>
+Folium version 0.1.dev1851+g5086929</div>
       
         <div class="footer-item">
 

@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>ImageOverlay &#8212; Folium 0.1.dev1+g4b860c0 documentation</title>
+    <title>ImageOverlay &#8212; Folium 0.1.dev1851+g5086929 documentation</title>
   
   
   
@@ -37,7 +37,7 @@
 <link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae" />
   <script src="../../_static/vendor/fontawesome/6.5.1/js/all.min.js?digest=8d27b9dea8ad943066ae"></script>
 
-    <script src="../../_static/documentation_options.js?v=cf1791ab"></script>
+    <script src="../../_static/documentation_options.js?v=e885c205"></script>
     <script src="../../_static/doctools.js?v=9a2dae69"></script>
     <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
@@ -440,6 +440,8 @@ document.write(`
 <li class="toctree-l2"><a class="reference internal" href="../plugins/measure_control.html">MeasureControl</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../plugins/mouse_position.html">MousePosition</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../plugins/pattern.html">Pattern plugins</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../plugins/polygon_encoded.html">PolygonFromEncoded</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../plugins/polyline_encoded.html">PolyLineFromEncoded</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../plugins/polyline_offset.html">PolylineOffset</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../plugins/polyline_textpath.html">PolyLineTextPath</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../plugins/realtime.html">Realtime</a></li>
@@ -596,7 +598,7 @@ Could not find data/Mercator_projection_SW.png
             &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no&quot; /&gt;
             &lt;style&gt;
-                #map_6134ecf7798a82a094fe92099533ee3d {
+                #map_a679e2df69c7f7d4288bd916bae7dcb8 {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -610,14 +612,14 @@ Could not find data/Mercator_projection_SW.png
 &lt;body&gt;
 
 
-            &lt;div class=&quot;folium-map&quot; id=&quot;map_6134ecf7798a82a094fe92099533ee3d&quot; &gt;&lt;/div&gt;
+            &lt;div class=&quot;folium-map&quot; id=&quot;map_a679e2df69c7f7d4288bd916bae7dcb8&quot; &gt;&lt;/div&gt;
 
 &lt;/body&gt;
 &lt;script&gt;
 
 
-            var map_6134ecf7798a82a094fe92099533ee3d = L.map(
-                &quot;map_6134ecf7798a82a094fe92099533ee3d&quot;,
+            var map_a679e2df69c7f7d4288bd916bae7dcb8 = L.map(
+                &quot;map_a679e2df69c7f7d4288bd916bae7dcb8&quot;,
                 {
                     center: [37.0, 0.0],
                     crs: L.CRS.EPSG3857,
@@ -631,13 +633,13 @@ Could not find data/Mercator_projection_SW.png
 
 
 
-            var tile_layer_4abf23229b95d7ae37cf38a95834f063 = L.tileLayer(
+            var tile_layer_ddfcd4653cbb81c09a14f6b883d7508e = L.tileLayer(
                 &quot;https://tile.openstreetmap.org/{z}/{x}/{y}.png&quot;,
                 {&quot;attribution&quot;: &quot;\u0026copy; \u003ca href=\&quot;https://www.openstreetmap.org/copyright\&quot;\u003eOpenStreetMap\u003c/a\u003e contributors&quot;, &quot;detectRetina&quot;: false, &quot;maxNativeZoom&quot;: 19, &quot;maxZoom&quot;: 19, &quot;minZoom&quot;: 0, &quot;noWrap&quot;: false, &quot;opacity&quot;: 1, &quot;subdomains&quot;: &quot;abc&quot;, &quot;tms&quot;: false}
             );
 
 
-            tile_layer_4abf23229b95d7ae37cf38a95834f063.addTo(map_6134ecf7798a82a094fe92099533ee3d);
+            tile_layer_ddfcd4653cbb81c09a14f6b883d7508e.addTo(map_a679e2df69c7f7d4288bd916bae7dcb8);
 
 &lt;/script&gt;
 &lt;/html&gt;" style="position:absolute;width:100%;height:100%;left:0;top:0;border:none !important;" allowfullscreen webkitallowfullscreen mozallowfullscreen></iframe></div></div></div>
@@ -705,7 +707,7 @@ Could not find data/Mercator_projection_SW.png
             &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no&quot; /&gt;
             &lt;style&gt;
-                #map_bdba5eae0c2e2a24107a270c199ab7d3 {
+                #map_1799f43391742691eee58de2f4498814 {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -732,14 +734,14 @@ Could not find data/Mercator_projection_SW.png
 &lt;body&gt;
 
 
-            &lt;div class=&quot;folium-map&quot; id=&quot;map_bdba5eae0c2e2a24107a270c199ab7d3&quot; &gt;&lt;/div&gt;
+            &lt;div class=&quot;folium-map&quot; id=&quot;map_1799f43391742691eee58de2f4498814&quot; &gt;&lt;/div&gt;
 
 &lt;/body&gt;
 &lt;script&gt;
 
 
-            var map_bdba5eae0c2e2a24107a270c199ab7d3 = L.map(
-                &quot;map_bdba5eae0c2e2a24107a270c199ab7d3&quot;,
+            var map_1799f43391742691eee58de2f4498814 = L.map(
+                &quot;map_1799f43391742691eee58de2f4498814&quot;,
                 {
                     center: [37.0, 0.0],
                     crs: L.CRS.EPSG3857,
@@ -753,38 +755,38 @@ Could not find data/Mercator_projection_SW.png
 
 
 
-            var tile_layer_560c83b0b2bd063001a8d37ccfc92aaa = L.tileLayer(
+            var tile_layer_0d105909f981244055736e3c5b59aa57 = L.tileLayer(
                 &quot;https://tile.openstreetmap.org/{z}/{x}/{y}.png&quot;,
                 {&quot;attribution&quot;: &quot;\u0026copy; \u003ca href=\&quot;https://www.openstreetmap.org/copyright\&quot;\u003eOpenStreetMap\u003c/a\u003e contributors&quot;, &quot;detectRetina&quot;: false, &quot;maxNativeZoom&quot;: 19, &quot;maxZoom&quot;: 19, &quot;minZoom&quot;: 0, &quot;noWrap&quot;: false, &quot;opacity&quot;: 1, &quot;subdomains&quot;: &quot;abc&quot;, &quot;tms&quot;: false}
             );
 
 
-            tile_layer_560c83b0b2bd063001a8d37ccfc92aaa.addTo(map_bdba5eae0c2e2a24107a270c199ab7d3);
+            tile_layer_0d105909f981244055736e3c5b59aa57.addTo(map_1799f43391742691eee58de2f4498814);
 
 
-            var image_overlay_9e40839f773b10a1d3513ffb56ad4b5e = L.imageOverlay(
+            var image_overlay_ca6cd431d0d0fe9993118de55eefd721 = L.imageOverlay(
                 &quot;https://upload.wikimedia.org/wikipedia/commons/f/f4/Mercator_projection_SW.jpg&quot;,
                 [[-82, -180], [82, 180]],
                 {&quot;alt&quot;: &quot;Wikipedia File:Mercator projection SW.jpg&quot;, &quot;crossOrigin&quot;: false, &quot;interactive&quot;: false, &quot;opacity&quot;: 1, &quot;zindex&quot;: 1}
             );
 
 
-            image_overlay_9e40839f773b10a1d3513ffb56ad4b5e.addTo(map_bdba5eae0c2e2a24107a270c199ab7d3);
+            image_overlay_ca6cd431d0d0fe9993118de55eefd721.addTo(map_1799f43391742691eee58de2f4498814);
 
 
-            var layer_control_aa40ff75d6809f28098f16f48954565b_layers = {
+            var layer_control_cbe7034d3c2709080bd1f7eb9843fddf_layers = {
                 base_layers : {
-                    &quot;openstreetmap&quot; : tile_layer_560c83b0b2bd063001a8d37ccfc92aaa,
+                    &quot;openstreetmap&quot; : tile_layer_0d105909f981244055736e3c5b59aa57,
                 },
                 overlays :  {
-                    &quot;I am a jpeg&quot; : image_overlay_9e40839f773b10a1d3513ffb56ad4b5e,
+                    &quot;I am a jpeg&quot; : image_overlay_ca6cd431d0d0fe9993118de55eefd721,
                 },
             };
-            let layer_control_aa40ff75d6809f28098f16f48954565b = L.control.layers(
-                layer_control_aa40ff75d6809f28098f16f48954565b_layers.base_layers,
-                layer_control_aa40ff75d6809f28098f16f48954565b_layers.overlays,
+            let layer_control_cbe7034d3c2709080bd1f7eb9843fddf = L.control.layers(
+                layer_control_cbe7034d3c2709080bd1f7eb9843fddf_layers.base_layers,
+                layer_control_cbe7034d3c2709080bd1f7eb9843fddf_layers.overlays,
                 {&quot;autoZIndex&quot;: true, &quot;collapsed&quot;: true, &quot;position&quot;: &quot;topright&quot;}
-            ).addTo(map_bdba5eae0c2e2a24107a270c199ab7d3);
+            ).addTo(map_1799f43391742691eee58de2f4498814);
 
 
 &lt;/script&gt;
@@ -859,7 +861,7 @@ Could not find data/Mercator_projection_SW.png
             &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no&quot; /&gt;
             &lt;style&gt;
-                #map_8ec20a9c399e54cdcdb69712d18e61a4 {
+                #map_da0283c89080a46b3ffa82238990a3d0 {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -886,14 +888,14 @@ Could not find data/Mercator_projection_SW.png
 &lt;body&gt;
 
 
-            &lt;div class=&quot;folium-map&quot; id=&quot;map_8ec20a9c399e54cdcdb69712d18e61a4&quot; &gt;&lt;/div&gt;
+            &lt;div class=&quot;folium-map&quot; id=&quot;map_da0283c89080a46b3ffa82238990a3d0&quot; &gt;&lt;/div&gt;
 
 &lt;/body&gt;
 &lt;script&gt;
 
 
-            var map_8ec20a9c399e54cdcdb69712d18e61a4 = L.map(
-                &quot;map_8ec20a9c399e54cdcdb69712d18e61a4&quot;,
+            var map_da0283c89080a46b3ffa82238990a3d0 = L.map(
+                &quot;map_da0283c89080a46b3ffa82238990a3d0&quot;,
                 {
                     center: [37.0, 0.0],
                     crs: L.CRS.EPSG3857,
@@ -907,23 +909,23 @@ Could not find data/Mercator_projection_SW.png
 
 
 
-            var tile_layer_ba289ba87f796d14691120e804c73242 = L.tileLayer(
+            var tile_layer_fc8365b01dea1f63584fd3538868b4f8 = L.tileLayer(
                 &quot;https://tile.openstreetmap.org/{z}/{x}/{y}.png&quot;,
                 {&quot;attribution&quot;: &quot;\u0026copy; \u003ca href=\&quot;https://www.openstreetmap.org/copyright\&quot;\u003eOpenStreetMap\u003c/a\u003e contributors&quot;, &quot;detectRetina&quot;: false, &quot;maxNativeZoom&quot;: 19, &quot;maxZoom&quot;: 19, &quot;minZoom&quot;: 0, &quot;noWrap&quot;: false, &quot;opacity&quot;: 1, &quot;subdomains&quot;: &quot;abc&quot;, &quot;tms&quot;: false}
             );
 
 
-            tile_layer_ba289ba87f796d14691120e804c73242.addTo(map_8ec20a9c399e54cdcdb69712d18e61a4);
+            tile_layer_fc8365b01dea1f63584fd3538868b4f8.addTo(map_da0283c89080a46b3ffa82238990a3d0);
 
 
-            var image_overlay_206693aabcb5ff4bc3fac9db195e3989 = L.imageOverlay(
+            var image_overlay_8bfb21e4cf024b40ffdc36928e5f1203 = L.imageOverlay(
                 &quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD0AAAA9CAYAAAAeYmHpAAAAW0lEQVR42u3PoQ0AAAzDsP7/9EaG90ANIoU6k0xbuUlR0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0C+6qgWzYWppA9g/7AAAAABJRU5ErkJggg==&quot;,
                 [[0, -60], [60, 60]],
                 {}
             );
 
 
-            image_overlay_206693aabcb5ff4bc3fac9db195e3989.addTo(map_8ec20a9c399e54cdcdb69712d18e61a4);
+            image_overlay_8bfb21e4cf024b40ffdc36928e5f1203.addTo(map_da0283c89080a46b3ffa82238990a3d0);
 
 &lt;/script&gt;
 &lt;/html&gt;" style="position:absolute;width:100%;height:100%;left:0;top:0;border:none !important;" allowfullscreen webkitallowfullscreen mozallowfullscreen></iframe></div></div></div>
@@ -988,7 +990,7 @@ Could not find data/Mercator_projection_SW.png
             &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no&quot; /&gt;
             &lt;style&gt;
-                #map_7773add092da7567d357764021c270f7 {
+                #map_01cf4031add352e4473f65e225c0f4c2 {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -1015,14 +1017,14 @@ Could not find data/Mercator_projection_SW.png
 &lt;body&gt;
 
 
-            &lt;div class=&quot;folium-map&quot; id=&quot;map_7773add092da7567d357764021c270f7&quot; &gt;&lt;/div&gt;
+            &lt;div class=&quot;folium-map&quot; id=&quot;map_01cf4031add352e4473f65e225c0f4c2&quot; &gt;&lt;/div&gt;
 
 &lt;/body&gt;
 &lt;script&gt;
 
 
-            var map_7773add092da7567d357764021c270f7 = L.map(
-                &quot;map_7773add092da7567d357764021c270f7&quot;,
+            var map_01cf4031add352e4473f65e225c0f4c2 = L.map(
+                &quot;map_01cf4031add352e4473f65e225c0f4c2&quot;,
                 {
                     center: [37.0, 0.0],
                     crs: L.CRS.EPSG3857,
@@ -1036,29 +1038,29 @@ Could not find data/Mercator_projection_SW.png
 
 
 
-            var tile_layer_8ca05063d174c56fe606d93de0442e46 = L.tileLayer(
+            var tile_layer_fa8bec26566bb12b737b1ddff6bcbab1 = L.tileLayer(
                 &quot;https://tile.openstreetmap.org/{z}/{x}/{y}.png&quot;,
                 {&quot;attribution&quot;: &quot;\u0026copy; \u003ca href=\&quot;https://www.openstreetmap.org/copyright\&quot;\u003eOpenStreetMap\u003c/a\u003e contributors&quot;, &quot;detectRetina&quot;: false, &quot;maxNativeZoom&quot;: 19, &quot;maxZoom&quot;: 19, &quot;minZoom&quot;: 0, &quot;noWrap&quot;: false, &quot;opacity&quot;: 1, &quot;subdomains&quot;: &quot;abc&quot;, &quot;tms&quot;: false}
             );
 
 
-            tile_layer_8ca05063d174c56fe606d93de0442e46.addTo(map_7773add092da7567d357764021c270f7);
+            tile_layer_fa8bec26566bb12b737b1ddff6bcbab1.addTo(map_01cf4031add352e4473f65e225c0f4c2);
 
 
-            var image_overlay_fefc797752750510850661d7f4b9c70e = L.imageOverlay(
+            var image_overlay_804b29d39928a3f8627d96dea6cf20b6 = L.imageOverlay(
                 &quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAA9CAYAAABsrQNfAAAAFklEQVR42mP4zwAEVCP+M1DXvMFHAABxyD3DNwdSfAAAAABJRU5ErkJggg==&quot;,
                 [[0, -60], [60, 60]],
                 {}
             );
 
 
-            image_overlay_fefc797752750510850661d7f4b9c70e.addTo(map_7773add092da7567d357764021c270f7);
+            image_overlay_804b29d39928a3f8627d96dea6cf20b6.addTo(map_01cf4031add352e4473f65e225c0f4c2);
 
 
-            var poly_line_e9b3b470d1bc39fbd26ac146c8572f5f = L.polyline(
+            var poly_line_4d0166732c9a75b6fde11037b488a3fd = L.polyline(
                 [[45.0, -60.0], [45.0, 60.0]],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#3388ff&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: false, &quot;fillColor&quot;: &quot;#3388ff&quot;, &quot;fillOpacity&quot;: 0.2, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;noClip&quot;: false, &quot;opacity&quot;: 1.0, &quot;smoothFactor&quot;: 1.0, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
-            ).addTo(map_7773add092da7567d357764021c270f7);
+            ).addTo(map_01cf4031add352e4473f65e225c0f4c2);
 
 &lt;/script&gt;
 &lt;/html&gt;" style="position:absolute;width:100%;height:100%;left:0;top:0;border:none !important;" allowfullscreen webkitallowfullscreen mozallowfullscreen></iframe></div></div></div>
@@ -1117,7 +1119,7 @@ Could not find data/Mercator_projection_SW.png
             &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no&quot; /&gt;
             &lt;style&gt;
-                #map_e252439065b2d54ffd1271d3df614950 {
+                #map_ab85929b8f7c2f39441657c0087b017b {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -1144,14 +1146,14 @@ Could not find data/Mercator_projection_SW.png
 &lt;body&gt;
 
 
-            &lt;div class=&quot;folium-map&quot; id=&quot;map_e252439065b2d54ffd1271d3df614950&quot; &gt;&lt;/div&gt;
+            &lt;div class=&quot;folium-map&quot; id=&quot;map_ab85929b8f7c2f39441657c0087b017b&quot; &gt;&lt;/div&gt;
 
 &lt;/body&gt;
 &lt;script&gt;
 
 
-            var map_e252439065b2d54ffd1271d3df614950 = L.map(
-                &quot;map_e252439065b2d54ffd1271d3df614950&quot;,
+            var map_ab85929b8f7c2f39441657c0087b017b = L.map(
+                &quot;map_ab85929b8f7c2f39441657c0087b017b&quot;,
                 {
                     center: [37.0, 0.0],
                     crs: L.CRS.EPSG3857,
@@ -1165,29 +1167,29 @@ Could not find data/Mercator_projection_SW.png
 
 
 
-            var tile_layer_d19f6cfe41cd842c8d11da0164caba55 = L.tileLayer(
+            var tile_layer_d3098e21f856d0f2e3edced3fb8ff7de = L.tileLayer(
                 &quot;https://tile.openstreetmap.org/{z}/{x}/{y}.png&quot;,
                 {&quot;attribution&quot;: &quot;\u0026copy; \u003ca href=\&quot;https://www.openstreetmap.org/copyright\&quot;\u003eOpenStreetMap\u003c/a\u003e contributors&quot;, &quot;detectRetina&quot;: false, &quot;maxNativeZoom&quot;: 19, &quot;maxZoom&quot;: 19, &quot;minZoom&quot;: 0, &quot;noWrap&quot;: false, &quot;opacity&quot;: 1, &quot;subdomains&quot;: &quot;abc&quot;, &quot;tms&quot;: false}
             );
 
 
-            tile_layer_d19f6cfe41cd842c8d11da0164caba55.addTo(map_e252439065b2d54ffd1271d3df614950);
+            tile_layer_d3098e21f856d0f2e3edced3fb8ff7de.addTo(map_ab85929b8f7c2f39441657c0087b017b);
 
 
-            var poly_line_8890264ddf10f2892c2d78be304e5308 = L.polyline(
+            var poly_line_f24596728b0cadd619d822579c414190 = L.polyline(
                 [[45.0, -60.0], [45.0, 60.0]],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#3388ff&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: false, &quot;fillColor&quot;: &quot;#3388ff&quot;, &quot;fillOpacity&quot;: 0.2, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;noClip&quot;: false, &quot;opacity&quot;: 1.0, &quot;smoothFactor&quot;: 1.0, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
-            ).addTo(map_e252439065b2d54ffd1271d3df614950);
+            ).addTo(map_ab85929b8f7c2f39441657c0087b017b);
 
 
-            var image_overlay_b9e22b574efaad41ef56842db29bad46 = L.imageOverlay(
+            var image_overlay_1ae36c79d809d2f220bc82073858a1eb = L.imageOverlay(
                 &quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAA9CAYAAABsrQNfAAAAG0lEQVR42mP4zwAENCU0QMR/EMHPQHvbaE0AAISNPfostPrWAAAAAElFTkSuQmCC&quot;,
                 [[0, -60], [60, 60]],
                 {}
             );
 
 
-            image_overlay_b9e22b574efaad41ef56842db29bad46.addTo(map_e252439065b2d54ffd1271d3df614950);
+            image_overlay_1ae36c79d809d2f220bc82073858a1eb.addTo(map_ab85929b8f7c2f39441657c0087b017b);
 
 &lt;/script&gt;
 &lt;/html&gt;" style="position:absolute;width:100%;height:100%;left:0;top:0;border:none !important;" allowfullscreen webkitallowfullscreen mozallowfullscreen></iframe></div></div></div>
@@ -1278,7 +1280,7 @@ Could not find data/Mercator_projection_SW.png
     <div class="footer-items__start">
       
         <div class="footer-item"><!-- This will display the version of the docs -->
-Folium version 0.1.dev1.dev+g4b860c0</div>
+Folium version 0.1.dev1851+g5086929</div>
       
         <div class="footer-item">
 

@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Map &#8212; Folium 0.1.dev1+g4b860c0 documentation</title>
+    <title>Map &#8212; Folium 0.1.dev1851+g5086929 documentation</title>
   
   
   
@@ -37,7 +37,7 @@
 <link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae" />
   <script src="../_static/vendor/fontawesome/6.5.1/js/all.min.js?digest=8d27b9dea8ad943066ae"></script>
 
-    <script src="../_static/documentation_options.js?v=cf1791ab"></script>
+    <script src="../_static/documentation_options.js?v=e885c205"></script>
     <script src="../_static/doctools.js?v=9a2dae69"></script>
     <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
@@ -440,6 +440,8 @@ document.write(`
 <li class="toctree-l2"><a class="reference internal" href="plugins/measure_control.html">MeasureControl</a></li>
 <li class="toctree-l2"><a class="reference internal" href="plugins/mouse_position.html">MousePosition</a></li>
 <li class="toctree-l2"><a class="reference internal" href="plugins/pattern.html">Pattern plugins</a></li>
+<li class="toctree-l2"><a class="reference internal" href="plugins/polygon_encoded.html">PolygonFromEncoded</a></li>
+<li class="toctree-l2"><a class="reference internal" href="plugins/polyline_encoded.html">PolyLineFromEncoded</a></li>
 <li class="toctree-l2"><a class="reference internal" href="plugins/polyline_offset.html">PolylineOffset</a></li>
 <li class="toctree-l2"><a class="reference internal" href="plugins/polyline_textpath.html">PolyLineTextPath</a></li>
 <li class="toctree-l2"><a class="reference internal" href="plugins/realtime.html">Realtime</a></li>
@@ -562,7 +564,7 @@ document.write(`
             &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no&quot; /&gt;
             &lt;style&gt;
-                #map_c29ddcde0da1a729f902cd956c0b58c2 {
+                #map_d8159f41c9321dc83ebd8f0caa2fe472 {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -576,14 +578,14 @@ document.write(`
 &lt;body&gt;
 
 
-            &lt;div class=&quot;folium-map&quot; id=&quot;map_c29ddcde0da1a729f902cd956c0b58c2&quot; &gt;&lt;/div&gt;
+            &lt;div class=&quot;folium-map&quot; id=&quot;map_d8159f41c9321dc83ebd8f0caa2fe472&quot; &gt;&lt;/div&gt;
 
 &lt;/body&gt;
 &lt;script&gt;
 
 
-            var map_c29ddcde0da1a729f902cd956c0b58c2 = L.map(
-                &quot;map_c29ddcde0da1a729f902cd956c0b58c2&quot;,
+            var map_d8159f41c9321dc83ebd8f0caa2fe472 = L.map(
+                &quot;map_d8159f41c9321dc83ebd8f0caa2fe472&quot;,
                 {
                     center: [-38.625, -12.875],
                     crs: L.CRS.EPSG3857,
@@ -592,19 +594,19 @@ document.write(`
                     preferCanvas: false,
                 }
             );
-            L.control.scale().addTo(map_c29ddcde0da1a729f902cd956c0b58c2);
+            L.control.scale().addTo(map_d8159f41c9321dc83ebd8f0caa2fe472);
 
 
 
 
 
-            var tile_layer_e6701b158bb574f57d20df033187c31a = L.tileLayer(
+            var tile_layer_afac1b95d446c79175eaa3676c04de0f = L.tileLayer(
                 &quot;https://tile.openstreetmap.org/{z}/{x}/{y}.png&quot;,
                 {&quot;attribution&quot;: &quot;\u0026copy; \u003ca href=\&quot;https://www.openstreetmap.org/copyright\&quot;\u003eOpenStreetMap\u003c/a\u003e contributors&quot;, &quot;detectRetina&quot;: false, &quot;maxNativeZoom&quot;: 19, &quot;maxZoom&quot;: 19, &quot;minZoom&quot;: 0, &quot;noWrap&quot;: false, &quot;opacity&quot;: 1, &quot;subdomains&quot;: &quot;abc&quot;, &quot;tms&quot;: false}
             );
 
 
-            tile_layer_e6701b158bb574f57d20df033187c31a.addTo(map_c29ddcde0da1a729f902cd956c0b58c2);
+            tile_layer_afac1b95d446c79175eaa3676c04de0f.addTo(map_d8159f41c9321dc83ebd8f0caa2fe472);
 
 &lt;/script&gt;
 &lt;/html&gt;" style="position:absolute;width:100%;height:100%;left:0;top:0;border:none !important;" allowfullscreen webkitallowfullscreen mozallowfullscreen></iframe></div></div></div>
@@ -656,7 +658,7 @@ document.write(`
             &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no&quot; /&gt;
             &lt;style&gt;
-                #map_56069f53d64e9aea1730b641bba78b3a {
+                #map_3a42e6764a86ae0e35c3bf4c2e87de8c {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -670,14 +672,14 @@ document.write(`
 &lt;body&gt;
 
 
-            &lt;div class=&quot;folium-map&quot; id=&quot;map_56069f53d64e9aea1730b641bba78b3a&quot; &gt;&lt;/div&gt;
+            &lt;div class=&quot;folium-map&quot; id=&quot;map_3a42e6764a86ae0e35c3bf4c2e87de8c&quot; &gt;&lt;/div&gt;
 
 &lt;/body&gt;
 &lt;script&gt;
 
 
-            var map_56069f53d64e9aea1730b641bba78b3a = L.map(
-                &quot;map_56069f53d64e9aea1730b641bba78b3a&quot;,
+            var map_3a42e6764a86ae0e35c3bf4c2e87de8c = L.map(
+                &quot;map_3a42e6764a86ae0e35c3bf4c2e87de8c&quot;,
                 {
                     center: [-38.625, -12.875],
                     crs: L.CRS.EPSG3857,
@@ -691,13 +693,13 @@ document.write(`
 
 
 
-            var tile_layer_2cdf6c103cb35176ab7621a563bbfb69 = L.tileLayer(
+            var tile_layer_a0a44172ee5969a9e9874ea91bf94a1d = L.tileLayer(
                 &quot;https://tile.openstreetmap.org/{z}/{x}/{y}.png&quot;,
                 {&quot;attribution&quot;: &quot;\u0026copy; \u003ca href=\&quot;https://www.openstreetmap.org/copyright\&quot;\u003eOpenStreetMap\u003c/a\u003e contributors&quot;, &quot;detectRetina&quot;: false, &quot;maxNativeZoom&quot;: 19, &quot;maxZoom&quot;: 19, &quot;minZoom&quot;: 0, &quot;noWrap&quot;: false, &quot;opacity&quot;: 1, &quot;subdomains&quot;: &quot;abc&quot;, &quot;tms&quot;: false}
             );
 
 
-            tile_layer_2cdf6c103cb35176ab7621a563bbfb69.addTo(map_56069f53d64e9aea1730b641bba78b3a);
+            tile_layer_a0a44172ee5969a9e9874ea91bf94a1d.addTo(map_3a42e6764a86ae0e35c3bf4c2e87de8c);
 
 &lt;/script&gt;
 &lt;/html&gt;" style="position:absolute;width:100%;height:100%;left:0;top:0;border:none !important;" allowfullscreen webkitallowfullscreen mozallowfullscreen></iframe></div></div></div>
@@ -766,7 +768,7 @@ document.write(`
             &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no&quot; /&gt;
             &lt;style&gt;
-                #map_f47131d3dd76ca25eafec2a67393c75c {
+                #map_55ee2045a6145505acde9d4fe7051e36 {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -780,14 +782,14 @@ document.write(`
 &lt;body&gt;
 
 
-            &lt;div class=&quot;folium-map&quot; id=&quot;map_f47131d3dd76ca25eafec2a67393c75c&quot; &gt;&lt;/div&gt;
+            &lt;div class=&quot;folium-map&quot; id=&quot;map_55ee2045a6145505acde9d4fe7051e36&quot; &gt;&lt;/div&gt;
 
 &lt;/body&gt;
 &lt;script&gt;
 
 
-            var map_f47131d3dd76ca25eafec2a67393c75c = L.map(
-                &quot;map_f47131d3dd76ca25eafec2a67393c75c&quot;,
+            var map_55ee2045a6145505acde9d4fe7051e36 = L.map(
+                &quot;map_55ee2045a6145505acde9d4fe7051e36&quot;,
                 {
                     center: [-20.0, -40.0],
                     crs: L.CRS.EPSG3857,
@@ -802,22 +804,22 @@ document.write(`
 
 
 
-            var tile_layer_5d4a7d07d08c225225119475a063eb73 = L.tileLayer(
+            var tile_layer_e833ee38df821af48b8337334013eaf7 = L.tileLayer(
                 &quot;https://tile.openstreetmap.org/{z}/{x}/{y}.png&quot;,
                 {&quot;attribution&quot;: &quot;\u0026copy; \u003ca href=\&quot;https://www.openstreetmap.org/copyright\&quot;\u003eOpenStreetMap\u003c/a\u003e contributors&quot;, &quot;detectRetina&quot;: false, &quot;maxNativeZoom&quot;: 19, &quot;maxZoom&quot;: 19, &quot;minZoom&quot;: 0, &quot;noWrap&quot;: false, &quot;opacity&quot;: 1, &quot;subdomains&quot;: &quot;abc&quot;, &quot;tms&quot;: false}
             );
 
 
-            tile_layer_5d4a7d07d08c225225119475a063eb73.addTo(map_f47131d3dd76ca25eafec2a67393c75c);
+            tile_layer_e833ee38df821af48b8337334013eaf7.addTo(map_55ee2045a6145505acde9d4fe7051e36);
 
 
-            var circle_marker_3a672ade7c86f9cd3ad327a1323e9d17 = L.circleMarker(
+            var circle_marker_965452839534be469c9c1f1909275cc3 = L.circleMarker(
                 [-15.0, -45.0],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#3388ff&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: false, &quot;fillColor&quot;: &quot;#3388ff&quot;, &quot;fillOpacity&quot;: 0.2, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 10, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
-            ).addTo(map_f47131d3dd76ca25eafec2a67393c75c);
+            ).addTo(map_55ee2045a6145505acde9d4fe7051e36);
 
 
-            circle_marker_3a672ade7c86f9cd3ad327a1323e9d17.bindTooltip(
+            circle_marker_965452839534be469c9c1f1909275cc3.bindTooltip(
                 `&lt;div&gt;
                      Upper Left Corner
                  &lt;/div&gt;`,
@@ -825,13 +827,13 @@ document.write(`
             );
 
 
-            var circle_marker_2c0516f1908fed420c937251b9182e77 = L.circleMarker(
+            var circle_marker_bbf351ed2439aabf5e6158121f9f559b = L.circleMarker(
                 [-25.0, -45.0],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#3388ff&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: false, &quot;fillColor&quot;: &quot;#3388ff&quot;, &quot;fillOpacity&quot;: 0.2, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 10, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
-            ).addTo(map_f47131d3dd76ca25eafec2a67393c75c);
+            ).addTo(map_55ee2045a6145505acde9d4fe7051e36);
 
 
-            circle_marker_2c0516f1908fed420c937251b9182e77.bindTooltip(
+            circle_marker_bbf351ed2439aabf5e6158121f9f559b.bindTooltip(
                 `&lt;div&gt;
                      Lower Left Corner
                  &lt;/div&gt;`,
@@ -839,13 +841,13 @@ document.write(`
             );
 
 
-            var circle_marker_46267f67bdbdf785468d24dd11da3f8a = L.circleMarker(
+            var circle_marker_fcaf2a2782d8310f91207fac5e169368 = L.circleMarker(
                 [-25.0, -35.0],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#3388ff&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: false, &quot;fillColor&quot;: &quot;#3388ff&quot;, &quot;fillOpacity&quot;: 0.2, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 10, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
-            ).addTo(map_f47131d3dd76ca25eafec2a67393c75c);
+            ).addTo(map_55ee2045a6145505acde9d4fe7051e36);
 
 
-            circle_marker_46267f67bdbdf785468d24dd11da3f8a.bindTooltip(
+            circle_marker_fcaf2a2782d8310f91207fac5e169368.bindTooltip(
                 `&lt;div&gt;
                      Lower Right Corner
                  &lt;/div&gt;`,
@@ -853,13 +855,13 @@ document.write(`
             );
 
 
-            var circle_marker_efb739c736b4737a40bedc4630aefe7e = L.circleMarker(
+            var circle_marker_3c273fdb2e2a9a89e9c0572a163e48a6 = L.circleMarker(
                 [-15.0, -35.0],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#3388ff&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: false, &quot;fillColor&quot;: &quot;#3388ff&quot;, &quot;fillOpacity&quot;: 0.2, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 10, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
-            ).addTo(map_f47131d3dd76ca25eafec2a67393c75c);
+            ).addTo(map_55ee2045a6145505acde9d4fe7051e36);
 
 
-            circle_marker_efb739c736b4737a40bedc4630aefe7e.bindTooltip(
+            circle_marker_3c273fdb2e2a9a89e9c0572a163e48a6.bindTooltip(
                 `&lt;div&gt;
                      Upper Right Corner
                  &lt;/div&gt;`,
@@ -955,7 +957,7 @@ document.write(`
     <div class="footer-items__start">
       
         <div class="footer-item"><!-- This will display the version of the docs -->
-Folium version 0.1.dev1.dev+g4b860c0</div>
+Folium version 0.1.dev1851+g5086929</div>
       
         <div class="footer-item">
 

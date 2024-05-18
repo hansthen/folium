@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Icons &#8212; Folium 0.1.dev1+g4b860c0 documentation</title>
+    <title>Icons &#8212; Folium 0.1.dev1851+g5086929 documentation</title>
   
   
   
@@ -37,7 +37,7 @@
 <link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae" />
   <script src="../../_static/vendor/fontawesome/6.5.1/js/all.min.js?digest=8d27b9dea8ad943066ae"></script>
 
-    <script src="../../_static/documentation_options.js?v=cf1791ab"></script>
+    <script src="../../_static/documentation_options.js?v=e885c205"></script>
     <script src="../../_static/doctools.js?v=9a2dae69"></script>
     <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
@@ -440,6 +440,8 @@ document.write(`
 <li class="toctree-l2"><a class="reference internal" href="../plugins/measure_control.html">MeasureControl</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../plugins/mouse_position.html">MousePosition</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../plugins/pattern.html">Pattern plugins</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../plugins/polygon_encoded.html">PolygonFromEncoded</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../plugins/polyline_encoded.html">PolyLineFromEncoded</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../plugins/polyline_offset.html">PolylineOffset</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../plugins/polyline_textpath.html">PolyLineTextPath</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../plugins/realtime.html">Realtime</a></li>
@@ -577,7 +579,7 @@ document.write(`
             &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no&quot; /&gt;
             &lt;style&gt;
-                #map_ff66398dbe4aeaf4037d07e263cc395e {
+                #map_972601997a7613166fe6e005e5ff7fcd {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -591,14 +593,14 @@ document.write(`
 &lt;body&gt;
 
 
-            &lt;div class=&quot;folium-map&quot; id=&quot;map_ff66398dbe4aeaf4037d07e263cc395e&quot; &gt;&lt;/div&gt;
+            &lt;div class=&quot;folium-map&quot; id=&quot;map_972601997a7613166fe6e005e5ff7fcd&quot; &gt;&lt;/div&gt;
 
 &lt;/body&gt;
 &lt;script&gt;
 
 
-            var map_ff66398dbe4aeaf4037d07e263cc395e = L.map(
-                &quot;map_ff66398dbe4aeaf4037d07e263cc395e&quot;,
+            var map_972601997a7613166fe6e005e5ff7fcd = L.map(
+                &quot;map_972601997a7613166fe6e005e5ff7fcd&quot;,
                 {
                     center: [41.0, -71.0],
                     crs: L.CRS.EPSG3857,
@@ -612,28 +614,28 @@ document.write(`
 
 
 
-            var tile_layer_138010e1a2fe89b68ad6909271dd27fe = L.tileLayer(
+            var tile_layer_a0b2c37ab27a166fb0b5e9ba6b9d445e = L.tileLayer(
                 &quot;https://tile.openstreetmap.org/{z}/{x}/{y}.png&quot;,
                 {&quot;attribution&quot;: &quot;\u0026copy; \u003ca href=\&quot;https://www.openstreetmap.org/copyright\&quot;\u003eOpenStreetMap\u003c/a\u003e contributors&quot;, &quot;detectRetina&quot;: false, &quot;maxNativeZoom&quot;: 19, &quot;maxZoom&quot;: 19, &quot;minZoom&quot;: 0, &quot;noWrap&quot;: false, &quot;opacity&quot;: 1, &quot;subdomains&quot;: &quot;abc&quot;, &quot;tms&quot;: false}
             );
 
 
-            tile_layer_138010e1a2fe89b68ad6909271dd27fe.addTo(map_ff66398dbe4aeaf4037d07e263cc395e);
+            tile_layer_a0b2c37ab27a166fb0b5e9ba6b9d445e.addTo(map_972601997a7613166fe6e005e5ff7fcd);
 
 
-            var marker_192be04f82409c5f8364d5a91ad3e086 = L.marker(
+            var marker_d738b134b39bb1cc4dd117a4e0f5fad0 = L.marker(
                 [41.0, -72.0],
                 {}
-            ).addTo(map_ff66398dbe4aeaf4037d07e263cc395e);
+            ).addTo(map_972601997a7613166fe6e005e5ff7fcd);
 
 
-            var icon_f46165d211f925a87c177b0b15265223 = L.AwesomeMarkers.icon(
+            var icon_b2dd812ab04e64766793bc8210798fd5 = L.AwesomeMarkers.icon(
                 {&quot;extraClasses&quot;: &quot;fa-rotate-180&quot;, &quot;icon&quot;: &quot;arrow-up&quot;, &quot;iconColor&quot;: &quot;white&quot;, &quot;markerColor&quot;: &quot;green&quot;, &quot;prefix&quot;: &quot;fa&quot;}
             );
-            marker_192be04f82409c5f8364d5a91ad3e086.setIcon(icon_f46165d211f925a87c177b0b15265223);
+            marker_d738b134b39bb1cc4dd117a4e0f5fad0.setIcon(icon_b2dd812ab04e64766793bc8210798fd5);
 
 
-            marker_192be04f82409c5f8364d5a91ad3e086.bindTooltip(
+            marker_d738b134b39bb1cc4dd117a4e0f5fad0.bindTooltip(
                 `&lt;div&gt;
                      180
                  &lt;/div&gt;`,
@@ -641,19 +643,19 @@ document.write(`
             );
 
 
-            var marker_1db0dea85ba07227950670ad2b3058a3 = L.marker(
+            var marker_9a19c55efcac2611b2e876bdcba7b828 = L.marker(
                 [41.0, -75.0],
                 {}
-            ).addTo(map_ff66398dbe4aeaf4037d07e263cc395e);
+            ).addTo(map_972601997a7613166fe6e005e5ff7fcd);
 
 
-            var icon_853a0c0e712ccdaa4d815d24e9cdf9c7 = L.AwesomeMarkers.icon(
+            var icon_0c62578185d5f004a014fc7e094666d1 = L.AwesomeMarkers.icon(
                 {&quot;extraClasses&quot;: &quot;fa-rotate-45&quot;, &quot;icon&quot;: &quot;arrow-up&quot;, &quot;iconColor&quot;: &quot;white&quot;, &quot;markerColor&quot;: &quot;green&quot;, &quot;prefix&quot;: &quot;fa&quot;}
             );
-            marker_1db0dea85ba07227950670ad2b3058a3.setIcon(icon_853a0c0e712ccdaa4d815d24e9cdf9c7);
+            marker_9a19c55efcac2611b2e876bdcba7b828.setIcon(icon_0c62578185d5f004a014fc7e094666d1);
 
 
-            marker_1db0dea85ba07227950670ad2b3058a3.bindTooltip(
+            marker_9a19c55efcac2611b2e876bdcba7b828.bindTooltip(
                 `&lt;div&gt;
                      45
                  &lt;/div&gt;`,
@@ -661,19 +663,19 @@ document.write(`
             );
 
 
-            var marker_a277c4c3b6070e3eaeb5203e638d4c0c = L.marker(
+            var marker_ab79ca046261443a53d4b8a15cad62c9 = L.marker(
                 [41.0, -78.0],
                 {}
-            ).addTo(map_ff66398dbe4aeaf4037d07e263cc395e);
+            ).addTo(map_972601997a7613166fe6e005e5ff7fcd);
 
 
-            var icon_1470d25b32ecdcc0c9f7d197c9576961 = L.AwesomeMarkers.icon(
+            var icon_7ad7187f34ddcae469c4154c7344d6a4 = L.AwesomeMarkers.icon(
                 {&quot;extraClasses&quot;: &quot;fa-rotate-90&quot;, &quot;icon&quot;: &quot;arrow-up&quot;, &quot;iconColor&quot;: &quot;white&quot;, &quot;markerColor&quot;: &quot;green&quot;, &quot;prefix&quot;: &quot;fa&quot;}
             );
-            marker_a277c4c3b6070e3eaeb5203e638d4c0c.setIcon(icon_1470d25b32ecdcc0c9f7d197c9576961);
+            marker_ab79ca046261443a53d4b8a15cad62c9.setIcon(icon_7ad7187f34ddcae469c4154c7344d6a4);
 
 
-            marker_a277c4c3b6070e3eaeb5203e638d4c0c.bindTooltip(
+            marker_ab79ca046261443a53d4b8a15cad62c9.bindTooltip(
                 `&lt;div&gt;
                      90
                  &lt;/div&gt;`,
@@ -746,7 +748,7 @@ document.write(`
             &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no&quot; /&gt;
             &lt;style&gt;
-                #map_7be3760603b5b22e191ae1fbbeeabfe7 {
+                #map_771ca9b458d19b3d104414b4a5274c09 {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -760,14 +762,14 @@ document.write(`
 &lt;body&gt;
 
 
-            &lt;div class=&quot;folium-map&quot; id=&quot;map_7be3760603b5b22e191ae1fbbeeabfe7&quot; &gt;&lt;/div&gt;
+            &lt;div class=&quot;folium-map&quot; id=&quot;map_771ca9b458d19b3d104414b4a5274c09&quot; &gt;&lt;/div&gt;
 
 &lt;/body&gt;
 &lt;script&gt;
 
 
-            var map_7be3760603b5b22e191ae1fbbeeabfe7 = L.map(
-                &quot;map_7be3760603b5b22e191ae1fbbeeabfe7&quot;,
+            var map_771ca9b458d19b3d104414b4a5274c09 = L.map(
+                &quot;map_771ca9b458d19b3d104414b4a5274c09&quot;,
                 {
                     center: [45.3288, -121.6625],
                     crs: L.CRS.EPSG3857,
@@ -781,35 +783,35 @@ document.write(`
 
 
 
-            var tile_layer_1ca1da25472a3abb17e87e0525b66737 = L.tileLayer(
+            var tile_layer_801f68f1c7721fd40cc1a9cde96d2a28 = L.tileLayer(
                 &quot;https://tile.openstreetmap.org/{z}/{x}/{y}.png&quot;,
                 {&quot;attribution&quot;: &quot;\u0026copy; \u003ca href=\&quot;https://www.openstreetmap.org/copyright\&quot;\u003eOpenStreetMap\u003c/a\u003e contributors&quot;, &quot;detectRetina&quot;: false, &quot;maxNativeZoom&quot;: 19, &quot;maxZoom&quot;: 19, &quot;minZoom&quot;: 0, &quot;noWrap&quot;: false, &quot;opacity&quot;: 1, &quot;subdomains&quot;: &quot;abc&quot;, &quot;tms&quot;: false}
             );
 
 
-            tile_layer_1ca1da25472a3abb17e87e0525b66737.addTo(map_7be3760603b5b22e191ae1fbbeeabfe7);
+            tile_layer_801f68f1c7721fd40cc1a9cde96d2a28.addTo(map_771ca9b458d19b3d104414b4a5274c09);
 
 
-            var marker_7cafb301f8b73deab741a4887b50e6ee = L.marker(
+            var marker_b744d5a4752e79e06430cc850043c7d8 = L.marker(
                 [45.3288, -121.6625],
                 {}
-            ).addTo(map_7be3760603b5b22e191ae1fbbeeabfe7);
+            ).addTo(map_771ca9b458d19b3d104414b4a5274c09);
 
 
-        var custom_icon_ed9ba3a4fba1fba5e61fca650f65e69a = L.icon({&quot;iconAnchor&quot;: [22, 94], &quot;iconSize&quot;: [38, 95], &quot;iconUrl&quot;: &quot;https://leafletjs.com/examples/custom-icons/leaf-red.png&quot;, &quot;popupAnchor&quot;: [-3, -76], &quot;shadowAnchor&quot;: [4, 62], &quot;shadowSize&quot;: [50, 64], &quot;shadowUrl&quot;: &quot;https://leafletjs.com/examples/custom-icons/leaf-shadow.png&quot;});
-        marker_7cafb301f8b73deab741a4887b50e6ee.setIcon(custom_icon_ed9ba3a4fba1fba5e61fca650f65e69a);
+        var custom_icon_6ba91fc0636665459d5536171a2d4d77 = L.icon({&quot;iconAnchor&quot;: [22, 94], &quot;iconSize&quot;: [38, 95], &quot;iconUrl&quot;: &quot;https://leafletjs.com/examples/custom-icons/leaf-red.png&quot;, &quot;popupAnchor&quot;: [-3, -76], &quot;shadowAnchor&quot;: [4, 62], &quot;shadowSize&quot;: [50, 64], &quot;shadowUrl&quot;: &quot;https://leafletjs.com/examples/custom-icons/leaf-shadow.png&quot;});
+        marker_b744d5a4752e79e06430cc850043c7d8.setIcon(custom_icon_6ba91fc0636665459d5536171a2d4d77);
 
 
-        var popup_9ebcac36933932df9dab63519567a896 = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
-
-
-
-                var html_dd1c79316fa75bba811096eec15f1996 = $(`&lt;div id=&quot;html_dd1c79316fa75bba811096eec15f1996&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;Mt. Hood Meadows&lt;/div&gt;`)[0];
-                popup_9ebcac36933932df9dab63519567a896.setContent(html_dd1c79316fa75bba811096eec15f1996);
+        var popup_c244953ca042d741304b23da637e62e1 = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
 
 
 
-        marker_7cafb301f8b73deab741a4887b50e6ee.bindPopup(popup_9ebcac36933932df9dab63519567a896)
+                var html_3f8fb58092b06e2195d5bfb19a986e1b = $(`&lt;div id=&quot;html_3f8fb58092b06e2195d5bfb19a986e1b&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;Mt. Hood Meadows&lt;/div&gt;`)[0];
+                popup_c244953ca042d741304b23da637e62e1.setContent(html_3f8fb58092b06e2195d5bfb19a986e1b);
+
+
+
+        marker_b744d5a4752e79e06430cc850043c7d8.bindPopup(popup_c244953ca042d741304b23da637e62e1)
         ;
 
 
@@ -902,7 +904,7 @@ document.write(`
     <div class="footer-items__start">
       
         <div class="footer-item"><!-- This will display the version of the docs -->
-Folium version 0.1.dev1.dev+g4b860c0</div>
+Folium version 0.1.dev1851+g5086929</div>
       
         <div class="footer-item">
 
