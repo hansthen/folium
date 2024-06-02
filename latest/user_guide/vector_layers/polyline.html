@@ -8,36 +8,36 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>PolyLine &#8212; Folium 0.1.dev1851+g5086929 documentation</title>
+    <title>PolyLine &#8212; Folium 0.1.dev1853+gb80e7e9 documentation</title>
   
   
   
   <script data-cfasync="false">
     document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
-    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
   </script>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../../_static/styles/theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
-<link href="../../_static/styles/bootstrap.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
-<link href="../../_static/styles/pydata-sphinx-theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+  <link href="../../_static/styles/theme.css?digest=3ee479438cf8b5e0d341" rel="stylesheet" />
+<link href="../../_static/styles/bootstrap.css?digest=3ee479438cf8b5e0d341" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=3ee479438cf8b5e0d341" rel="stylesheet" />
 
   
-  <link href="../../_static/vendor/fontawesome/6.5.1/css/all.min.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
-  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.1/webfonts/fa-solid-900.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.1/webfonts/fa-brands-400.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.1/webfonts/fa-regular-400.woff2" />
+  <link href="../../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=3ee479438cf8b5e0d341" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
 
     <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=fa44fd50" />
     <link rel="stylesheet" type="text/css" href="../../_static/nbsphinx-code-cells.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/custom.css?v=924e9346" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae" />
-<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae" />
-  <script src="../../_static/vendor/fontawesome/6.5.1/js/all.min.js?digest=8d27b9dea8ad943066ae"></script>
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=3ee479438cf8b5e0d341" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=3ee479438cf8b5e0d341" />
+  <script src="../../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=3ee479438cf8b5e0d341"></script>
 
-    <script src="../../_static/documentation_options.js?v=e885c205"></script>
+    <script src="../../_static/documentation_options.js?v=c980cc8d"></script>
     <script src="../../_static/doctools.js?v=9a2dae69"></script>
     <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
@@ -45,7 +45,7 @@
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'user_guide/vector_layers/polyline';</script>
     <script>
-        DOCUMENTATION_OPTIONS.theme_version = '0.15.2';
+        DOCUMENTATION_OPTIONS.theme_version = '0.15.3';
         DOCUMENTATION_OPTIONS.theme_switcher_json_url = 'https://python-visualization.github.io/folium/latest/_static/switcher.json';
         DOCUMENTATION_OPTIONS.theme_switcher_version_match = 'latest';
         DOCUMENTATION_OPTIONS.show_version_warning_banner = false;
@@ -63,27 +63,23 @@
 
   
   
-  <a id="pst-skip-link" class="skip-link" href="#main-content">Skip to main content</a>
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
   
   <div id="pst-scroll-pixel-helper"></div>
   
   <button type="button" class="btn rounded-pill" id="pst-back-to-top">
-    <i class="fa-solid fa-arrow-up"></i>
-    Back to top
-  </button>
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
 
   
   <input type="checkbox"
           class="sidebar-toggle"
-          name="__primary"
-          id="__primary"/>
-  <label class="overlay overlay-primary" for="__primary"></label>
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
   
   <input type="checkbox"
           class="sidebar-toggle"
-          name="__secondary"
-          id="__secondary"/>
-  <label class="overlay overlay-secondary" for="__secondary"></label>
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
   
   <div class="search-button__wrapper">
     <div class="search-button__overlay"></div>
@@ -105,12 +101,17 @@
   <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
 </form></div>
   </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
   
-    <header class="bd-header navbar navbar-expand-lg bd-navbar">
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
 <div class="bd-header__inner bd-page-width">
-  <label class="sidebar-toggle primary-toggle" for="__primary">
+  <button class="sidebar-toggle primary-toggle" aria-label="Site navigation">
     <span class="fa-solid fa-bars"></span>
-  </label>
+  </button>
   
   
   <div class="col-lg-3 navbar-header-items__start">
@@ -172,40 +173,40 @@ document.write(`
 <nav class="navbar-nav">
   <ul class="bd-navbar-elements navbar-nav">
     
-                    <li class="nav-item">
-                      <a class="nav-link nav-internal" href="../../index.html">
-                        Home
-                      </a>
-                    </li>
-                
+<li class="nav-item pst-header-nav-item">
+  <a class="nav-link nav-internal" href="../../index.html">
+    Home
+  </a>
+</li>
 
-                    <li class="nav-item">
-                      <a class="nav-link nav-internal" href="../../getting_started.html">
-                        Getting started
-                      </a>
-                    </li>
-                
 
-                    <li class="nav-item current active">
-                      <a class="nav-link nav-internal" href="../../user_guide.html">
-                        User guide
-                      </a>
-                    </li>
-                
+<li class="nav-item pst-header-nav-item">
+  <a class="nav-link nav-internal" href="../../getting_started.html">
+    Getting started
+  </a>
+</li>
 
-                    <li class="nav-item">
-                      <a class="nav-link nav-internal" href="../../advanced_guide.html">
-                        Advanced guide
-                      </a>
-                    </li>
-                
 
-                    <li class="nav-item">
-                      <a class="nav-link nav-internal" href="../../reference.html">
-                        API reference
-                      </a>
-                    </li>
-                
+<li class="nav-item pst-header-nav-item current active">
+  <a class="nav-link nav-internal" href="../../user_guide.html">
+    User guide
+  </a>
+</li>
+
+
+<li class="nav-item pst-header-nav-item">
+  <a class="nav-link nav-internal" href="../../advanced_guide.html">
+    Advanced guide
+  </a>
+</li>
+
+
+<li class="nav-item pst-header-nav-item">
+  <a class="nav-link nav-internal" href="../../reference.html">
+    API reference
+  </a>
+</li>
+
   </ul>
 </nav></div>
       
@@ -277,9 +278,9 @@ document.write(`
   
 
   
-    <label class="sidebar-toggle secondary-toggle" for="__secondary" tabindex="0">
+    <button class="sidebar-toggle secondary-toggle" aria-label="On this page">
       <span class="fa-solid fa-outdent"></span>
-    </label>
+    </button>
   
 </div>
 
@@ -300,46 +301,49 @@ document.write(`
     
       <div class="sidebar-header-items__center">
         
-          <div class="navbar-item">
+          
+          
+            <div class="navbar-item">
 <nav class="navbar-nav">
   <ul class="bd-navbar-elements navbar-nav">
     
-                    <li class="nav-item">
-                      <a class="nav-link nav-internal" href="../../index.html">
-                        Home
-                      </a>
-                    </li>
-                
+<li class="nav-item pst-header-nav-item">
+  <a class="nav-link nav-internal" href="../../index.html">
+    Home
+  </a>
+</li>
 
-                    <li class="nav-item">
-                      <a class="nav-link nav-internal" href="../../getting_started.html">
-                        Getting started
-                      </a>
-                    </li>
-                
 
-                    <li class="nav-item current active">
-                      <a class="nav-link nav-internal" href="../../user_guide.html">
-                        User guide
-                      </a>
-                    </li>
-                
+<li class="nav-item pst-header-nav-item">
+  <a class="nav-link nav-internal" href="../../getting_started.html">
+    Getting started
+  </a>
+</li>
 
-                    <li class="nav-item">
-                      <a class="nav-link nav-internal" href="../../advanced_guide.html">
-                        Advanced guide
-                      </a>
-                    </li>
-                
 
-                    <li class="nav-item">
-                      <a class="nav-link nav-internal" href="../../reference.html">
-                        API reference
-                      </a>
-                    </li>
-                
+<li class="nav-item pst-header-nav-item current active">
+  <a class="nav-link nav-internal" href="../../user_guide.html">
+    User guide
+  </a>
+</li>
+
+
+<li class="nav-item pst-header-nav-item">
+  <a class="nav-link nav-internal" href="../../advanced_guide.html">
+    Advanced guide
+  </a>
+</li>
+
+
+<li class="nav-item pst-header-nav-item">
+  <a class="nav-link nav-internal" href="../../reference.html">
+    API reference
+  </a>
+</li>
+
   </ul>
 </nav></div>
+          
         
       </div>
     
@@ -386,28 +390,28 @@ document.write(`
   <p class="bd-links__title" role="heading" aria-level="1">Section Navigation</p>
   <div class="bd-toc-item navbar-nav"><ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../map.html">Map</a></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../ui_elements.html">UI elements</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../ui_elements.html">UI elements</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="../ui_elements/layer_control.html">LayerControl</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ui_elements/popups.html">Popups</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ui_elements/icons.html">Icons</a></li>
 </ul>
-</li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../raster_layers.html">Raster layers</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../raster_layers.html">Raster layers</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="../raster_layers/tiles.html">Tiles</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../raster_layers/image_overlay.html">ImageOverlay</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../raster_layers/video_overlay.html">VideoOverlay</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../raster_layers/wms_tile_layer.html">WmsTileLayer</a></li>
 </ul>
-</li>
-<li class="toctree-l1 current active has-children"><a class="reference internal" href="../vector_layers.html">Vector layers</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
+</details></li>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="../vector_layers.html">Vector layers</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="circle_and_circle_marker.html">Circle and CircleMarker</a></li>
 <li class="toctree-l2 current active"><a class="current reference internal" href="#">PolyLine</a></li>
 <li class="toctree-l2"><a class="reference internal" href="rectangle.html">Rectangle</a></li>
 <li class="toctree-l2"><a class="reference internal" href="polygon.html">Polygon</a></li>
 <li class="toctree-l2"><a class="reference internal" href="colorline.html">ColorLine</a></li>
 </ul>
-</li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../geojson.html">GeoJSON and choropleth</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../geojson.html">GeoJSON and choropleth</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="../geojson/geojson.html">Using <code class="docutils literal notranslate"><span class="pre">GeoJson</span></code></a></li>
 <li class="toctree-l2"><a class="reference internal" href="../geojson/choropleth.html">Using <code class="docutils literal notranslate"><span class="pre">Choropleth</span></code></a></li>
 <li class="toctree-l2"><a class="reference internal" href="../geojson/geojson_marker.html">GeoJSON point features with markers</a></li>
@@ -415,13 +419,13 @@ document.write(`
 <li class="toctree-l2"><a class="reference internal" href="../geojson/geopandas_and_geo_interface.html">Using GeoPandas.GeoDataFrame in folium</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../geojson/smoothing.html">Smoothing</a></li>
 </ul>
-</li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../features.html">Features</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-5"><i class="fa-solid fa-chevron-down"></i></label><ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../features.html">Features</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="../features/fit_overlays.html">FitOverlays</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../features/click_related_classes.html">Click-related classes</a></li>
 </ul>
-</li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../plugins.html">Plugins</a><input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-6"><i class="fa-solid fa-chevron-down"></i></label><ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../plugins.html">Plugins</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="../plugins/antpath.html">Antpath</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../plugins/boat_marker.html">BoatMarker</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../plugins/beautify_icon.html">BeautifyIcon</a></li>
@@ -458,7 +462,7 @@ document.write(`
 <li class="toctree-l2"><a class="reference internal" href="../plugins/vector_tiles.html">Vector tiles using VectorGridProtobuf</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../plugins/WmsTimeDimension.html">TimestampedWmsTileLayers</a></li>
 </ul>
-</li>
+</details></li>
 </ul>
 </div>
 </nav></div>
@@ -473,13 +477,13 @@ document.write(`
 
       </div>
       
-      <main id="main-content" class="bd-main">
+      <main id="main-content" class="bd-main" role="main">
         
         
           <div class="bd-content">
             <div class="bd-article-container">
               
-              <div class="bd-header-article">
+              <div class="bd-header-article d-print-none">
 <div class="header-article-items header-article__inner">
   
     <div class="header-article-items__start">
@@ -488,7 +492,7 @@ document.write(`
 
 
 
-<nav aria-label="Breadcrumb">
+<nav aria-label="Breadcrumb" class="d-print-none">
   <ul class="bd-breadcrumbs">
     
     <li class="breadcrumb-item breadcrumb-home">
@@ -590,7 +594,7 @@ document.write(`
             &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no&quot; /&gt;
             &lt;style&gt;
-                #map_448f67329496c2cc9d2f506a059350d0 {
+                #map_2473e95b9ca0a2b9c8400887e2525e71 {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -604,14 +608,14 @@ document.write(`
 &lt;body&gt;
 
 
-            &lt;div class=&quot;folium-map&quot; id=&quot;map_448f67329496c2cc9d2f506a059350d0&quot; &gt;&lt;/div&gt;
+            &lt;div class=&quot;folium-map&quot; id=&quot;map_2473e95b9ca0a2b9c8400887e2525e71&quot; &gt;&lt;/div&gt;
 
 &lt;/body&gt;
 &lt;script&gt;
 
 
-            var map_448f67329496c2cc9d2f506a059350d0 = L.map(
-                &quot;map_448f67329496c2cc9d2f506a059350d0&quot;,
+            var map_2473e95b9ca0a2b9c8400887e2525e71 = L.map(
+                &quot;map_2473e95b9ca0a2b9c8400887e2525e71&quot;,
                 {
                     center: [41.9, -97.3],
                     crs: L.CRS.EPSG3857,
@@ -625,22 +629,22 @@ document.write(`
 
 
 
-            var tile_layer_6217e37e811ff1197b53f27c81b75884 = L.tileLayer(
+            var tile_layer_5e87a95f044a70506dfeb38652fb9743 = L.tileLayer(
                 &quot;https://tile.openstreetmap.org/{z}/{x}/{y}.png&quot;,
                 {&quot;attribution&quot;: &quot;\u0026copy; \u003ca href=\&quot;https://www.openstreetmap.org/copyright\&quot;\u003eOpenStreetMap\u003c/a\u003e contributors&quot;, &quot;detectRetina&quot;: false, &quot;maxNativeZoom&quot;: 19, &quot;maxZoom&quot;: 19, &quot;minZoom&quot;: 0, &quot;noWrap&quot;: false, &quot;opacity&quot;: 1, &quot;subdomains&quot;: &quot;abc&quot;, &quot;tms&quot;: false}
             );
 
 
-            tile_layer_6217e37e811ff1197b53f27c81b75884.addTo(map_448f67329496c2cc9d2f506a059350d0);
+            tile_layer_5e87a95f044a70506dfeb38652fb9743.addTo(map_2473e95b9ca0a2b9c8400887e2525e71);
 
 
-            var poly_line_4a2298c34beec8b3d80d1a539bacc79c = L.polyline(
+            var poly_line_c248de2a0370f7745aa9656a00a51913 = L.polyline(
                 [[42.3581, -71.0636], [42.82995815, -74.78991444], [43.17929819, -78.56603306], [43.40320216, -82.37774519], [43.49975489, -86.20965845], [43.46811941, -90.04569087], [43.30857071, -93.86961818], [43.02248456, -97.66563267], [42.61228259, -101.41886832], [42.08133868, -105.11585198], [41.4338549, -108.74485069], [40.67471747, -112.29609954], [39.8093434, -115.76190821], [38.84352776, -119.13665678], [37.7833, -122.4167]],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#FF0000&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: false, &quot;fillColor&quot;: &quot;#FF0000&quot;, &quot;fillOpacity&quot;: 0.2, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;noClip&quot;: false, &quot;opacity&quot;: 1.0, &quot;smoothFactor&quot;: 1.0, &quot;stroke&quot;: true, &quot;weight&quot;: 5}
-            ).addTo(map_448f67329496c2cc9d2f506a059350d0);
+            ).addTo(map_2473e95b9ca0a2b9c8400887e2525e71);
 
 
-            poly_line_4a2298c34beec8b3d80d1a539bacc79c.bindTooltip(
+            poly_line_c248de2a0370f7745aa9656a00a51913.bindTooltip(
                 `&lt;div&gt;
                      From Boston to San Francisco
                  &lt;/div&gt;`,
@@ -703,7 +707,7 @@ document.write(`
             &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no&quot; /&gt;
             &lt;style&gt;
-                #map_9327fa2d194e933910ae6528eb645deb {
+                #map_32dac91fc7fc775dd88efb932684e3f8 {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -717,14 +721,14 @@ document.write(`
 &lt;body&gt;
 
 
-            &lt;div class=&quot;folium-map&quot; id=&quot;map_9327fa2d194e933910ae6528eb645deb&quot; &gt;&lt;/div&gt;
+            &lt;div class=&quot;folium-map&quot; id=&quot;map_32dac91fc7fc775dd88efb932684e3f8&quot; &gt;&lt;/div&gt;
 
 &lt;/body&gt;
 &lt;script&gt;
 
 
-            var map_9327fa2d194e933910ae6528eb645deb = L.map(
-                &quot;map_9327fa2d194e933910ae6528eb645deb&quot;,
+            var map_32dac91fc7fc775dd88efb932684e3f8 = L.map(
+                &quot;map_32dac91fc7fc775dd88efb932684e3f8&quot;,
                 {
                     center: [41.9, -97.3],
                     crs: L.CRS.EPSG3857,
@@ -738,22 +742,22 @@ document.write(`
 
 
 
-            var tile_layer_f0be70c94d286157dbd008c62d3df762 = L.tileLayer(
+            var tile_layer_1b23c930a8330412177d45100814eaef = L.tileLayer(
                 &quot;https://tile.openstreetmap.org/{z}/{x}/{y}.png&quot;,
                 {&quot;attribution&quot;: &quot;\u0026copy; \u003ca href=\&quot;https://www.openstreetmap.org/copyright\&quot;\u003eOpenStreetMap\u003c/a\u003e contributors&quot;, &quot;detectRetina&quot;: false, &quot;maxNativeZoom&quot;: 19, &quot;maxZoom&quot;: 19, &quot;minZoom&quot;: 0, &quot;noWrap&quot;: false, &quot;opacity&quot;: 1, &quot;subdomains&quot;: &quot;abc&quot;, &quot;tms&quot;: false}
             );
 
 
-            tile_layer_f0be70c94d286157dbd008c62d3df762.addTo(map_9327fa2d194e933910ae6528eb645deb);
+            tile_layer_1b23c930a8330412177d45100814eaef.addTo(map_32dac91fc7fc775dd88efb932684e3f8);
 
 
-            var poly_line_c4d1477dfbb46b3d232a9627dc016138 = L.polyline(
+            var poly_line_79b8a1ba20526567184a47e477629337 = L.polyline(
                 [[42.3581, -71.0636], [42.82995815, -74.78991444], [43.17929819, -78.56603306], [43.40320216, -82.37774519], [43.49975489, -86.20965845], [43.46811941, -90.04569087], [43.30857071, -93.86961818], [43.02248456, -97.66563267], [42.61228259, -101.41886832], [42.08133868, -105.11585198], [41.4338549, -108.74485069], [40.67471747, -112.29609954], [39.8093434, -115.76190821], [38.84352776, -119.13665678], [37.7833, -122.4167]],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;grey&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: false, &quot;fillColor&quot;: &quot;grey&quot;, &quot;fillOpacity&quot;: 0.2, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;noClip&quot;: false, &quot;opacity&quot;: 1.0, &quot;smoothFactor&quot;: 50, &quot;stroke&quot;: true, &quot;weight&quot;: 5}
-            ).addTo(map_9327fa2d194e933910ae6528eb645deb);
+            ).addTo(map_32dac91fc7fc775dd88efb932684e3f8);
 
 
-            poly_line_c4d1477dfbb46b3d232a9627dc016138.bindTooltip(
+            poly_line_79b8a1ba20526567184a47e477629337.bindTooltip(
                 `&lt;div&gt;
                      Too much smoothing?
                  &lt;/div&gt;`,
@@ -844,7 +848,7 @@ document.write(`
             &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no&quot; /&gt;
             &lt;style&gt;
-                #map_bdba224f8ef145ef8ae9f1e0a81b45cb {
+                #map_dbd032bc61b97a8bc83fbc7ac288b692 {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -858,14 +862,14 @@ document.write(`
 &lt;body&gt;
 
 
-            &lt;div class=&quot;folium-map&quot; id=&quot;map_bdba224f8ef145ef8ae9f1e0a81b45cb&quot; &gt;&lt;/div&gt;
+            &lt;div class=&quot;folium-map&quot; id=&quot;map_dbd032bc61b97a8bc83fbc7ac288b692&quot; &gt;&lt;/div&gt;
 
 &lt;/body&gt;
 &lt;script&gt;
 
 
-            var map_bdba224f8ef145ef8ae9f1e0a81b45cb = L.map(
-                &quot;map_bdba224f8ef145ef8ae9f1e0a81b45cb&quot;,
+            var map_dbd032bc61b97a8bc83fbc7ac288b692 = L.map(
+                &quot;map_dbd032bc61b97a8bc83fbc7ac288b692&quot;,
                 {
                     center: [0.0, 0.0],
                     crs: L.CRS.EPSG3857,
@@ -879,22 +883,22 @@ document.write(`
 
 
 
-            var tile_layer_eea9b5e6fd4d6e38ecbc17bf008a4112 = L.tileLayer(
+            var tile_layer_cbb9f98a2bd723495bbb22fffac2df95 = L.tileLayer(
                 &quot;https://tile.openstreetmap.org/{z}/{x}/{y}.png&quot;,
                 {&quot;attribution&quot;: &quot;\u0026copy; \u003ca href=\&quot;https://www.openstreetmap.org/copyright\&quot;\u003eOpenStreetMap\u003c/a\u003e contributors&quot;, &quot;detectRetina&quot;: false, &quot;maxNativeZoom&quot;: 19, &quot;maxZoom&quot;: 19, &quot;minZoom&quot;: 0, &quot;noWrap&quot;: false, &quot;opacity&quot;: 1, &quot;subdomains&quot;: &quot;abc&quot;, &quot;tms&quot;: false}
             );
 
 
-            tile_layer_eea9b5e6fd4d6e38ecbc17bf008a4112.addTo(map_bdba224f8ef145ef8ae9f1e0a81b45cb);
+            tile_layer_cbb9f98a2bd723495bbb22fffac2df95.addTo(map_dbd032bc61b97a8bc83fbc7ac288b692);
 
 
-            var poly_line_c50488e8a21218bd4e349fc8b0074576 = L.polyline(
+            var poly_line_975c8209139f85d68aa18225301b2210 = L.polyline(
                 [[2.0, 179.0], [2.0, -179.0]],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;red&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: false, &quot;fillColor&quot;: &quot;red&quot;, &quot;fillOpacity&quot;: 0.2, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;noClip&quot;: false, &quot;opacity&quot;: 1.0, &quot;smoothFactor&quot;: 1.0, &quot;stroke&quot;: true, &quot;weight&quot;: 6}
-            ).addTo(map_bdba224f8ef145ef8ae9f1e0a81b45cb);
+            ).addTo(map_dbd032bc61b97a8bc83fbc7ac288b692);
 
 
-            poly_line_c50488e8a21218bd4e349fc8b0074576.bindTooltip(
+            poly_line_975c8209139f85d68aa18225301b2210.bindTooltip(
                 `&lt;div&gt;
                      Wrong
                  &lt;/div&gt;`,
@@ -902,13 +906,13 @@ document.write(`
             );
 
 
-            var poly_line_1a67fe144be4116fef595ab1c34f5b88 = L.polyline(
+            var poly_line_91e7d600bcc23c1507cf60fc02a704d5 = L.polyline(
                 [[-2.0, 179.0], [-2.0, 181.0]],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;blue&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: false, &quot;fillColor&quot;: &quot;blue&quot;, &quot;fillOpacity&quot;: 0.2, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;butt&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;noClip&quot;: false, &quot;opacity&quot;: 1.0, &quot;smoothFactor&quot;: 1.0, &quot;stroke&quot;: true, &quot;weight&quot;: 6}
-            ).addTo(map_bdba224f8ef145ef8ae9f1e0a81b45cb);
+            ).addTo(map_dbd032bc61b97a8bc83fbc7ac288b692);
 
 
-            poly_line_1a67fe144be4116fef595ab1c34f5b88.bindTooltip(
+            poly_line_91e7d600bcc23c1507cf60fc02a704d5.bindTooltip(
                 `&lt;div&gt;
                      Correct
                  &lt;/div&gt;`,
@@ -916,13 +920,13 @@ document.write(`
             );
 
 
-            var poly_line_7358773af3c3edff60c5294a80805e1c = L.polyline(
+            var poly_line_ff365568974ab0d22619ec95b37079f0 = L.polyline(
                 [[-6.0, -179.0], [-6.0, 179.0]],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;green&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: false, &quot;fillColor&quot;: &quot;green&quot;, &quot;fillOpacity&quot;: 0.2, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;square&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;noClip&quot;: false, &quot;opacity&quot;: 1.0, &quot;smoothFactor&quot;: 1.0, &quot;stroke&quot;: true, &quot;weight&quot;: 6}
-            ).addTo(map_bdba224f8ef145ef8ae9f1e0a81b45cb);
+            ).addTo(map_dbd032bc61b97a8bc83fbc7ac288b692);
 
 
-            poly_line_7358773af3c3edff60c5294a80805e1c.bindTooltip(
+            poly_line_ff365568974ab0d22619ec95b37079f0.bindTooltip(
                 `&lt;div&gt;
                      Correct
                  &lt;/div&gt;`,
@@ -930,13 +934,13 @@ document.write(`
             );
 
 
-            var poly_line_30890752837612129f11bb2aff79f549 = L.polyline(
+            var poly_line_6ea6b8b531cf37e0cae0ff8b1a731c1d = L.polyline(
                 [[12.0, -179.0], [12.0, 190.0]],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;orange&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: false, &quot;fillColor&quot;: &quot;orange&quot;, &quot;fillOpacity&quot;: 0.2, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;noClip&quot;: false, &quot;opacity&quot;: 1.0, &quot;smoothFactor&quot;: 1.0, &quot;stroke&quot;: true, &quot;weight&quot;: 6}
-            ).addTo(map_bdba224f8ef145ef8ae9f1e0a81b45cb);
+            ).addTo(map_dbd032bc61b97a8bc83fbc7ac288b692);
 
 
-            poly_line_30890752837612129f11bb2aff79f549.bindTooltip(
+            poly_line_6ea6b8b531cf37e0cae0ff8b1a731c1d.bindTooltip(
                 `&lt;div&gt;
                      Artifact?
                  &lt;/div&gt;`,
@@ -1049,7 +1053,7 @@ document.write(`
             &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no&quot; /&gt;
             &lt;style&gt;
-                #map_42c22bc9e05b1072a23a79c1ac4392d3 {
+                #map_1b8ecd02553366ef3c7cbf5d252b64c0 {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -1063,14 +1067,14 @@ document.write(`
 &lt;body&gt;
 
 
-            &lt;div class=&quot;folium-map&quot; id=&quot;map_42c22bc9e05b1072a23a79c1ac4392d3&quot; &gt;&lt;/div&gt;
+            &lt;div class=&quot;folium-map&quot; id=&quot;map_1b8ecd02553366ef3c7cbf5d252b64c0&quot; &gt;&lt;/div&gt;
 
 &lt;/body&gt;
 &lt;script&gt;
 
 
-            var map_42c22bc9e05b1072a23a79c1ac4392d3 = L.map(
-                &quot;map_42c22bc9e05b1072a23a79c1ac4392d3&quot;,
+            var map_1b8ecd02553366ef3c7cbf5d252b64c0 = L.map(
+                &quot;map_1b8ecd02553366ef3c7cbf5d252b64c0&quot;,
                 {
                     center: [38.89399, -77.03659],
                     crs: L.CRS.EPSG3857,
@@ -1084,31 +1088,31 @@ document.write(`
 
 
 
-            var tile_layer_502fba293c03bafeaf5ec93cf69edede = L.tileLayer(
+            var tile_layer_32e61856edbb45df2951ce7b45c3f980 = L.tileLayer(
                 &quot;https://tile.openstreetmap.org/{z}/{x}/{y}.png&quot;,
                 {&quot;attribution&quot;: &quot;\u0026copy; \u003ca href=\&quot;https://www.openstreetmap.org/copyright\&quot;\u003eOpenStreetMap\u003c/a\u003e contributors&quot;, &quot;detectRetina&quot;: false, &quot;maxNativeZoom&quot;: 19, &quot;maxZoom&quot;: 19, &quot;minZoom&quot;: 0, &quot;noWrap&quot;: false, &quot;opacity&quot;: 1, &quot;subdomains&quot;: &quot;abc&quot;, &quot;tms&quot;: false}
             );
 
 
-            tile_layer_502fba293c03bafeaf5ec93cf69edede.addTo(map_42c22bc9e05b1072a23a79c1ac4392d3);
+            tile_layer_32e61856edbb45df2951ce7b45c3f980.addTo(map_1b8ecd02553366ef3c7cbf5d252b64c0);
 
 
-            var circle_marker_a28065ac2c96f8e3385e4988b5eda92a = L.circleMarker(
+            var circle_marker_a5f42bd11c2c8b189e60f38c0af3b06b = L.circleMarker(
                 [38.89415, -77.03738],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;red&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;red&quot;, &quot;fillOpacity&quot;: 0.2, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 20, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
-            ).addTo(map_42c22bc9e05b1072a23a79c1ac4392d3);
+            ).addTo(map_1b8ecd02553366ef3c7cbf5d252b64c0);
 
 
-            var circle_marker_b76ccba87448c2870424d323dd12b6b6 = L.circleMarker(
+            var circle_marker_5ff50600eddf5fb31c67c6a344d2d56f = L.circleMarker(
                 [38.89415, -77.03578],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;red&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;red&quot;, &quot;fillOpacity&quot;: 0.2, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 20, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
-            ).addTo(map_42c22bc9e05b1072a23a79c1ac4392d3);
+            ).addTo(map_1b8ecd02553366ef3c7cbf5d252b64c0);
 
 
-            var poly_line_dc97e69bddaeeb376a4471260b740347 = L.polyline(
+            var poly_line_f98093c85069c19694296f8ef1392ff1 = L.polyline(
                 [[[38.893596444352134, -77.0381498336792], [38.89337933372204, -77.03792452812195]], [[38.89337933372204, -77.03792452812195], [38.89316222242831, -77.03761339187622]], [[38.89316222242831, -77.03761339187622], [38.893028615148424, -77.03731298446655]], [[38.893028615148424, -77.03731298446655], [38.892920059048464, -77.03691601753235]], [[38.892920059048464, -77.03691601753235], [38.892903358095296, -77.03637957572937]], [[38.892903358095296, -77.03637957572937], [38.89301191422077, -77.03592896461487]], [[38.89301191422077, -77.03592896461487], [38.89316222242831, -77.03549981117249]], [[38.89316222242831, -77.03549981117249], [38.89340438498248, -77.03514575958252]], [[38.89340438498248, -77.03514575958252], [38.893596444352134, -77.0349633693695]]],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;orange&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: false, &quot;fillColor&quot;: &quot;orange&quot;, &quot;fillOpacity&quot;: 0.2, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;noClip&quot;: false, &quot;opacity&quot;: 1, &quot;smoothFactor&quot;: 0, &quot;stroke&quot;: true, &quot;weight&quot;: 8}
-            ).addTo(map_42c22bc9e05b1072a23a79c1ac4392d3);
+            ).addTo(map_1b8ecd02553366ef3c7cbf5d252b64c0);
 
 &lt;/script&gt;
 &lt;/html&gt;" style="position:absolute;width:100%;height:100%;left:0;top:0;border:none !important;" allowfullscreen webkitallowfullscreen mozallowfullscreen></iframe></div></div></div>
@@ -1123,7 +1127,7 @@ document.write(`
               
               
               
-                <footer class="prev-next-footer">
+                <footer class="prev-next-footer d-print-none">
                   
 <div class="prev-next-area">
     <a class="left-prev"
@@ -1190,8 +1194,8 @@ document.write(`
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../../_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae"></script>
-<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae"></script>
+  <script src="../../_static/scripts/bootstrap.js?digest=3ee479438cf8b5e0d341"></script>
+<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=3ee479438cf8b5e0d341"></script>
 
   <footer class="bd-footer">
 <div class="bd-footer__inner bd-page-width">
@@ -1199,7 +1203,7 @@ document.write(`
     <div class="footer-items__start">
       
         <div class="footer-item"><!-- This will display the version of the docs -->
-Folium version 0.1.dev1851+g5086929</div>
+Folium version 0.1.dev1853+gb80e7e9</div>
       
         <div class="footer-item">
 
@@ -1221,7 +1225,7 @@ Folium version 0.1.dev1851+g5086929</div>
       
         <div class="footer-item">
 <p class="theme-version">
-  Built with the <a href="https://pydata-sphinx-theme.readthedocs.io/en/stable/index.html">PyData Sphinx Theme</a> 0.15.2.
+  Built with the <a href="https://pydata-sphinx-theme.readthedocs.io/en/stable/index.html">PyData Sphinx Theme</a> 0.15.3.
 </p></div>
       
     </div>
@@ -1232,7 +1236,7 @@ Folium version 0.1.dev1851+g5086929</div>
       
         <div class="footer-item">
 <p class="theme-version">
-  Built with the <a href="https://pydata-sphinx-theme.readthedocs.io/en/stable/index.html">PyData Sphinx Theme</a> 0.15.2.
+  Built with the <a href="https://pydata-sphinx-theme.readthedocs.io/en/stable/index.html">PyData Sphinx Theme</a> 0.15.3.
 </p></div>
       
     </div>
