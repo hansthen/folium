@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Icons &#8212; Folium 0.1.dev1900+g8c2f753 documentation</title>
+    <title>Icons &#8212; Folium 0.1.dev1922+gd115da6 documentation</title>
   
   
   
@@ -40,7 +40,7 @@
   <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=26a4bc78f4c0ddb94549" />
 <link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=26a4bc78f4c0ddb94549" />
 
-    <script src="../../_static/documentation_options.js?v=3142ddfe"></script>
+    <script src="../../_static/documentation_options.js?v=3da61926"></script>
     <script src="../../_static/doctools.js?v=9bcbadda"></script>
     <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
@@ -59,7 +59,7 @@
     <link rel="prev" title="Popups" href="popups.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
-  <meta name="docsearch:version" content="0.1.dev1900+g8c2f753" />
+  <meta name="docsearch:version" content="0.1.dev1922+gd115da6" />
   </head>
   
   
@@ -418,6 +418,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../plugins/mini_map.html">MiniMap</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../plugins/measure_control.html">MeasureControl</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../plugins/mouse_position.html">MousePosition</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../plugins/overlapping_marker_spiderfier.html">OverlappingMarkerSpiderfier</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../plugins/pattern.html">Pattern plugins</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../plugins/polygon_encoded.html">PolygonFromEncoded</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../plugins/polyline_encoded.html">PolyLineFromEncoded</a></li>
@@ -556,7 +557,7 @@
             &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no&quot; /&gt;
             &lt;style&gt;
-                #map_10fb61a170e2d7c482b041ada64787da {
+                #map_457d197571c1bff770334df8114813bb {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -570,20 +571,24 @@
 &lt;body&gt;
 
 
-            &lt;div class=&quot;folium-map&quot; id=&quot;map_10fb61a170e2d7c482b041ada64787da&quot; &gt;&lt;/div&gt;
+            &lt;div class=&quot;folium-map&quot; id=&quot;map_457d197571c1bff770334df8114813bb&quot; &gt;&lt;/div&gt;
 
 &lt;/body&gt;
 &lt;script&gt;
 
 
-            var map_10fb61a170e2d7c482b041ada64787da = L.map(
-                &quot;map_10fb61a170e2d7c482b041ada64787da&quot;,
+            var map_457d197571c1bff770334df8114813bb = L.map(
+                &quot;map_457d197571c1bff770334df8114813bb&quot;,
                 {
                     center: [41.0, -71.0],
                     crs: L.CRS.EPSG3857,
-                    zoom: 4,
-                    zoomControl: true,
-                    preferCanvas: false,
+                    ...{
+  &quot;maxBounds&quot;: null,
+  &quot;zoom&quot;: 4,
+  &quot;zoomControl&quot;: true,
+  &quot;preferCanvas&quot;: false,
+}
+
                 }
             );
 
@@ -591,72 +596,116 @@
 
 
 
-            var tile_layer_fc92146b9ac8993c80a60c88813b3667 = L.tileLayer(
+            var tile_layer_f83e285ab04f8c9f3faaaba664b880b2 = L.tileLayer(
                 &quot;https://tile.openstreetmap.org/{z}/{x}/{y}.png&quot;,
-                {&quot;attribution&quot;: &quot;\u0026copy; \u003ca href=\&quot;https://www.openstreetmap.org/copyright\&quot;\u003eOpenStreetMap\u003c/a\u003e contributors&quot;, &quot;detectRetina&quot;: false, &quot;maxNativeZoom&quot;: 19, &quot;maxZoom&quot;: 19, &quot;minZoom&quot;: 0, &quot;noWrap&quot;: false, &quot;opacity&quot;: 1, &quot;subdomains&quot;: &quot;abc&quot;, &quot;tms&quot;: false}
+                {
+  &quot;minZoom&quot;: 0,
+  &quot;maxZoom&quot;: 19,
+  &quot;maxNativeZoom&quot;: 19,
+  &quot;noWrap&quot;: false,
+  &quot;attribution&quot;: &quot;\u0026copy; \u003ca href=\&quot;https://www.openstreetmap.org/copyright\&quot;\u003eOpenStreetMap\u003c/a\u003e contributors&quot;,
+  &quot;subdomains&quot;: &quot;abc&quot;,
+  &quot;detectRetina&quot;: false,
+  &quot;tms&quot;: false,
+  &quot;opacity&quot;: 1,
+}
+
             );
 
 
-            tile_layer_fc92146b9ac8993c80a60c88813b3667.addTo(map_10fb61a170e2d7c482b041ada64787da);
+            tile_layer_f83e285ab04f8c9f3faaaba664b880b2.addTo(map_457d197571c1bff770334df8114813bb);
 
 
-            var marker_a349c90a09e18287c145f36122cbda1f = L.marker(
+            var marker_84db85837553cb86f76bd274b3859a40 = L.marker(
                 [41.0, -72.0],
-                {}
-            ).addTo(map_10fb61a170e2d7c482b041ada64787da);
+                {
+  &quot;draggable&quot;: null,
+  &quot;autoPan&quot;: null,
+}
+            ).addTo(map_457d197571c1bff770334df8114813bb);
 
 
-            var icon_d3e43dbb732935bccf20b3075a809da6 = L.AwesomeMarkers.icon(
-                {&quot;extraClasses&quot;: &quot;fa-rotate-180&quot;, &quot;icon&quot;: &quot;arrow-up&quot;, &quot;iconColor&quot;: &quot;white&quot;, &quot;markerColor&quot;: &quot;green&quot;, &quot;prefix&quot;: &quot;fa&quot;}
+            var icon_70af827afb0ccc50cd06c4969f930e8b = L.AwesomeMarkers.icon(
+                {
+  &quot;markerColor&quot;: &quot;green&quot;,
+  &quot;iconColor&quot;: &quot;white&quot;,
+  &quot;icon&quot;: &quot;arrow-up&quot;,
+  &quot;prefix&quot;: &quot;fa&quot;,
+  &quot;extraClasses&quot;: &quot;fa-rotate-180&quot;,
+}
             );
-            marker_a349c90a09e18287c145f36122cbda1f.setIcon(icon_d3e43dbb732935bccf20b3075a809da6);
+            marker_84db85837553cb86f76bd274b3859a40.setIcon(icon_70af827afb0ccc50cd06c4969f930e8b);
 
 
-            marker_a349c90a09e18287c145f36122cbda1f.bindTooltip(
+            marker_84db85837553cb86f76bd274b3859a40.bindTooltip(
                 `&lt;div&gt;
                      180
                  &lt;/div&gt;`,
-                {&quot;sticky&quot;: true}
+                {
+  &quot;sticky&quot;: true,
+}
             );
 
 
-            var marker_c181e60b997ae674d1e73072ac790145 = L.marker(
+            var marker_402526b830225599f616d0de06213414 = L.marker(
                 [41.0, -75.0],
-                {}
-            ).addTo(map_10fb61a170e2d7c482b041ada64787da);
+                {
+  &quot;draggable&quot;: null,
+  &quot;autoPan&quot;: null,
+}
+            ).addTo(map_457d197571c1bff770334df8114813bb);
 
 
-            var icon_1468b5b959a1a52d044889d364f31d16 = L.AwesomeMarkers.icon(
-                {&quot;extraClasses&quot;: &quot;fa-rotate-45&quot;, &quot;icon&quot;: &quot;arrow-up&quot;, &quot;iconColor&quot;: &quot;white&quot;, &quot;markerColor&quot;: &quot;green&quot;, &quot;prefix&quot;: &quot;fa&quot;}
+            var icon_9f2d6311a70e9beb11a1677e3c5a9fee = L.AwesomeMarkers.icon(
+                {
+  &quot;markerColor&quot;: &quot;green&quot;,
+  &quot;iconColor&quot;: &quot;white&quot;,
+  &quot;icon&quot;: &quot;arrow-up&quot;,
+  &quot;prefix&quot;: &quot;fa&quot;,
+  &quot;extraClasses&quot;: &quot;fa-rotate-45&quot;,
+}
             );
-            marker_c181e60b997ae674d1e73072ac790145.setIcon(icon_1468b5b959a1a52d044889d364f31d16);
+            marker_402526b830225599f616d0de06213414.setIcon(icon_9f2d6311a70e9beb11a1677e3c5a9fee);
 
 
-            marker_c181e60b997ae674d1e73072ac790145.bindTooltip(
+            marker_402526b830225599f616d0de06213414.bindTooltip(
                 `&lt;div&gt;
                      45
                  &lt;/div&gt;`,
-                {&quot;sticky&quot;: true}
+                {
+  &quot;sticky&quot;: true,
+}
             );
 
 
-            var marker_a5f7e7638f8e4f1a7d38f9b9b4bbb428 = L.marker(
+            var marker_d602fd78b30b9b84cf247fc67b4833a3 = L.marker(
                 [41.0, -78.0],
-                {}
-            ).addTo(map_10fb61a170e2d7c482b041ada64787da);
+                {
+  &quot;draggable&quot;: null,
+  &quot;autoPan&quot;: null,
+}
+            ).addTo(map_457d197571c1bff770334df8114813bb);
 
 
-            var icon_307e20b3458ccbad5a1f4196b090ab3d = L.AwesomeMarkers.icon(
-                {&quot;extraClasses&quot;: &quot;fa-rotate-90&quot;, &quot;icon&quot;: &quot;arrow-up&quot;, &quot;iconColor&quot;: &quot;white&quot;, &quot;markerColor&quot;: &quot;green&quot;, &quot;prefix&quot;: &quot;fa&quot;}
+            var icon_afc696e7c37ead74f5cc907c31841a79 = L.AwesomeMarkers.icon(
+                {
+  &quot;markerColor&quot;: &quot;green&quot;,
+  &quot;iconColor&quot;: &quot;white&quot;,
+  &quot;icon&quot;: &quot;arrow-up&quot;,
+  &quot;prefix&quot;: &quot;fa&quot;,
+  &quot;extraClasses&quot;: &quot;fa-rotate-90&quot;,
+}
             );
-            marker_a5f7e7638f8e4f1a7d38f9b9b4bbb428.setIcon(icon_307e20b3458ccbad5a1f4196b090ab3d);
+            marker_d602fd78b30b9b84cf247fc67b4833a3.setIcon(icon_afc696e7c37ead74f5cc907c31841a79);
 
 
-            marker_a5f7e7638f8e4f1a7d38f9b9b4bbb428.bindTooltip(
+            marker_d602fd78b30b9b84cf247fc67b4833a3.bindTooltip(
                 `&lt;div&gt;
                      90
                  &lt;/div&gt;`,
-                {&quot;sticky&quot;: true}
+                {
+  &quot;sticky&quot;: true,
+}
             );
 
 &lt;/script&gt;
@@ -725,7 +774,7 @@
             &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no&quot; /&gt;
             &lt;style&gt;
-                #map_06337ed289481d016a3dbac5f465f5f8 {
+                #map_c822cf532b5ebd377a5b0e1877a67395 {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -739,20 +788,24 @@
 &lt;body&gt;
 
 
-            &lt;div class=&quot;folium-map&quot; id=&quot;map_06337ed289481d016a3dbac5f465f5f8&quot; &gt;&lt;/div&gt;
+            &lt;div class=&quot;folium-map&quot; id=&quot;map_c822cf532b5ebd377a5b0e1877a67395&quot; &gt;&lt;/div&gt;
 
 &lt;/body&gt;
 &lt;script&gt;
 
 
-            var map_06337ed289481d016a3dbac5f465f5f8 = L.map(
-                &quot;map_06337ed289481d016a3dbac5f465f5f8&quot;,
+            var map_c822cf532b5ebd377a5b0e1877a67395 = L.map(
+                &quot;map_c822cf532b5ebd377a5b0e1877a67395&quot;,
                 {
                     center: [45.3288, -121.6625],
                     crs: L.CRS.EPSG3857,
-                    zoom: 12,
-                    zoomControl: true,
-                    preferCanvas: false,
+                    ...{
+  &quot;maxBounds&quot;: null,
+  &quot;zoom&quot;: 12,
+  &quot;zoomControl&quot;: true,
+  &quot;preferCanvas&quot;: false,
+}
+
                 }
             );
 
@@ -760,35 +813,61 @@
 
 
 
-            var tile_layer_24507b4c3e7d218f02ba08bf8560333c = L.tileLayer(
+            var tile_layer_554d3d1edd89b9b1af28dc3ede0105a9 = L.tileLayer(
                 &quot;https://tile.openstreetmap.org/{z}/{x}/{y}.png&quot;,
-                {&quot;attribution&quot;: &quot;\u0026copy; \u003ca href=\&quot;https://www.openstreetmap.org/copyright\&quot;\u003eOpenStreetMap\u003c/a\u003e contributors&quot;, &quot;detectRetina&quot;: false, &quot;maxNativeZoom&quot;: 19, &quot;maxZoom&quot;: 19, &quot;minZoom&quot;: 0, &quot;noWrap&quot;: false, &quot;opacity&quot;: 1, &quot;subdomains&quot;: &quot;abc&quot;, &quot;tms&quot;: false}
+                {
+  &quot;minZoom&quot;: 0,
+  &quot;maxZoom&quot;: 19,
+  &quot;maxNativeZoom&quot;: 19,
+  &quot;noWrap&quot;: false,
+  &quot;attribution&quot;: &quot;\u0026copy; \u003ca href=\&quot;https://www.openstreetmap.org/copyright\&quot;\u003eOpenStreetMap\u003c/a\u003e contributors&quot;,
+  &quot;subdomains&quot;: &quot;abc&quot;,
+  &quot;detectRetina&quot;: false,
+  &quot;tms&quot;: false,
+  &quot;opacity&quot;: 1,
+}
+
             );
 
 
-            tile_layer_24507b4c3e7d218f02ba08bf8560333c.addTo(map_06337ed289481d016a3dbac5f465f5f8);
+            tile_layer_554d3d1edd89b9b1af28dc3ede0105a9.addTo(map_c822cf532b5ebd377a5b0e1877a67395);
 
 
-            var marker_e99abf0edf59fcfb0f09f847e309fdc2 = L.marker(
+            var marker_1105f0b650ece95ee3261c1c92287525 = L.marker(
                 [45.3288, -121.6625],
-                {}
-            ).addTo(map_06337ed289481d016a3dbac5f465f5f8);
+                {
+  &quot;draggable&quot;: null,
+  &quot;autoPan&quot;: null,
+}
+            ).addTo(map_c822cf532b5ebd377a5b0e1877a67395);
 
 
-        var custom_icon_fd19e479afa99d4edcb813897b987bc4 = L.icon({&quot;iconAnchor&quot;: [22, 94], &quot;iconSize&quot;: [38, 95], &quot;iconUrl&quot;: &quot;https://leafletjs.com/examples/custom-icons/leaf-red.png&quot;, &quot;popupAnchor&quot;: [-3, -76], &quot;shadowAnchor&quot;: [4, 62], &quot;shadowSize&quot;: [50, 64], &quot;shadowUrl&quot;: &quot;https://leafletjs.com/examples/custom-icons/leaf-shadow.png&quot;});
-        marker_e99abf0edf59fcfb0f09f847e309fdc2.setIcon(custom_icon_fd19e479afa99d4edcb813897b987bc4);
+        var custom_icon_b70f73f0587079ebd072bcd175288309 = L.icon({
+  &quot;iconUrl&quot;: &quot;https://leafletjs.com/examples/custom-icons/leaf-red.png&quot;,
+  &quot;iconSize&quot;: [38, 95],
+  &quot;iconAnchor&quot;: [22, 94],
+  &quot;shadowUrl&quot;: &quot;https://leafletjs.com/examples/custom-icons/leaf-shadow.png&quot;,
+  &quot;shadowSize&quot;: [50, 64],
+  &quot;shadowAnchor&quot;: [4, 62],
+  &quot;popupAnchor&quot;: [-3, -76],
+});
+        marker_1105f0b650ece95ee3261c1c92287525.setIcon(custom_icon_b70f73f0587079ebd072bcd175288309);
 
 
-        var popup_2651a654b35f0068153cedd911d048e1 = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
+        var popup_306377eae1f52b890d801b2b28b59daa = L.popup({
+  &quot;maxWidth&quot;: &quot;100%&quot;,
+  &quot;autoClose&quot;: null,
+  &quot;closeOnClick&quot;: null,
+});
 
 
 
-                var html_c34469436f7f790c8907e8ca5c1354fd = $(`&lt;div id=&quot;html_c34469436f7f790c8907e8ca5c1354fd&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;Mt. Hood Meadows&lt;/div&gt;`)[0];
-                popup_2651a654b35f0068153cedd911d048e1.setContent(html_c34469436f7f790c8907e8ca5c1354fd);
+                var html_d0e187604dc181e59a39d1b6f2c41e2b = $(`&lt;div id=&quot;html_d0e187604dc181e59a39d1b6f2c41e2b&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;Mt. Hood Meadows&lt;/div&gt;`)[0];
+                popup_306377eae1f52b890d801b2b28b59daa.setContent(html_d0e187604dc181e59a39d1b6f2c41e2b);
 
 
 
-        marker_e99abf0edf59fcfb0f09f847e309fdc2.bindPopup(popup_2651a654b35f0068153cedd911d048e1)
+        marker_1105f0b650ece95ee3261c1c92287525.bindPopup(popup_306377eae1f52b890d801b2b28b59daa)
         ;
 
 
@@ -882,7 +961,7 @@
     <div class="footer-items__start">
       
         <div class="footer-item"><!-- This will display the version of the docs -->
-Folium version 0.1.dev1900+g8c2f753</div>
+Folium version 0.1.dev1922+gd115da6</div>
       
         <div class="footer-item">
 

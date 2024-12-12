@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Antpath &#8212; Folium 0.1.dev1900+g8c2f753 documentation</title>
+    <title>Antpath &#8212; Folium 0.1.dev1922+gd115da6 documentation</title>
   
   
   
@@ -40,7 +40,7 @@
   <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=26a4bc78f4c0ddb94549" />
 <link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=26a4bc78f4c0ddb94549" />
 
-    <script src="../../_static/documentation_options.js?v=3142ddfe"></script>
+    <script src="../../_static/documentation_options.js?v=3da61926"></script>
     <script src="../../_static/doctools.js?v=9bcbadda"></script>
     <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
@@ -59,7 +59,7 @@
     <link rel="prev" title="Plugins" href="../plugins.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
-  <meta name="docsearch:version" content="0.1.dev1900+g8c2f753" />
+  <meta name="docsearch:version" content="0.1.dev1922+gd115da6" />
   </head>
   
   
@@ -418,6 +418,7 @@
 <li class="toctree-l2"><a class="reference internal" href="mini_map.html">MiniMap</a></li>
 <li class="toctree-l2"><a class="reference internal" href="measure_control.html">MeasureControl</a></li>
 <li class="toctree-l2"><a class="reference internal" href="mouse_position.html">MousePosition</a></li>
+<li class="toctree-l2"><a class="reference internal" href="overlapping_marker_spiderfier.html">OverlappingMarkerSpiderfier</a></li>
 <li class="toctree-l2"><a class="reference internal" href="pattern.html">Pattern plugins</a></li>
 <li class="toctree-l2"><a class="reference internal" href="polygon_encoded.html">PolygonFromEncoded</a></li>
 <li class="toctree-l2"><a class="reference internal" href="polyline_encoded.html">PolyLineFromEncoded</a></li>
@@ -565,7 +566,7 @@
             &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no&quot; /&gt;
             &lt;style&gt;
-                #map_7290cd8ac3db5e9e0671a6bb9cf18cb0 {
+                #map_a6d3e396f2ccf802a8811b92db777c63 {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -580,20 +581,24 @@
 &lt;body&gt;
 
 
-            &lt;div class=&quot;folium-map&quot; id=&quot;map_7290cd8ac3db5e9e0671a6bb9cf18cb0&quot; &gt;&lt;/div&gt;
+            &lt;div class=&quot;folium-map&quot; id=&quot;map_a6d3e396f2ccf802a8811b92db777c63&quot; &gt;&lt;/div&gt;
 
 &lt;/body&gt;
 &lt;script&gt;
 
 
-            var map_7290cd8ac3db5e9e0671a6bb9cf18cb0 = L.map(
-                &quot;map_7290cd8ac3db5e9e0671a6bb9cf18cb0&quot;,
+            var map_a6d3e396f2ccf802a8811b92db777c63 = L.map(
+                &quot;map_a6d3e396f2ccf802a8811b92db777c63&quot;,
                 {
                     center: [0.0, 0.0],
                     crs: L.CRS.EPSG3857,
-                    zoom: 1,
-                    zoomControl: true,
-                    preferCanvas: false,
+                    ...{
+  &quot;maxBounds&quot;: null,
+  &quot;zoom&quot;: 1,
+  &quot;zoomControl&quot;: true,
+  &quot;preferCanvas&quot;: false,
+}
+
                 }
             );
 
@@ -601,22 +606,57 @@
 
 
 
-            var tile_layer_30281abda3eb2b9ca2724daab0e9e404 = L.tileLayer(
+            var tile_layer_7356421c9ba73f972e00bdcc39195234 = L.tileLayer(
                 &quot;https://tile.openstreetmap.org/{z}/{x}/{y}.png&quot;,
-                {&quot;attribution&quot;: &quot;\u0026copy; \u003ca href=\&quot;https://www.openstreetmap.org/copyright\&quot;\u003eOpenStreetMap\u003c/a\u003e contributors&quot;, &quot;detectRetina&quot;: false, &quot;maxNativeZoom&quot;: 19, &quot;maxZoom&quot;: 19, &quot;minZoom&quot;: 0, &quot;noWrap&quot;: false, &quot;opacity&quot;: 1, &quot;subdomains&quot;: &quot;abc&quot;, &quot;tms&quot;: false}
+                {
+  &quot;minZoom&quot;: 0,
+  &quot;maxZoom&quot;: 19,
+  &quot;maxNativeZoom&quot;: 19,
+  &quot;noWrap&quot;: false,
+  &quot;attribution&quot;: &quot;\u0026copy; \u003ca href=\&quot;https://www.openstreetmap.org/copyright\&quot;\u003eOpenStreetMap\u003c/a\u003e contributors&quot;,
+  &quot;subdomains&quot;: &quot;abc&quot;,
+  &quot;detectRetina&quot;: false,
+  &quot;tms&quot;: false,
+  &quot;opacity&quot;: 1,
+}
+
             );
 
 
-            tile_layer_30281abda3eb2b9ca2724daab0e9e404.addTo(map_7290cd8ac3db5e9e0671a6bb9cf18cb0);
+            tile_layer_7356421c9ba73f972e00bdcc39195234.addTo(map_a6d3e396f2ccf802a8811b92db777c63);
 
 
-            ant_path_a11b1b3aa1af53606d934c049afc1c21 = L.polyline.antPath(
+            ant_path_275b6b268f129ad605043987593167a1 = L.polyline.antPath(
               [[59.3556, -31.99219], [55.17887, -42.89062], [47.7541, -43.94531], [38.27269, -37.96875], [27.05913, -41.13281], [16.29905, -36.5625], [8.40717, -30.23437], [1.05463, -22.5], [-8.75479, -18.28125], [-21.61658, -20.03906], [-31.35364, -24.25781], [-39.90974, -30.9375], [-43.83453, -41.13281], [-47.7541, -49.92187], [-50.95843, -54.14062], [-55.9738, -56.60156]],
-              {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#0000FF&quot;, &quot;dashArray&quot;: [20, 30], &quot;dashOffset&quot;: null, &quot;delay&quot;: 400, &quot;fill&quot;: false, &quot;fillColor&quot;: &quot;#3388ff&quot;, &quot;fillOpacity&quot;: 0.2, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;hardwareAcceleration&quot;: false, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;noClip&quot;: false, &quot;opacity&quot;: 0.5, &quot;paused&quot;: false, &quot;pulseColor&quot;: &quot;#FFFFFF&quot;, &quot;reverse&quot;: &quot;True&quot;, &quot;smoothFactor&quot;: 1.0, &quot;stroke&quot;: true, &quot;weight&quot;: 5}
-        ).addTo(map_7290cd8ac3db5e9e0671a6bb9cf18cb0);
+              {
+  &quot;stroke&quot;: true,
+  &quot;color&quot;: &quot;#0000FF&quot;,
+  &quot;weight&quot;: 5,
+  &quot;opacity&quot;: 0.5,
+  &quot;lineCap&quot;: &quot;round&quot;,
+  &quot;lineJoin&quot;: &quot;round&quot;,
+  &quot;dashArray&quot;: [
+20,
+30,
+],
+  &quot;dashOffset&quot;: null,
+  &quot;fill&quot;: false,
+  &quot;fillColor&quot;: &quot;#3388ff&quot;,
+  &quot;fillOpacity&quot;: 0.2,
+  &quot;fillRule&quot;: &quot;evenodd&quot;,
+  &quot;bubblingMouseEvents&quot;: true,
+  &quot;smoothFactor&quot;: 1.0,
+  &quot;noClip&quot;: false,
+  &quot;paused&quot;: false,
+  &quot;reverse&quot;: &quot;True&quot;,
+  &quot;hardwareAcceleration&quot;: false,
+  &quot;delay&quot;: 400,
+  &quot;pulseColor&quot;: &quot;#FFFFFF&quot;,
+}
+        ).addTo(map_a6d3e396f2ccf802a8811b92db777c63);
 
 
-            map_7290cd8ac3db5e9e0671a6bb9cf18cb0.fitBounds(
+            map_a6d3e396f2ccf802a8811b92db777c63.fitBounds(
                 [[-55.9738, -56.60156], [59.3556, -18.28125]],
                 {}
             );
@@ -696,7 +736,7 @@
     <div class="footer-items__start">
       
         <div class="footer-item"><!-- This will display the version of the docs -->
-Folium version 0.1.dev1900+g8c2f753</div>
+Folium version 0.1.dev1922+gd115da6</div>
       
         <div class="footer-item">
 
