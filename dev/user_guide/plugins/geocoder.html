@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Geocoder &#8212; Folium 0.1.dev1922+gd115da6 documentation</title>
+    <title>Geocoder &#8212; Folium 0.1.dev1925+gd04d4ba documentation</title>
   
   
   
@@ -40,7 +40,7 @@
   <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=26a4bc78f4c0ddb94549" />
 <link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=26a4bc78f4c0ddb94549" />
 
-    <script src="../../_static/documentation_options.js?v=3da61926"></script>
+    <script src="../../_static/documentation_options.js?v=1cd6ea86"></script>
     <script src="../../_static/doctools.js?v=9bcbadda"></script>
     <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
@@ -59,7 +59,7 @@
     <link rel="prev" title="Fullscreen" href="fullscreen.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
-  <meta name="docsearch:version" content="0.1.dev1922+gd115da6" />
+  <meta name="docsearch:version" content="0.1.dev1925+gd04d4ba" />
   </head>
   
   
@@ -545,7 +545,7 @@
             &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no&quot; /&gt;
             &lt;style&gt;
-                #map_a4e32bdd9245bc1560a52cd25a7a6920 {
+                #map_b90bd8a8c3c26e63cf49845b7f26bea9 {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -561,19 +561,18 @@
 &lt;body&gt;
 
 
-            &lt;div class=&quot;folium-map&quot; id=&quot;map_a4e32bdd9245bc1560a52cd25a7a6920&quot; &gt;&lt;/div&gt;
+            &lt;div class=&quot;folium-map&quot; id=&quot;map_b90bd8a8c3c26e63cf49845b7f26bea9&quot; &gt;&lt;/div&gt;
 
 &lt;/body&gt;
 &lt;script&gt;
 
 
-            var map_a4e32bdd9245bc1560a52cd25a7a6920 = L.map(
-                &quot;map_a4e32bdd9245bc1560a52cd25a7a6920&quot;,
+            var map_b90bd8a8c3c26e63cf49845b7f26bea9 = L.map(
+                &quot;map_b90bd8a8c3c26e63cf49845b7f26bea9&quot;,
                 {
                     center: [0.0, 0.0],
                     crs: L.CRS.EPSG3857,
                     ...{
-  &quot;maxBounds&quot;: null,
   &quot;zoom&quot;: 1,
   &quot;zoomControl&quot;: true,
   &quot;preferCanvas&quot;: false,
@@ -586,7 +585,7 @@
 
 
 
-            var tile_layer_31e4c4483c652f6cd93b18f1a41ac669 = L.tileLayer(
+            var tile_layer_2d6caa883bb05309dc58773536881241 = L.tileLayer(
                 &quot;https://tile.openstreetmap.org/{z}/{x}/{y}.png&quot;,
                 {
   &quot;minZoom&quot;: 0,
@@ -603,11 +602,11 @@
             );
 
 
-            tile_layer_31e4c4483c652f6cd93b18f1a41ac669.addTo(map_a4e32bdd9245bc1560a52cd25a7a6920);
+            tile_layer_2d6caa883bb05309dc58773536881241.addTo(map_b90bd8a8c3c26e63cf49845b7f26bea9);
 
 
 
-            var geocoderOpts_geocoder_1f5134e59c0c0039afc9c971ecc12b67 = {
+            var geocoderOpts_geocoder_bc59f2d311de945b1a85044251aae769 = {
   &quot;collapsed&quot;: false,
   &quot;position&quot;: &quot;topright&quot;,
   &quot;defaultMarkGeocode&quot;: true,
@@ -618,19 +617,19 @@
 };
 
             // note: geocoder name should start with lowercase
-            var geocoderName_geocoder_1f5134e59c0c0039afc9c971ecc12b67 = geocoderOpts_geocoder_1f5134e59c0c0039afc9c971ecc12b67[&quot;provider&quot;];
+            var geocoderName_geocoder_bc59f2d311de945b1a85044251aae769 = geocoderOpts_geocoder_bc59f2d311de945b1a85044251aae769[&quot;provider&quot;];
 
-            var customGeocoder_geocoder_1f5134e59c0c0039afc9c971ecc12b67 = L.Control.Geocoder[ geocoderName_geocoder_1f5134e59c0c0039afc9c971ecc12b67 ](
-                geocoderOpts_geocoder_1f5134e59c0c0039afc9c971ecc12b67[&#x27;providerOptions&#x27;]
+            var customGeocoder_geocoder_bc59f2d311de945b1a85044251aae769 = L.Control.Geocoder[ geocoderName_geocoder_bc59f2d311de945b1a85044251aae769 ](
+                geocoderOpts_geocoder_bc59f2d311de945b1a85044251aae769[&#x27;providerOptions&#x27;]
             );
-            geocoderOpts_geocoder_1f5134e59c0c0039afc9c971ecc12b67[&quot;geocoder&quot;] = customGeocoder_geocoder_1f5134e59c0c0039afc9c971ecc12b67;
+            geocoderOpts_geocoder_bc59f2d311de945b1a85044251aae769[&quot;geocoder&quot;] = customGeocoder_geocoder_bc59f2d311de945b1a85044251aae769;
 
             L.Control.geocoder(
-                geocoderOpts_geocoder_1f5134e59c0c0039afc9c971ecc12b67
+                geocoderOpts_geocoder_bc59f2d311de945b1a85044251aae769
             ).on(&#x27;markgeocode&#x27;, function(e) {
-                var zoom = geocoderOpts_geocoder_1f5134e59c0c0039afc9c971ecc12b67[&#x27;zoom&#x27;] || map_a4e32bdd9245bc1560a52cd25a7a6920.getZoom();
-                map_a4e32bdd9245bc1560a52cd25a7a6920.setView(e.geocode.center, zoom);
-            }).addTo(map_a4e32bdd9245bc1560a52cd25a7a6920);
+                var zoom = geocoderOpts_geocoder_bc59f2d311de945b1a85044251aae769[&#x27;zoom&#x27;] || map_b90bd8a8c3c26e63cf49845b7f26bea9.getZoom();
+                map_b90bd8a8c3c26e63cf49845b7f26bea9.setView(e.geocode.center, zoom);
+            }).addTo(map_b90bd8a8c3c26e63cf49845b7f26bea9);
 
 
 &lt;/script&gt;
@@ -708,7 +707,7 @@
     <div class="footer-items__start">
       
         <div class="footer-item"><!-- This will display the version of the docs -->
-Folium version 0.1.dev1922+gd115da6</div>
+Folium version 0.1.dev1925+gd04d4ba</div>
       
         <div class="footer-item">
 
