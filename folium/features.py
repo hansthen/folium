@@ -26,7 +26,6 @@ from folium.utilities import (
     _parse_size,
     escape_backticks,
     get_bounds,
-    get_obj_in_upper_tree,
     image_to_url,
     javascript_identifier_path_to_array_notation,
     none_max,
@@ -604,12 +603,12 @@ class GeoJson(Layer):
                 {%- if this.zoom_on_click %}
                 click: function(e) {
                     if (typeof e.target.getBounds === 'function') {
-                        {{ this.parent_map.get_name() }}.fitBounds(e.target.getBounds());
+                        this._map.fitBounds(e.target.getBounds());
                     }
                     else if (typeof e.target.getLatLng === 'function'){
-                        let zoom = {{ this.parent_map.get_name() }}.getZoom()
+                        let zoom = this._map.getZoom()
                         zoom = zoom > 12 ? zoom : zoom + 1
-                        {{ this.parent_map.get_name() }}.flyTo(e.target.getLatLng(), zoom)
+                        this._map.flyTo(e.target.getLatLng(), zoom)
                     }
                 }
                 {%- endif %}
@@ -821,7 +820,8 @@ class GeoJson(Layer):
         return get_bounds(self.data, lonlat=True)
 
     def render(self, **kwargs) -> None:
-        self.parent_map = get_obj_in_upper_tree(self, Map)
+        # HTH: no longer needed, find parent_map in js as this._map
+        # self.parent_map = get_obj_in_upper_tree(self, Map)
         # Need at least one feature, otherwise style mapping fails
         if (self.style or self.highlight) and self.data["features"]:
             mapper = GeoJsonStyleMapper(self.data, self.feature_identifier, self)

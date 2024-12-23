@@ -3,13 +3,14 @@ Classes for drawing maps.
 
 """
 
+import threading
 import warnings
 from collections import OrderedDict
 from typing import List, Optional, Sequence, Union
 
 from branca.element import Element, Figure, Html, MacroElement
 
-from folium.elements import ElementAddToElement, EventHandler
+from folium.elements import EventHandler
 from folium.template import Template
 from folium.utilities import (
     JsCode,
@@ -21,8 +22,73 @@ from folium.utilities import (
     validate_location,
 )
 
+tls = threading.local()
 
-class Evented(MacroElement):
+
+def get_context():
+    if hasattr(tls, "context") is False:
+        tls.context = MapContext()
+    return tls.context
+
+
+class MapContext(Figure):
+    def render(self, **kwargs) -> None:
+        """Renders the HTML representation of the element."""
+        # Set global switches
+        self.header.add_child(self.global_switches, name="global_switches")
+
+        self.header.add_child(
+            Element(
+                "<style>html, body {"
+                "width: 100%;"
+                "height: 100%;"
+                "margin: 0;"
+                "padding: 0;"
+                "}"
+                "</style>"
+            ),
+            name="css_style",
+        )
+
+        self.header.add_child(
+            Element(
+                "<style>#map {"
+                "position:absolute;"
+                "top:0;"
+                "bottom:0;"
+                "right:0;"
+                "left:0;"
+                "}"
+                "</style>"
+            ),
+            name="map_style",
+        )
+        print(self._children)
+        super().render(**kwargs)
+
+
+class Class(MacroElement):
+    """The root class of the Leaflet class hierarchy"""
+
+    def __init__(self):
+        super().__init__()
+        self._parent = get_context()
+        self._parent.add_child(self)
+
+    def render(self, **kwargs):
+        if self._children:
+            print(self._children)
+            warnings.warn("Leaflet items cannot have children")
+            assert not self._children, "Leaflet items cannot have children"
+        return super().render(**kwargs)
+
+    def add_to(self, obj):
+        warnings.warn("Leaflet class elements cannot be added")
+        # raise NotImplementedError("Leaflet class elements cannot be added")
+        return self
+
+
+class Evented(Class):
     """The base class for Layer and Map
 
     Adds the `on` and `once` methods for event handling capabilities.
@@ -71,19 +137,14 @@ class Layer(Evented):
         super().__init__()
         self.layer_name = name if name is not None else self.get_name()
         self.overlay = overlay
-        self.control = control
-        self.show = show
+        self.control = control  # HTH: will be ignored
+        self.show = show  # HTH: will be ignored
 
-    def render(self, **kwargs):
-        if self.show:
-            self.add_child(
-                ElementAddToElement(
-                    element_name=self.get_name(),
-                    element_parent_name=self._parent.get_name(),
-                ),
-                name=self.get_name() + "_add",
-            )
-        super().render(**kwargs)
+    def add_to(self, obj):
+        # HTH: implement me, this should generate code to add the item
+        # to the map
+        self.leaflet_parent = obj
+        return self
 
 
 class FeatureGroup(Layer):
@@ -135,7 +196,7 @@ class FeatureGroup(Layer):
         self.options = remove_empty(**kwargs)
 
 
-class LayerControl(MacroElement):
+class LayerControl(Class):
     """
     Creates a LayerControl object to be added on a folium map.
 
@@ -323,7 +384,7 @@ class Icon(MacroElement):
         )
 
 
-class Marker(MacroElement):
+class Marker(Class):
     """
     Create a simple stock Leaflet marker on the map, with optional
     popup text or Vincent visualization.
@@ -384,12 +445,14 @@ class Marker(MacroElement):
             draggable=draggable or None, autoPan=draggable or None, **kwargs
         )
         if icon is not None:
-            self.add_child(icon)
+            self._parent.add_child(icon)
             self.icon = icon
         if popup is not None:
-            self.add_child(popup if isinstance(popup, Popup) else Popup(str(popup)))
+            self._parent.add_child(
+                popup if isinstance(popup, Popup) else Popup(str(popup))
+            )
         if tooltip is not None:
-            self.add_child(
+            self._parent.add_child(
                 tooltip if isinstance(tooltip, Tooltip) else Tooltip(str(tooltip))
             )
 
@@ -402,10 +465,12 @@ class Marker(MacroElement):
         return [self.location, self.location]
 
     def render(self) -> None:
+        print("rendering marker")
         if self.location is None:
             raise ValueError(
                 f"{self._name} location must be assigned when added directly to map."
             )
+        print(self._children)
         super().render()
 
 
@@ -505,7 +570,7 @@ class Popup(Element):
         )
 
 
-class Tooltip(MacroElement):
+class Tooltip(Class):
     """
     Create a tooltip that shows text when hovering over its parent object.
 
@@ -561,7 +626,7 @@ class Tooltip(MacroElement):
             self.style = style
 
 
-class FitBounds(MacroElement):
+class FitBounds(Class):
     """Fit the map to contain a bounding box with the
     maximum zoom level possible.
 
@@ -612,7 +677,7 @@ class FitBounds(MacroElement):
         )
 
 
-class FitOverlays(MacroElement):
+class FitOverlays(Class):
     """Fit the bounds of the maps to the enabled overlays.
 
     Parameters
@@ -663,7 +728,7 @@ class FitOverlays(MacroElement):
         self.options = remove_empty(padding=(padding, padding), max_zoom=max_zoom)
 
 
-class CustomPane(MacroElement):
+class CustomPane(Class):
     """
     Creates a custom pane to hold map elements.
 
@@ -690,7 +755,7 @@ class CustomPane(MacroElement):
     _template = Template(
         """
         {% macro script(this, kwargs) %}
-            var {{ this.get_name() }} = {{ this._parent.get_name() }}.createPane(
+            var {{ this.get_name() }} = {{ this.leaflet_parent.get_name() }}.createPane(
                 {{ this.name|tojson }});
             {{ this.get_name() }}.style.zIndex = {{ this.z_index|tojson }};
             {% if not this.pointer_events %}
@@ -711,3 +776,7 @@ class CustomPane(MacroElement):
         self.name = name
         self.z_index = z_index
         self.pointer_events = pointer_events
+
+    def add_to(self, obj):
+        self.leaflet_parent = obj
+        return self

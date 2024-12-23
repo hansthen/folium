@@ -65,8 +65,9 @@ def test_layer_control_render():
 def test_layer_control_draggable():
     m = Map(tiles=None)
     layer_control = LayerControl(draggable=True).add_to(m)
+
     expected = f"new L.Draggable({ layer_control.get_name() }.getContainer()).enable();"
-    rendered = m.get_root().render()
+    rendered = m._parent.render()
     assert normalize(expected) in normalize(rendered)
 
 
@@ -203,6 +204,8 @@ def test_custom_pane_show():
     {pane.get_name()}.style.zIndex = 625;
     {pane.get_name()}.style.pointerEvents = 'none';
     """
+    print(rendered)
+    print(expected)
     assert normalize(rendered) == normalize(expected)
 
 
@@ -210,8 +213,10 @@ def test_marker_valid_location():
     m = Map()
     marker = Marker()
     marker.add_to(m)
+    print(m._children)
     with pytest.raises(ValueError):
-        m.render()
+        print(m._parent)
+        m._parent.render()
 
 
 def test_marker_numpy_array_as_location():

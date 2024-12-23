@@ -48,6 +48,26 @@ class JSCSSMixin(Element):
             default_list.append((name, url))
 
 
+class MethodCall(MacroElement):
+    def __init__(self, target, method: str, *args, **kwargs):
+        super().__init__()
+        self._name = "MethodCall"
+        self.target = target
+        self.method = method
+        self.kwargs = kwargs
+
+    _template = Template(
+        """
+        {% macro script(this, kwargs) %}
+            {{ this.target.get_name()}}.{{ this.method }}(
+                ...{{ this.args|tojavascript }},
+                {{ this.kwargs|tojavascript }}
+            );
+        {% endmacro %}
+        """
+    )
+
+
 class EventHandler(MacroElement):
     '''
     Add javascript event handlers.

@@ -276,7 +276,8 @@ class Map(JSCSSMixin, Evented):
         else:
             self.location = validate_location(location)
 
-        Figure().add_child(self)
+        # HTH: No longer needed, because all Leaflet code has a context
+        # Figure().add_child(self)
 
         # Map Size Parameters.
         self.width = _parse_size(width)
@@ -312,17 +313,17 @@ class Map(JSCSSMixin, Evented):
             **kwargs,
         )
 
-        self.global_switches = GlobalSwitches(no_touch, disable_3d)
+        self._parent.global_switches = GlobalSwitches(no_touch, disable_3d)
 
         self.objects_to_stay_in_front: List[Layer] = []
 
         if isinstance(tiles, TileLayer):
-            self.add_child(tiles)
+            self._parent.add_child(tiles)
         elif tiles:
             tile_layer = TileLayer(
                 tiles=tiles, attr=attr, min_zoom=min_zoom, max_zoom=max_zoom
             )
-            self.add_child(tile_layer, name=tile_layer.tile_name)
+            self._parent.add_child(tile_layer, name=tile_layer.tile_name)
 
     def _repr_html_(self, **kwargs) -> str:
         """Displays the HTML Map in a Jupyter notebook."""
@@ -376,45 +377,6 @@ class Map(JSCSSMixin, Evented):
         if not self.png_enabled:
             return None
         return self._to_png()
-
-    def render(self, **kwargs) -> None:
-        """Renders the HTML representation of the element."""
-        figure = self.get_root()
-        assert isinstance(
-            figure, Figure
-        ), "You cannot render this Element if it is not in a Figure."
-
-        # Set global switches
-        figure.header.add_child(self.global_switches, name="global_switches")
-
-        figure.header.add_child(
-            Element(
-                "<style>html, body {"
-                "width: 100%;"
-                "height: 100%;"
-                "margin: 0;"
-                "padding: 0;"
-                "}"
-                "</style>"
-            ),
-            name="css_style",
-        )
-
-        figure.header.add_child(
-            Element(
-                "<style>#map {"
-                "position:absolute;"
-                "top:0;"
-                "bottom:0;"
-                "right:0;"
-                "left:0;"
-                "}"
-                "</style>"
-            ),
-            name="map_style",
-        )
-
-        super().render(**kwargs)
 
     def show_in_browser(self) -> None:
         """Display the Map in the default web browser."""
