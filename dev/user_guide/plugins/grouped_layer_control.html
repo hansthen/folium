@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>GroupedLayerControl &#8212; Folium 0.1.dev1925+gd04d4ba documentation</title>
+    <title>GroupedLayerControl &#8212; Folium 0.1.dev1928+g7c8073e documentation</title>
   
   
   
@@ -16,8 +16,8 @@
     document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
     document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
   </script>
-  <!-- 
-    this give us a css class that will be invisible only if js is disabled 
+  <!--
+    this give us a css class that will be invisible only if js is disabled
   -->
   <noscript>
     <style>
@@ -27,20 +27,20 @@
   </noscript>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../../_static/styles/theme.css?digest=26a4bc78f4c0ddb94549" rel="stylesheet" />
-<link href="../../_static/styles/pydata-sphinx-theme.css?digest=26a4bc78f4c0ddb94549" rel="stylesheet" />
+  <link href="../../_static/styles/theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
 
     <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=fa44fd50" />
     <link rel="stylesheet" type="text/css" href="../../_static/nbsphinx-code-cells.css?v=2aa19091" />
     <link rel="stylesheet" type="text/css" href="../../_static/custom.css?v=924e9346" />
   
   <!-- So that users can add custom icons -->
-  <script src="../../_static/scripts/fontawesome.js?digest=26a4bc78f4c0ddb94549"></script>
+  <script src="../../_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=26a4bc78f4c0ddb94549" />
-<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=26a4bc78f4c0ddb94549" />
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
 
-    <script src="../../_static/documentation_options.js?v=1cd6ea86"></script>
+    <script src="../../_static/documentation_options.js?v=2be1f188"></script>
     <script src="../../_static/doctools.js?v=9bcbadda"></script>
     <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
@@ -48,10 +48,11 @@
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'user_guide/plugins/grouped_layer_control';</script>
     <script>
-        DOCUMENTATION_OPTIONS.theme_version = '0.16.0';
+        DOCUMENTATION_OPTIONS.theme_version = '0.16.1';
         DOCUMENTATION_OPTIONS.theme_switcher_json_url = 'https://python-visualization.github.io/folium/dev/_static/switcher.json';
         DOCUMENTATION_OPTIONS.theme_switcher_version_match = 'dev';
-        DOCUMENTATION_OPTIONS.show_version_warning_banner = false;
+        DOCUMENTATION_OPTIONS.show_version_warning_banner =
+            false;
         </script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
@@ -59,7 +60,7 @@
     <link rel="prev" title="Geocoder" href="geocoder.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
-  <meta name="docsearch:version" content="0.1.dev1925+gd04d4ba" />
+  <meta name="docsearch:version" content="0.1.dev1928+g7c8073e" />
   </head>
   
   
@@ -446,9 +447,14 @@
   
   
   <div class="sidebar-primary-items__end sidebar-primary__section">
+      <div class="sidebar-primary-item">
+<div id="ethical-ad-placement"
+      class="flat"
+      data-ea-publisher="readthedocs"
+      data-ea-type="readthedocs-sidebar"
+      data-ea-manual="true">
+</div></div>
   </div>
-  
-  <div id="rtd-footer-container"></div>
 
 
       </div>
@@ -564,7 +570,7 @@
             &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no&quot; /&gt;
             &lt;style&gt;
-                #map_7f2bbface659c817df2d465fd0c64abd {
+                #map_09cbc2c53a75f177aba3d35a3a7d9e6e {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -580,14 +586,14 @@
 &lt;body&gt;
 
 
-            &lt;div class=&quot;folium-map&quot; id=&quot;map_7f2bbface659c817df2d465fd0c64abd&quot; &gt;&lt;/div&gt;
+            &lt;div class=&quot;folium-map&quot; id=&quot;map_09cbc2c53a75f177aba3d35a3a7d9e6e&quot; &gt;&lt;/div&gt;
 
 &lt;/body&gt;
 &lt;script&gt;
 
 
-            var map_7f2bbface659c817df2d465fd0c64abd = L.map(
-                &quot;map_7f2bbface659c817df2d465fd0c64abd&quot;,
+            var map_09cbc2c53a75f177aba3d35a3a7d9e6e = L.map(
+                &quot;map_09cbc2c53a75f177aba3d35a3a7d9e6e&quot;,
                 {
                     center: [40.0, 70.0],
                     crs: L.CRS.EPSG3857,
@@ -604,7 +610,7 @@
 
 
 
-            var tile_layer_7fda9a46b00ffdee704b02db940d1fdb = L.tileLayer(
+            var tile_layer_6a07219fa644844bd11fdc9d87b70980 = L.tileLayer(
                 &quot;https://tile.openstreetmap.org/{z}/{x}/{y}.png&quot;,
                 {
   &quot;minZoom&quot;: 0,
@@ -621,74 +627,74 @@
             );
 
 
-            tile_layer_7fda9a46b00ffdee704b02db940d1fdb.addTo(map_7f2bbface659c817df2d465fd0c64abd);
+            tile_layer_6a07219fa644844bd11fdc9d87b70980.addTo(map_09cbc2c53a75f177aba3d35a3a7d9e6e);
 
 
-            var feature_group_4822d9948aaf2a96a712795bdaa6f775 = L.featureGroup(
+            var feature_group_54b6bab62eccb1f52e3d7ff511015d35 = L.featureGroup(
                 {
 }
             );
 
 
-            var marker_c785faa28c0e174a2563168a32189b9f = L.marker(
+            var marker_7483a3e01b02861bd8a64f2d8844f6a2 = L.marker(
                 [40.0, 74.0],
                 {
 }
-            ).addTo(feature_group_4822d9948aaf2a96a712795bdaa6f775);
+            ).addTo(feature_group_54b6bab62eccb1f52e3d7ff511015d35);
 
 
-            feature_group_4822d9948aaf2a96a712795bdaa6f775.addTo(map_7f2bbface659c817df2d465fd0c64abd);
+            feature_group_54b6bab62eccb1f52e3d7ff511015d35.addTo(map_09cbc2c53a75f177aba3d35a3a7d9e6e);
 
 
-            var feature_group_213530442ef259c3b8aaaa859a9d9da9 = L.featureGroup(
+            var feature_group_d302c94331c8dee92265fcb7b263965b = L.featureGroup(
                 {
 }
             );
 
 
-            var marker_5c7282c1f887d803453723df9096b67f = L.marker(
+            var marker_53ef8ac562623b979d463422d6b5dded = L.marker(
                 [38.0, 72.0],
                 {
 }
-            ).addTo(feature_group_213530442ef259c3b8aaaa859a9d9da9);
+            ).addTo(feature_group_d302c94331c8dee92265fcb7b263965b);
 
 
-            feature_group_213530442ef259c3b8aaaa859a9d9da9.addTo(map_7f2bbface659c817df2d465fd0c64abd);
+            feature_group_d302c94331c8dee92265fcb7b263965b.addTo(map_09cbc2c53a75f177aba3d35a3a7d9e6e);
 
 
-            var feature_group_b402af4336a9f005ff6c2f312a21ffc7 = L.featureGroup(
+            var feature_group_fbb6db1063b22907025f164a5ff0e9f8 = L.featureGroup(
                 {
 }
             );
 
 
-            var marker_739921477359f7a8a65c4802996242fe = L.marker(
+            var marker_d723fd51207cc6d47c7f5007ce28dc41 = L.marker(
                 [40.0, 72.0],
                 {
 }
-            ).addTo(feature_group_b402af4336a9f005ff6c2f312a21ffc7);
+            ).addTo(feature_group_fbb6db1063b22907025f164a5ff0e9f8);
 
 
-            feature_group_b402af4336a9f005ff6c2f312a21ffc7.addTo(map_7f2bbface659c817df2d465fd0c64abd);
+            feature_group_fbb6db1063b22907025f164a5ff0e9f8.addTo(map_09cbc2c53a75f177aba3d35a3a7d9e6e);
 
 
-            var layer_control_930ef362cfc7bda0085ba4fc9be1ed63_layers = {
+            var layer_control_b00837962d086d7f5be8db6c7adf16f2_layers = {
                 base_layers : {
-                    &quot;openstreetmap&quot; : tile_layer_7fda9a46b00ffdee704b02db940d1fdb,
+                    &quot;openstreetmap&quot; : tile_layer_6a07219fa644844bd11fdc9d87b70980,
                 },
                 overlays :  {
-                    &quot;g3&quot; : feature_group_b402af4336a9f005ff6c2f312a21ffc7,
+                    &quot;g3&quot; : feature_group_fbb6db1063b22907025f164a5ff0e9f8,
                 },
             };
-            let layer_control_930ef362cfc7bda0085ba4fc9be1ed63 = L.control.layers(
-                layer_control_930ef362cfc7bda0085ba4fc9be1ed63_layers.base_layers,
-                layer_control_930ef362cfc7bda0085ba4fc9be1ed63_layers.overlays,
+            let layer_control_b00837962d086d7f5be8db6c7adf16f2 = L.control.layers(
+                layer_control_b00837962d086d7f5be8db6c7adf16f2_layers.base_layers,
+                layer_control_b00837962d086d7f5be8db6c7adf16f2_layers.overlays,
                 {
   &quot;position&quot;: &quot;topright&quot;,
   &quot;collapsed&quot;: false,
   &quot;autoZIndex&quot;: true,
 }
-            ).addTo(map_7f2bbface659c817df2d465fd0c64abd);
+            ).addTo(map_09cbc2c53a75f177aba3d35a3a7d9e6e);
 
 
 
@@ -697,8 +703,8 @@
                 null,
                 {
                     &quot;groups1&quot; : {
-                        &quot;g1&quot; : feature_group_4822d9948aaf2a96a712795bdaa6f775,
-                        &quot;g2&quot; : feature_group_213530442ef259c3b8aaaa859a9d9da9,
+                        &quot;g1&quot; : feature_group_54b6bab62eccb1f52e3d7ff511015d35,
+                        &quot;g2&quot; : feature_group_d302c94331c8dee92265fcb7b263965b,
                     },
                 },
                 {
@@ -707,8 +713,8 @@
 &quot;groups1&quot;,
 ],
 },
-            ).addTo(map_7f2bbface659c817df2d465fd0c64abd);
-            feature_group_213530442ef259c3b8aaaa859a9d9da9.remove();
+            ).addTo(map_09cbc2c53a75f177aba3d35a3a7d9e6e);
+            feature_group_d302c94331c8dee92265fcb7b263965b.remove();
 
 
 &lt;/script&gt;
@@ -776,7 +782,7 @@
             &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no&quot; /&gt;
             &lt;style&gt;
-                #map_ac8faab0c5ee160c97de4c14bbdd820a {
+                #map_3da8acbcb724ea56fa08b672eb599d7d {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -792,14 +798,14 @@
 &lt;body&gt;
 
 
-            &lt;div class=&quot;folium-map&quot; id=&quot;map_ac8faab0c5ee160c97de4c14bbdd820a&quot; &gt;&lt;/div&gt;
+            &lt;div class=&quot;folium-map&quot; id=&quot;map_3da8acbcb724ea56fa08b672eb599d7d&quot; &gt;&lt;/div&gt;
 
 &lt;/body&gt;
 &lt;script&gt;
 
 
-            var map_ac8faab0c5ee160c97de4c14bbdd820a = L.map(
-                &quot;map_ac8faab0c5ee160c97de4c14bbdd820a&quot;,
+            var map_3da8acbcb724ea56fa08b672eb599d7d = L.map(
+                &quot;map_3da8acbcb724ea56fa08b672eb599d7d&quot;,
                 {
                     center: [40.0, 70.0],
                     crs: L.CRS.EPSG3857,
@@ -816,7 +822,7 @@
 
 
 
-            var tile_layer_31ca013158d3afa2471ba24b364a1230 = L.tileLayer(
+            var tile_layer_2544539250817377552576a9e8c0571a = L.tileLayer(
                 &quot;https://tile.openstreetmap.org/{z}/{x}/{y}.png&quot;,
                 {
   &quot;minZoom&quot;: 0,
@@ -833,68 +839,68 @@
             );
 
 
-            tile_layer_31ca013158d3afa2471ba24b364a1230.addTo(map_ac8faab0c5ee160c97de4c14bbdd820a);
+            tile_layer_2544539250817377552576a9e8c0571a.addTo(map_3da8acbcb724ea56fa08b672eb599d7d);
 
 
-            var feature_group_49fbf5c369664c32eedaeaf801ab9381 = L.featureGroup(
+            var feature_group_9a06a7bf5999b23fc3fa3621f334ed3e = L.featureGroup(
                 {
 }
             );
 
 
-            var marker_3dc9a41ecdd7e7e6225fa2739756f5f6 = L.marker(
+            var marker_f5c25d08bc5619bae17cddfc397ec177 = L.marker(
                 [40.0, 74.0],
                 {
 }
-            ).addTo(feature_group_49fbf5c369664c32eedaeaf801ab9381);
+            ).addTo(feature_group_9a06a7bf5999b23fc3fa3621f334ed3e);
 
 
-            var feature_group_439134c240e91aefb602621d836b496c = L.featureGroup(
+            var feature_group_9e338b7459284a4a58620f526cb22f47 = L.featureGroup(
                 {
 }
             );
 
 
-            var marker_32653e8d36f7cfa1efae032112b46137 = L.marker(
+            var marker_6a0115bcac992d16234a8e3edef6ed88 = L.marker(
                 [38.0, 72.0],
                 {
 }
-            ).addTo(feature_group_439134c240e91aefb602621d836b496c);
+            ).addTo(feature_group_9e338b7459284a4a58620f526cb22f47);
 
 
-            var feature_group_d6d1c494c017f0ae7fc09108b1b525cb = L.featureGroup(
+            var feature_group_3dfae57d29856ba9e8e96a5d823cf8a6 = L.featureGroup(
                 {
 }
             );
 
 
-            var marker_1e06d1481e802259c06d7f1e4e43ec1f = L.marker(
+            var marker_ceebe7d817d54f0b8f7b2103c9f4b2ee = L.marker(
                 [40.0, 72.0],
                 {
 }
-            ).addTo(feature_group_d6d1c494c017f0ae7fc09108b1b525cb);
+            ).addTo(feature_group_3dfae57d29856ba9e8e96a5d823cf8a6);
 
 
-            feature_group_d6d1c494c017f0ae7fc09108b1b525cb.addTo(map_ac8faab0c5ee160c97de4c14bbdd820a);
+            feature_group_3dfae57d29856ba9e8e96a5d823cf8a6.addTo(map_3da8acbcb724ea56fa08b672eb599d7d);
 
 
-            var layer_control_78d02aba58c65305735c06d34643605d_layers = {
+            var layer_control_2adf7166cb77866d0e690b28257e80e5_layers = {
                 base_layers : {
-                    &quot;openstreetmap&quot; : tile_layer_31ca013158d3afa2471ba24b364a1230,
+                    &quot;openstreetmap&quot; : tile_layer_2544539250817377552576a9e8c0571a,
                 },
                 overlays :  {
-                    &quot;g3&quot; : feature_group_d6d1c494c017f0ae7fc09108b1b525cb,
+                    &quot;g3&quot; : feature_group_3dfae57d29856ba9e8e96a5d823cf8a6,
                 },
             };
-            let layer_control_78d02aba58c65305735c06d34643605d = L.control.layers(
-                layer_control_78d02aba58c65305735c06d34643605d_layers.base_layers,
-                layer_control_78d02aba58c65305735c06d34643605d_layers.overlays,
+            let layer_control_2adf7166cb77866d0e690b28257e80e5 = L.control.layers(
+                layer_control_2adf7166cb77866d0e690b28257e80e5_layers.base_layers,
+                layer_control_2adf7166cb77866d0e690b28257e80e5_layers.overlays,
                 {
   &quot;position&quot;: &quot;topright&quot;,
   &quot;collapsed&quot;: false,
   &quot;autoZIndex&quot;: true,
 }
-            ).addTo(map_ac8faab0c5ee160c97de4c14bbdd820a);
+            ).addTo(map_3da8acbcb724ea56fa08b672eb599d7d);
 
 
 
@@ -903,16 +909,16 @@
                 null,
                 {
                     &quot;groups1&quot; : {
-                        &quot;g1&quot; : feature_group_49fbf5c369664c32eedaeaf801ab9381,
-                        &quot;g2&quot; : feature_group_439134c240e91aefb602621d836b496c,
+                        &quot;g1&quot; : feature_group_9a06a7bf5999b23fc3fa3621f334ed3e,
+                        &quot;g2&quot; : feature_group_9e338b7459284a4a58620f526cb22f47,
                     },
                 },
                 {
   &quot;collapsed&quot;: false,
 },
-            ).addTo(map_ac8faab0c5ee160c97de4c14bbdd820a);
-            feature_group_49fbf5c369664c32eedaeaf801ab9381.remove();
-            feature_group_439134c240e91aefb602621d836b496c.remove();
+            ).addTo(map_3da8acbcb724ea56fa08b672eb599d7d);
+            feature_group_9e338b7459284a4a58620f526cb22f47.remove();
+            feature_group_9a06a7bf5999b23fc3fa3621f334ed3e.remove();
 
 
 &lt;/script&gt;
@@ -960,13 +966,13 @@
 
 
   <div class="sidebar-secondary-item">
-
-  <div class="tocsection sourcelink">
-    <a href="../../_sources/user_guide/plugins/grouped_layer_control.md.txt">
-      <i class="fa-solid fa-file-lines"></i> Show Source
-    </a>
-  </div>
-</div>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../../_sources/user_guide/plugins/grouped_layer_control.md.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div></div>
 
 </div></div>
               
@@ -981,8 +987,8 @@
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script defer src="../../_static/scripts/bootstrap.js?digest=26a4bc78f4c0ddb94549"></script>
-<script defer src="../../_static/scripts/pydata-sphinx-theme.js?digest=26a4bc78f4c0ddb94549"></script>
+  <script defer src="../../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf"></script>
+<script defer src="../../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf"></script>
 
   <footer class="bd-footer">
 <div class="bd-footer__inner bd-page-width">
@@ -990,13 +996,13 @@
     <div class="footer-items__start">
       
         <div class="footer-item"><!-- This will display the version of the docs -->
-Folium version 0.1.dev1925+gd04d4ba</div>
+Folium version 0.1.dev1928+g7c8073e</div>
       
         <div class="footer-item">
 
   <p class="copyright">
     
-      © Copyright 2013-2024, Rob Story.
+      © Copyright 2013-2025, Rob Story.
       <br/>
     
   </p>
@@ -1012,7 +1018,8 @@ Folium version 0.1.dev1925+gd04d4ba</div>
       
         <div class="footer-item">
 <p class="theme-version">
-  Built with the <a href="https://pydata-sphinx-theme.readthedocs.io/en/stable/index.html">PyData Sphinx Theme</a> 0.16.0.
+  <!-- # L10n: Setting the PST URL as an argument as this does not need to be localized -->
+  Built with the <a href="https://pydata-sphinx-theme.readthedocs.io/en/stable/index.html">PyData Sphinx Theme</a> 0.16.1.
 </p></div>
       
     </div>
@@ -1023,7 +1030,8 @@ Folium version 0.1.dev1925+gd04d4ba</div>
       
         <div class="footer-item">
 <p class="theme-version">
-  Built with the <a href="https://pydata-sphinx-theme.readthedocs.io/en/stable/index.html">PyData Sphinx Theme</a> 0.16.0.
+  <!-- # L10n: Setting the PST URL as an argument as this does not need to be localized -->
+  Built with the <a href="https://pydata-sphinx-theme.readthedocs.io/en/stable/index.html">PyData Sphinx Theme</a> 0.16.1.
 </p></div>
       
     </div>

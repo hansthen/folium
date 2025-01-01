@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Circle and CircleMarker &#8212; Folium 0.1.dev1925+gd04d4ba documentation</title>
+    <title>Circle and CircleMarker &#8212; Folium 0.1.dev1928+g7c8073e documentation</title>
   
   
   
@@ -16,8 +16,8 @@
     document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
     document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
   </script>
-  <!-- 
-    this give us a css class that will be invisible only if js is disabled 
+  <!--
+    this give us a css class that will be invisible only if js is disabled
   -->
   <noscript>
     <style>
@@ -27,20 +27,20 @@
   </noscript>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../../_static/styles/theme.css?digest=26a4bc78f4c0ddb94549" rel="stylesheet" />
-<link href="../../_static/styles/pydata-sphinx-theme.css?digest=26a4bc78f4c0ddb94549" rel="stylesheet" />
+  <link href="../../_static/styles/theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
 
     <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=fa44fd50" />
     <link rel="stylesheet" type="text/css" href="../../_static/nbsphinx-code-cells.css?v=2aa19091" />
     <link rel="stylesheet" type="text/css" href="../../_static/custom.css?v=924e9346" />
   
   <!-- So that users can add custom icons -->
-  <script src="../../_static/scripts/fontawesome.js?digest=26a4bc78f4c0ddb94549"></script>
+  <script src="../../_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=26a4bc78f4c0ddb94549" />
-<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=26a4bc78f4c0ddb94549" />
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
 
-    <script src="../../_static/documentation_options.js?v=1cd6ea86"></script>
+    <script src="../../_static/documentation_options.js?v=2be1f188"></script>
     <script src="../../_static/doctools.js?v=9bcbadda"></script>
     <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
@@ -48,10 +48,11 @@
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'user_guide/vector_layers/circle_and_circle_marker';</script>
     <script>
-        DOCUMENTATION_OPTIONS.theme_version = '0.16.0';
+        DOCUMENTATION_OPTIONS.theme_version = '0.16.1';
         DOCUMENTATION_OPTIONS.theme_switcher_json_url = 'https://python-visualization.github.io/folium/dev/_static/switcher.json';
         DOCUMENTATION_OPTIONS.theme_switcher_version_match = 'dev';
-        DOCUMENTATION_OPTIONS.show_version_warning_banner = false;
+        DOCUMENTATION_OPTIONS.show_version_warning_banner =
+            false;
         </script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
@@ -59,7 +60,7 @@
     <link rel="prev" title="Vector layers" href="../vector_layers.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
-  <meta name="docsearch:version" content="0.1.dev1925+gd04d4ba" />
+  <meta name="docsearch:version" content="0.1.dev1928+g7c8073e" />
   </head>
   
   
@@ -446,9 +447,14 @@
   
   
   <div class="sidebar-primary-items__end sidebar-primary__section">
+      <div class="sidebar-primary-item">
+<div id="ethical-ad-placement"
+      class="flat"
+      data-ea-publisher="readthedocs"
+      data-ea-type="readthedocs-sidebar"
+      data-ea-manual="true">
+</div></div>
   </div>
-  
-  <div id="rtd-footer-container"></div>
 
 
       </div>
@@ -582,7 +588,7 @@
             &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no&quot; /&gt;
             &lt;style&gt;
-                #map_8d55a128b7423fd05183904705150bbc {
+                #map_a4598f52a73bd5988dcaf77a5b21030d {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -596,14 +602,14 @@
 &lt;body&gt;
 
 
-            &lt;div class=&quot;folium-map&quot; id=&quot;map_8d55a128b7423fd05183904705150bbc&quot; &gt;&lt;/div&gt;
+            &lt;div class=&quot;folium-map&quot; id=&quot;map_a4598f52a73bd5988dcaf77a5b21030d&quot; &gt;&lt;/div&gt;
 
 &lt;/body&gt;
 &lt;script&gt;
 
 
-            var map_8d55a128b7423fd05183904705150bbc = L.map(
-                &quot;map_8d55a128b7423fd05183904705150bbc&quot;,
+            var map_a4598f52a73bd5988dcaf77a5b21030d = L.map(
+                &quot;map_a4598f52a73bd5988dcaf77a5b21030d&quot;,
                 {
                     center: [-27.5717, -48.6256],
                     crs: L.CRS.EPSG3857,
@@ -620,7 +626,7 @@
 
 
 
-            var tile_layer_2c4788d5d6f6d51ad0659088f5ba1af7 = L.tileLayer(
+            var tile_layer_b621dabb777dfe388bd1afa9221a4eb0 = L.tileLayer(
                 &quot;https://tile.openstreetmap.org/{z}/{x}/{y}.png&quot;,
                 {
   &quot;minZoom&quot;: 0,
@@ -637,33 +643,33 @@
             );
 
 
-            tile_layer_2c4788d5d6f6d51ad0659088f5ba1af7.addTo(map_8d55a128b7423fd05183904705150bbc);
+            tile_layer_b621dabb777dfe388bd1afa9221a4eb0.addTo(map_a4598f52a73bd5988dcaf77a5b21030d);
 
 
-            var circle_marker_a87cc0ba769bad4e7152e0bdd5da8083 = L.circleMarker(
+            var circle_marker_55848b3cc4c08e879598ce0dc3c4c7db = L.circleMarker(
                 [-27.55, -48.8],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;cornflowerblue&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;cornflowerblue&quot;, &quot;fillOpacity&quot;: 0.6, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1, &quot;radius&quot;: 50, &quot;stroke&quot;: false, &quot;weight&quot;: 3}
-            ).addTo(map_8d55a128b7423fd05183904705150bbc);
+            ).addTo(map_a4598f52a73bd5988dcaf77a5b21030d);
 
 
-        var popup_94dd8dab7d5467c8a9e0b17c1cc25f45 = L.popup({
+        var popup_1d121bc3d4fa14d6f3f964a819928d52 = L.popup({
   &quot;maxWidth&quot;: &quot;100%&quot;,
 });
 
 
 
-                var html_ee8ffae15c5cccd5b2088620f6794f38 = $(`&lt;div id=&quot;html_ee8ffae15c5cccd5b2088620f6794f38&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;50 pixels&lt;/div&gt;`)[0];
-                popup_94dd8dab7d5467c8a9e0b17c1cc25f45.setContent(html_ee8ffae15c5cccd5b2088620f6794f38);
+                var html_43e41d53e273d9778b3954b733bcd965 = $(`&lt;div id=&quot;html_43e41d53e273d9778b3954b733bcd965&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;50 pixels&lt;/div&gt;`)[0];
+                popup_1d121bc3d4fa14d6f3f964a819928d52.setContent(html_43e41d53e273d9778b3954b733bcd965);
 
 
 
-        circle_marker_a87cc0ba769bad4e7152e0bdd5da8083.bindPopup(popup_94dd8dab7d5467c8a9e0b17c1cc25f45)
+        circle_marker_55848b3cc4c08e879598ce0dc3c4c7db.bindPopup(popup_1d121bc3d4fa14d6f3f964a819928d52)
         ;
 
 
 
 
-            circle_marker_a87cc0ba769bad4e7152e0bdd5da8083.bindTooltip(
+            circle_marker_55848b3cc4c08e879598ce0dc3c4c7db.bindTooltip(
                 `&lt;div&gt;
                      I am in pixels
                  &lt;/div&gt;`,
@@ -673,36 +679,36 @@
             );
 
 
-            var circle_marker_ee0303a20442bf3485e3467198a526c7 = L.circleMarker(
+            var circle_marker_8e3b9d43f28037c8ea839032d287a465 = L.circleMarker(
                 [-27.35, -48.8],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;black&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: false, &quot;fillColor&quot;: &quot;black&quot;, &quot;fillOpacity&quot;: 0.6, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1, &quot;radius&quot;: 25, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
-            ).addTo(map_8d55a128b7423fd05183904705150bbc);
+            ).addTo(map_a4598f52a73bd5988dcaf77a5b21030d);
 
 
-            var circle_d7308b216f470bfecfd6b5d92d4c67a4 = L.circle(
+            var circle_45bc787ac9efc4845131602d2b0eabf4 = L.circle(
                 [-27.551667, -48.478889],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;black&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;green&quot;, &quot;fillOpacity&quot;: 0.6, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1, &quot;radius&quot;: 10000, &quot;stroke&quot;: true, &quot;weight&quot;: 1}
-            ).addTo(map_8d55a128b7423fd05183904705150bbc);
+            ).addTo(map_a4598f52a73bd5988dcaf77a5b21030d);
 
 
-        var popup_917f3c477d28467a1cb14950aec7d2d0 = L.popup({
+        var popup_47cf31f618497f08ca90bfb9a87eba8e = L.popup({
   &quot;maxWidth&quot;: &quot;100%&quot;,
 });
 
 
 
-                var html_70f1f0eb2625099458b257aa073f7bae = $(`&lt;div id=&quot;html_70f1f0eb2625099458b257aa073f7bae&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;10000 meters&lt;/div&gt;`)[0];
-                popup_917f3c477d28467a1cb14950aec7d2d0.setContent(html_70f1f0eb2625099458b257aa073f7bae);
+                var html_9de2393e6adac2c222935c923b383712 = $(`&lt;div id=&quot;html_9de2393e6adac2c222935c923b383712&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;10000 meters&lt;/div&gt;`)[0];
+                popup_47cf31f618497f08ca90bfb9a87eba8e.setContent(html_9de2393e6adac2c222935c923b383712);
 
 
 
-        circle_d7308b216f470bfecfd6b5d92d4c67a4.bindPopup(popup_917f3c477d28467a1cb14950aec7d2d0)
+        circle_45bc787ac9efc4845131602d2b0eabf4.bindPopup(popup_47cf31f618497f08ca90bfb9a87eba8e)
         ;
 
 
 
 
-            circle_d7308b216f470bfecfd6b5d92d4c67a4.bindTooltip(
+            circle_45bc787ac9efc4845131602d2b0eabf4.bindTooltip(
                 `&lt;div&gt;
                      I am in meters
                  &lt;/div&gt;`,
@@ -756,13 +762,13 @@
 
 
   <div class="sidebar-secondary-item">
-
-  <div class="tocsection sourcelink">
-    <a href="../../_sources/user_guide/vector_layers/circle_and_circle_marker.md.txt">
-      <i class="fa-solid fa-file-lines"></i> Show Source
-    </a>
-  </div>
-</div>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../../_sources/user_guide/vector_layers/circle_and_circle_marker.md.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div></div>
 
 </div></div>
               
@@ -777,8 +783,8 @@
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script defer src="../../_static/scripts/bootstrap.js?digest=26a4bc78f4c0ddb94549"></script>
-<script defer src="../../_static/scripts/pydata-sphinx-theme.js?digest=26a4bc78f4c0ddb94549"></script>
+  <script defer src="../../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf"></script>
+<script defer src="../../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf"></script>
 
   <footer class="bd-footer">
 <div class="bd-footer__inner bd-page-width">
@@ -786,13 +792,13 @@
     <div class="footer-items__start">
       
         <div class="footer-item"><!-- This will display the version of the docs -->
-Folium version 0.1.dev1925+gd04d4ba</div>
+Folium version 0.1.dev1928+g7c8073e</div>
       
         <div class="footer-item">
 
   <p class="copyright">
     
-      © Copyright 2013-2024, Rob Story.
+      © Copyright 2013-2025, Rob Story.
       <br/>
     
   </p>
@@ -808,7 +814,8 @@ Folium version 0.1.dev1925+gd04d4ba</div>
       
         <div class="footer-item">
 <p class="theme-version">
-  Built with the <a href="https://pydata-sphinx-theme.readthedocs.io/en/stable/index.html">PyData Sphinx Theme</a> 0.16.0.
+  <!-- # L10n: Setting the PST URL as an argument as this does not need to be localized -->
+  Built with the <a href="https://pydata-sphinx-theme.readthedocs.io/en/stable/index.html">PyData Sphinx Theme</a> 0.16.1.
 </p></div>
       
     </div>
@@ -819,7 +826,8 @@ Folium version 0.1.dev1925+gd04d4ba</div>
       
         <div class="footer-item">
 <p class="theme-version">
-  Built with the <a href="https://pydata-sphinx-theme.readthedocs.io/en/stable/index.html">PyData Sphinx Theme</a> 0.16.0.
+  <!-- # L10n: Setting the PST URL as an argument as this does not need to be localized -->
+  Built with the <a href="https://pydata-sphinx-theme.readthedocs.io/en/stable/index.html">PyData Sphinx Theme</a> 0.16.1.
 </p></div>
       
     </div>
