@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>MousePosition &#8212; Folium 0.1.dev1930+g4eb48f0 documentation</title>
+    <title>MousePosition &#8212; Folium 0.1.dev1937+gaf03218 documentation</title>
   
   
   
@@ -30,7 +30,7 @@
   <link href="../../_static/styles/theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
 <link href="../../_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
 
-    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=03e43079" />
     <link rel="stylesheet" type="text/css" href="../../_static/nbsphinx-code-cells.css?v=2aa19091" />
     <link rel="stylesheet" type="text/css" href="../../_static/custom.css?v=924e9346" />
   
@@ -40,7 +40,7 @@
   <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
 <link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
 
-    <script src="../../_static/documentation_options.js?v=7c134b4e"></script>
+    <script src="../../_static/documentation_options.js?v=99c22335"></script>
     <script src="../../_static/doctools.js?v=9bcbadda"></script>
     <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
@@ -60,7 +60,7 @@
     <link rel="prev" title="MeasureControl" href="measure_control.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
-  <meta name="docsearch:version" content="0.1.dev1930+g4eb48f0" />
+  <meta name="docsearch:version" content="0.1.dev1937+gaf03218" />
   </head>
   
   
@@ -510,8 +510,8 @@
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[1]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">folium</span>
-<span class="kn">from</span> <span class="nn">folium.plugins</span> <span class="kn">import</span> <span class="n">MousePosition</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">folium</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">folium.plugins</span><span class="w"> </span><span class="kn">import</span> <span class="n">MousePosition</span>
 
 
 <span class="n">m</span> <span class="o">=</span> <span class="n">folium</span><span class="o">.</span><span class="n">Map</span><span class="p">()</span>
@@ -554,7 +554,7 @@
             &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no&quot; /&gt;
             &lt;style&gt;
-                #map_bec29e87e1e8ca550e4dd7d855f7c6b6 {
+                #map_36a63833565ce817a30ce2d9a84c950e {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -570,14 +570,14 @@
 &lt;body&gt;
 
 
-            &lt;div class=&quot;folium-map&quot; id=&quot;map_bec29e87e1e8ca550e4dd7d855f7c6b6&quot; &gt;&lt;/div&gt;
+            &lt;div class=&quot;folium-map&quot; id=&quot;map_36a63833565ce817a30ce2d9a84c950e&quot; &gt;&lt;/div&gt;
 
 &lt;/body&gt;
 &lt;script&gt;
 
 
-            var map_bec29e87e1e8ca550e4dd7d855f7c6b6 = L.map(
-                &quot;map_bec29e87e1e8ca550e4dd7d855f7c6b6&quot;,
+            var map_36a63833565ce817a30ce2d9a84c950e = L.map(
+                &quot;map_36a63833565ce817a30ce2d9a84c950e&quot;,
                 {
                     center: [0.0, 0.0],
                     crs: L.CRS.EPSG3857,
@@ -594,7 +594,7 @@
 
 
 
-            var tile_layer_fdbf4648080d5f2dd03252485666cd41 = L.tileLayer(
+            var tile_layer_8d567c796844d3b2d692d4fe15333f8c = L.tileLayer(
                 &quot;https://tile.openstreetmap.org/{z}/{x}/{y}.png&quot;,
                 {
   &quot;minZoom&quot;: 0,
@@ -611,10 +611,10 @@
             );
 
 
-            tile_layer_fdbf4648080d5f2dd03252485666cd41.addTo(map_bec29e87e1e8ca550e4dd7d855f7c6b6);
+            tile_layer_8d567c796844d3b2d692d4fe15333f8c.addTo(map_36a63833565ce817a30ce2d9a84c950e);
 
 
-            var mouse_position_2cc21d500d195504bfc8205b7c8b3287 = new L.Control.MousePosition(
+            var mouse_position_d1a7e6ab7da5658082bd46d50c865ad3 = new L.Control.MousePosition(
                 {
   &quot;position&quot;: &quot;bottomright&quot;,
   &quot;separator&quot;: &quot; : &quot;,
@@ -624,11 +624,11 @@
   &quot;prefix&quot;: &quot;&quot;,
 }
             );
-            mouse_position_2cc21d500d195504bfc8205b7c8b3287.options[&quot;latFormatter&quot;] =
+            mouse_position_d1a7e6ab7da5658082bd46d50c865ad3.options[&quot;latFormatter&quot;] =
                 undefined;
-            mouse_position_2cc21d500d195504bfc8205b7c8b3287.options[&quot;lngFormatter&quot;] =
+            mouse_position_d1a7e6ab7da5658082bd46d50c865ad3.options[&quot;lngFormatter&quot;] =
                 undefined;
-            map_bec29e87e1e8ca550e4dd7d855f7c6b6.addControl(mouse_position_2cc21d500d195504bfc8205b7c8b3287);
+            map_36a63833565ce817a30ce2d9a84c950e.addControl(mouse_position_d1a7e6ab7da5658082bd46d50c865ad3);
 
 &lt;/script&gt;
 &lt;/html&gt;" style="position:absolute;width:100%;height:100%;left:0;top:0;border:none !important;" allowfullscreen webkitallowfullscreen mozallowfullscreen></iframe></div></div></div>
@@ -690,7 +690,7 @@
             &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no&quot; /&gt;
             &lt;style&gt;
-                #map_4a4d88563dc4754524fca8104d02a8ad {
+                #map_e666dd3c88f2910f60098192baf2c7ba {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -706,14 +706,14 @@
 &lt;body&gt;
 
 
-            &lt;div class=&quot;folium-map&quot; id=&quot;map_4a4d88563dc4754524fca8104d02a8ad&quot; &gt;&lt;/div&gt;
+            &lt;div class=&quot;folium-map&quot; id=&quot;map_e666dd3c88f2910f60098192baf2c7ba&quot; &gt;&lt;/div&gt;
 
 &lt;/body&gt;
 &lt;script&gt;
 
 
-            var map_4a4d88563dc4754524fca8104d02a8ad = L.map(
-                &quot;map_4a4d88563dc4754524fca8104d02a8ad&quot;,
+            var map_e666dd3c88f2910f60098192baf2c7ba = L.map(
+                &quot;map_e666dd3c88f2910f60098192baf2c7ba&quot;,
                 {
                     center: [0.0, 0.0],
                     crs: L.CRS.EPSG3857,
@@ -730,7 +730,7 @@
 
 
 
-            var tile_layer_bc4b1001b5d431564dd363153fcb0f86 = L.tileLayer(
+            var tile_layer_b838084e233f42fa6c7e66687b7d3784 = L.tileLayer(
                 &quot;https://tile.openstreetmap.org/{z}/{x}/{y}.png&quot;,
                 {
   &quot;minZoom&quot;: 0,
@@ -747,10 +747,10 @@
             );
 
 
-            tile_layer_bc4b1001b5d431564dd363153fcb0f86.addTo(map_4a4d88563dc4754524fca8104d02a8ad);
+            tile_layer_b838084e233f42fa6c7e66687b7d3784.addTo(map_e666dd3c88f2910f60098192baf2c7ba);
 
 
-            var mouse_position_3308e05170c79aeb2cdfd0567c8f8f60 = new L.Control.MousePosition(
+            var mouse_position_9a55a841679a9db5e16868b256b48e53 = new L.Control.MousePosition(
                 {
   &quot;position&quot;: &quot;topright&quot;,
   &quot;separator&quot;: &quot; | &quot;,
@@ -760,11 +760,11 @@
   &quot;prefix&quot;: &quot;Coordinates:&quot;,
 }
             );
-            mouse_position_3308e05170c79aeb2cdfd0567c8f8f60.options[&quot;latFormatter&quot;] =
+            mouse_position_9a55a841679a9db5e16868b256b48e53.options[&quot;latFormatter&quot;] =
                 function(num) {return L.Util.formatNum(num, 3) + &#x27; &amp;deg; &#x27;;};;
-            mouse_position_3308e05170c79aeb2cdfd0567c8f8f60.options[&quot;lngFormatter&quot;] =
+            mouse_position_9a55a841679a9db5e16868b256b48e53.options[&quot;lngFormatter&quot;] =
                 function(num) {return L.Util.formatNum(num, 3) + &#x27; &amp;deg; &#x27;;};;
-            map_4a4d88563dc4754524fca8104d02a8ad.addControl(mouse_position_3308e05170c79aeb2cdfd0567c8f8f60);
+            map_e666dd3c88f2910f60098192baf2c7ba.addControl(mouse_position_9a55a841679a9db5e16868b256b48e53);
 
 &lt;/script&gt;
 &lt;/html&gt;" style="position:absolute;width:100%;height:100%;left:0;top:0;border:none !important;" allowfullscreen webkitallowfullscreen mozallowfullscreen></iframe></div></div></div>
@@ -854,7 +854,7 @@
     <div class="footer-items__start">
       
         <div class="footer-item"><!-- This will display the version of the docs -->
-Folium version 0.1.dev1930+g4eb48f0</div>
+Folium version 0.1.dev1937+gaf03218</div>
       
         <div class="footer-item">
 
