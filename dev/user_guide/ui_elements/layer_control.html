@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>LayerControl &#8212; Folium 0.1.dev1945+gf9b00cd documentation</title>
+    <title>LayerControl &#8212; Folium 0.1.dev1960+ge468548 documentation</title>
   
   
   
@@ -40,12 +40,10 @@
   <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
 <link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
 
-    <script src="../../_static/documentation_options.js?v=c1c4aa48"></script>
-    <script src="../../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../../_static/documentation_options.js?v=5105c532"></script>
+    <script src="../../_static/doctools.js?v=9bcbadda"></script>
     <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
-    <script>window.MathJax = {"tex": {"inlineMath": [["$", "$"], ["\\(", "\\)"]], "processEscapes": true}, "options": {"ignoreHtmlClass": "tex2jax_ignore|mathjax_ignore|document", "processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
-    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'user_guide/ui_elements/layer_control';</script>
     <script>
         DOCUMENTATION_OPTIONS.theme_version = '0.16.1';
@@ -60,7 +58,7 @@
     <link rel="prev" title="UI elements" href="../ui_elements.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
-  <meta name="docsearch:version" content="0.1.dev1945+gf9b00cd" />
+  <meta name="docsearch:version" content="0.1.dev1960+ge468548" />
   </head>
   
   
@@ -512,8 +510,7 @@
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">m</span> <span class="o">=</span> <span class="n">folium</span><span class="o">.</span><span class="n">Map</span><span class="p">(</span><span class="n">tiles</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span>
 
-<span class="n">folium</span><span class="o">.</span><span class="n">TileLayer</span><span class="p">(</span><span class="s2">&quot;OpenStreetMap&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">add_to</span><span class="p">(</span><span class="n">m</span><span class="p">)</span>
-<span class="n">folium</span><span class="o">.</span><span class="n">TileLayer</span><span class="p">(</span><span class="n">show</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span><span class="o">.</span><span class="n">add_to</span><span class="p">(</span><span class="n">m</span><span class="p">)</span>
+<span class="n">folium</span><span class="o">.</span><span class="n">TileLayer</span><span class="p">(</span><span class="s2">&quot;OpenStreetMap&quot;</span><span class="p">,</span> <span class="n">overlay</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span><span class="o">.</span><span class="n">add_to</span><span class="p">(</span><span class="n">m</span><span class="p">)</span>
 
 <span class="n">folium</span><span class="o">.</span><span class="n">LayerControl</span><span class="p">()</span><span class="o">.</span><span class="n">add_to</span><span class="p">(</span><span class="n">m</span><span class="p">)</span>
 
@@ -531,14 +528,6 @@
 &lt;head&gt;
 
     &lt;meta http-equiv=&quot;content-type&quot; content=&quot;text/html; charset=UTF-8&quot; /&gt;
-
-        &lt;script&gt;
-            L_NO_TOUCH = false;
-            L_DISABLE_3D = false;
-        &lt;/script&gt;
-
-    &lt;style&gt;html, body {width: 100%;height: 100%;margin: 0;padding: 0;}&lt;/style&gt;
-    &lt;style&gt;#map {position:absolute;top:0;bottom:0;right:0;left:0;}&lt;/style&gt;
     &lt;script src=&quot;https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js&quot;&gt;&lt;/script&gt;
     &lt;script src=&quot;https://code.jquery.com/jquery-3.7.1.min.js&quot;&gt;&lt;/script&gt;
     &lt;script src=&quot;https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js&quot;&gt;&lt;/script&gt;
@@ -553,7 +542,7 @@
             &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no&quot; /&gt;
             &lt;style&gt;
-                #map_f2ce4dd79c884b7033a1a2c9c608fef1 {
+                #map_cfa236fd3b33119c4e51bf97129cfe2f {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -563,18 +552,41 @@
                 .leaflet-container { font-size: 1rem; }
             &lt;/style&gt;
 
+            &lt;style&gt;html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            &lt;/style&gt;
+
+            &lt;style&gt;#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            &lt;/style&gt;
+
+            &lt;script&gt;
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            &lt;/script&gt;
+
+
 &lt;/head&gt;
 &lt;body&gt;
 
 
-            &lt;div class=&quot;folium-map&quot; id=&quot;map_f2ce4dd79c884b7033a1a2c9c608fef1&quot; &gt;&lt;/div&gt;
+            &lt;div class=&quot;folium-map&quot; id=&quot;map_cfa236fd3b33119c4e51bf97129cfe2f&quot; &gt;&lt;/div&gt;
 
 &lt;/body&gt;
 &lt;script&gt;
 
 
-            var map_f2ce4dd79c884b7033a1a2c9c608fef1 = L.map(
-                &quot;map_f2ce4dd79c884b7033a1a2c9c608fef1&quot;,
+            var map_cfa236fd3b33119c4e51bf97129cfe2f = L.map(
+                &quot;map_cfa236fd3b33119c4e51bf97129cfe2f&quot;,
                 {
                     center: [0.0, 0.0],
                     crs: L.CRS.EPSG3857,
@@ -591,7 +603,7 @@
 
 
 
-            var tile_layer_d3b45a11865028e6fe127dc19a9ee4fb = L.tileLayer(
+            var tile_layer_ccca9c70cf3ff5def6c9f88e22d56d69 = L.tileLayer(
                 &quot;https://tile.openstreetmap.org/{z}/{x}/{y}.png&quot;,
                 {
   &quot;minZoom&quot;: 0,
@@ -608,42 +620,25 @@
             );
 
 
-            tile_layer_d3b45a11865028e6fe127dc19a9ee4fb.addTo(map_f2ce4dd79c884b7033a1a2c9c608fef1);
+            tile_layer_ccca9c70cf3ff5def6c9f88e22d56d69.addTo(map_cfa236fd3b33119c4e51bf97129cfe2f);
 
 
-            var tile_layer_1182ee9ab279f0c54b9e98791a16850e = L.tileLayer(
-                &quot;https://tile.openstreetmap.org/{z}/{x}/{y}.png&quot;,
-                {
-  &quot;minZoom&quot;: 0,
-  &quot;maxZoom&quot;: 19,
-  &quot;maxNativeZoom&quot;: 19,
-  &quot;noWrap&quot;: false,
-  &quot;attribution&quot;: &quot;\u0026copy; \u003ca href=\&quot;https://www.openstreetmap.org/copyright\&quot;\u003eOpenStreetMap\u003c/a\u003e contributors&quot;,
-  &quot;subdomains&quot;: &quot;abc&quot;,
-  &quot;detectRetina&quot;: false,
-  &quot;tms&quot;: false,
-  &quot;opacity&quot;: 1,
-}
-
-            );
-
-
-            var layer_control_ee6e968b8c75db65c6fca1186dc04d16_layers = {
+            var layer_control_ed49756ee57e899ab13c64be3b080ed9_layers = {
                 base_layers : {
-                    &quot;openstreetmap&quot; : tile_layer_1182ee9ab279f0c54b9e98791a16850e,
                 },
                 overlays :  {
+                    &quot;openstreetmap&quot; : tile_layer_ccca9c70cf3ff5def6c9f88e22d56d69,
                 },
             };
-            let layer_control_ee6e968b8c75db65c6fca1186dc04d16 = L.control.layers(
-                layer_control_ee6e968b8c75db65c6fca1186dc04d16_layers.base_layers,
-                layer_control_ee6e968b8c75db65c6fca1186dc04d16_layers.overlays,
+            let layer_control_ed49756ee57e899ab13c64be3b080ed9 = L.control.layers(
+                layer_control_ed49756ee57e899ab13c64be3b080ed9_layers.base_layers,
+                layer_control_ed49756ee57e899ab13c64be3b080ed9_layers.overlays,
                 {
   &quot;position&quot;: &quot;topright&quot;,
   &quot;collapsed&quot;: true,
   &quot;autoZIndex&quot;: true,
 }
-            ).addTo(map_f2ce4dd79c884b7033a1a2c9c608fef1);
+            ).addTo(map_cfa236fd3b33119c4e51bf97129cfe2f);
 
 
 &lt;/script&gt;
@@ -656,8 +651,8 @@
 <li><p><code class="docutils literal notranslate"><span class="pre">name</span></code>: how the layer will be named in the layer control.</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">overlay</span></code>: True if the layer is an overlay, False if the layer is a base layer.</p>
 <ul>
-<li><p>base layer: only one of them can be active at a time. Mostly used for tile layers.</p></li>
-<li><p>overlay: multiple can be active at the same time. Used for anything else than tile layers.</p></li>
+<li><p>base layer: only one can be active at a time. Tile layers are base layers by default.</p></li>
+<li><p>overlay: multiple can be active at the same time. <code class="docutils literal notranslate"><span class="pre">FeatureGroup</span></code>s and most non-tile layers are overlays by default.</p></li>
 </ul>
 </li>
 <li><p><code class="docutils literal notranslate"><span class="pre">control</span></code>: Whether the layer can be controlled in the layer control.</p></li>
@@ -692,14 +687,6 @@
 &lt;head&gt;
 
     &lt;meta http-equiv=&quot;content-type&quot; content=&quot;text/html; charset=UTF-8&quot; /&gt;
-
-        &lt;script&gt;
-            L_NO_TOUCH = false;
-            L_DISABLE_3D = false;
-        &lt;/script&gt;
-
-    &lt;style&gt;html, body {width: 100%;height: 100%;margin: 0;padding: 0;}&lt;/style&gt;
-    &lt;style&gt;#map {position:absolute;top:0;bottom:0;right:0;left:0;}&lt;/style&gt;
     &lt;script src=&quot;https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js&quot;&gt;&lt;/script&gt;
     &lt;script src=&quot;https://code.jquery.com/jquery-3.7.1.min.js&quot;&gt;&lt;/script&gt;
     &lt;script src=&quot;https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js&quot;&gt;&lt;/script&gt;
@@ -714,7 +701,7 @@
             &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no&quot; /&gt;
             &lt;style&gt;
-                #map_0a0926c4294a265452798c52f376bcfc {
+                #map_842337294c519f537d08fe024b39c0b0 {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -724,18 +711,41 @@
                 .leaflet-container { font-size: 1rem; }
             &lt;/style&gt;
 
+            &lt;style&gt;html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            &lt;/style&gt;
+
+            &lt;style&gt;#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            &lt;/style&gt;
+
+            &lt;script&gt;
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            &lt;/script&gt;
+
+
 &lt;/head&gt;
 &lt;body&gt;
 
 
-            &lt;div class=&quot;folium-map&quot; id=&quot;map_0a0926c4294a265452798c52f376bcfc&quot; &gt;&lt;/div&gt;
+            &lt;div class=&quot;folium-map&quot; id=&quot;map_842337294c519f537d08fe024b39c0b0&quot; &gt;&lt;/div&gt;
 
 &lt;/body&gt;
 &lt;script&gt;
 
 
-            var map_0a0926c4294a265452798c52f376bcfc = L.map(
-                &quot;map_0a0926c4294a265452798c52f376bcfc&quot;,
+            var map_842337294c519f537d08fe024b39c0b0 = L.map(
+                &quot;map_842337294c519f537d08fe024b39c0b0&quot;,
                 {
                     center: [0.0, 0.0],
                     crs: L.CRS.EPSG3857,
@@ -752,7 +762,7 @@
 
 
 
-            var tile_layer_9fffb95f523abdc7654389532fdf54c7 = L.tileLayer(
+            var tile_layer_5ed1687cd3d6e7e5d0c6802f48ffb0ac = L.tileLayer(
                 &quot;https://tile.openstreetmap.org/{z}/{x}/{y}.png&quot;,
                 {
   &quot;minZoom&quot;: 0,
@@ -769,41 +779,41 @@
             );
 
 
-            tile_layer_9fffb95f523abdc7654389532fdf54c7.addTo(map_0a0926c4294a265452798c52f376bcfc);
+            tile_layer_5ed1687cd3d6e7e5d0c6802f48ffb0ac.addTo(map_842337294c519f537d08fe024b39c0b0);
 
 
-            var feature_group_57b58cbc69cdc174122d13788c9a681a = L.featureGroup(
+            var feature_group_ec421a5f8c8401745b22270096a66895 = L.featureGroup(
                 {
 }
             );
 
 
-            var marker_74933df8ffbf24768d2024136d712fba = L.marker(
+            var marker_5cfd5813a3167ea6d58b9e6ea83d6c5d = L.marker(
                 [0.0, 0.0],
                 {
 }
-            ).addTo(feature_group_57b58cbc69cdc174122d13788c9a681a);
+            ).addTo(feature_group_ec421a5f8c8401745b22270096a66895);
 
 
-            feature_group_57b58cbc69cdc174122d13788c9a681a.addTo(map_0a0926c4294a265452798c52f376bcfc);
+            feature_group_ec421a5f8c8401745b22270096a66895.addTo(map_842337294c519f537d08fe024b39c0b0);
 
 
-            var layer_control_f0f00008f995b1b1f8d92b5b741ac8a0_layers = {
+            var layer_control_a4c4a33086e04d5325807bed6822f0b6_layers = {
                 base_layers : {
-                    &quot;openstreetmap&quot; : tile_layer_9fffb95f523abdc7654389532fdf54c7,
+                    &quot;openstreetmap&quot; : tile_layer_5ed1687cd3d6e7e5d0c6802f48ffb0ac,
                 },
                 overlays :  {
                 },
             };
-            let layer_control_f0f00008f995b1b1f8d92b5b741ac8a0 = L.control.layers(
-                layer_control_f0f00008f995b1b1f8d92b5b741ac8a0_layers.base_layers,
-                layer_control_f0f00008f995b1b1f8d92b5b741ac8a0_layers.overlays,
+            let layer_control_a4c4a33086e04d5325807bed6822f0b6 = L.control.layers(
+                layer_control_a4c4a33086e04d5325807bed6822f0b6_layers.base_layers,
+                layer_control_a4c4a33086e04d5325807bed6822f0b6_layers.overlays,
                 {
   &quot;position&quot;: &quot;topright&quot;,
   &quot;collapsed&quot;: true,
   &quot;autoZIndex&quot;: true,
 }
-            ).addTo(map_0a0926c4294a265452798c52f376bcfc);
+            ).addTo(map_842337294c519f537d08fe024b39c0b0);
 
 
 &lt;/script&gt;
@@ -837,14 +847,6 @@
 &lt;head&gt;
 
     &lt;meta http-equiv=&quot;content-type&quot; content=&quot;text/html; charset=UTF-8&quot; /&gt;
-
-        &lt;script&gt;
-            L_NO_TOUCH = false;
-            L_DISABLE_3D = false;
-        &lt;/script&gt;
-
-    &lt;style&gt;html, body {width: 100%;height: 100%;margin: 0;padding: 0;}&lt;/style&gt;
-    &lt;style&gt;#map {position:absolute;top:0;bottom:0;right:0;left:0;}&lt;/style&gt;
     &lt;script src=&quot;https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js&quot;&gt;&lt;/script&gt;
     &lt;script src=&quot;https://code.jquery.com/jquery-3.7.1.min.js&quot;&gt;&lt;/script&gt;
     &lt;script src=&quot;https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js&quot;&gt;&lt;/script&gt;
@@ -859,7 +861,7 @@
             &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no&quot; /&gt;
             &lt;style&gt;
-                #map_d48613e96f86abc43d27ad17faddd467 {
+                #map_c820844d4b1acb87b36b5bd71c579f27 {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -869,18 +871,41 @@
                 .leaflet-container { font-size: 1rem; }
             &lt;/style&gt;
 
+            &lt;style&gt;html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            &lt;/style&gt;
+
+            &lt;style&gt;#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            &lt;/style&gt;
+
+            &lt;script&gt;
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            &lt;/script&gt;
+
+
 &lt;/head&gt;
 &lt;body&gt;
 
 
-            &lt;div class=&quot;folium-map&quot; id=&quot;map_d48613e96f86abc43d27ad17faddd467&quot; &gt;&lt;/div&gt;
+            &lt;div class=&quot;folium-map&quot; id=&quot;map_c820844d4b1acb87b36b5bd71c579f27&quot; &gt;&lt;/div&gt;
 
 &lt;/body&gt;
 &lt;script&gt;
 
 
-            var map_d48613e96f86abc43d27ad17faddd467 = L.map(
-                &quot;map_d48613e96f86abc43d27ad17faddd467&quot;,
+            var map_c820844d4b1acb87b36b5bd71c579f27 = L.map(
+                &quot;map_c820844d4b1acb87b36b5bd71c579f27&quot;,
                 {
                     center: [0.0, 0.0],
                     crs: L.CRS.EPSG3857,
@@ -897,7 +922,7 @@
 
 
 
-            var tile_layer_ceef788cb980e4fc0aadaf77f56950be = L.tileLayer(
+            var tile_layer_bd055f2cb0faf93104ff637f0ce0cdaf = L.tileLayer(
                 &quot;https://tile.openstreetmap.org/{z}/{x}/{y}.png&quot;,
                 {
   &quot;minZoom&quot;: 0,
@@ -914,39 +939,39 @@
             );
 
 
-            tile_layer_ceef788cb980e4fc0aadaf77f56950be.addTo(map_d48613e96f86abc43d27ad17faddd467);
+            tile_layer_bd055f2cb0faf93104ff637f0ce0cdaf.addTo(map_c820844d4b1acb87b36b5bd71c579f27);
 
 
-            var feature_group_2b21b83277cd21a9d900e91f57c1845c = L.featureGroup(
+            var feature_group_eadc91c933ff529eca1a9b3551146c13 = L.featureGroup(
                 {
 }
             );
 
 
-            var marker_048d9a5d2a225f291bae9639a54c7a13 = L.marker(
+            var marker_dadf1649898970a66e3377222bd0bf81 = L.marker(
                 [0.0, 0.0],
                 {
 }
-            ).addTo(feature_group_2b21b83277cd21a9d900e91f57c1845c);
+            ).addTo(feature_group_eadc91c933ff529eca1a9b3551146c13);
 
 
-            var layer_control_2de18a51708c071119b3ffae5a77c426_layers = {
+            var layer_control_d49fdf7f82ac71c013a800ef28fc270d_layers = {
                 base_layers : {
-                    &quot;openstreetmap&quot; : tile_layer_ceef788cb980e4fc0aadaf77f56950be,
+                    &quot;openstreetmap&quot; : tile_layer_bd055f2cb0faf93104ff637f0ce0cdaf,
                 },
                 overlays :  {
-                    &quot;Icon collection&quot; : feature_group_2b21b83277cd21a9d900e91f57c1845c,
+                    &quot;Icon collection&quot; : feature_group_eadc91c933ff529eca1a9b3551146c13,
                 },
             };
-            let layer_control_2de18a51708c071119b3ffae5a77c426 = L.control.layers(
-                layer_control_2de18a51708c071119b3ffae5a77c426_layers.base_layers,
-                layer_control_2de18a51708c071119b3ffae5a77c426_layers.overlays,
+            let layer_control_d49fdf7f82ac71c013a800ef28fc270d = L.control.layers(
+                layer_control_d49fdf7f82ac71c013a800ef28fc270d_layers.base_layers,
+                layer_control_d49fdf7f82ac71c013a800ef28fc270d_layers.overlays,
                 {
   &quot;position&quot;: &quot;topright&quot;,
   &quot;collapsed&quot;: true,
   &quot;autoZIndex&quot;: true,
 }
-            ).addTo(map_d48613e96f86abc43d27ad17faddd467);
+            ).addTo(map_c820844d4b1acb87b36b5bd71c579f27);
 
 
 &lt;/script&gt;
@@ -1039,7 +1064,7 @@
     <div class="footer-items__start">
       
         <div class="footer-item"><!-- This will display the version of the docs -->
-Folium version 0.1.dev1945+gf9b00cd</div>
+Folium version 0.1.dev1960+ge468548</div>
       
         <div class="footer-item">
 
@@ -1054,7 +1079,7 @@ Folium version 0.1.dev1945+gf9b00cd</div>
         <div class="footer-item">
 
   <p class="sphinx-version">
-    Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 7.3.7.
+    Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 8.2.3.
     <br/>
   </p>
 </div>

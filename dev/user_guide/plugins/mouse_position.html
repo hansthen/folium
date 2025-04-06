@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>MousePosition &#8212; Folium 0.1.dev1945+gf9b00cd documentation</title>
+    <title>MousePosition &#8212; Folium 0.1.dev1960+ge468548 documentation</title>
   
   
   
@@ -40,12 +40,10 @@
   <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
 <link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
 
-    <script src="../../_static/documentation_options.js?v=c1c4aa48"></script>
-    <script src="../../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../../_static/documentation_options.js?v=5105c532"></script>
+    <script src="../../_static/doctools.js?v=9bcbadda"></script>
     <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
-    <script>window.MathJax = {"tex": {"inlineMath": [["$", "$"], ["\\(", "\\)"]], "processEscapes": true}, "options": {"ignoreHtmlClass": "tex2jax_ignore|mathjax_ignore|document", "processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
-    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'user_guide/plugins/mouse_position';</script>
     <script>
         DOCUMENTATION_OPTIONS.theme_version = '0.16.1';
@@ -60,7 +58,7 @@
     <link rel="prev" title="MeasureControl" href="measure_control.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
-  <meta name="docsearch:version" content="0.1.dev1945+gf9b00cd" />
+  <meta name="docsearch:version" content="0.1.dev1960+ge468548" />
   </head>
   
   
@@ -532,14 +530,6 @@
 &lt;head&gt;
 
     &lt;meta http-equiv=&quot;content-type&quot; content=&quot;text/html; charset=UTF-8&quot; /&gt;
-
-        &lt;script&gt;
-            L_NO_TOUCH = false;
-            L_DISABLE_3D = false;
-        &lt;/script&gt;
-
-    &lt;style&gt;html, body {width: 100%;height: 100%;margin: 0;padding: 0;}&lt;/style&gt;
-    &lt;style&gt;#map {position:absolute;top:0;bottom:0;right:0;left:0;}&lt;/style&gt;
     &lt;script src=&quot;https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js&quot;&gt;&lt;/script&gt;
     &lt;script src=&quot;https://code.jquery.com/jquery-3.7.1.min.js&quot;&gt;&lt;/script&gt;
     &lt;script src=&quot;https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js&quot;&gt;&lt;/script&gt;
@@ -554,7 +544,7 @@
             &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no&quot; /&gt;
             &lt;style&gt;
-                #map_b3454cb1c9943ce334faff3c5d5a5790 {
+                #map_9b60f5a15f325eadb19096319b582d3a {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -564,20 +554,43 @@
                 .leaflet-container { font-size: 1rem; }
             &lt;/style&gt;
 
+            &lt;style&gt;html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            &lt;/style&gt;
+
+            &lt;style&gt;#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            &lt;/style&gt;
+
+            &lt;script&gt;
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            &lt;/script&gt;
+
+
     &lt;script src=&quot;https://cdn.jsdelivr.net/gh/ardhi/Leaflet.MousePosition/src/L.Control.MousePosition.min.js&quot;&gt;&lt;/script&gt;
     &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/ardhi/Leaflet.MousePosition/src/L.Control.MousePosition.min.css&quot;/&gt;
 &lt;/head&gt;
 &lt;body&gt;
 
 
-            &lt;div class=&quot;folium-map&quot; id=&quot;map_b3454cb1c9943ce334faff3c5d5a5790&quot; &gt;&lt;/div&gt;
+            &lt;div class=&quot;folium-map&quot; id=&quot;map_9b60f5a15f325eadb19096319b582d3a&quot; &gt;&lt;/div&gt;
 
 &lt;/body&gt;
 &lt;script&gt;
 
 
-            var map_b3454cb1c9943ce334faff3c5d5a5790 = L.map(
-                &quot;map_b3454cb1c9943ce334faff3c5d5a5790&quot;,
+            var map_9b60f5a15f325eadb19096319b582d3a = L.map(
+                &quot;map_9b60f5a15f325eadb19096319b582d3a&quot;,
                 {
                     center: [0.0, 0.0],
                     crs: L.CRS.EPSG3857,
@@ -594,7 +607,7 @@
 
 
 
-            var tile_layer_c81c3bbe80c4147f90ecbdb75ec0b33d = L.tileLayer(
+            var tile_layer_d4f24c1dd117003f6a143663de21a357 = L.tileLayer(
                 &quot;https://tile.openstreetmap.org/{z}/{x}/{y}.png&quot;,
                 {
   &quot;minZoom&quot;: 0,
@@ -611,10 +624,10 @@
             );
 
 
-            tile_layer_c81c3bbe80c4147f90ecbdb75ec0b33d.addTo(map_b3454cb1c9943ce334faff3c5d5a5790);
+            tile_layer_d4f24c1dd117003f6a143663de21a357.addTo(map_9b60f5a15f325eadb19096319b582d3a);
 
 
-            var mouse_position_f0ba72c3a94be21c2e03dffb949d2588 = new L.Control.MousePosition(
+            var mouse_position_675751708569dfa06b9e9468fa073c11 = new L.Control.MousePosition(
                 {
   &quot;position&quot;: &quot;bottomright&quot;,
   &quot;separator&quot;: &quot; : &quot;,
@@ -624,11 +637,11 @@
   &quot;prefix&quot;: &quot;&quot;,
 }
             );
-            mouse_position_f0ba72c3a94be21c2e03dffb949d2588.options[&quot;latFormatter&quot;] =
+            mouse_position_675751708569dfa06b9e9468fa073c11.options[&quot;latFormatter&quot;] =
                 undefined;
-            mouse_position_f0ba72c3a94be21c2e03dffb949d2588.options[&quot;lngFormatter&quot;] =
+            mouse_position_675751708569dfa06b9e9468fa073c11.options[&quot;lngFormatter&quot;] =
                 undefined;
-            map_b3454cb1c9943ce334faff3c5d5a5790.addControl(mouse_position_f0ba72c3a94be21c2e03dffb949d2588);
+            map_9b60f5a15f325eadb19096319b582d3a.addControl(mouse_position_675751708569dfa06b9e9468fa073c11);
 
 &lt;/script&gt;
 &lt;/html&gt;" style="position:absolute;width:100%;height:100%;left:0;top:0;border:none !important;" allowfullscreen webkitallowfullscreen mozallowfullscreen></iframe></div></div></div>
@@ -668,14 +681,6 @@
 &lt;head&gt;
 
     &lt;meta http-equiv=&quot;content-type&quot; content=&quot;text/html; charset=UTF-8&quot; /&gt;
-
-        &lt;script&gt;
-            L_NO_TOUCH = false;
-            L_DISABLE_3D = false;
-        &lt;/script&gt;
-
-    &lt;style&gt;html, body {width: 100%;height: 100%;margin: 0;padding: 0;}&lt;/style&gt;
-    &lt;style&gt;#map {position:absolute;top:0;bottom:0;right:0;left:0;}&lt;/style&gt;
     &lt;script src=&quot;https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js&quot;&gt;&lt;/script&gt;
     &lt;script src=&quot;https://code.jquery.com/jquery-3.7.1.min.js&quot;&gt;&lt;/script&gt;
     &lt;script src=&quot;https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js&quot;&gt;&lt;/script&gt;
@@ -690,7 +695,7 @@
             &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no&quot; /&gt;
             &lt;style&gt;
-                #map_875c9647638ccd48573053675e75f08e {
+                #map_fa5cd361b2819eee62122bbc845c22c9 {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -700,20 +705,43 @@
                 .leaflet-container { font-size: 1rem; }
             &lt;/style&gt;
 
+            &lt;style&gt;html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            &lt;/style&gt;
+
+            &lt;style&gt;#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            &lt;/style&gt;
+
+            &lt;script&gt;
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            &lt;/script&gt;
+
+
     &lt;script src=&quot;https://cdn.jsdelivr.net/gh/ardhi/Leaflet.MousePosition/src/L.Control.MousePosition.min.js&quot;&gt;&lt;/script&gt;
     &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/ardhi/Leaflet.MousePosition/src/L.Control.MousePosition.min.css&quot;/&gt;
 &lt;/head&gt;
 &lt;body&gt;
 
 
-            &lt;div class=&quot;folium-map&quot; id=&quot;map_875c9647638ccd48573053675e75f08e&quot; &gt;&lt;/div&gt;
+            &lt;div class=&quot;folium-map&quot; id=&quot;map_fa5cd361b2819eee62122bbc845c22c9&quot; &gt;&lt;/div&gt;
 
 &lt;/body&gt;
 &lt;script&gt;
 
 
-            var map_875c9647638ccd48573053675e75f08e = L.map(
-                &quot;map_875c9647638ccd48573053675e75f08e&quot;,
+            var map_fa5cd361b2819eee62122bbc845c22c9 = L.map(
+                &quot;map_fa5cd361b2819eee62122bbc845c22c9&quot;,
                 {
                     center: [0.0, 0.0],
                     crs: L.CRS.EPSG3857,
@@ -730,7 +758,7 @@
 
 
 
-            var tile_layer_6dd825984f606abc7ef1091d0cf7ab1e = L.tileLayer(
+            var tile_layer_c13216716eb30444bfa71f1c69553efd = L.tileLayer(
                 &quot;https://tile.openstreetmap.org/{z}/{x}/{y}.png&quot;,
                 {
   &quot;minZoom&quot;: 0,
@@ -747,10 +775,10 @@
             );
 
 
-            tile_layer_6dd825984f606abc7ef1091d0cf7ab1e.addTo(map_875c9647638ccd48573053675e75f08e);
+            tile_layer_c13216716eb30444bfa71f1c69553efd.addTo(map_fa5cd361b2819eee62122bbc845c22c9);
 
 
-            var mouse_position_c02f3395acb203e40f653ee9123830ec = new L.Control.MousePosition(
+            var mouse_position_8ad1d6f4e12195baf09a4e58d965ef97 = new L.Control.MousePosition(
                 {
   &quot;position&quot;: &quot;topright&quot;,
   &quot;separator&quot;: &quot; | &quot;,
@@ -760,11 +788,11 @@
   &quot;prefix&quot;: &quot;Coordinates:&quot;,
 }
             );
-            mouse_position_c02f3395acb203e40f653ee9123830ec.options[&quot;latFormatter&quot;] =
+            mouse_position_8ad1d6f4e12195baf09a4e58d965ef97.options[&quot;latFormatter&quot;] =
                 function(num) {return L.Util.formatNum(num, 3) + &#x27; &amp;deg; &#x27;;};;
-            mouse_position_c02f3395acb203e40f653ee9123830ec.options[&quot;lngFormatter&quot;] =
+            mouse_position_8ad1d6f4e12195baf09a4e58d965ef97.options[&quot;lngFormatter&quot;] =
                 function(num) {return L.Util.formatNum(num, 3) + &#x27; &amp;deg; &#x27;;};;
-            map_875c9647638ccd48573053675e75f08e.addControl(mouse_position_c02f3395acb203e40f653ee9123830ec);
+            map_fa5cd361b2819eee62122bbc845c22c9.addControl(mouse_position_8ad1d6f4e12195baf09a4e58d965ef97);
 
 &lt;/script&gt;
 &lt;/html&gt;" style="position:absolute;width:100%;height:100%;left:0;top:0;border:none !important;" allowfullscreen webkitallowfullscreen mozallowfullscreen></iframe></div></div></div>
@@ -854,7 +882,7 @@
     <div class="footer-items__start">
       
         <div class="footer-item"><!-- This will display the version of the docs -->
-Folium version 0.1.dev1945+gf9b00cd</div>
+Folium version 0.1.dev1960+ge468548</div>
       
         <div class="footer-item">
 
@@ -869,7 +897,7 @@ Folium version 0.1.dev1945+gf9b00cd</div>
         <div class="footer-item">
 
   <p class="sphinx-version">
-    Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 7.3.7.
+    Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 8.2.3.
     <br/>
   </p>
 </div>

@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>TreeLayerControl &#8212; Folium 0.1.dev1945+gf9b00cd documentation</title>
+    <title>TreeLayerControl &#8212; Folium 0.1.dev1960+ge468548 documentation</title>
   
   
   
@@ -40,12 +40,10 @@
   <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
 <link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
 
-    <script src="../../_static/documentation_options.js?v=c1c4aa48"></script>
-    <script src="../../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../../_static/documentation_options.js?v=5105c532"></script>
+    <script src="../../_static/doctools.js?v=9bcbadda"></script>
     <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
-    <script>window.MathJax = {"tex": {"inlineMath": [["$", "$"], ["\\(", "\\)"]], "processEscapes": true}, "options": {"ignoreHtmlClass": "tex2jax_ignore|mathjax_ignore|document", "processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
-    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'user_guide/plugins/treelayercontrol';</script>
     <script>
         DOCUMENTATION_OPTIONS.theme_version = '0.16.1';
@@ -60,7 +58,7 @@
     <link rel="prev" title="TimestampedGeoJson" href="timestamped_geojson.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
-  <meta name="docsearch:version" content="0.1.dev1945+gf9b00cd" />
+  <meta name="docsearch:version" content="0.1.dev1960+ge468548" />
   </head>
   
   
@@ -584,14 +582,6 @@
 &lt;head&gt;
 
     &lt;meta http-equiv=&quot;content-type&quot; content=&quot;text/html; charset=UTF-8&quot; /&gt;
-
-        &lt;script&gt;
-            L_NO_TOUCH = false;
-            L_DISABLE_3D = false;
-        &lt;/script&gt;
-
-    &lt;style&gt;html, body {width: 100%;height: 100%;margin: 0;padding: 0;}&lt;/style&gt;
-    &lt;style&gt;#map {position:absolute;top:0;bottom:0;right:0;left:0;}&lt;/style&gt;
     &lt;script src=&quot;https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js&quot;&gt;&lt;/script&gt;
     &lt;script src=&quot;https://code.jquery.com/jquery-3.7.1.min.js&quot;&gt;&lt;/script&gt;
     &lt;script src=&quot;https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js&quot;&gt;&lt;/script&gt;
@@ -606,7 +596,7 @@
             &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no&quot; /&gt;
             &lt;style&gt;
-                #map_13f8b833915301e821bae429b76b41b5 {
+                #map_72fb86de5b7dc257b7ad96ef5c69af12 {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -616,20 +606,43 @@
                 .leaflet-container { font-size: 1rem; }
             &lt;/style&gt;
 
+            &lt;style&gt;html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            &lt;/style&gt;
+
+            &lt;style&gt;#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            &lt;/style&gt;
+
+            &lt;script&gt;
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            &lt;/script&gt;
+
+
     &lt;script src=&quot;https://cdn.jsdelivr.net/npm/leaflet.control.layers.tree@1.1.0/L.Control.Layers.Tree.min.js&quot;&gt;&lt;/script&gt;
     &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/npm/leaflet.control.layers.tree@1.1.0/L.Control.Layers.Tree.min.css&quot;/&gt;
 &lt;/head&gt;
 &lt;body&gt;
 
 
-            &lt;div class=&quot;folium-map&quot; id=&quot;map_13f8b833915301e821bae429b76b41b5&quot; &gt;&lt;/div&gt;
+            &lt;div class=&quot;folium-map&quot; id=&quot;map_72fb86de5b7dc257b7ad96ef5c69af12&quot; &gt;&lt;/div&gt;
 
 &lt;/body&gt;
 &lt;script&gt;
 
 
-            var map_13f8b833915301e821bae429b76b41b5 = L.map(
-                &quot;map_13f8b833915301e821bae429b76b41b5&quot;,
+            var map_72fb86de5b7dc257b7ad96ef5c69af12 = L.map(
+                &quot;map_72fb86de5b7dc257b7ad96ef5c69af12&quot;,
                 {
                     center: [46.603354, 1.8883335],
                     crs: L.CRS.EPSG3857,
@@ -646,7 +659,7 @@
 
 
 
-            var tile_layer_376f5049b1aafe8dc1d73850b982f843 = L.tileLayer(
+            var tile_layer_046b76a33e8df13fab1ff8cb0234f29e = L.tileLayer(
                 &quot;https://tile.openstreetmap.org/{z}/{x}/{y}.png&quot;,
                 {
   &quot;minZoom&quot;: 0,
@@ -663,70 +676,70 @@
             );
 
 
-            tile_layer_376f5049b1aafe8dc1d73850b982f843.addTo(map_13f8b833915301e821bae429b76b41b5);
+            tile_layer_046b76a33e8df13fab1ff8cb0234f29e.addTo(map_72fb86de5b7dc257b7ad96ef5c69af12);
 
 
-            var marker_86518dbcd210957a6483d1ce4699e31b = L.marker(
+            var marker_7d569ae52b627f8c0be71888c96d6e2e = L.marker(
                 [48.8582441, 2.2944775],
                 {
 }
-            ).addTo(map_13f8b833915301e821bae429b76b41b5);
+            ).addTo(map_72fb86de5b7dc257b7ad96ef5c69af12);
 
 
-            var marker_a5d941398c75e72a851baeaa4b531543 = L.marker(
+            var marker_7e349aaaced9c74280ecf64324ae22ad = L.marker(
                 [48.852954, 2.3498726],
                 {
 }
-            ).addTo(map_13f8b833915301e821bae429b76b41b5);
+            ).addTo(map_72fb86de5b7dc257b7ad96ef5c69af12);
 
 
-            var marker_3c95ac4cd47f11db3bc93fc0b130fcb3 = L.marker(
+            var marker_9c393d12c55fc045f193004072590c04 = L.marker(
                 [48.8605847, 2.3376267],
                 {
 }
-            ).addTo(map_13f8b833915301e821bae429b76b41b5);
+            ).addTo(map_72fb86de5b7dc257b7ad96ef5c69af12);
 
 
-            var marker_c53419435d94ffac74085b4c1ae23104 = L.marker(
+            var marker_af3eb40fcb5c8c472e649386fbef1345 = L.marker(
                 [52.5162542, 13.3776805],
                 {
 }
-            ).addTo(map_13f8b833915301e821bae429b76b41b5);
+            ).addTo(map_72fb86de5b7dc257b7ad96ef5c69af12);
 
 
-            var marker_875956c88b4c4cba89bf8fdacc0919d0 = L.marker(
+            var marker_1f54543e72fc6cfb3283d45ec05a1799 = L.marker(
                 [50.941324, 6.9581201],
                 {
 }
-            ).addTo(map_13f8b833915301e821bae429b76b41b5);
+            ).addTo(map_72fb86de5b7dc257b7ad96ef5c69af12);
 
 
-            var marker_11298551d12eb50e8d6e0ff5d25872ee = L.marker(
+            var marker_da7eb32fd833ff8ee7ef6f55cdf63ed4 = L.marker(
                 [40.4184145, -3.7137051],
                 {
 }
-            ).addTo(map_13f8b833915301e821bae429b76b41b5);
+            ).addTo(map_72fb86de5b7dc257b7ad96ef5c69af12);
 
 
-            var marker_d5e22ed25c3f631f85d2f396a7202a9a = L.marker(
+            var marker_8fa9f3c4f8e7131e595dddf73b84cbad = L.marker(
                 [37.1767829, -3.5892795],
                 {
 }
-            ).addTo(map_13f8b833915301e821bae429b76b41b5);
+            ).addTo(map_72fb86de5b7dc257b7ad96ef5c69af12);
 
 
-            var marker_9eae9b9d752d62859a739b1733f146d2 = L.marker(
+            var marker_c9c49af33a575d93ff80f3e78c77438d = L.marker(
                 [30.3292215, 35.4432464],
                 {
 }
-            ).addTo(map_13f8b833915301e821bae429b76b41b5);
+            ).addTo(map_72fb86de5b7dc257b7ad96ef5c69af12);
 
 
-            var marker_b83c4f050fb04984788465b7b659ef05 = L.marker(
+            var marker_369bf9f10247734996e696b21e554ee4 = L.marker(
                 [29.6233486, 35.4390656],
                 {
 }
-            ).addTo(map_13f8b833915301e821bae429b76b41b5);
+            ).addTo(map_72fb86de5b7dc257b7ad96ef5c69af12);
 
 
             L.control.layers.tree(
@@ -745,15 +758,15 @@
   &quot;children&quot;: [
 {
   &quot;label&quot;: &quot;Tour Eiffel&quot;,
-  &quot;layer&quot;: marker_86518dbcd210957a6483d1ce4699e31b,
+  &quot;layer&quot;: marker_7d569ae52b627f8c0be71888c96d6e2e,
 },
 {
   &quot;label&quot;: &quot;Notre Dame&quot;,
-  &quot;layer&quot;: marker_a5d941398c75e72a851baeaa4b531543,
+  &quot;layer&quot;: marker_7e349aaaced9c74280ecf64324ae22ad,
 },
 {
   &quot;label&quot;: &quot;Louvre&quot;,
-  &quot;layer&quot;: marker_3c95ac4cd47f11db3bc93fc0b130fcb3,
+  &quot;layer&quot;: marker_9c393d12c55fc045f193004072590c04,
 },
 ],
 },
@@ -763,11 +776,11 @@
   &quot;children&quot;: [
 {
   &quot;label&quot;: &quot;Branderburger Tor&quot;,
-  &quot;layer&quot;: marker_c53419435d94ffac74085b4c1ae23104,
+  &quot;layer&quot;: marker_af3eb40fcb5c8c472e649386fbef1345,
 },
 {
   &quot;label&quot;: &quot;K\u00f6lner Dom&quot;,
-  &quot;layer&quot;: marker_875956c88b4c4cba89bf8fdacc0919d0,
+  &quot;layer&quot;: marker_1f54543e72fc6cfb3283d45ec05a1799,
 },
 ],
 },
@@ -777,11 +790,11 @@
   &quot;children&quot;: [
 {
   &quot;label&quot;: &quot;Palacio Real&quot;,
-  &quot;layer&quot;: marker_11298551d12eb50e8d6e0ff5d25872ee,
+  &quot;layer&quot;: marker_da7eb32fd833ff8ee7ef6f55cdf63ed4,
 },
 {
   &quot;label&quot;: &quot;La Alhambra&quot;,
-  &quot;layer&quot;: marker_d5e22ed25c3f631f85d2f396a7202a9a,
+  &quot;layer&quot;: marker_8fa9f3c4f8e7131e595dddf73b84cbad,
 },
 ],
 },
@@ -797,11 +810,11 @@
   &quot;children&quot;: [
 {
   &quot;label&quot;: &quot;Petra&quot;,
-  &quot;layer&quot;: marker_9eae9b9d752d62859a739b1733f146d2,
+  &quot;layer&quot;: marker_c9c49af33a575d93ff80f3e78c77438d,
 },
 {
   &quot;label&quot;: &quot;Wadi Rum&quot;,
-  &quot;layer&quot;: marker_b83c4f050fb04984788465b7b659ef05,
+  &quot;layer&quot;: marker_369bf9f10247734996e696b21e554ee4,
 },
 ],
 },
@@ -821,7 +834,7 @@
   &quot;expandAll&quot;: &quot;&quot;,
   &quot;labelIsSelector&quot;: &quot;both&quot;,
 }
-            ).addTo(map_13f8b833915301e821bae429b76b41b5);
+            ).addTo(map_72fb86de5b7dc257b7ad96ef5c69af12);
 
 &lt;/script&gt;
 &lt;/html&gt;" style="position:absolute;width:100%;height:100%;left:0;top:0;border:none !important;" allowfullscreen webkitallowfullscreen mozallowfullscreen></iframe></div></div></div>
@@ -911,7 +924,7 @@
     <div class="footer-items__start">
       
         <div class="footer-item"><!-- This will display the version of the docs -->
-Folium version 0.1.dev1945+gf9b00cd</div>
+Folium version 0.1.dev1960+ge468548</div>
       
         <div class="footer-item">
 
@@ -926,7 +939,7 @@ Folium version 0.1.dev1945+gf9b00cd</div>
         <div class="footer-item">
 
   <p class="sphinx-version">
-    Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 7.3.7.
+    Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 8.2.3.
     <br/>
   </p>
 </div>
