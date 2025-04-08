@@ -47,5 +47,5 @@ jobs:
       uses: ad-m/github-push-action@master
       with:
         branch: issue_2125_broken_selenium_tests
-	github_token: ${{ secrets.GITHUB_TOKEN }}
-	force: true
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        force: true
