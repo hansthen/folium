@@ -5,12 +5,13 @@ on:
   push:
     branches:
       - main
+# FIXME: uncomment this after testing
 #  release:
 #    types:
 #      - published
 
 permissions:
-  # Give the GITHUB_TOKEN write permission to open a PR with the changes to the switcher.json file.
+  # Give the GITHUB_TOKEN write permission
   contents: write
 
 jobs:
@@ -47,6 +48,6 @@ jobs:
     - name: Push changes # push the output folder to your repo
       uses: ad-m/github-push-action@master
       with:
-        branch: issue_2125_broken_selenium_tests
+        branch: issue_2125_broken_selenium_tests  # TODO: should be changed to main after testing
         github_token: ${{ secrets.GITHUB_TOKEN }}
         force: true
