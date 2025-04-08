@@ -1,0 +1,51 @@
+name: Freeze Versions
+
+on:
+  pull_request:
+  push:
+    branches:
+      - issue_2125_broken_selenium_tests
+#  release:
+#    types:
+#      - published
+
+permissions:
+  # Give the GITHUB_TOKEN write permission to open a PR with the changes to the switcher.json file.
+  contents: write
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        shell: bash -l {0}
+
+    steps:
+    - uses: actions/checkout@v4
+      with:
+        fetch-depth: 0
+
+    - name: Setup Micromamba env
+      uses: mamba-org/setup-micromamba@v2
+      with:
+        environment-name: TEST
+        init-shell: bash
+        create-args: >-
+          python=3.12
+          --file requirements.txt
+          --file requirements-dev.txt
+
+    - name: Freeze versions
+      run: |
+        python -m pip freeze > frozen_versions.txt
+	git config --local user.email "test@github.com"
+	git config --local user.name "GitHub Action test"
+	git add ./frozen_versions.txt
+	git commit -m "store versions for later reference"
+
+    - name: Push changes # push the output folder to your repo
+      uses: ad-m/github-push-action@master
+      with:
+        branch: issue_2125_broken_selenium_tests
+	github_token: ${{ secrets.GITHUB_TOKEN }}
+	force: true
