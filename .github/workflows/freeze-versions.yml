@@ -4,7 +4,7 @@ on:
   pull_request:
   push:
     branches:
-      - issue_2125_broken_selenium_tests
+      - main
 #  release:
 #    types:
 #      - published
