@@ -20,8 +20,7 @@ paths = [p.replace(".py", "") for p in paths if p.endswith(".py")]
 @pytest.mark.parametrize("path", paths)
 def test_screenshot(path: str):
     m = importlib.import_module(f"tests.regressions.{path}").m
-    # img_data = m._to_png(3, driver=driver, size=(800, 800))
-    img_data = m._to_png(driver=driver)
+    img_data = m._to_png(3, driver=driver, size=(800, 800))
     img_a = Image.open(io.BytesIO(img_data))
     img_a.save(f"/tmp/screenshot_new_{path}.png")
 
