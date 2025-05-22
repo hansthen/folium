@@ -550,7 +550,7 @@
             &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no&quot; /&gt;
             &lt;style&gt;
-                #map_5c477c95788bfb23ab1e076e512d3e8b {
+                #map_34be7e5500a5fb008aa31d679d48f97c {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -587,14 +587,14 @@
 &lt;body&gt;
 
 
-            &lt;div class=&quot;folium-map&quot; id=&quot;map_5c477c95788bfb23ab1e076e512d3e8b&quot; &gt;&lt;/div&gt;
+            &lt;div class=&quot;folium-map&quot; id=&quot;map_34be7e5500a5fb008aa31d679d48f97c&quot; &gt;&lt;/div&gt;
 
 &lt;/body&gt;
 &lt;script&gt;
 
 
-            var map_5c477c95788bfb23ab1e076e512d3e8b = L.map(
-                &quot;map_5c477c95788bfb23ab1e076e512d3e8b&quot;,
+            var map_34be7e5500a5fb008aa31d679d48f97c = L.map(
+                &quot;map_34be7e5500a5fb008aa31d679d48f97c&quot;,
                 {
                     center: [41.0, -70.0],
                     crs: L.CRS.EPSG3857,
@@ -611,7 +611,7 @@
 
 
 
-            var tile_layer_df731f691ccb8b05c573b407b5d46956 = L.tileLayer(
+            var tile_layer_c9de0dc6c63300f0d7e3475249365cc0 = L.tileLayer(
                 &quot;https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png&quot;,
                 {
   &quot;minZoom&quot;: 0,
@@ -628,35 +628,35 @@
             );
 
 
-            tile_layer_df731f691ccb8b05c573b407b5d46956.addTo(map_5c477c95788bfb23ab1e076e512d3e8b);
+            tile_layer_c9de0dc6c63300f0d7e3475249365cc0.addTo(map_34be7e5500a5fb008aa31d679d48f97c);
 
 
-            var macro_element_0f227c92dd553b8b25865f13c4a8505b = L.tileLayer.wms(
+            var macro_element_e6a457c1013f897c30649a14a52510fc = L.tileLayer.wms(
                 &quot;https://mesonet.agron.iastate.edu/cgi-bin/wms/nexrad/n0r.cgi&quot;,
                 {&quot;attribution&quot;: &quot;Weather data \u00a9 2012 IEM Nexrad&quot;, &quot;format&quot;: &quot;image/png&quot;, &quot;layers&quot;: &quot;nexrad-n0r-900913&quot;, &quot;styles&quot;: &quot;&quot;, &quot;transparent&quot;: true, &quot;version&quot;: &quot;1.1.1&quot;}
             );
 
 
-            macro_element_0f227c92dd553b8b25865f13c4a8505b.addTo(map_5c477c95788bfb23ab1e076e512d3e8b);
+            macro_element_e6a457c1013f897c30649a14a52510fc.addTo(map_34be7e5500a5fb008aa31d679d48f97c);
 
 
-            var layer_control_be59c2f39cdf4bc846491eca9937110f_layers = {
+            var layer_control_f46ba32a9bd37c7bdb9e9ae700418b26_layers = {
                 base_layers : {
-                    &quot;cartodbpositron&quot; : tile_layer_df731f691ccb8b05c573b407b5d46956,
+                    &quot;cartodbpositron&quot; : tile_layer_c9de0dc6c63300f0d7e3475249365cc0,
                 },
                 overlays :  {
-                    &quot;test&quot; : macro_element_0f227c92dd553b8b25865f13c4a8505b,
+                    &quot;test&quot; : macro_element_e6a457c1013f897c30649a14a52510fc,
                 },
             };
-            let layer_control_be59c2f39cdf4bc846491eca9937110f = L.control.layers(
-                layer_control_be59c2f39cdf4bc846491eca9937110f_layers.base_layers,
-                layer_control_be59c2f39cdf4bc846491eca9937110f_layers.overlays,
+            let layer_control_f46ba32a9bd37c7bdb9e9ae700418b26 = L.control.layers(
+                layer_control_f46ba32a9bd37c7bdb9e9ae700418b26_layers.base_layers,
+                layer_control_f46ba32a9bd37c7bdb9e9ae700418b26_layers.overlays,
                 {
   &quot;position&quot;: &quot;topright&quot;,
   &quot;collapsed&quot;: true,
   &quot;autoZIndex&quot;: true,
 }
-            ).addTo(map_5c477c95788bfb23ab1e076e512d3e8b);
+            ).addTo(map_34be7e5500a5fb008aa31d679d48f97c);
 
 
 &lt;/script&gt;
