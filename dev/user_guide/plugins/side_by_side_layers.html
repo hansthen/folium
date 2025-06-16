@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>SideBySideLayers &#8212; Folium 0.1.dev2002+g63080c1 documentation</title>
+    <title>SideBySideLayers &#8212; Folium 0.1.dev2004+g75ec4b1 documentation</title>
   
   
   
@@ -40,7 +40,7 @@
   <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
 <link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
 
-    <script src="../../_static/documentation_options.js?v=252f2622"></script>
+    <script src="../../_static/documentation_options.js?v=8e3c479f"></script>
     <script src="../../_static/doctools.js?v=9bcbadda"></script>
     <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
@@ -58,7 +58,7 @@
     <link rel="prev" title="SemiCircle" href="semi_circle.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
-  <meta name="docsearch:version" content="0.1.dev2002+g63080c1" />
+  <meta name="docsearch:version" content="0.1.dev2004+g75ec4b1" />
   </head>
   
   
@@ -549,7 +549,7 @@
             &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no&quot; /&gt;
             &lt;style&gt;
-                #map_983e5baec197a20824e3c80d42c4929f {
+                #map_a89a07753175ebf7d32ef824fcee2bde {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -587,14 +587,14 @@
 &lt;body&gt;
 
 
-            &lt;div class=&quot;folium-map&quot; id=&quot;map_983e5baec197a20824e3c80d42c4929f&quot; &gt;&lt;/div&gt;
+            &lt;div class=&quot;folium-map&quot; id=&quot;map_a89a07753175ebf7d32ef824fcee2bde&quot; &gt;&lt;/div&gt;
 
 &lt;/body&gt;
 &lt;script&gt;
 
 
-            var map_983e5baec197a20824e3c80d42c4929f = L.map(
-                &quot;map_983e5baec197a20824e3c80d42c4929f&quot;,
+            var map_a89a07753175ebf7d32ef824fcee2bde = L.map(
+                &quot;map_a89a07753175ebf7d32ef824fcee2bde&quot;,
                 {
                     center: [30.0, 20.0],
                     crs: L.CRS.EPSG3857,
@@ -611,7 +611,7 @@
 
 
 
-            var tile_layer_b25be06ed5e5dd0e01e89c4b0a43d7ae = L.tileLayer(
+            var tile_layer_355e0cd0c7620137a62e5991f064e015 = L.tileLayer(
                 &quot;https://tile.openstreetmap.org/{z}/{x}/{y}.png&quot;,
                 {
   &quot;minZoom&quot;: 0,
@@ -628,10 +628,10 @@
             );
 
 
-            tile_layer_b25be06ed5e5dd0e01e89c4b0a43d7ae.addTo(map_983e5baec197a20824e3c80d42c4929f);
+            tile_layer_355e0cd0c7620137a62e5991f064e015.addTo(map_a89a07753175ebf7d32ef824fcee2bde);
 
 
-            var tile_layer_f29cd7494415c378bc38e3555bc4310a = L.tileLayer(
+            var tile_layer_3c2a15b948477f0b2e656e6aec9cdc79 = L.tileLayer(
                 &quot;https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png&quot;,
                 {
   &quot;minZoom&quot;: 0,
@@ -648,10 +648,10 @@
             );
 
 
-            tile_layer_f29cd7494415c378bc38e3555bc4310a.addTo(map_983e5baec197a20824e3c80d42c4929f);
+            tile_layer_3c2a15b948477f0b2e656e6aec9cdc79.addTo(map_a89a07753175ebf7d32ef824fcee2bde);
 
 
-            var tile_layer_6c6df882aa655e7ffa3371cb931a417f = L.tileLayer(
+            var tile_layer_89bff007df75f64de37a446d03358660 = L.tileLayer(
                 &quot;https://tile.openstreetmap.org/{z}/{x}/{y}.png&quot;,
                 {
   &quot;minZoom&quot;: 0,
@@ -668,12 +668,12 @@
             );
 
 
-            tile_layer_6c6df882aa655e7ffa3371cb931a417f.addTo(map_983e5baec197a20824e3c80d42c4929f);
+            tile_layer_89bff007df75f64de37a446d03358660.addTo(map_a89a07753175ebf7d32ef824fcee2bde);
 
 
-            var side_by_side_layers_5f4bf6b04d43a222289715ebef7e2f4a = L.control.sideBySide(
-                tile_layer_f29cd7494415c378bc38e3555bc4310a, tile_layer_6c6df882aa655e7ffa3371cb931a417f
-            ).addTo(map_983e5baec197a20824e3c80d42c4929f);
+            var side_by_side_layers_e19d7e11b7c054052272c98c42e2f5ba = L.control.sideBySide(
+                tile_layer_3c2a15b948477f0b2e656e6aec9cdc79, tile_layer_89bff007df75f64de37a446d03358660
+            ).addTo(map_a89a07753175ebf7d32ef824fcee2bde);
 
 &lt;/script&gt;
 &lt;/html&gt;" style="position:absolute;width:100%;height:100%;left:0;top:0;border:none !important;" allowfullscreen webkitallowfullscreen mozallowfullscreen></iframe></div></div></div>
@@ -750,7 +750,7 @@
     <div class="footer-items__start">
       
         <div class="footer-item"><!-- This will display the version of the docs -->
-Folium version 0.1.dev2002+g63080c1</div>
+Folium version 0.1.dev2004+g75ec4b1</div>
       
         <div class="footer-item">
 
