@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>WmsTileLayer &#8212; Folium 0.1.dev2004+g75ec4b1 documentation</title>
+    <title>WmsTileLayer &#8212; Folium 0.1.dev2006+g1b00173 documentation</title>
   
   
   
@@ -40,7 +40,7 @@
   <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
 <link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
 
-    <script src="../../_static/documentation_options.js?v=8e3c479f"></script>
+    <script src="../../_static/documentation_options.js?v=8766ae8c"></script>
     <script src="../../_static/doctools.js?v=9bcbadda"></script>
     <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
@@ -58,7 +58,7 @@
     <link rel="prev" title="VideoOverlay" href="video_overlay.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
-  <meta name="docsearch:version" content="0.1.dev2004+g75ec4b1" />
+  <meta name="docsearch:version" content="0.1.dev2006+g1b00173" />
   </head>
   
   
@@ -550,7 +550,7 @@
             &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no&quot; /&gt;
             &lt;style&gt;
-                #map_d70f879fe1ef69a5434ef4efb8c5ffab {
+                #map_3b1e07f5cfcdf2197372432f190cc547 {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -587,14 +587,14 @@
 &lt;body&gt;
 
 
-            &lt;div class=&quot;folium-map&quot; id=&quot;map_d70f879fe1ef69a5434ef4efb8c5ffab&quot; &gt;&lt;/div&gt;
+            &lt;div class=&quot;folium-map&quot; id=&quot;map_3b1e07f5cfcdf2197372432f190cc547&quot; &gt;&lt;/div&gt;
 
 &lt;/body&gt;
 &lt;script&gt;
 
 
-            var map_d70f879fe1ef69a5434ef4efb8c5ffab = L.map(
-                &quot;map_d70f879fe1ef69a5434ef4efb8c5ffab&quot;,
+            var map_3b1e07f5cfcdf2197372432f190cc547 = L.map(
+                &quot;map_3b1e07f5cfcdf2197372432f190cc547&quot;,
                 {
                     center: [41.0, -70.0],
                     crs: L.CRS.EPSG3857,
@@ -611,7 +611,7 @@
 
 
 
-            var tile_layer_d7ef3c62c03c4a74bef7cb99fead4c48 = L.tileLayer(
+            var tile_layer_357595cfaad92f58ba0c1a1dd17c73c6 = L.tileLayer(
                 &quot;https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png&quot;,
                 {
   &quot;minZoom&quot;: 0,
@@ -628,35 +628,35 @@
             );
 
 
-            tile_layer_d7ef3c62c03c4a74bef7cb99fead4c48.addTo(map_d70f879fe1ef69a5434ef4efb8c5ffab);
+            tile_layer_357595cfaad92f58ba0c1a1dd17c73c6.addTo(map_3b1e07f5cfcdf2197372432f190cc547);
 
 
-            var macro_element_f4a567e8b28a670ef9f3e7230a71f825 = L.tileLayer.wms(
+            var macro_element_31e5f209681a68e4e2ab28be400ea5d2 = L.tileLayer.wms(
                 &quot;https://mesonet.agron.iastate.edu/cgi-bin/wms/nexrad/n0r.cgi&quot;,
                 {&quot;attribution&quot;: &quot;Weather data \u00a9 2012 IEM Nexrad&quot;, &quot;format&quot;: &quot;image/png&quot;, &quot;layers&quot;: &quot;nexrad-n0r-900913&quot;, &quot;styles&quot;: &quot;&quot;, &quot;transparent&quot;: true, &quot;version&quot;: &quot;1.1.1&quot;}
             );
 
 
-            macro_element_f4a567e8b28a670ef9f3e7230a71f825.addTo(map_d70f879fe1ef69a5434ef4efb8c5ffab);
+            macro_element_31e5f209681a68e4e2ab28be400ea5d2.addTo(map_3b1e07f5cfcdf2197372432f190cc547);
 
 
-            var layer_control_1878b4415498ca432860d040a23a75e1_layers = {
+            var layer_control_ed879c65c6f271450e0622b8679bb17d_layers = {
                 base_layers : {
-                    &quot;cartodbpositron&quot; : tile_layer_d7ef3c62c03c4a74bef7cb99fead4c48,
+                    &quot;cartodbpositron&quot; : tile_layer_357595cfaad92f58ba0c1a1dd17c73c6,
                 },
                 overlays :  {
-                    &quot;test&quot; : macro_element_f4a567e8b28a670ef9f3e7230a71f825,
+                    &quot;test&quot; : macro_element_31e5f209681a68e4e2ab28be400ea5d2,
                 },
             };
-            let layer_control_1878b4415498ca432860d040a23a75e1 = L.control.layers(
-                layer_control_1878b4415498ca432860d040a23a75e1_layers.base_layers,
-                layer_control_1878b4415498ca432860d040a23a75e1_layers.overlays,
+            let layer_control_ed879c65c6f271450e0622b8679bb17d = L.control.layers(
+                layer_control_ed879c65c6f271450e0622b8679bb17d_layers.base_layers,
+                layer_control_ed879c65c6f271450e0622b8679bb17d_layers.overlays,
                 {
   &quot;position&quot;: &quot;topright&quot;,
   &quot;collapsed&quot;: true,
   &quot;autoZIndex&quot;: true,
 }
-            ).addTo(map_d70f879fe1ef69a5434ef4efb8c5ffab);
+            ).addTo(map_3b1e07f5cfcdf2197372432f190cc547);
 
 
 &lt;/script&gt;
@@ -734,7 +734,7 @@
     <div class="footer-items__start">
       
         <div class="footer-item"><!-- This will display the version of the docs -->
-Folium version 0.1.dev2004+g75ec4b1</div>
+Folium version 0.1.dev2006+g1b00173</div>
       
         <div class="footer-item">
 

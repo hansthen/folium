@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>FitOverlays &#8212; Folium 0.1.dev2004+g75ec4b1 documentation</title>
+    <title>FitOverlays &#8212; Folium 0.1.dev2006+g1b00173 documentation</title>
   
   
   
@@ -40,7 +40,7 @@
   <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
 <link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
 
-    <script src="../../_static/documentation_options.js?v=8e3c479f"></script>
+    <script src="../../_static/documentation_options.js?v=8766ae8c"></script>
     <script src="../../_static/doctools.js?v=9bcbadda"></script>
     <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
@@ -58,7 +58,7 @@
     <link rel="prev" title="Features" href="../features.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
-  <meta name="docsearch:version" content="0.1.dev2004+g75ec4b1" />
+  <meta name="docsearch:version" content="0.1.dev2006+g1b00173" />
   </head>
   
   
@@ -550,7 +550,7 @@
             &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no&quot; /&gt;
             &lt;style&gt;
-                #map_868d10ecbb7c4eda3dc0fb47e5ffc150 {
+                #map_70dfa131532dee4947852679c39b548b {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -587,14 +587,14 @@
 &lt;body&gt;
 
 
-            &lt;div class=&quot;folium-map&quot; id=&quot;map_868d10ecbb7c4eda3dc0fb47e5ffc150&quot; &gt;&lt;/div&gt;
+            &lt;div class=&quot;folium-map&quot; id=&quot;map_70dfa131532dee4947852679c39b548b&quot; &gt;&lt;/div&gt;
 
 &lt;/body&gt;
 &lt;script&gt;
 
 
-            var map_868d10ecbb7c4eda3dc0fb47e5ffc150 = L.map(
-                &quot;map_868d10ecbb7c4eda3dc0fb47e5ffc150&quot;,
+            var map_70dfa131532dee4947852679c39b548b = L.map(
+                &quot;map_70dfa131532dee4947852679c39b548b&quot;,
                 {
                     center: [52.0, 0.0],
                     crs: L.CRS.EPSG3857,
@@ -611,7 +611,7 @@
 
 
 
-            var tile_layer_4ea151ff5e7f0fa38f37ec16f01412a9 = L.tileLayer(
+            var tile_layer_207abc3b566ecfb5c1ab5b23a567eaa3 = L.tileLayer(
                 &quot;https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png&quot;,
                 {
   &quot;minZoom&quot;: 0,
@@ -628,73 +628,73 @@
             );
 
 
-            tile_layer_4ea151ff5e7f0fa38f37ec16f01412a9.addTo(map_868d10ecbb7c4eda3dc0fb47e5ffc150);
+            tile_layer_207abc3b566ecfb5c1ab5b23a567eaa3.addTo(map_70dfa131532dee4947852679c39b548b);
 
 
-            var feature_group_84018f0ec31f943d036f524d13448815 = L.featureGroup(
+            var feature_group_e78371e51a40feb87ed3c1557a682a00 = L.featureGroup(
                 {
 }
             );
 
 
-            var marker_618db5b554f967fbabd03a268b880c9c = L.marker(
+            var marker_2134d168f99775c62fcfc14ce1bf0717 = L.marker(
                 [52.0, 5.0],
                 {
 }
-            ).addTo(feature_group_84018f0ec31f943d036f524d13448815);
+            ).addTo(feature_group_e78371e51a40feb87ed3c1557a682a00);
 
 
-            feature_group_84018f0ec31f943d036f524d13448815.addTo(map_868d10ecbb7c4eda3dc0fb47e5ffc150);
+            feature_group_e78371e51a40feb87ed3c1557a682a00.addTo(map_70dfa131532dee4947852679c39b548b);
 
 
-            var feature_group_df6f30abd3225182ea9ce9e4b8d40f9f = L.featureGroup(
+            var feature_group_e9a09d3982631a97e9f3d08e448a54d3 = L.featureGroup(
                 {
 }
             );
 
 
-            var marker_f86ca8a5a9b7bf25678b7f24d95f4d59 = L.marker(
+            var marker_8545699625ad52ab03aec5fe9596f039 = L.marker(
                 [52.0, 5.1],
                 {
 }
-            ).addTo(feature_group_df6f30abd3225182ea9ce9e4b8d40f9f);
+            ).addTo(feature_group_e9a09d3982631a97e9f3d08e448a54d3);
 
 
         function customFlyToBounds() {
             let bounds = L.latLngBounds([]);
-            map_868d10ecbb7c4eda3dc0fb47e5ffc150.eachLayer(function(layer) {
+            map_70dfa131532dee4947852679c39b548b.eachLayer(function(layer) {
                 if (typeof layer.getBounds === &#x27;function&#x27;) {
                     bounds.extend(layer.getBounds());
                 }
             });
             if (bounds.isValid()) {
-                map_868d10ecbb7c4eda3dc0fb47e5ffc150.fitBounds(bounds, {
+                map_70dfa131532dee4947852679c39b548b.fitBounds(bounds, {
   &quot;padding&quot;: [0, 0],
 });
             }
         }
-        map_868d10ecbb7c4eda3dc0fb47e5ffc150.on(&#x27;overlayadd&#x27;, customFlyToBounds);
+        map_70dfa131532dee4947852679c39b548b.on(&#x27;overlayadd&#x27;, customFlyToBounds);
         customFlyToBounds();
 
 
-            var layer_control_dcb95b48c407a9ebc8a801b5418f66fc_layers = {
+            var layer_control_8327da22d310a75cf78c7ee19a847964_layers = {
                 base_layers : {
-                    &quot;cartodbpositron&quot; : tile_layer_4ea151ff5e7f0fa38f37ec16f01412a9,
+                    &quot;cartodbpositron&quot; : tile_layer_207abc3b566ecfb5c1ab5b23a567eaa3,
                 },
                 overlays :  {
-                    &quot;macro_element_84018f0ec31f943d036f524d13448815&quot; : feature_group_84018f0ec31f943d036f524d13448815,
-                    &quot;macro_element_df6f30abd3225182ea9ce9e4b8d40f9f&quot; : feature_group_df6f30abd3225182ea9ce9e4b8d40f9f,
+                    &quot;macro_element_e78371e51a40feb87ed3c1557a682a00&quot; : feature_group_e78371e51a40feb87ed3c1557a682a00,
+                    &quot;macro_element_e9a09d3982631a97e9f3d08e448a54d3&quot; : feature_group_e9a09d3982631a97e9f3d08e448a54d3,
                 },
             };
-            let layer_control_dcb95b48c407a9ebc8a801b5418f66fc = L.control.layers(
-                layer_control_dcb95b48c407a9ebc8a801b5418f66fc_layers.base_layers,
-                layer_control_dcb95b48c407a9ebc8a801b5418f66fc_layers.overlays,
+            let layer_control_8327da22d310a75cf78c7ee19a847964 = L.control.layers(
+                layer_control_8327da22d310a75cf78c7ee19a847964_layers.base_layers,
+                layer_control_8327da22d310a75cf78c7ee19a847964_layers.overlays,
                 {
   &quot;position&quot;: &quot;topright&quot;,
   &quot;collapsed&quot;: true,
   &quot;autoZIndex&quot;: true,
 }
-            ).addTo(map_868d10ecbb7c4eda3dc0fb47e5ffc150);
+            ).addTo(map_70dfa131532dee4947852679c39b548b);
 
 
 &lt;/script&gt;
@@ -780,7 +780,7 @@
     <div class="footer-items__start">
       
         <div class="footer-item"><!-- This will display the version of the docs -->
-Folium version 0.1.dev2004+g75ec4b1</div>
+Folium version 0.1.dev2006+g1b00173</div>
       
         <div class="footer-item">
 
