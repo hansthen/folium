@@ -584,7 +584,7 @@
             &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no&quot; /&gt;
             &lt;style&gt;
-                #map_60ef6b24271611a8551832fe694c5fba {
+                #map_db43f1a395355567db9c0786bb30eae1 {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -620,10 +620,10 @@
     &lt;script src=&quot;https://www.webglearth.com/v2/api.js&quot;&gt;&lt;/script&gt;
 
             &lt;style&gt;
-                #map_60ef6b24271611a8551832fe694c5fba {
+                #map_db43f1a395355567db9c0786bb30eae1 {
                     display: none !important;
                 }
-                #webgl-earth-web_gl_earth_95a95c6a66e985e964960ee513aab39c {
+                #webgl-earth-web_gl_earth_2b125b224c8f7062f0da17b63f6183b6 {
                     height: 600px;
                     width: 100%;
                     position: relative;
@@ -650,14 +650,14 @@
 &lt;body&gt;
 
 
-            &lt;div class=&quot;folium-map&quot; id=&quot;map_60ef6b24271611a8551832fe694c5fba&quot; &gt;&lt;/div&gt;
+            &lt;div class=&quot;folium-map&quot; id=&quot;map_db43f1a395355567db9c0786bb30eae1&quot; &gt;&lt;/div&gt;
 
 
             &lt;div style=&quot;position: relative;&quot;&gt;
-                &lt;div id=&quot;webgl-earth-web_gl_earth_95a95c6a66e985e964960ee513aab39c&quot;&gt;&lt;/div&gt;
+                &lt;div id=&quot;webgl-earth-web_gl_earth_2b125b224c8f7062f0da17b63f6183b6&quot;&gt;&lt;/div&gt;
                 &lt;button
                     class=&quot;webgl-earth-reset-btn&quot;
-                    onclick=&quot;web_gl_earth_95a95c6a66e985e964960ee513aab39c.setView(
+                    onclick=&quot;web_gl_earth_2b125b224c8f7062f0da17b63f6183b6.setView(
                         [20.0, 0.0],
                         2
                     )&quot;
@@ -670,8 +670,8 @@
 &lt;script&gt;
 
 
-            var map_60ef6b24271611a8551832fe694c5fba = L.map(
-                &quot;map_60ef6b24271611a8551832fe694c5fba&quot;,
+            var map_db43f1a395355567db9c0786bb30eae1 = L.map(
+                &quot;map_db43f1a395355567db9c0786bb30eae1&quot;,
                 {
                     center: [0.0, 0.0],
                     crs: L.CRS.EPSG3857,
@@ -688,7 +688,7 @@
 
 
 
-            var tile_layer_ad55b0e6ba9fc3f46f1c3be62444f2eb = L.tileLayer(
+            var tile_layer_4c835f4106313afe9dad15c780004b44 = L.tileLayer(
                 &quot;https://tile.openstreetmap.org/{z}/{x}/{y}.png&quot;,
                 {
   &quot;minZoom&quot;: 0,
@@ -705,11 +705,11 @@
             );
 
 
-            tile_layer_ad55b0e6ba9fc3f46f1c3be62444f2eb.addTo(map_60ef6b24271611a8551832fe694c5fba);
+            tile_layer_4c835f4106313afe9dad15c780004b44.addTo(map_db43f1a395355567db9c0786bb30eae1);
 
 
-            var web_gl_earth_95a95c6a66e985e964960ee513aab39c = WE.map(
-                &#x27;webgl-earth-web_gl_earth_95a95c6a66e985e964960ee513aab39c&#x27;,
+            var web_gl_earth_2b125b224c8f7062f0da17b63f6183b6 = WE.map(
+                &#x27;webgl-earth-web_gl_earth_2b125b224c8f7062f0da17b63f6183b6&#x27;,
                 {
   &quot;center&quot;: [
 20.0,
@@ -726,11 +726,11 @@
                     attribution: &#x27;&amp;copy; OpenStreetMap contributors&#x27;,
                     subdomains: [&quot;a&quot;, &quot;b&quot;, &quot;c&quot;]
                 }
-            ).addTo(web_gl_earth_95a95c6a66e985e964960ee513aab39c);
+            ).addTo(web_gl_earth_2b125b224c8f7062f0da17b63f6183b6);
 
             // Block right-click tilt
             (function() {
-                var container = document.getElementById(&#x27;webgl-earth-web_gl_earth_95a95c6a66e985e964960ee513aab39c&#x27;);
+                var container = document.getElementById(&#x27;webgl-earth-web_gl_earth_2b125b224c8f7062f0da17b63f6183b6&#x27;);
                 container.addEventListener(&#x27;contextmenu&#x27;, function(e) {
                     e.preventDefault();
                     e.stopPropagation();
@@ -744,27 +744,27 @@
             })();
 
 
-            var web_gl_earth_marker_9a9474ce97f984ed6631d80b801b3b63 = WE.marker(
+            var web_gl_earth_marker_92054f7414ea5bef918f52ce157d1b37 = WE.marker(
                 [48.8566, 2.3522]
-            ).addTo(web_gl_earth_95a95c6a66e985e964960ee513aab39c);
+            ).addTo(web_gl_earth_2b125b224c8f7062f0da17b63f6183b6);
 
-            web_gl_earth_marker_9a9474ce97f984ed6631d80b801b3b63.bindPopup(&quot;Paris&quot;);
+            web_gl_earth_marker_92054f7414ea5bef918f52ce157d1b37.bindPopup(&quot;Paris&quot;);
 
 
 
-            var web_gl_earth_marker_22d5ce6cfd7a6a1b9ca2ca713231cca6 = WE.marker(
+            var web_gl_earth_marker_d6a09041f8a714a985735deb9142a710 = WE.marker(
                 [35.6762, 139.6503]
-            ).addTo(web_gl_earth_95a95c6a66e985e964960ee513aab39c);
+            ).addTo(web_gl_earth_2b125b224c8f7062f0da17b63f6183b6);
 
-            web_gl_earth_marker_22d5ce6cfd7a6a1b9ca2ca713231cca6.bindPopup(&quot;Tokyo&quot;);
+            web_gl_earth_marker_d6a09041f8a714a985735deb9142a710.bindPopup(&quot;Tokyo&quot;);
 
 
 
-            var web_gl_earth_marker_3e88f7c4e7bf8830838b818f282ac0cb = WE.marker(
+            var web_gl_earth_marker_9ac385c4a73224dc5635da0830cadb4e = WE.marker(
                 [40.7128, -74.006]
-            ).addTo(web_gl_earth_95a95c6a66e985e964960ee513aab39c);
+            ).addTo(web_gl_earth_2b125b224c8f7062f0da17b63f6183b6);
 
-            web_gl_earth_marker_3e88f7c4e7bf8830838b818f282ac0cb.bindPopup(&quot;New York&quot;);
+            web_gl_earth_marker_9ac385c4a73224dc5635da0830cadb4e.bindPopup(&quot;New York&quot;);
 
 
 &lt;/script&gt;
@@ -820,7 +820,7 @@
             &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no&quot; /&gt;
             &lt;style&gt;
-                #map_5cb99b21bad7536b6a819702bcc09e7e {
+                #map_715ebcc1d1b82aa562bb0843655b4e3e {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -856,10 +856,10 @@
     &lt;script src=&quot;https://www.webglearth.com/v2/api.js&quot;&gt;&lt;/script&gt;
 
             &lt;style&gt;
-                #map_5cb99b21bad7536b6a819702bcc09e7e {
+                #map_715ebcc1d1b82aa562bb0843655b4e3e {
                     display: none !important;
                 }
-                #webgl-earth-web_gl_earth_bc8983a5d9db0cfbb6be90100e4c8008 {
+                #webgl-earth-web_gl_earth_b09c0df520d72081de9157dbcc26c59b {
                     height: 600px;
                     width: 100%;
                     position: relative;
@@ -886,14 +886,14 @@
 &lt;body&gt;
 
 
-            &lt;div class=&quot;folium-map&quot; id=&quot;map_5cb99b21bad7536b6a819702bcc09e7e&quot; &gt;&lt;/div&gt;
+            &lt;div class=&quot;folium-map&quot; id=&quot;map_715ebcc1d1b82aa562bb0843655b4e3e&quot; &gt;&lt;/div&gt;
 
 
             &lt;div style=&quot;position: relative;&quot;&gt;
-                &lt;div id=&quot;webgl-earth-web_gl_earth_bc8983a5d9db0cfbb6be90100e4c8008&quot;&gt;&lt;/div&gt;
+                &lt;div id=&quot;webgl-earth-web_gl_earth_b09c0df520d72081de9157dbcc26c59b&quot;&gt;&lt;/div&gt;
                 &lt;button
                     class=&quot;webgl-earth-reset-btn&quot;
-                    onclick=&quot;web_gl_earth_bc8983a5d9db0cfbb6be90100e4c8008.setView(
+                    onclick=&quot;web_gl_earth_b09c0df520d72081de9157dbcc26c59b.setView(
                         [20.0, 0.0],
                         2
                     )&quot;
@@ -906,8 +906,8 @@
 &lt;script&gt;
 
 
-            var map_5cb99b21bad7536b6a819702bcc09e7e = L.map(
-                &quot;map_5cb99b21bad7536b6a819702bcc09e7e&quot;,
+            var map_715ebcc1d1b82aa562bb0843655b4e3e = L.map(
+                &quot;map_715ebcc1d1b82aa562bb0843655b4e3e&quot;,
                 {
                     center: [0.0, 0.0],
                     crs: L.CRS.EPSG3857,
@@ -924,7 +924,7 @@
 
 
 
-            var tile_layer_26bf3f006e1f885f5146b3fb93eb21a4 = L.tileLayer(
+            var tile_layer_bb1cbec8b6f0749cb8ba6158dd2f86ae = L.tileLayer(
                 &quot;https://tile.openstreetmap.org/{z}/{x}/{y}.png&quot;,
                 {
   &quot;minZoom&quot;: 0,
@@ -941,11 +941,11 @@
             );
 
 
-            tile_layer_26bf3f006e1f885f5146b3fb93eb21a4.addTo(map_5cb99b21bad7536b6a819702bcc09e7e);
+            tile_layer_bb1cbec8b6f0749cb8ba6158dd2f86ae.addTo(map_715ebcc1d1b82aa562bb0843655b4e3e);
 
 
-            var web_gl_earth_bc8983a5d9db0cfbb6be90100e4c8008 = WE.map(
-                &#x27;webgl-earth-web_gl_earth_bc8983a5d9db0cfbb6be90100e4c8008&#x27;,
+            var web_gl_earth_b09c0df520d72081de9157dbcc26c59b = WE.map(
+                &#x27;webgl-earth-web_gl_earth_b09c0df520d72081de9157dbcc26c59b&#x27;,
                 {
   &quot;center&quot;: [
 20.0,
@@ -962,11 +962,11 @@
                     attribution: &#x27;&amp;copy; OpenStreetMap contributors&#x27;,
                     subdomains: [&quot;a&quot;, &quot;b&quot;, &quot;c&quot;]
                 }
-            ).addTo(web_gl_earth_bc8983a5d9db0cfbb6be90100e4c8008);
+            ).addTo(web_gl_earth_b09c0df520d72081de9157dbcc26c59b);
 
             // Block right-click tilt
             (function() {
-                var container = document.getElementById(&#x27;webgl-earth-web_gl_earth_bc8983a5d9db0cfbb6be90100e4c8008&#x27;);
+                var container = document.getElementById(&#x27;webgl-earth-web_gl_earth_b09c0df520d72081de9157dbcc26c59b&#x27;);
                 container.addEventListener(&#x27;contextmenu&#x27;, function(e) {
                     e.preventDefault();
                     e.stopPropagation();
@@ -980,7 +980,7 @@
             })();
 
 
-            var web_gl_earth_tile_layer_b6c04e36608e775a5e79759c2e3bd3c1 = WE.tileLayer(
+            var web_gl_earth_tile_layer_592b4efd23f385f80997d0d6609716df = WE.tileLayer(
                 &quot;https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png&quot;,
                 {
   &quot;attribution&quot;: &quot;\u00a9 OpenStreetMap contributors&quot;,
@@ -991,7 +991,7 @@
 ],
   &quot;opacity&quot;: 0.5,
 }
-            ).addTo(web_gl_earth_bc8983a5d9db0cfbb6be90100e4c8008);
+            ).addTo(web_gl_earth_b09c0df520d72081de9157dbcc26c59b);
 
 &lt;/script&gt;
 &lt;/html&gt;" style="position:absolute;width:100%;height:100%;left:0;top:0;border:none !important;" allowfullscreen webkitallowfullscreen mozallowfullscreen></iframe></div></div></div>
@@ -1060,7 +1060,7 @@
             &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no&quot; /&gt;
             &lt;style&gt;
-                #map_20a3ae56cf4c4022aa81baf936540104 {
+                #map_6fd17b13528727fe94f53fe162dfd898 {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -1096,10 +1096,10 @@
     &lt;script src=&quot;https://www.webglearth.com/v2/api.js&quot;&gt;&lt;/script&gt;
 
             &lt;style&gt;
-                #map_20a3ae56cf4c4022aa81baf936540104 {
+                #map_6fd17b13528727fe94f53fe162dfd898 {
                     display: none !important;
                 }
-                #webgl-earth-web_gl_earth_eec068da66fb4d3153721afcd562d2de {
+                #webgl-earth-web_gl_earth_1341cccd51f16a745ad09b2da573b873 {
                     height: 600px;
                     width: 100%;
                     position: relative;
@@ -1126,14 +1126,14 @@
 &lt;body&gt;
 
 
-            &lt;div class=&quot;folium-map&quot; id=&quot;map_20a3ae56cf4c4022aa81baf936540104&quot; &gt;&lt;/div&gt;
+            &lt;div class=&quot;folium-map&quot; id=&quot;map_6fd17b13528727fe94f53fe162dfd898&quot; &gt;&lt;/div&gt;
 
 
             &lt;div style=&quot;position: relative;&quot;&gt;
-                &lt;div id=&quot;webgl-earth-web_gl_earth_eec068da66fb4d3153721afcd562d2de&quot;&gt;&lt;/div&gt;
+                &lt;div id=&quot;webgl-earth-web_gl_earth_1341cccd51f16a745ad09b2da573b873&quot;&gt;&lt;/div&gt;
                 &lt;button
                     class=&quot;webgl-earth-reset-btn&quot;
-                    onclick=&quot;web_gl_earth_eec068da66fb4d3153721afcd562d2de.setView(
+                    onclick=&quot;web_gl_earth_1341cccd51f16a745ad09b2da573b873.setView(
                         [0.0, 0.0],
                         1.8
                     )&quot;
@@ -1146,8 +1146,8 @@
 &lt;script&gt;
 
 
-            var map_20a3ae56cf4c4022aa81baf936540104 = L.map(
-                &quot;map_20a3ae56cf4c4022aa81baf936540104&quot;,
+            var map_6fd17b13528727fe94f53fe162dfd898 = L.map(
+                &quot;map_6fd17b13528727fe94f53fe162dfd898&quot;,
                 {
                     center: [0.0, 0.0],
                     crs: L.CRS.EPSG3857,
@@ -1164,7 +1164,7 @@
 
 
 
-            var tile_layer_7cf8bf20905f46252d84818a52c13716 = L.tileLayer(
+            var tile_layer_1fc0f9854666e46fa2ee968f88bba039 = L.tileLayer(
                 &quot;https://tile.openstreetmap.org/{z}/{x}/{y}.png&quot;,
                 {
   &quot;minZoom&quot;: 0,
@@ -1181,11 +1181,11 @@
             );
 
 
-            tile_layer_7cf8bf20905f46252d84818a52c13716.addTo(map_20a3ae56cf4c4022aa81baf936540104);
+            tile_layer_1fc0f9854666e46fa2ee968f88bba039.addTo(map_6fd17b13528727fe94f53fe162dfd898);
 
 
-            var web_gl_earth_eec068da66fb4d3153721afcd562d2de = WE.map(
-                &#x27;webgl-earth-web_gl_earth_eec068da66fb4d3153721afcd562d2de&#x27;,
+            var web_gl_earth_1341cccd51f16a745ad09b2da573b873 = WE.map(
+                &#x27;webgl-earth-web_gl_earth_1341cccd51f16a745ad09b2da573b873&#x27;,
                 {
   &quot;center&quot;: [
 0.0,
@@ -1202,11 +1202,11 @@
                     attribution: &#x27;&amp;copy; OpenStreetMap contributors&#x27;,
                     subdomains: [&quot;a&quot;, &quot;b&quot;, &quot;c&quot;]
                 }
-            ).addTo(web_gl_earth_eec068da66fb4d3153721afcd562d2de);
+            ).addTo(web_gl_earth_1341cccd51f16a745ad09b2da573b873);
 
             // Block right-click tilt
             (function() {
-                var container = document.getElementById(&#x27;webgl-earth-web_gl_earth_eec068da66fb4d3153721afcd562d2de&#x27;);
+                var container = document.getElementById(&#x27;webgl-earth-web_gl_earth_1341cccd51f16a745ad09b2da573b873&#x27;);
                 container.addEventListener(&#x27;contextmenu&#x27;, function(e) {
                     e.preventDefault();
                     e.stopPropagation();
@@ -1221,8 +1221,8 @@
 
 
             (function() {
-                var earth = web_gl_earth_eec068da66fb4d3153721afcd562d2de;
-                function web_gl_earth_realtime_dffe7bdb02426a62672acb33dbad866c_update() {
+                var earth = web_gl_earth_1341cccd51f16a745ad09b2da573b873;
+                function web_gl_earth_realtime_00eb9edf893a8793243da84ec9808bff_update() {
                     fetch(&quot;https://api.wheretheiss.at/v1/satellites/25544&quot;)
                         .then(function(response) { return response.json(); })
                         .then(function(data) {
@@ -1246,8 +1246,8 @@
                             console.warn(&#x27;WebGLEarthRealtime error:&#x27;, err);
                         });
                 }
-                web_gl_earth_realtime_dffe7bdb02426a62672acb33dbad866c_update();
-                setInterval(web_gl_earth_realtime_dffe7bdb02426a62672acb33dbad866c_update, 3000);
+                web_gl_earth_realtime_00eb9edf893a8793243da84ec9808bff_update();
+                setInterval(web_gl_earth_realtime_00eb9edf893a8793243da84ec9808bff_update, 3000);
             })();
 
 &lt;/script&gt;
