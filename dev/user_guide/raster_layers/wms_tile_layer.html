@@ -27,18 +27,18 @@
   </noscript>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../../_static/styles/theme.css?digest=0790524f97105ba85085" rel="stylesheet" />
-<link href="../../_static/styles/pydata-sphinx-theme.css?digest=0790524f97105ba85085" rel="stylesheet" />
+  <link href="../../_static/styles/theme.css?digest=a95f357e85573c9b56d5" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=a95f357e85573c9b56d5" rel="stylesheet" />
 
     <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=03e43079" />
     <link rel="stylesheet" type="text/css" href="../../_static/nbsphinx-code-cells.css?v=2aa19091" />
     <link rel="stylesheet" type="text/css" href="../../_static/custom.css?v=924e9346" />
   
   <!-- So that users can add custom icons -->
-  <script defer src="../../_static/scripts/fontawesome.js?digest=0790524f97105ba85085"></script>
+  <script defer src="../../_static/scripts/fontawesome.js?digest=a95f357e85573c9b56d5"></script>
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=0790524f97105ba85085" />
-<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=0790524f97105ba85085" />
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=a95f357e85573c9b56d5" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=a95f357e85573c9b56d5" />
 
     <script src="../../_static/documentation_options.js?v=4d7ae7ef"></script>
     <script src="../../_static/doctools.js?v=fd6eb6e6"></script>
@@ -48,7 +48,7 @@
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'user_guide/raster_layers/wms_tile_layer';</script>
     <script>
-        DOCUMENTATION_OPTIONS.theme_version = '0.18.0';
+        DOCUMENTATION_OPTIONS.theme_version = '0.19.0';
         DOCUMENTATION_OPTIONS.theme_switcher_json_url = 'https://python-visualization.github.io/folium/dev/_static/switcher.json';
         DOCUMENTATION_OPTIONS.theme_switcher_version_match = 'dev';
         DOCUMENTATION_OPTIONS.show_version_warning_banner =
@@ -582,7 +582,7 @@
             &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no&quot; /&gt;
             &lt;style&gt;
-                #map_6bd66faf2b51d2b6d62fe666bae576d7 {
+                #map_d1851ea0f558a51bb7f368aaa0917adf {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -619,14 +619,14 @@
 &lt;body&gt;
 
 
-            &lt;div class=&quot;folium-map&quot; id=&quot;map_6bd66faf2b51d2b6d62fe666bae576d7&quot; &gt;&lt;/div&gt;
+            &lt;div class=&quot;folium-map&quot; id=&quot;map_d1851ea0f558a51bb7f368aaa0917adf&quot; &gt;&lt;/div&gt;
 
 &lt;/body&gt;
 &lt;script&gt;
 
 
-            var map_6bd66faf2b51d2b6d62fe666bae576d7 = L.map(
-                &quot;map_6bd66faf2b51d2b6d62fe666bae576d7&quot;,
+            var map_d1851ea0f558a51bb7f368aaa0917adf = L.map(
+                &quot;map_d1851ea0f558a51bb7f368aaa0917adf&quot;,
                 {
                     center: [41.0, -70.0],
                     crs: L.CRS.EPSG3857,
@@ -643,7 +643,7 @@
 
 
 
-            var tile_layer_c7555f44d5283a14c724009cfba882d8 = L.tileLayer(
+            var tile_layer_d8773c1aa6c56d8c049e48c4320f687c = L.tileLayer(
                 &quot;https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png&quot;,
                 {
   &quot;minZoom&quot;: 0,
@@ -660,35 +660,35 @@
             );
 
 
-            tile_layer_c7555f44d5283a14c724009cfba882d8.addTo(map_6bd66faf2b51d2b6d62fe666bae576d7);
+            tile_layer_d8773c1aa6c56d8c049e48c4320f687c.addTo(map_d1851ea0f558a51bb7f368aaa0917adf);
 
 
-            var macro_element_7a72b0f4b5fa224a15c2c610de87a707 = L.tileLayer.wms(
+            var macro_element_a37a437633d8d4b927a8f34e75a73441 = L.tileLayer.wms(
                 &quot;https://mesonet.agron.iastate.edu/cgi-bin/wms/nexrad/n0r.cgi&quot;,
                 {&quot;attribution&quot;: &quot;Weather data \u00a9 2012 IEM Nexrad&quot;, &quot;format&quot;: &quot;image/png&quot;, &quot;layers&quot;: &quot;nexrad-n0r-900913&quot;, &quot;styles&quot;: &quot;&quot;, &quot;transparent&quot;: true, &quot;version&quot;: &quot;1.1.1&quot;}
             );
 
 
-            macro_element_7a72b0f4b5fa224a15c2c610de87a707.addTo(map_6bd66faf2b51d2b6d62fe666bae576d7);
+            macro_element_a37a437633d8d4b927a8f34e75a73441.addTo(map_d1851ea0f558a51bb7f368aaa0917adf);
 
 
-            var layer_control_2e286629a4652f2437daf1e6fe8682b2_layers = {
+            var layer_control_9d6640a5fcecc3f3be36a0ad1945d965_layers = {
                 base_layers : {
-                    &quot;cartodbpositron&quot; : tile_layer_c7555f44d5283a14c724009cfba882d8,
+                    &quot;cartodbpositron&quot; : tile_layer_d8773c1aa6c56d8c049e48c4320f687c,
                 },
                 overlays :  {
-                    &quot;test&quot; : macro_element_7a72b0f4b5fa224a15c2c610de87a707,
+                    &quot;test&quot; : macro_element_a37a437633d8d4b927a8f34e75a73441,
                 },
             };
-            let layer_control_2e286629a4652f2437daf1e6fe8682b2 = L.control.layers(
-                layer_control_2e286629a4652f2437daf1e6fe8682b2_layers.base_layers,
-                layer_control_2e286629a4652f2437daf1e6fe8682b2_layers.overlays,
+            let layer_control_9d6640a5fcecc3f3be36a0ad1945d965 = L.control.layers(
+                layer_control_9d6640a5fcecc3f3be36a0ad1945d965_layers.base_layers,
+                layer_control_9d6640a5fcecc3f3be36a0ad1945d965_layers.overlays,
                 {
   &quot;position&quot;: &quot;topright&quot;,
   &quot;collapsed&quot;: true,
   &quot;autoZIndex&quot;: true,
 }
-            ).addTo(map_6bd66faf2b51d2b6d62fe666bae576d7);
+            ).addTo(map_d1851ea0f558a51bb7f368aaa0917adf);
 
 
 &lt;/script&gt;
@@ -757,8 +757,8 @@
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script defer src="../../_static/scripts/bootstrap.js?digest=0790524f97105ba85085"></script>
-<script defer src="../../_static/scripts/pydata-sphinx-theme.js?digest=0790524f97105ba85085"></script>
+  <script defer src="../../_static/scripts/bootstrap.js?digest=a95f357e85573c9b56d5"></script>
+<script defer src="../../_static/scripts/pydata-sphinx-theme.js?digest=a95f357e85573c9b56d5"></script>
 
   <footer class="bd-footer">
 <div class="bd-footer__inner bd-page-width">
@@ -789,7 +789,7 @@ Folium version 0.1.dev2129+g2601e1143</div>
         <div class="footer-item">
 <p class="theme-version">
   <!-- # L10n: Setting the PST URL as an argument as this does not need to be localized -->
-  Built with the <a href="https://pydata-sphinx-theme.readthedocs.io/en/stable/index.html">PyData Sphinx Theme</a> 0.18.0.
+  Built with the <a href="https://pydata-sphinx-theme.readthedocs.io/en/stable/index.html">PyData Sphinx Theme</a> 0.19.0.
 </p></div>
       
     </div>
@@ -801,7 +801,7 @@ Folium version 0.1.dev2129+g2601e1143</div>
         <div class="footer-item">
 <p class="theme-version">
   <!-- # L10n: Setting the PST URL as an argument as this does not need to be localized -->
-  Built with the <a href="https://pydata-sphinx-theme.readthedocs.io/en/stable/index.html">PyData Sphinx Theme</a> 0.18.0.
+  Built with the <a href="https://pydata-sphinx-theme.readthedocs.io/en/stable/index.html">PyData Sphinx Theme</a> 0.19.0.
 </p></div>
       
     </div>
