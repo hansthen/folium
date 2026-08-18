@@ -577,7 +577,7 @@
             &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no&quot; /&gt;
             &lt;style&gt;
-                #map_f0f6a02d8e32c09b3ebdf598a5c0a1bd {
+                #map_281cc7941aa6ac1060299525579e3532 {
                     position: relative;
                     width: 100.0vw;
                     height: 100.0vh;
@@ -617,14 +617,14 @@
 &lt;body&gt;
 
 
-            &lt;div class=&quot;folium-map&quot; id=&quot;map_f0f6a02d8e32c09b3ebdf598a5c0a1bd&quot; &gt;&lt;/div&gt;
+            &lt;div class=&quot;folium-map&quot; id=&quot;map_281cc7941aa6ac1060299525579e3532&quot; &gt;&lt;/div&gt;
 
 &lt;/body&gt;
 &lt;script&gt;
 
 
-            var map_f0f6a02d8e32c09b3ebdf598a5c0a1bd = L.map(
-                &quot;map_f0f6a02d8e32c09b3ebdf598a5c0a1bd&quot;,
+            var map_281cc7941aa6ac1060299525579e3532 = L.map(
+                &quot;map_281cc7941aa6ac1060299525579e3532&quot;,
                 {
                     center: [0.0, 0.0],
                     crs: L.CRS.EPSG3857,
@@ -641,7 +641,7 @@
 
 
 
-            var tile_layer_2fe4b876e3ac67a8b12f1897e91eab23 = L.tileLayer(
+            var tile_layer_8a9b68979013022d07cc5431aae2cb4d = L.tileLayer(
                 &quot;https://tile.openstreetmap.org/{z}/{x}/{y}.png&quot;,
                 {
   &quot;minZoom&quot;: 0,
@@ -658,10 +658,10 @@
             );
 
 
-            tile_layer_2fe4b876e3ac67a8b12f1897e91eab23.addTo(map_f0f6a02d8e32c09b3ebdf598a5c0a1bd);
+            tile_layer_8a9b68979013022d07cc5431aae2cb4d.addTo(map_281cc7941aa6ac1060299525579e3532);
 
 
-            var mouse_position_6099fb79790e88863dcb4ba2f1287ab6 = new L.Control.MousePosition(
+            var mouse_position_1adb5fda4c320f362303be399783b679 = new L.Control.MousePosition(
                 {
   &quot;position&quot;: &quot;bottomright&quot;,
   &quot;separator&quot;: &quot; : &quot;,
@@ -671,11 +671,11 @@
   &quot;prefix&quot;: &quot;&quot;,
 }
             );
-            mouse_position_6099fb79790e88863dcb4ba2f1287ab6.options[&quot;latFormatter&quot;] =
+            mouse_position_1adb5fda4c320f362303be399783b679.options[&quot;latFormatter&quot;] =
                 undefined;
-            mouse_position_6099fb79790e88863dcb4ba2f1287ab6.options[&quot;lngFormatter&quot;] =
+            mouse_position_1adb5fda4c320f362303be399783b679.options[&quot;lngFormatter&quot;] =
                 undefined;
-            map_f0f6a02d8e32c09b3ebdf598a5c0a1bd.addControl(mouse_position_6099fb79790e88863dcb4ba2f1287ab6);
+            map_281cc7941aa6ac1060299525579e3532.addControl(mouse_position_1adb5fda4c320f362303be399783b679);
 
 &lt;/script&gt;
 &lt;/html&gt;" style="position:absolute;width:100%;height:100%;left:0;top:0;border:none !important;" allowfullscreen webkitallowfullscreen mozallowfullscreen></iframe></div></div></div>
@@ -688,15 +688,15 @@
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">m</span> <span class="o">=</span> <span class="n">folium</span><span class="o">.</span><span class="n">Map</span><span class="p">()</span>
 
-<span class="n">formatter</span> <span class="o">=</span> <span class="s2">&quot;function(num) {return L.Util.formatNum(num, 3) + &#39; &amp;deg; &#39;;};&quot;</span>
+<span class="n">formatter</span> <span class="o">=</span> <span class="s2">"function(num) {return L.Util.formatNum(num, 3) + ' &amp;deg; ';};"</span>
 
 <span class="n">MousePosition</span><span class="p">(</span>
-    <span class="n">position</span><span class="o">=</span><span class="s2">&quot;topright&quot;</span><span class="p">,</span>
-    <span class="n">separator</span><span class="o">=</span><span class="s2">&quot; | &quot;</span><span class="p">,</span>
-    <span class="n">empty_string</span><span class="o">=</span><span class="s2">&quot;NaN&quot;</span><span class="p">,</span>
+    <span class="n">position</span><span class="o">=</span><span class="s2">"topright"</span><span class="p">,</span>
+    <span class="n">separator</span><span class="o">=</span><span class="s2">" | "</span><span class="p">,</span>
+    <span class="n">empty_string</span><span class="o">=</span><span class="s2">"NaN"</span><span class="p">,</span>
     <span class="n">lng_first</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
     <span class="n">num_digits</span><span class="o">=</span><span class="mi">20</span><span class="p">,</span>
-    <span class="n">prefix</span><span class="o">=</span><span class="s2">&quot;Coordinates:&quot;</span><span class="p">,</span>
+    <span class="n">prefix</span><span class="o">=</span><span class="s2">"Coordinates:"</span><span class="p">,</span>
     <span class="n">lat_formatter</span><span class="o">=</span><span class="n">formatter</span><span class="p">,</span>
     <span class="n">lng_formatter</span><span class="o">=</span><span class="n">formatter</span><span class="p">,</span>
 <span class="p">)</span><span class="o">.</span><span class="n">add_to</span><span class="p">(</span><span class="n">m</span><span class="p">)</span>
@@ -729,7 +729,7 @@
             &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no&quot; /&gt;
             &lt;style&gt;
-                #map_b2afc3808b63a6783a86e89140db9558 {
+                #map_58b800382dd86bf5c344137f3c329ba5 {
                     position: relative;
                     width: 100.0vw;
                     height: 100.0vh;
@@ -769,14 +769,14 @@
 &lt;body&gt;
 
 
-            &lt;div class=&quot;folium-map&quot; id=&quot;map_b2afc3808b63a6783a86e89140db9558&quot; &gt;&lt;/div&gt;
+            &lt;div class=&quot;folium-map&quot; id=&quot;map_58b800382dd86bf5c344137f3c329ba5&quot; &gt;&lt;/div&gt;
 
 &lt;/body&gt;
 &lt;script&gt;
 
 
-            var map_b2afc3808b63a6783a86e89140db9558 = L.map(
-                &quot;map_b2afc3808b63a6783a86e89140db9558&quot;,
+            var map_58b800382dd86bf5c344137f3c329ba5 = L.map(
+                &quot;map_58b800382dd86bf5c344137f3c329ba5&quot;,
                 {
                     center: [0.0, 0.0],
                     crs: L.CRS.EPSG3857,
@@ -793,7 +793,7 @@
 
 
 
-            var tile_layer_e8a37fb5790e6eba835361ef6a894af0 = L.tileLayer(
+            var tile_layer_5274bebded03249a2f8c2b108cae7c6c = L.tileLayer(
                 &quot;https://tile.openstreetmap.org/{z}/{x}/{y}.png&quot;,
                 {
   &quot;minZoom&quot;: 0,
@@ -810,10 +810,10 @@
             );
 
 
-            tile_layer_e8a37fb5790e6eba835361ef6a894af0.addTo(map_b2afc3808b63a6783a86e89140db9558);
+            tile_layer_5274bebded03249a2f8c2b108cae7c6c.addTo(map_58b800382dd86bf5c344137f3c329ba5);
 
 
-            var mouse_position_288849f02884e7cb06048c064d436ecd = new L.Control.MousePosition(
+            var mouse_position_6489ac6fc7a2a22d790758234617c32a = new L.Control.MousePosition(
                 {
   &quot;position&quot;: &quot;topright&quot;,
   &quot;separator&quot;: &quot; | &quot;,
@@ -823,11 +823,11 @@
   &quot;prefix&quot;: &quot;Coordinates:&quot;,
 }
             );
-            mouse_position_288849f02884e7cb06048c064d436ecd.options[&quot;latFormatter&quot;] =
+            mouse_position_6489ac6fc7a2a22d790758234617c32a.options[&quot;latFormatter&quot;] =
                 function(num) {return L.Util.formatNum(num, 3) + &#x27; &amp;deg; &#x27;;};;
-            mouse_position_288849f02884e7cb06048c064d436ecd.options[&quot;lngFormatter&quot;] =
+            mouse_position_6489ac6fc7a2a22d790758234617c32a.options[&quot;lngFormatter&quot;] =
                 function(num) {return L.Util.formatNum(num, 3) + &#x27; &amp;deg; &#x27;;};;
-            map_b2afc3808b63a6783a86e89140db9558.addControl(mouse_position_288849f02884e7cb06048c064d436ecd);
+            map_58b800382dd86bf5c344137f3c329ba5.addControl(mouse_position_6489ac6fc7a2a22d790758234617c32a);
 
 &lt;/script&gt;
 &lt;/html&gt;" style="position:absolute;width:100%;height:100%;left:0;top:0;border:none !important;" allowfullscreen webkitallowfullscreen mozallowfullscreen></iframe></div></div></div>

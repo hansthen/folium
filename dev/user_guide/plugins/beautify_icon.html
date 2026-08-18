@@ -543,19 +543,19 @@
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">m</span> <span class="o">=</span> <span class="n">folium</span><span class="o">.</span><span class="n">Map</span><span class="p">([</span><span class="mf">45.5</span><span class="p">,</span> <span class="o">-</span><span class="mi">122</span><span class="p">],</span> <span class="n">zoom_start</span><span class="o">=</span><span class="mi">3</span><span class="p">)</span>
 
 <span class="n">icon_plane</span> <span class="o">=</span> <span class="n">folium</span><span class="o">.</span><span class="n">plugins</span><span class="o">.</span><span class="n">BeautifyIcon</span><span class="p">(</span>
-    <span class="n">icon</span><span class="o">=</span><span class="s2">&quot;plane&quot;</span><span class="p">,</span> <span class="n">border_color</span><span class="o">=</span><span class="s2">&quot;#b3334f&quot;</span><span class="p">,</span> <span class="n">text_color</span><span class="o">=</span><span class="s2">&quot;#b3334f&quot;</span><span class="p">,</span> <span class="n">icon_shape</span><span class="o">=</span><span class="s2">&quot;triangle&quot;</span>
+    <span class="n">icon</span><span class="o">=</span><span class="s2">"plane"</span><span class="p">,</span> <span class="n">border_color</span><span class="o">=</span><span class="s2">"#b3334f"</span><span class="p">,</span> <span class="n">text_color</span><span class="o">=</span><span class="s2">"#b3334f"</span><span class="p">,</span> <span class="n">icon_shape</span><span class="o">=</span><span class="s2">"triangle"</span>
 <span class="p">)</span>
 
 <span class="n">icon_number</span> <span class="o">=</span> <span class="n">folium</span><span class="o">.</span><span class="n">plugins</span><span class="o">.</span><span class="n">BeautifyIcon</span><span class="p">(</span>
-    <span class="n">border_color</span><span class="o">=</span><span class="s2">&quot;#00ABDC&quot;</span><span class="p">,</span>
-    <span class="n">text_color</span><span class="o">=</span><span class="s2">&quot;#00ABDC&quot;</span><span class="p">,</span>
+    <span class="n">border_color</span><span class="o">=</span><span class="s2">"#00ABDC"</span><span class="p">,</span>
+    <span class="n">text_color</span><span class="o">=</span><span class="s2">"#00ABDC"</span><span class="p">,</span>
     <span class="n">number</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span>
-    <span class="n">inner_icon_style</span><span class="o">=</span><span class="s2">&quot;margin-top:0;&quot;</span><span class="p">,</span>
+    <span class="n">inner_icon_style</span><span class="o">=</span><span class="s2">"margin-top:0;"</span><span class="p">,</span>
 <span class="p">)</span>
 
-<span class="n">folium</span><span class="o">.</span><span class="n">Marker</span><span class="p">(</span><span class="n">location</span><span class="o">=</span><span class="p">[</span><span class="mi">46</span><span class="p">,</span> <span class="o">-</span><span class="mi">122</span><span class="p">],</span> <span class="n">popup</span><span class="o">=</span><span class="s2">&quot;Portland, OR&quot;</span><span class="p">,</span> <span class="n">icon</span><span class="o">=</span><span class="n">icon_plane</span><span class="p">)</span><span class="o">.</span><span class="n">add_to</span><span class="p">(</span><span class="n">m</span><span class="p">)</span>
+<span class="n">folium</span><span class="o">.</span><span class="n">Marker</span><span class="p">(</span><span class="n">location</span><span class="o">=</span><span class="p">[</span><span class="mi">46</span><span class="p">,</span> <span class="o">-</span><span class="mi">122</span><span class="p">],</span> <span class="n">popup</span><span class="o">=</span><span class="s2">"Portland, OR"</span><span class="p">,</span> <span class="n">icon</span><span class="o">=</span><span class="n">icon_plane</span><span class="p">)</span><span class="o">.</span><span class="n">add_to</span><span class="p">(</span><span class="n">m</span><span class="p">)</span>
 
-<span class="n">folium</span><span class="o">.</span><span class="n">Marker</span><span class="p">(</span><span class="n">location</span><span class="o">=</span><span class="p">[</span><span class="mi">50</span><span class="p">,</span> <span class="o">-</span><span class="mi">122</span><span class="p">],</span> <span class="n">popup</span><span class="o">=</span><span class="s2">&quot;Portland, OR&quot;</span><span class="p">,</span> <span class="n">icon</span><span class="o">=</span><span class="n">icon_number</span><span class="p">)</span><span class="o">.</span><span class="n">add_to</span><span class="p">(</span><span class="n">m</span><span class="p">)</span>
+<span class="n">folium</span><span class="o">.</span><span class="n">Marker</span><span class="p">(</span><span class="n">location</span><span class="o">=</span><span class="p">[</span><span class="mi">50</span><span class="p">,</span> <span class="o">-</span><span class="mi">122</span><span class="p">],</span> <span class="n">popup</span><span class="o">=</span><span class="s2">"Portland, OR"</span><span class="p">,</span> <span class="n">icon</span><span class="o">=</span><span class="n">icon_number</span><span class="p">)</span><span class="o">.</span><span class="n">add_to</span><span class="p">(</span><span class="n">m</span><span class="p">)</span>
 
 <span class="n">m</span>
 </pre></div>
@@ -585,7 +585,7 @@
             &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no&quot; /&gt;
             &lt;style&gt;
-                #map_c9cfa92bdff5441fed1ea96c717db291 {
+                #map_2068631356050b3b5c8857fb840467ca {
                     position: relative;
                     width: 100.0vw;
                     height: 100.0vh;
@@ -625,14 +625,14 @@
 &lt;body&gt;
 
 
-            &lt;div class=&quot;folium-map&quot; id=&quot;map_c9cfa92bdff5441fed1ea96c717db291&quot; &gt;&lt;/div&gt;
+            &lt;div class=&quot;folium-map&quot; id=&quot;map_2068631356050b3b5c8857fb840467ca&quot; &gt;&lt;/div&gt;
 
 &lt;/body&gt;
 &lt;script&gt;
 
 
-            var map_c9cfa92bdff5441fed1ea96c717db291 = L.map(
-                &quot;map_c9cfa92bdff5441fed1ea96c717db291&quot;,
+            var map_2068631356050b3b5c8857fb840467ca = L.map(
+                &quot;map_2068631356050b3b5c8857fb840467ca&quot;,
                 {
                     center: [45.5, -122.0],
                     crs: L.CRS.EPSG3857,
@@ -649,7 +649,7 @@
 
 
 
-            var tile_layer_a1e635ad13e793c257fb0adfcba56f02 = L.tileLayer(
+            var tile_layer_009fe98b362d2e87b1c143be882cb79e = L.tileLayer(
                 &quot;https://tile.openstreetmap.org/{z}/{x}/{y}.png&quot;,
                 {
   &quot;minZoom&quot;: 0,
@@ -666,17 +666,17 @@
             );
 
 
-            tile_layer_a1e635ad13e793c257fb0adfcba56f02.addTo(map_c9cfa92bdff5441fed1ea96c717db291);
+            tile_layer_009fe98b362d2e87b1c143be882cb79e.addTo(map_2068631356050b3b5c8857fb840467ca);
 
 
-            var marker_3b997c2ab22b696ccf2d335ea2169475 = L.marker(
+            var marker_1f8e4f7b053502fdd470ab74b7bbeac3 = L.marker(
                 [46.0, -122.0],
                 {
 }
-            ).addTo(map_c9cfa92bdff5441fed1ea96c717db291);
+            ).addTo(map_2068631356050b3b5c8857fb840467ca);
 
 
-            var beautify_icon_7905121359a1345a226fd094e9c5598c = new L.BeautifyIcon.icon(
+            var beautify_icon_48a3367ffa96498d89ae6d2ecaac9135 = new L.BeautifyIcon.icon(
                 {
   &quot;icon&quot;: &quot;plane&quot;,
   &quot;iconShape&quot;: &quot;triangle&quot;,
@@ -689,37 +689,37 @@
   &quot;isAlphaNumericIcon&quot;: false,
 }
             )
-            marker_3b997c2ab22b696ccf2d335ea2169475.setIcon(beautify_icon_7905121359a1345a226fd094e9c5598c);
+            marker_1f8e4f7b053502fdd470ab74b7bbeac3.setIcon(beautify_icon_48a3367ffa96498d89ae6d2ecaac9135);
 
 
-        var popup_664db81f231f311b13084cfbc057bd68 = L.popup({
+        var popup_620ecc839aa209cc450611c9bb15ad0a = L.popup({
   &quot;maxWidth&quot;: &quot;100%&quot;,
 });
 
 
 
-                var html_b6a879cb91241534e81137dc475e1707 = $(`&lt;div id=&quot;html_b6a879cb91241534e81137dc475e1707&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;Portland, OR&lt;/div&gt;`)[0];
-                popup_664db81f231f311b13084cfbc057bd68.setContent(html_b6a879cb91241534e81137dc475e1707);
+                var html_3a2b26518f457395dc2a42978160b18b = $(`&lt;div id=&quot;html_3a2b26518f457395dc2a42978160b18b&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;Portland, OR&lt;/div&gt;`)[0];
+                popup_620ecc839aa209cc450611c9bb15ad0a.setContent(html_3a2b26518f457395dc2a42978160b18b);
 
 
 
-        marker_3b997c2ab22b696ccf2d335ea2169475.bindPopup(popup_664db81f231f311b13084cfbc057bd68)
+        marker_1f8e4f7b053502fdd470ab74b7bbeac3.bindPopup(popup_620ecc839aa209cc450611c9bb15ad0a)
         ;
 
 
 
 
-                marker_3b997c2ab22b696ccf2d335ea2169475.setIcon(beautify_icon_7905121359a1345a226fd094e9c5598c);
+                marker_1f8e4f7b053502fdd470ab74b7bbeac3.setIcon(beautify_icon_48a3367ffa96498d89ae6d2ecaac9135);
 
 
-            var marker_44ca73bfcab8e9db4148c95338548bb4 = L.marker(
+            var marker_f6ff11cad869eb934a59a6b9707d34bd = L.marker(
                 [50.0, -122.0],
                 {
 }
-            ).addTo(map_c9cfa92bdff5441fed1ea96c717db291);
+            ).addTo(map_2068631356050b3b5c8857fb840467ca);
 
 
-            var beautify_icon_33b1251bbbdbf9e84b7fc33711bab20c = new L.BeautifyIcon.icon(
+            var beautify_icon_f1d9409c7144858c9afa60d008baca3e = new L.BeautifyIcon.icon(
                 {
   &quot;borderWidth&quot;: 3,
   &quot;borderColor&quot;: &quot;#00ABDC&quot;,
@@ -731,27 +731,27 @@
   &quot;text&quot;: 10,
 }
             )
-            marker_44ca73bfcab8e9db4148c95338548bb4.setIcon(beautify_icon_33b1251bbbdbf9e84b7fc33711bab20c);
+            marker_f6ff11cad869eb934a59a6b9707d34bd.setIcon(beautify_icon_f1d9409c7144858c9afa60d008baca3e);
 
 
-        var popup_77991f79d417573d54ffc93f8d171b59 = L.popup({
+        var popup_da2c9568512eea002bf4941b7638a521 = L.popup({
   &quot;maxWidth&quot;: &quot;100%&quot;,
 });
 
 
 
-                var html_c4f0d7cc736adf2c9ab3e35f6955ae72 = $(`&lt;div id=&quot;html_c4f0d7cc736adf2c9ab3e35f6955ae72&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;Portland, OR&lt;/div&gt;`)[0];
-                popup_77991f79d417573d54ffc93f8d171b59.setContent(html_c4f0d7cc736adf2c9ab3e35f6955ae72);
+                var html_d4811647bacb826d87c8bcc8b995bf2f = $(`&lt;div id=&quot;html_d4811647bacb826d87c8bcc8b995bf2f&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;Portland, OR&lt;/div&gt;`)[0];
+                popup_da2c9568512eea002bf4941b7638a521.setContent(html_d4811647bacb826d87c8bcc8b995bf2f);
 
 
 
-        marker_44ca73bfcab8e9db4148c95338548bb4.bindPopup(popup_77991f79d417573d54ffc93f8d171b59)
+        marker_f6ff11cad869eb934a59a6b9707d34bd.bindPopup(popup_da2c9568512eea002bf4941b7638a521)
         ;
 
 
 
 
-                marker_44ca73bfcab8e9db4148c95338548bb4.setIcon(beautify_icon_33b1251bbbdbf9e84b7fc33711bab20c);
+                marker_f6ff11cad869eb934a59a6b9707d34bd.setIcon(beautify_icon_f1d9409c7144858c9afa60d008baca3e);
 
 &lt;/script&gt;
 &lt;/html&gt;" style="position:absolute;width:100%;height:100%;left:0;top:0;border:none !important;" allowfullscreen webkitallowfullscreen mozallowfullscreen></iframe></div></div></div>

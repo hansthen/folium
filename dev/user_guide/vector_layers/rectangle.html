@@ -543,34 +543,34 @@
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">m</span> <span class="o">=</span> <span class="n">folium</span><span class="o">.</span><span class="n">Map</span><span class="p">(</span><span class="n">location</span><span class="o">=</span><span class="p">[</span><span class="mf">35.685</span><span class="p">,</span> <span class="mf">139.76</span><span class="p">],</span> <span class="n">zoom_start</span><span class="o">=</span><span class="mi">15</span><span class="p">)</span>
 
 <span class="n">kw</span> <span class="o">=</span> <span class="p">{</span>
-    <span class="s2">&quot;color&quot;</span><span class="p">:</span> <span class="s2">&quot;blue&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;line_cap&quot;</span><span class="p">:</span> <span class="s2">&quot;round&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;fill&quot;</span><span class="p">:</span> <span class="kc">True</span><span class="p">,</span>
-    <span class="s2">&quot;fill_color&quot;</span><span class="p">:</span> <span class="s2">&quot;red&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;weight&quot;</span><span class="p">:</span> <span class="mi">5</span><span class="p">,</span>
-    <span class="s2">&quot;popup&quot;</span><span class="p">:</span> <span class="s2">&quot;Tokyo, Japan&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;tooltip&quot;</span><span class="p">:</span> <span class="s2">&quot;&lt;strong&gt;Click me!&lt;/strong&gt;&quot;</span><span class="p">,</span>
+    <span class="s2">"color"</span><span class="p">:</span> <span class="s2">"blue"</span><span class="p">,</span>
+    <span class="s2">"line_cap"</span><span class="p">:</span> <span class="s2">"round"</span><span class="p">,</span>
+    <span class="s2">"fill"</span><span class="p">:</span> <span class="kc">True</span><span class="p">,</span>
+    <span class="s2">"fill_color"</span><span class="p">:</span> <span class="s2">"red"</span><span class="p">,</span>
+    <span class="s2">"weight"</span><span class="p">:</span> <span class="mi">5</span><span class="p">,</span>
+    <span class="s2">"popup"</span><span class="p">:</span> <span class="s2">"Tokyo, Japan"</span><span class="p">,</span>
+    <span class="s2">"tooltip"</span><span class="p">:</span> <span class="s2">"&lt;strong&gt;Click me!&lt;/strong&gt;"</span><span class="p">,</span>
 <span class="p">}</span>
 
 <span class="n">folium</span><span class="o">.</span><span class="n">Rectangle</span><span class="p">(</span>
     <span class="n">bounds</span><span class="o">=</span><span class="p">[[</span><span class="mf">35.681</span><span class="p">,</span> <span class="mf">139.766</span><span class="p">],</span> <span class="p">[</span><span class="mf">35.691</span><span class="p">,</span> <span class="mf">139.776</span><span class="p">]],</span>
-    <span class="n">line_join</span><span class="o">=</span><span class="s2">&quot;round&quot;</span><span class="p">,</span>
-    <span class="n">dash_array</span><span class="o">=</span><span class="s2">&quot;5, 5&quot;</span><span class="p">,</span>
+    <span class="n">line_join</span><span class="o">=</span><span class="s2">"round"</span><span class="p">,</span>
+    <span class="n">dash_array</span><span class="o">=</span><span class="s2">"5, 5"</span><span class="p">,</span>
     <span class="o">**</span><span class="n">kw</span><span class="p">,</span>
 <span class="p">)</span><span class="o">.</span><span class="n">add_to</span><span class="p">(</span><span class="n">m</span><span class="p">)</span>
 
 <span class="n">dx</span> <span class="o">=</span> <span class="mf">0.012</span>
 <span class="n">folium</span><span class="o">.</span><span class="n">Rectangle</span><span class="p">(</span>
     <span class="n">bounds</span><span class="o">=</span><span class="p">[[</span><span class="mf">35.681</span><span class="p">,</span> <span class="mf">139.766</span> <span class="o">-</span> <span class="n">dx</span><span class="p">],</span> <span class="p">[</span><span class="mf">35.691</span><span class="p">,</span> <span class="mf">139.776</span> <span class="o">-</span> <span class="n">dx</span><span class="p">]],</span>
-    <span class="n">line_join</span><span class="o">=</span><span class="s2">&quot;mitter&quot;</span><span class="p">,</span>
-    <span class="n">dash_array</span><span class="o">=</span><span class="s2">&quot;5, 10&quot;</span><span class="p">,</span>
+    <span class="n">line_join</span><span class="o">=</span><span class="s2">"mitter"</span><span class="p">,</span>
+    <span class="n">dash_array</span><span class="o">=</span><span class="s2">"5, 10"</span><span class="p">,</span>
     <span class="o">**</span><span class="n">kw</span><span class="p">,</span>
 <span class="p">)</span><span class="o">.</span><span class="n">add_to</span><span class="p">(</span><span class="n">m</span><span class="p">)</span>
 
 <span class="n">folium</span><span class="o">.</span><span class="n">Rectangle</span><span class="p">(</span>
     <span class="n">bounds</span><span class="o">=</span><span class="p">[[</span><span class="mf">35.681</span><span class="p">,</span> <span class="mf">139.766</span> <span class="o">-</span> <span class="mi">2</span> <span class="o">*</span> <span class="n">dx</span><span class="p">],</span> <span class="p">[</span><span class="mf">35.691</span><span class="p">,</span> <span class="mf">139.7762</span> <span class="o">-</span> <span class="mi">2</span> <span class="o">*</span> <span class="n">dx</span><span class="p">]],</span>
-    <span class="n">line_join</span><span class="o">=</span><span class="s2">&quot;bevel&quot;</span><span class="p">,</span>
-    <span class="n">dash_array</span><span class="o">=</span><span class="s2">&quot;15, 10, 5, 10, 15&quot;</span><span class="p">,</span>
+    <span class="n">line_join</span><span class="o">=</span><span class="s2">"bevel"</span><span class="p">,</span>
+    <span class="n">dash_array</span><span class="o">=</span><span class="s2">"15, 10, 5, 10, 15"</span><span class="p">,</span>
     <span class="o">**</span><span class="n">kw</span><span class="p">,</span>
 <span class="p">)</span><span class="o">.</span><span class="n">add_to</span><span class="p">(</span><span class="n">m</span><span class="p">)</span>
 
@@ -602,7 +602,7 @@
             &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no&quot; /&gt;
             &lt;style&gt;
-                #map_34c8e9fdabf432fbb674bb00dcb29cac {
+                #map_8d0adba1d532861a04832c1718d2761a {
                     position: relative;
                     width: 100.0vw;
                     height: 100.0vh;
@@ -640,14 +640,14 @@
 &lt;body&gt;
 
 
-            &lt;div class=&quot;folium-map&quot; id=&quot;map_34c8e9fdabf432fbb674bb00dcb29cac&quot; &gt;&lt;/div&gt;
+            &lt;div class=&quot;folium-map&quot; id=&quot;map_8d0adba1d532861a04832c1718d2761a&quot; &gt;&lt;/div&gt;
 
 &lt;/body&gt;
 &lt;script&gt;
 
 
-            var map_34c8e9fdabf432fbb674bb00dcb29cac = L.map(
-                &quot;map_34c8e9fdabf432fbb674bb00dcb29cac&quot;,
+            var map_8d0adba1d532861a04832c1718d2761a = L.map(
+                &quot;map_8d0adba1d532861a04832c1718d2761a&quot;,
                 {
                     center: [35.685, 139.76],
                     crs: L.CRS.EPSG3857,
@@ -664,7 +664,7 @@
 
 
 
-            var tile_layer_6e880628e668f3f018123809f2dc317d = L.tileLayer(
+            var tile_layer_8fc3a587e41587a60609577bef0d58e6 = L.tileLayer(
                 &quot;https://tile.openstreetmap.org/{z}/{x}/{y}.png&quot;,
                 {
   &quot;minZoom&quot;: 0,
@@ -681,33 +681,33 @@
             );
 
 
-            tile_layer_6e880628e668f3f018123809f2dc317d.addTo(map_34c8e9fdabf432fbb674bb00dcb29cac);
+            tile_layer_8fc3a587e41587a60609577bef0d58e6.addTo(map_8d0adba1d532861a04832c1718d2761a);
 
 
-            var rectangle_ffc7643f6b6fb3c1a6f0a6eae1ecab8c = L.rectangle(
+            var rectangle_ffed0e7a9eb660c2b936eb8091c0266f = L.rectangle(
                 [[35.681, 139.766], [35.691, 139.776]],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;blue&quot;, &quot;dashArray&quot;: &quot;5, 5&quot;, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;red&quot;, &quot;fillOpacity&quot;: 0.2, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;noClip&quot;: false, &quot;opacity&quot;: 1.0, &quot;smoothFactor&quot;: 1.0, &quot;stroke&quot;: true, &quot;weight&quot;: 5}
-            ).addTo(map_34c8e9fdabf432fbb674bb00dcb29cac);
+            ).addTo(map_8d0adba1d532861a04832c1718d2761a);
 
 
-        var popup_58b47cdaedb3712043f4ab11608238d3 = L.popup({
+        var popup_5fe15df0df1d9886dd1a9706bccd0e60 = L.popup({
   &quot;maxWidth&quot;: &quot;100%&quot;,
 });
 
 
 
-                var html_3bedaad6c159c28c5a9287b0dc1b906e = $(`&lt;div id=&quot;html_3bedaad6c159c28c5a9287b0dc1b906e&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;Tokyo, Japan&lt;/div&gt;`)[0];
-                popup_58b47cdaedb3712043f4ab11608238d3.setContent(html_3bedaad6c159c28c5a9287b0dc1b906e);
+                var html_2ce90f3e40b54c2f6d749534cb2cd4b8 = $(`&lt;div id=&quot;html_2ce90f3e40b54c2f6d749534cb2cd4b8&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;Tokyo, Japan&lt;/div&gt;`)[0];
+                popup_5fe15df0df1d9886dd1a9706bccd0e60.setContent(html_2ce90f3e40b54c2f6d749534cb2cd4b8);
 
 
 
-        rectangle_ffc7643f6b6fb3c1a6f0a6eae1ecab8c.bindPopup(popup_58b47cdaedb3712043f4ab11608238d3)
+        rectangle_ffed0e7a9eb660c2b936eb8091c0266f.bindPopup(popup_5fe15df0df1d9886dd1a9706bccd0e60)
         ;
 
 
 
 
-            rectangle_ffc7643f6b6fb3c1a6f0a6eae1ecab8c.bindTooltip(
+            rectangle_ffed0e7a9eb660c2b936eb8091c0266f.bindTooltip(
                 `&lt;div&gt;
                      &lt;strong&gt;Click me!&lt;/strong&gt;
                  &lt;/div&gt;`,
@@ -717,30 +717,30 @@
             );
 
 
-            var rectangle_c5140b8ec0bc5d373bde80adc3ea8981 = L.rectangle(
+            var rectangle_f0d7ebff3e188040ee4dee7dcd531bec = L.rectangle(
                 [[35.681, 139.754], [35.691, 139.764]],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;blue&quot;, &quot;dashArray&quot;: &quot;5, 10&quot;, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;red&quot;, &quot;fillOpacity&quot;: 0.2, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;mitter&quot;, &quot;noClip&quot;: false, &quot;opacity&quot;: 1.0, &quot;smoothFactor&quot;: 1.0, &quot;stroke&quot;: true, &quot;weight&quot;: 5}
-            ).addTo(map_34c8e9fdabf432fbb674bb00dcb29cac);
+            ).addTo(map_8d0adba1d532861a04832c1718d2761a);
 
 
-        var popup_c1a247b6193efa6aa78d1aea577e58e5 = L.popup({
+        var popup_7c22b912d8e8a86fe6b7aebaf1c3d2e1 = L.popup({
   &quot;maxWidth&quot;: &quot;100%&quot;,
 });
 
 
 
-                var html_1880e294297a02e9f60a4e0cdeef2db3 = $(`&lt;div id=&quot;html_1880e294297a02e9f60a4e0cdeef2db3&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;Tokyo, Japan&lt;/div&gt;`)[0];
-                popup_c1a247b6193efa6aa78d1aea577e58e5.setContent(html_1880e294297a02e9f60a4e0cdeef2db3);
+                var html_62f19fd7903775b0b11d9afad572dba5 = $(`&lt;div id=&quot;html_62f19fd7903775b0b11d9afad572dba5&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;Tokyo, Japan&lt;/div&gt;`)[0];
+                popup_7c22b912d8e8a86fe6b7aebaf1c3d2e1.setContent(html_62f19fd7903775b0b11d9afad572dba5);
 
 
 
-        rectangle_c5140b8ec0bc5d373bde80adc3ea8981.bindPopup(popup_c1a247b6193efa6aa78d1aea577e58e5)
+        rectangle_f0d7ebff3e188040ee4dee7dcd531bec.bindPopup(popup_7c22b912d8e8a86fe6b7aebaf1c3d2e1)
         ;
 
 
 
 
-            rectangle_c5140b8ec0bc5d373bde80adc3ea8981.bindTooltip(
+            rectangle_f0d7ebff3e188040ee4dee7dcd531bec.bindTooltip(
                 `&lt;div&gt;
                      &lt;strong&gt;Click me!&lt;/strong&gt;
                  &lt;/div&gt;`,
@@ -750,30 +750,30 @@
             );
 
 
-            var rectangle_11443ed93488665311f7fec1c2dad9c6 = L.rectangle(
+            var rectangle_78b056a5439e4080ce477a7a87ef213d = L.rectangle(
                 [[35.681, 139.742], [35.691, 139.7522]],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;blue&quot;, &quot;dashArray&quot;: &quot;15, 10, 5, 10, 15&quot;, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;red&quot;, &quot;fillOpacity&quot;: 0.2, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;bevel&quot;, &quot;noClip&quot;: false, &quot;opacity&quot;: 1.0, &quot;smoothFactor&quot;: 1.0, &quot;stroke&quot;: true, &quot;weight&quot;: 5}
-            ).addTo(map_34c8e9fdabf432fbb674bb00dcb29cac);
+            ).addTo(map_8d0adba1d532861a04832c1718d2761a);
 
 
-        var popup_dca510c04b14d625eb3583da0decc38f = L.popup({
+        var popup_17d2d5e9fab7ea58dd111f86aec16f35 = L.popup({
   &quot;maxWidth&quot;: &quot;100%&quot;,
 });
 
 
 
-                var html_3c77ef46c9f91405246f0268db364404 = $(`&lt;div id=&quot;html_3c77ef46c9f91405246f0268db364404&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;Tokyo, Japan&lt;/div&gt;`)[0];
-                popup_dca510c04b14d625eb3583da0decc38f.setContent(html_3c77ef46c9f91405246f0268db364404);
+                var html_547101bee1c3d6bcb7d7252101b25556 = $(`&lt;div id=&quot;html_547101bee1c3d6bcb7d7252101b25556&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;Tokyo, Japan&lt;/div&gt;`)[0];
+                popup_17d2d5e9fab7ea58dd111f86aec16f35.setContent(html_547101bee1c3d6bcb7d7252101b25556);
 
 
 
-        rectangle_11443ed93488665311f7fec1c2dad9c6.bindPopup(popup_dca510c04b14d625eb3583da0decc38f)
+        rectangle_78b056a5439e4080ce477a7a87ef213d.bindPopup(popup_17d2d5e9fab7ea58dd111f86aec16f35)
         ;
 
 
 
 
-            rectangle_11443ed93488665311f7fec1c2dad9c6.bindTooltip(
+            rectangle_78b056a5439e4080ce477a7a87ef213d.bindTooltip(
                 `&lt;div&gt;
                      &lt;strong&gt;Click me!&lt;/strong&gt;
                  &lt;/div&gt;`,

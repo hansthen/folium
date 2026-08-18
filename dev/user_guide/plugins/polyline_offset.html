@@ -547,7 +547,7 @@
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[2]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">m</span> <span class="o">=</span> <span class="n">folium</span><span class="o">.</span><span class="n">Map</span><span class="p">(</span><span class="n">location</span><span class="o">=</span><span class="p">[</span><span class="mf">58.0</span><span class="p">,</span> <span class="o">-</span><span class="mf">11.0</span><span class="p">],</span> <span class="n">zoom_start</span><span class="o">=</span><span class="mi">4</span><span class="p">,</span> <span class="n">tiles</span><span class="o">=</span><span class="s2">&quot;cartodbpositron&quot;</span><span class="p">)</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">m</span> <span class="o">=</span> <span class="n">folium</span><span class="o">.</span><span class="n">Map</span><span class="p">(</span><span class="n">location</span><span class="o">=</span><span class="p">[</span><span class="mf">58.0</span><span class="p">,</span> <span class="o">-</span><span class="mf">11.0</span><span class="p">],</span> <span class="n">zoom_start</span><span class="o">=</span><span class="mi">4</span><span class="p">,</span> <span class="n">tiles</span><span class="o">=</span><span class="s2">"cartodbpositron"</span><span class="p">)</span>
 
 <span class="n">coords</span> <span class="o">=</span> <span class="p">[</span>
     <span class="p">[</span><span class="mf">58.44773</span><span class="p">,</span> <span class="o">-</span><span class="mf">28.65234</span><span class="p">],</span>
@@ -566,12 +566,12 @@
 <span class="p">]</span>
 
 <span class="n">folium</span><span class="o">.</span><span class="n">plugins</span><span class="o">.</span><span class="n">PolyLineOffset</span><span class="p">(</span>
-    <span class="n">coords</span><span class="p">,</span> <span class="n">weight</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">dash_array</span><span class="o">=</span><span class="s2">&quot;5,10&quot;</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s2">&quot;black&quot;</span><span class="p">,</span> <span class="n">opacity</span><span class="o">=</span><span class="mi">1</span>
+    <span class="n">coords</span><span class="p">,</span> <span class="n">weight</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">dash_array</span><span class="o">=</span><span class="s2">"5,10"</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s2">"black"</span><span class="p">,</span> <span class="n">opacity</span><span class="o">=</span><span class="mi">1</span>
 <span class="p">)</span><span class="o">.</span><span class="n">add_to</span><span class="p">(</span><span class="n">m</span><span class="p">)</span>
 
-<span class="n">folium</span><span class="o">.</span><span class="n">plugins</span><span class="o">.</span><span class="n">PolyLineOffset</span><span class="p">(</span><span class="n">coords</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s2">&quot;#f00&quot;</span><span class="p">,</span> <span class="n">opacity</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">offset</span><span class="o">=-</span><span class="mi">5</span><span class="p">)</span><span class="o">.</span><span class="n">add_to</span><span class="p">(</span><span class="n">m</span><span class="p">)</span>
+<span class="n">folium</span><span class="o">.</span><span class="n">plugins</span><span class="o">.</span><span class="n">PolyLineOffset</span><span class="p">(</span><span class="n">coords</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s2">"#f00"</span><span class="p">,</span> <span class="n">opacity</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">offset</span><span class="o">=-</span><span class="mi">5</span><span class="p">)</span><span class="o">.</span><span class="n">add_to</span><span class="p">(</span><span class="n">m</span><span class="p">)</span>
 
-<span class="n">folium</span><span class="o">.</span><span class="n">plugins</span><span class="o">.</span><span class="n">PolyLineOffset</span><span class="p">(</span><span class="n">coords</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s2">&quot;#080&quot;</span><span class="p">,</span> <span class="n">opacity</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">offset</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span><span class="o">.</span><span class="n">add_to</span><span class="p">(</span><span class="n">m</span><span class="p">)</span>
+<span class="n">folium</span><span class="o">.</span><span class="n">plugins</span><span class="o">.</span><span class="n">PolyLineOffset</span><span class="p">(</span><span class="n">coords</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s2">"#080"</span><span class="p">,</span> <span class="n">opacity</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">offset</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span><span class="o">.</span><span class="n">add_to</span><span class="p">(</span><span class="n">m</span><span class="p">)</span>
 
 <span class="n">m</span>
 </pre></div>
@@ -601,7 +601,7 @@
             &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no&quot; /&gt;
             &lt;style&gt;
-                #map_01e190a0705d3090b6029597d82a59d5 {
+                #map_873c32684834cd20cef7203d635a2a0a {
                     position: relative;
                     width: 100.0vw;
                     height: 100.0vh;
@@ -640,14 +640,14 @@
 &lt;body&gt;
 
 
-            &lt;div class=&quot;folium-map&quot; id=&quot;map_01e190a0705d3090b6029597d82a59d5&quot; &gt;&lt;/div&gt;
+            &lt;div class=&quot;folium-map&quot; id=&quot;map_873c32684834cd20cef7203d635a2a0a&quot; &gt;&lt;/div&gt;
 
 &lt;/body&gt;
 &lt;script&gt;
 
 
-            var map_01e190a0705d3090b6029597d82a59d5 = L.map(
-                &quot;map_01e190a0705d3090b6029597d82a59d5&quot;,
+            var map_873c32684834cd20cef7203d635a2a0a = L.map(
+                &quot;map_873c32684834cd20cef7203d635a2a0a&quot;,
                 {
                     center: [58.0, -11.0],
                     crs: L.CRS.EPSG3857,
@@ -664,7 +664,7 @@
 
 
 
-            var tile_layer_c2c1617d9ef9f02cec4c9e9d64db8ce2 = L.tileLayer(
+            var tile_layer_1d0962032373862008c80f2e179a65c2 = L.tileLayer(
                 &quot;https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png&quot;,
                 {
   &quot;minZoom&quot;: 0,
@@ -681,25 +681,25 @@
             );
 
 
-            tile_layer_c2c1617d9ef9f02cec4c9e9d64db8ce2.addTo(map_01e190a0705d3090b6029597d82a59d5);
+            tile_layer_1d0962032373862008c80f2e179a65c2.addTo(map_873c32684834cd20cef7203d635a2a0a);
 
 
-            var poly_line_offset_b54eb79d56b04b731dd114a517bf3e3f = L.polyline(
+            var poly_line_offset_98eaa65a84004cef382035c2037be67d = L.polyline(
                 [[58.44773, -28.65234], [53.0, -23.33496], [53.0, -14.32617], [58.1707, -10.37109], [59.0, -13.0], [57.0, -15.0], [57.0, -18.0], [60.0, -18.0], [63.0, -5.0], [59.0, -7.0], [58.0, -3.0], [56.0, -3.0], [60.0, -4.0]],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;black&quot;, &quot;dashArray&quot;: &quot;5,10&quot;, &quot;dashOffset&quot;: null, &quot;fill&quot;: false, &quot;fillColor&quot;: &quot;black&quot;, &quot;fillOpacity&quot;: 0.2, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;noClip&quot;: false, &quot;offset&quot;: 0, &quot;opacity&quot;: 1, &quot;smoothFactor&quot;: 1.0, &quot;stroke&quot;: true, &quot;weight&quot;: 2}
-            ).addTo(map_01e190a0705d3090b6029597d82a59d5);
+            ).addTo(map_873c32684834cd20cef7203d635a2a0a);
 
 
-            var poly_line_offset_9e0cd0c5a640dec214218e09effc4a84 = L.polyline(
+            var poly_line_offset_5717138c5bd9b16c27919b584d19f7ec = L.polyline(
                 [[58.44773, -28.65234], [53.0, -23.33496], [53.0, -14.32617], [58.1707, -10.37109], [59.0, -13.0], [57.0, -15.0], [57.0, -18.0], [60.0, -18.0], [63.0, -5.0], [59.0, -7.0], [58.0, -3.0], [56.0, -3.0], [60.0, -4.0]],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#f00&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: false, &quot;fillColor&quot;: &quot;#f00&quot;, &quot;fillOpacity&quot;: 0.2, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;noClip&quot;: false, &quot;offset&quot;: -5, &quot;opacity&quot;: 1, &quot;smoothFactor&quot;: 1.0, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
-            ).addTo(map_01e190a0705d3090b6029597d82a59d5);
+            ).addTo(map_873c32684834cd20cef7203d635a2a0a);
 
 
-            var poly_line_offset_41d6308e504b5e8af44ab3dd1ee35659 = L.polyline(
+            var poly_line_offset_a1f1053a76be226d5717ba79eded78c6 = L.polyline(
                 [[58.44773, -28.65234], [53.0, -23.33496], [53.0, -14.32617], [58.1707, -10.37109], [59.0, -13.0], [57.0, -15.0], [57.0, -18.0], [60.0, -18.0], [63.0, -5.0], [59.0, -7.0], [58.0, -3.0], [56.0, -3.0], [60.0, -4.0]],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#080&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: false, &quot;fillColor&quot;: &quot;#080&quot;, &quot;fillOpacity&quot;: 0.2, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;noClip&quot;: false, &quot;offset&quot;: 10, &quot;opacity&quot;: 1, &quot;smoothFactor&quot;: 1.0, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
-            ).addTo(map_01e190a0705d3090b6029597d82a59d5);
+            ).addTo(map_873c32684834cd20cef7203d635a2a0a);
 
 &lt;/script&gt;
 &lt;/html&gt;" style="position:absolute;width:100%;height:100%;left:0;top:0;border:none !important;" allowfullscreen webkitallowfullscreen mozallowfullscreen></iframe></div></div></div>
@@ -715,14 +715,14 @@
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">m</span> <span class="o">=</span> <span class="n">folium</span><span class="o">.</span><span class="n">Map</span><span class="p">(</span><span class="n">location</span><span class="o">=</span><span class="p">[</span><span class="mf">48.868</span><span class="p">,</span> <span class="mf">2.365</span><span class="p">],</span> <span class="n">zoom_start</span><span class="o">=</span><span class="mi">15</span><span class="p">)</span>
 
 <span class="n">geojson</span> <span class="o">=</span> <span class="p">{</span>
-    <span class="s2">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;FeatureCollection&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;features&quot;</span><span class="p">:</span> <span class="p">[</span>
+    <span class="s2">"type"</span><span class="p">:</span> <span class="s2">"FeatureCollection"</span><span class="p">,</span>
+    <span class="s2">"features"</span><span class="p">:</span> <span class="p">[</span>
         <span class="p">{</span>
-            <span class="s2">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;Feature&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;properties&quot;</span><span class="p">:</span> <span class="p">{</span><span class="s2">&quot;lines&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">]},</span>
-            <span class="s2">&quot;geometry&quot;</span><span class="p">:</span> <span class="p">{</span>
-                <span class="s2">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;LineString&quot;</span><span class="p">,</span>
-                <span class="s2">&quot;coordinates&quot;</span><span class="p">:</span> <span class="p">[</span>
+            <span class="s2">"type"</span><span class="p">:</span> <span class="s2">"Feature"</span><span class="p">,</span>
+            <span class="s2">"properties"</span><span class="p">:</span> <span class="p">{</span><span class="s2">"lines"</span><span class="p">:</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">]},</span>
+            <span class="s2">"geometry"</span><span class="p">:</span> <span class="p">{</span>
+                <span class="s2">"type"</span><span class="p">:</span> <span class="s2">"LineString"</span><span class="p">,</span>
+                <span class="s2">"coordinates"</span><span class="p">:</span> <span class="p">[</span>
                     <span class="p">[</span><span class="mf">2.357919216156006</span><span class="p">,</span> <span class="mf">48.87621773324153</span><span class="p">],</span>
                     <span class="p">[</span><span class="mf">2.357339859008789</span><span class="p">,</span> <span class="mf">48.874834693731664</span><span class="p">],</span>
                     <span class="p">[</span><span class="mf">2.362983226776123</span><span class="p">,</span> <span class="mf">48.86855408432749</span><span class="p">],</span>
@@ -732,11 +732,11 @@
             <span class="p">},</span>
         <span class="p">},</span>
         <span class="p">{</span>
-            <span class="s2">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;Feature&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;properties&quot;</span><span class="p">:</span> <span class="p">{</span><span class="s2">&quot;lines&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">]},</span>
-            <span class="s2">&quot;geometry&quot;</span><span class="p">:</span> <span class="p">{</span>
-                <span class="s2">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;LineString&quot;</span><span class="p">,</span>
-                <span class="s2">&quot;coordinates&quot;</span><span class="p">:</span> <span class="p">[</span>
+            <span class="s2">"type"</span><span class="p">:</span> <span class="s2">"Feature"</span><span class="p">,</span>
+            <span class="s2">"properties"</span><span class="p">:</span> <span class="p">{</span><span class="s2">"lines"</span><span class="p">:</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">]},</span>
+            <span class="s2">"geometry"</span><span class="p">:</span> <span class="p">{</span>
+                <span class="s2">"type"</span><span class="p">:</span> <span class="s2">"LineString"</span><span class="p">,</span>
+                <span class="s2">"coordinates"</span><span class="p">:</span> <span class="p">[</span>
                     <span class="p">[</span><span class="mf">2.351503372192383</span><span class="p">,</span> <span class="mf">48.86443950493823</span><span class="p">],</span>
                     <span class="p">[</span><span class="mf">2.361609935760498</span><span class="p">,</span> <span class="mf">48.866775611250205</span><span class="p">],</span>
                     <span class="p">[</span><span class="mf">2.3633265495300293</span><span class="p">,</span> <span class="mf">48.86735432768131</span><span class="p">],</span>
@@ -744,11 +744,11 @@
             <span class="p">},</span>
         <span class="p">},</span>
         <span class="p">{</span>
-            <span class="s2">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;Feature&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;properties&quot;</span><span class="p">:</span> <span class="p">{</span><span class="s2">&quot;lines&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">]},</span>
-            <span class="s2">&quot;geometry&quot;</span><span class="p">:</span> <span class="p">{</span>
-                <span class="s2">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;LineString&quot;</span><span class="p">,</span>
-                <span class="s2">&quot;coordinates&quot;</span><span class="p">:</span> <span class="p">[</span>
+            <span class="s2">"type"</span><span class="p">:</span> <span class="s2">"Feature"</span><span class="p">,</span>
+            <span class="s2">"properties"</span><span class="p">:</span> <span class="p">{</span><span class="s2">"lines"</span><span class="p">:</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">]},</span>
+            <span class="s2">"geometry"</span><span class="p">:</span> <span class="p">{</span>
+                <span class="s2">"type"</span><span class="p">:</span> <span class="s2">"LineString"</span><span class="p">,</span>
+                <span class="s2">"coordinates"</span><span class="p">:</span> <span class="p">[</span>
                     <span class="p">[</span><span class="mf">2.369627058506012</span><span class="p">,</span> <span class="mf">48.86619159489603</span><span class="p">],</span>
                     <span class="p">[</span><span class="mf">2.3724031448364253</span><span class="p">,</span> <span class="mf">48.8626397112042</span><span class="p">],</span>
                     <span class="p">[</span><span class="mf">2.3728322982788086</span><span class="p">,</span> <span class="mf">48.8616233285001</span><span class="p">],</span>
@@ -757,11 +757,11 @@
             <span class="p">},</span>
         <span class="p">},</span>
         <span class="p">{</span>
-            <span class="s2">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;Feature&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;properties&quot;</span><span class="p">:</span> <span class="p">{</span><span class="s2">&quot;lines&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mi">0</span><span class="p">]},</span>
-            <span class="s2">&quot;geometry&quot;</span><span class="p">:</span> <span class="p">{</span>
-                <span class="s2">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;LineString&quot;</span><span class="p">,</span>
-                <span class="s2">&quot;coordinates&quot;</span><span class="p">:</span> <span class="p">[</span>
+            <span class="s2">"type"</span><span class="p">:</span> <span class="s2">"Feature"</span><span class="p">,</span>
+            <span class="s2">"properties"</span><span class="p">:</span> <span class="p">{</span><span class="s2">"lines"</span><span class="p">:</span> <span class="p">[</span><span class="mi">0</span><span class="p">]},</span>
+            <span class="s2">"geometry"</span><span class="p">:</span> <span class="p">{</span>
+                <span class="s2">"type"</span><span class="p">:</span> <span class="s2">"LineString"</span><span class="p">,</span>
+                <span class="s2">"coordinates"</span><span class="p">:</span> <span class="p">[</span>
                     <span class="p">[</span><span class="mf">2.3647427558898926</span><span class="p">,</span> <span class="mf">48.86653565369396</span><span class="p">],</span>
                     <span class="p">[</span><span class="mf">2.3647642135620117</span><span class="p">,</span> <span class="mf">48.86630981023694</span><span class="p">],</span>
                     <span class="p">[</span><span class="mf">2.3666739463806152</span><span class="p">,</span> <span class="mf">48.86314789481612</span><span class="p">],</span>
@@ -770,22 +770,22 @@
             <span class="p">},</span>
         <span class="p">},</span>
         <span class="p">{</span>
-            <span class="s2">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;Feature&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;properties&quot;</span><span class="p">:</span> <span class="p">{</span><span class="s2">&quot;lines&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">]},</span>
-            <span class="s2">&quot;geometry&quot;</span><span class="p">:</span> <span class="p">{</span>
-                <span class="s2">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;LineString&quot;</span><span class="p">,</span>
-                <span class="s2">&quot;coordinates&quot;</span><span class="p">:</span> <span class="p">[</span>
+            <span class="s2">"type"</span><span class="p">:</span> <span class="s2">"Feature"</span><span class="p">,</span>
+            <span class="s2">"properties"</span><span class="p">:</span> <span class="p">{</span><span class="s2">"lines"</span><span class="p">:</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">]},</span>
+            <span class="s2">"geometry"</span><span class="p">:</span> <span class="p">{</span>
+                <span class="s2">"type"</span><span class="p">:</span> <span class="s2">"LineString"</span><span class="p">,</span>
+                <span class="s2">"coordinates"</span><span class="p">:</span> <span class="p">[</span>
                     <span class="p">[</span><span class="mf">2.3633265495300293</span><span class="p">,</span> <span class="mf">48.86735432768131</span><span class="p">],</span>
                     <span class="p">[</span><span class="mf">2.3647427558898926</span><span class="p">,</span> <span class="mf">48.86653565369396</span><span class="p">],</span>
                 <span class="p">],</span>
             <span class="p">},</span>
         <span class="p">},</span>
         <span class="p">{</span>
-            <span class="s2">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;Feature&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;properties&quot;</span><span class="p">:</span> <span class="p">{</span><span class="s2">&quot;lines&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">]},</span>
-            <span class="s2">&quot;geometry&quot;</span><span class="p">:</span> <span class="p">{</span>
-                <span class="s2">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;LineString&quot;</span><span class="p">,</span>
-                <span class="s2">&quot;coordinates&quot;</span><span class="p">:</span> <span class="p">[</span>
+            <span class="s2">"type"</span><span class="p">:</span> <span class="s2">"Feature"</span><span class="p">,</span>
+            <span class="s2">"properties"</span><span class="p">:</span> <span class="p">{</span><span class="s2">"lines"</span><span class="p">:</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">]},</span>
+            <span class="s2">"geometry"</span><span class="p">:</span> <span class="p">{</span>
+                <span class="s2">"type"</span><span class="p">:</span> <span class="s2">"LineString"</span><span class="p">,</span>
+                <span class="s2">"coordinates"</span><span class="p">:</span> <span class="p">[</span>
                     <span class="p">[</span><span class="mf">2.3647427558898926</span><span class="p">,</span> <span class="mf">48.86653565369396</span><span class="p">],</span>
                     <span class="p">[</span><span class="mf">2.3650002479553223</span><span class="p">,</span> <span class="mf">48.86660622956524</span><span class="p">],</span>
                     <span class="p">[</span><span class="mf">2.365509867668152</span><span class="p">,</span> <span class="mf">48.866987337550164</span><span class="p">],</span>
@@ -794,11 +794,11 @@
             <span class="p">},</span>
         <span class="p">},</span>
         <span class="p">{</span>
-            <span class="s2">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;Feature&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;properties&quot;</span><span class="p">:</span> <span class="p">{</span><span class="s2">&quot;lines&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mi">3</span><span class="p">]},</span>
-            <span class="s2">&quot;geometry&quot;</span><span class="p">:</span> <span class="p">{</span>
-                <span class="s2">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;LineString&quot;</span><span class="p">,</span>
-                <span class="s2">&quot;coordinates&quot;</span><span class="p">:</span> <span class="p">[</span>
+            <span class="s2">"type"</span><span class="p">:</span> <span class="s2">"Feature"</span><span class="p">,</span>
+            <span class="s2">"properties"</span><span class="p">:</span> <span class="p">{</span><span class="s2">"lines"</span><span class="p">:</span> <span class="p">[</span><span class="mi">3</span><span class="p">]},</span>
+            <span class="s2">"geometry"</span><span class="p">:</span> <span class="p">{</span>
+                <span class="s2">"type"</span><span class="p">:</span> <span class="s2">"LineString"</span><span class="p">,</span>
+                <span class="s2">"coordinates"</span><span class="p">:</span> <span class="p">[</span>
                     <span class="p">[</span><span class="mf">2.369627058506012</span><span class="p">,</span> <span class="mf">48.86619159489603</span><span class="p">],</span>
                     <span class="p">[</span><span class="mf">2.372349500656128</span><span class="p">,</span> <span class="mf">48.865702850895744</span><span class="p">],</span>
                 <span class="p">],</span>
@@ -808,30 +808,30 @@
 <span class="p">}</span>
 
 <span class="c1"># manage overlays in groups to ease superposition order</span>
-<span class="n">outlines</span> <span class="o">=</span> <span class="n">folium</span><span class="o">.</span><span class="n">FeatureGroup</span><span class="p">(</span><span class="s2">&quot;outlines&quot;</span><span class="p">)</span>
-<span class="n">line_bg</span> <span class="o">=</span> <span class="n">folium</span><span class="o">.</span><span class="n">FeatureGroup</span><span class="p">(</span><span class="s2">&quot;lineBg&quot;</span><span class="p">)</span>
-<span class="n">bus_lines</span> <span class="o">=</span> <span class="n">folium</span><span class="o">.</span><span class="n">FeatureGroup</span><span class="p">(</span><span class="s2">&quot;busLines&quot;</span><span class="p">)</span>
-<span class="n">bus_stops</span> <span class="o">=</span> <span class="n">folium</span><span class="o">.</span><span class="n">FeatureGroup</span><span class="p">(</span><span class="s2">&quot;busStops&quot;</span><span class="p">)</span>
+<span class="n">outlines</span> <span class="o">=</span> <span class="n">folium</span><span class="o">.</span><span class="n">FeatureGroup</span><span class="p">(</span><span class="s2">"outlines"</span><span class="p">)</span>
+<span class="n">line_bg</span> <span class="o">=</span> <span class="n">folium</span><span class="o">.</span><span class="n">FeatureGroup</span><span class="p">(</span><span class="s2">"lineBg"</span><span class="p">)</span>
+<span class="n">bus_lines</span> <span class="o">=</span> <span class="n">folium</span><span class="o">.</span><span class="n">FeatureGroup</span><span class="p">(</span><span class="s2">"busLines"</span><span class="p">)</span>
+<span class="n">bus_stops</span> <span class="o">=</span> <span class="n">folium</span><span class="o">.</span><span class="n">FeatureGroup</span><span class="p">(</span><span class="s2">"busStops"</span><span class="p">)</span>
 
 <span class="n">line_weight</span> <span class="o">=</span> <span class="mi">6</span>
-<span class="n">line_colors</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;red&quot;</span><span class="p">,</span> <span class="s2">&quot;#08f&quot;</span><span class="p">,</span> <span class="s2">&quot;#0c0&quot;</span><span class="p">,</span> <span class="s2">&quot;#f80&quot;</span><span class="p">]</span>
+<span class="n">line_colors</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"red"</span><span class="p">,</span> <span class="s2">"#08f"</span><span class="p">,</span> <span class="s2">"#0c0"</span><span class="p">,</span> <span class="s2">"#f80"</span><span class="p">]</span>
 <span class="n">stops</span> <span class="o">=</span> <span class="p">[]</span>
-<span class="k">for</span> <span class="n">line_segment</span> <span class="ow">in</span> <span class="n">geojson</span><span class="p">[</span><span class="s2">&quot;features&quot;</span><span class="p">]:</span>
+<span class="k">for</span> <span class="n">line_segment</span> <span class="ow">in</span> <span class="n">geojson</span><span class="p">[</span><span class="s2">"features"</span><span class="p">]:</span>
     <span class="c1"># Get every bus line coordinates</span>
-    <span class="n">segment_coords</span> <span class="o">=</span> <span class="p">[[</span><span class="n">x</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">x</span><span class="p">[</span><span class="mi">0</span><span class="p">]]</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">line_segment</span><span class="p">[</span><span class="s2">&quot;geometry&quot;</span><span class="p">][</span><span class="s2">&quot;coordinates&quot;</span><span class="p">]]</span>
+    <span class="n">segment_coords</span> <span class="o">=</span> <span class="p">[[</span><span class="n">x</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">x</span><span class="p">[</span><span class="mi">0</span><span class="p">]]</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">line_segment</span><span class="p">[</span><span class="s2">"geometry"</span><span class="p">][</span><span class="s2">"coordinates"</span><span class="p">]]</span>
     <span class="c1"># Get bus stops coordinates</span>
     <span class="n">stops</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">segment_coords</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
     <span class="n">stops</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">segment_coords</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span>
     <span class="c1"># Get number of bus lines sharing the same coordinates</span>
-    <span class="n">lines_on_segment</span> <span class="o">=</span> <span class="n">line_segment</span><span class="p">[</span><span class="s2">&quot;properties&quot;</span><span class="p">][</span><span class="s2">&quot;lines&quot;</span><span class="p">]</span>
+    <span class="n">lines_on_segment</span> <span class="o">=</span> <span class="n">line_segment</span><span class="p">[</span><span class="s2">"properties"</span><span class="p">][</span><span class="s2">"lines"</span><span class="p">]</span>
     <span class="c1"># Width of segment proportional to the number of bus lines</span>
     <span class="n">segment_width</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">lines_on_segment</span><span class="p">)</span> <span class="o">*</span> <span class="p">(</span><span class="n">line_weight</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span>
     <span class="c1"># For the white and black outline effect</span>
     <span class="n">folium</span><span class="o">.</span><span class="n">PolyLine</span><span class="p">(</span>
-        <span class="n">segment_coords</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s2">&quot;#000&quot;</span><span class="p">,</span> <span class="n">weight</span><span class="o">=</span><span class="n">segment_width</span> <span class="o">+</span> <span class="mi">5</span><span class="p">,</span> <span class="n">opacity</span><span class="o">=</span><span class="mi">1</span>
+        <span class="n">segment_coords</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s2">"#000"</span><span class="p">,</span> <span class="n">weight</span><span class="o">=</span><span class="n">segment_width</span> <span class="o">+</span> <span class="mi">5</span><span class="p">,</span> <span class="n">opacity</span><span class="o">=</span><span class="mi">1</span>
     <span class="p">)</span><span class="o">.</span><span class="n">add_to</span><span class="p">(</span><span class="n">outlines</span><span class="p">)</span>
     <span class="n">folium</span><span class="o">.</span><span class="n">PolyLine</span><span class="p">(</span>
-        <span class="n">segment_coords</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s2">&quot;#fff&quot;</span><span class="p">,</span> <span class="n">weight</span><span class="o">=</span><span class="n">segment_width</span> <span class="o">+</span> <span class="mi">3</span><span class="p">,</span> <span class="n">opacity</span><span class="o">=</span><span class="mi">1</span>
+        <span class="n">segment_coords</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s2">"#fff"</span><span class="p">,</span> <span class="n">weight</span><span class="o">=</span><span class="n">segment_width</span> <span class="o">+</span> <span class="mi">3</span><span class="p">,</span> <span class="n">opacity</span><span class="o">=</span><span class="mi">1</span>
     <span class="p">)</span><span class="o">.</span><span class="n">add_to</span><span class="p">(</span><span class="n">line_bg</span><span class="p">)</span>
     <span class="c1"># Draw parallel bus lines with different color and offset</span>
     <span class="k">for</span> <span class="n">j</span><span class="p">,</span> <span class="n">line_number</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">lines_on_segment</span><span class="p">):</span>
@@ -847,8 +847,8 @@
 <span class="k">for</span> <span class="n">stop</span> <span class="ow">in</span> <span class="n">stops</span><span class="p">:</span>
     <span class="n">folium</span><span class="o">.</span><span class="n">CircleMarker</span><span class="p">(</span>
         <span class="n">stop</span><span class="p">,</span>
-        <span class="n">color</span><span class="o">=</span><span class="s2">&quot;#000&quot;</span><span class="p">,</span>
-        <span class="n">fill_color</span><span class="o">=</span><span class="s2">&quot;#ccc&quot;</span><span class="p">,</span>
+        <span class="n">color</span><span class="o">=</span><span class="s2">"#000"</span><span class="p">,</span>
+        <span class="n">fill_color</span><span class="o">=</span><span class="s2">"#ccc"</span><span class="p">,</span>
         <span class="n">fill_opacity</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span>
         <span class="n">radius</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span>
         <span class="n">weight</span><span class="o">=</span><span class="mi">4</span><span class="p">,</span>
@@ -888,7 +888,7 @@
             &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no&quot; /&gt;
             &lt;style&gt;
-                #map_2b226a11acea832115a12f48258de3e2 {
+                #map_057775f032088cfbb81ebce89c0a7aab {
                     position: relative;
                     width: 100.0vw;
                     height: 100.0vh;
@@ -927,14 +927,14 @@
 &lt;body&gt;
 
 
-            &lt;div class=&quot;folium-map&quot; id=&quot;map_2b226a11acea832115a12f48258de3e2&quot; &gt;&lt;/div&gt;
+            &lt;div class=&quot;folium-map&quot; id=&quot;map_057775f032088cfbb81ebce89c0a7aab&quot; &gt;&lt;/div&gt;
 
 &lt;/body&gt;
 &lt;script&gt;
 
 
-            var map_2b226a11acea832115a12f48258de3e2 = L.map(
-                &quot;map_2b226a11acea832115a12f48258de3e2&quot;,
+            var map_057775f032088cfbb81ebce89c0a7aab = L.map(
+                &quot;map_057775f032088cfbb81ebce89c0a7aab&quot;,
                 {
                     center: [48.868, 2.365],
                     crs: L.CRS.EPSG3857,
@@ -951,7 +951,7 @@
 
 
 
-            var tile_layer_36e340ca6d94852089dd720418d069e7 = L.tileLayer(
+            var tile_layer_3e8690dfc2fb446e1c934a3d3d3d480f = L.tileLayer(
                 &quot;https://tile.openstreetmap.org/{z}/{x}/{y}.png&quot;,
                 {
   &quot;minZoom&quot;: 0,
@@ -968,301 +968,301 @@
             );
 
 
-            tile_layer_36e340ca6d94852089dd720418d069e7.addTo(map_2b226a11acea832115a12f48258de3e2);
+            tile_layer_3e8690dfc2fb446e1c934a3d3d3d480f.addTo(map_057775f032088cfbb81ebce89c0a7aab);
 
 
-            var feature_group_b3f9f25c6f69ba796c6662cdad759d52 = L.featureGroup(
+            var feature_group_3a815062176fcf6832d409854e7be21e = L.featureGroup(
                 {
 }
             );
 
 
-            var poly_line_4a7df3dd8e23db2eb7a404948293fddd = L.polyline(
+            var poly_line_ce1f8b05ed7cfdec4d97b8a151e9362a = L.polyline(
                 [[48.87621773324153, 2.357919216156006], [48.874834693731664, 2.357339859008789], [48.86855408432749, 2.362983226776123], [48.86796126699168, 2.362382411956787], [48.86735432768131, 2.3633265495300293]],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#000&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: false, &quot;fillColor&quot;: &quot;#000&quot;, &quot;fillOpacity&quot;: 0.2, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;noClip&quot;: false, &quot;opacity&quot;: 1, &quot;smoothFactor&quot;: 1.0, &quot;stroke&quot;: true, &quot;weight&quot;: 19}
-            ).addTo(feature_group_b3f9f25c6f69ba796c6662cdad759d52);
+            ).addTo(feature_group_3a815062176fcf6832d409854e7be21e);
 
 
-            var poly_line_e748af5ca1022f8d9009d45370341128 = L.polyline(
+            var poly_line_5117df54c93b805059fa8d28a6b13249 = L.polyline(
                 [[48.86443950493823, 2.351503372192383], [48.866775611250205, 2.361609935760498], [48.86735432768131, 2.3633265495300293]],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#000&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: false, &quot;fillColor&quot;: &quot;#000&quot;, &quot;fillOpacity&quot;: 0.2, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;noClip&quot;: false, &quot;opacity&quot;: 1, &quot;smoothFactor&quot;: 1.0, &quot;stroke&quot;: true, &quot;weight&quot;: 19}
-            ).addTo(feature_group_b3f9f25c6f69ba796c6662cdad759d52);
+            ).addTo(feature_group_3a815062176fcf6832d409854e7be21e);
 
 
-            var poly_line_fae7ece8e3105fb40790bf2c3c3d6f0b = L.polyline(
+            var poly_line_71e2d9b68d6d292511bd26e8d07d818a = L.polyline(
                 [[48.86619159489603, 2.369627058506012], [48.8626397112042, 2.3724031448364253], [48.8616233285001, 2.3728322982788086], [48.86080456075567, 2.372767925262451]],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#000&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: false, &quot;fillColor&quot;: &quot;#000&quot;, &quot;fillOpacity&quot;: 0.2, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;noClip&quot;: false, &quot;opacity&quot;: 1, &quot;smoothFactor&quot;: 1.0, &quot;stroke&quot;: true, &quot;weight&quot;: 19}
-            ).addTo(feature_group_b3f9f25c6f69ba796c6662cdad759d52);
+            ).addTo(feature_group_3a815062176fcf6832d409854e7be21e);
 
 
-            var poly_line_da50f16a23ba237769540b2b52499323 = L.polyline(
+            var poly_line_34dd03e6148058cc6522f97ba5d33a92 = L.polyline(
                 [[48.86653565369396, 2.3647427558898926], [48.86630981023694, 2.3647642135620117], [48.86314789481612, 2.3666739463806152], [48.86066339254944, 2.3673176765441895]],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#000&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: false, &quot;fillColor&quot;: &quot;#000&quot;, &quot;fillOpacity&quot;: 0.2, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;noClip&quot;: false, &quot;opacity&quot;: 1, &quot;smoothFactor&quot;: 1.0, &quot;stroke&quot;: true, &quot;weight&quot;: 12}
-            ).addTo(feature_group_b3f9f25c6f69ba796c6662cdad759d52);
+            ).addTo(feature_group_3a815062176fcf6832d409854e7be21e);
 
 
-            var poly_line_c45f9b0e4f6e38a2281a796c4b7667b8 = L.polyline(
+            var poly_line_d312753d98d539b6872bd2eff349a609 = L.polyline(
                 [[48.86735432768131, 2.3633265495300293], [48.86653565369396, 2.3647427558898926]],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#000&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: false, &quot;fillColor&quot;: &quot;#000&quot;, &quot;fillOpacity&quot;: 0.2, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;noClip&quot;: false, &quot;opacity&quot;: 1, &quot;smoothFactor&quot;: 1.0, &quot;stroke&quot;: true, &quot;weight&quot;: 33}
-            ).addTo(feature_group_b3f9f25c6f69ba796c6662cdad759d52);
+            ).addTo(feature_group_3a815062176fcf6832d409854e7be21e);
 
 
-            var poly_line_6764037f7aef4886a224d6f93e3c1bc6 = L.polyline(
+            var poly_line_931fc0f7eb3677f6c5c6880be13df883 = L.polyline(
                 [[48.86653565369396, 2.3647427558898926], [48.86660622956524, 2.3650002479553223], [48.866987337550164, 2.365509867668152], [48.86619159489603, 2.369627058506012]],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#000&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: false, &quot;fillColor&quot;: &quot;#000&quot;, &quot;fillOpacity&quot;: 0.2, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;noClip&quot;: false, &quot;opacity&quot;: 1, &quot;smoothFactor&quot;: 1.0, &quot;stroke&quot;: true, &quot;weight&quot;: 26}
-            ).addTo(feature_group_b3f9f25c6f69ba796c6662cdad759d52);
+            ).addTo(feature_group_3a815062176fcf6832d409854e7be21e);
 
 
-            var poly_line_e08184a12e8339aa292ab15bfb2afe25 = L.polyline(
+            var poly_line_d980b6fa54cace5b874f88233f759d7f = L.polyline(
                 [[48.86619159489603, 2.369627058506012], [48.865702850895744, 2.372349500656128]],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#000&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: false, &quot;fillColor&quot;: &quot;#000&quot;, &quot;fillOpacity&quot;: 0.2, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;noClip&quot;: false, &quot;opacity&quot;: 1, &quot;smoothFactor&quot;: 1.0, &quot;stroke&quot;: true, &quot;weight&quot;: 12}
-            ).addTo(feature_group_b3f9f25c6f69ba796c6662cdad759d52);
+            ).addTo(feature_group_3a815062176fcf6832d409854e7be21e);
 
 
-            feature_group_b3f9f25c6f69ba796c6662cdad759d52.addTo(map_2b226a11acea832115a12f48258de3e2);
+            feature_group_3a815062176fcf6832d409854e7be21e.addTo(map_057775f032088cfbb81ebce89c0a7aab);
 
 
-            var feature_group_a2e436b4b4d2f969fdfe3926fc7bfe1f = L.featureGroup(
+            var feature_group_cef521d3483ffe145172de1bc1c9363a = L.featureGroup(
                 {
 }
             );
 
 
-            var poly_line_6141d581b45ca5b8c579e2583546d816 = L.polyline(
+            var poly_line_6049cdfa7b7fe2529481f946640a8ed9 = L.polyline(
                 [[48.87621773324153, 2.357919216156006], [48.874834693731664, 2.357339859008789], [48.86855408432749, 2.362983226776123], [48.86796126699168, 2.362382411956787], [48.86735432768131, 2.3633265495300293]],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#fff&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: false, &quot;fillColor&quot;: &quot;#fff&quot;, &quot;fillOpacity&quot;: 0.2, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;noClip&quot;: false, &quot;opacity&quot;: 1, &quot;smoothFactor&quot;: 1.0, &quot;stroke&quot;: true, &quot;weight&quot;: 17}
-            ).addTo(feature_group_a2e436b4b4d2f969fdfe3926fc7bfe1f);
+            ).addTo(feature_group_cef521d3483ffe145172de1bc1c9363a);
 
 
-            var poly_line_16e35dd4a5a1d78c450c33a7494eebb2 = L.polyline(
+            var poly_line_049e2e93a9583bc992ac2a8524f5b236 = L.polyline(
                 [[48.86443950493823, 2.351503372192383], [48.866775611250205, 2.361609935760498], [48.86735432768131, 2.3633265495300293]],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#fff&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: false, &quot;fillColor&quot;: &quot;#fff&quot;, &quot;fillOpacity&quot;: 0.2, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;noClip&quot;: false, &quot;opacity&quot;: 1, &quot;smoothFactor&quot;: 1.0, &quot;stroke&quot;: true, &quot;weight&quot;: 17}
-            ).addTo(feature_group_a2e436b4b4d2f969fdfe3926fc7bfe1f);
+            ).addTo(feature_group_cef521d3483ffe145172de1bc1c9363a);
 
 
-            var poly_line_8fd29d91a6423566ab4c9d7b2dd232d3 = L.polyline(
+            var poly_line_f82c5a69c4682e1308b16fa9cd634375 = L.polyline(
                 [[48.86619159489603, 2.369627058506012], [48.8626397112042, 2.3724031448364253], [48.8616233285001, 2.3728322982788086], [48.86080456075567, 2.372767925262451]],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#fff&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: false, &quot;fillColor&quot;: &quot;#fff&quot;, &quot;fillOpacity&quot;: 0.2, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;noClip&quot;: false, &quot;opacity&quot;: 1, &quot;smoothFactor&quot;: 1.0, &quot;stroke&quot;: true, &quot;weight&quot;: 17}
-            ).addTo(feature_group_a2e436b4b4d2f969fdfe3926fc7bfe1f);
+            ).addTo(feature_group_cef521d3483ffe145172de1bc1c9363a);
 
 
-            var poly_line_c7235174cd8fbcc5ab49fff0159cc5e3 = L.polyline(
+            var poly_line_2ecd5c5ac9bc8ad51335f9059a7d2178 = L.polyline(
                 [[48.86653565369396, 2.3647427558898926], [48.86630981023694, 2.3647642135620117], [48.86314789481612, 2.3666739463806152], [48.86066339254944, 2.3673176765441895]],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#fff&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: false, &quot;fillColor&quot;: &quot;#fff&quot;, &quot;fillOpacity&quot;: 0.2, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;noClip&quot;: false, &quot;opacity&quot;: 1, &quot;smoothFactor&quot;: 1.0, &quot;stroke&quot;: true, &quot;weight&quot;: 10}
-            ).addTo(feature_group_a2e436b4b4d2f969fdfe3926fc7bfe1f);
+            ).addTo(feature_group_cef521d3483ffe145172de1bc1c9363a);
 
 
-            var poly_line_0cab4e55802f2f3554430b2c1571e629 = L.polyline(
+            var poly_line_1daab0fe08cdaff7ae0566ced1f4ba8e = L.polyline(
                 [[48.86735432768131, 2.3633265495300293], [48.86653565369396, 2.3647427558898926]],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#fff&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: false, &quot;fillColor&quot;: &quot;#fff&quot;, &quot;fillOpacity&quot;: 0.2, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;noClip&quot;: false, &quot;opacity&quot;: 1, &quot;smoothFactor&quot;: 1.0, &quot;stroke&quot;: true, &quot;weight&quot;: 31}
-            ).addTo(feature_group_a2e436b4b4d2f969fdfe3926fc7bfe1f);
+            ).addTo(feature_group_cef521d3483ffe145172de1bc1c9363a);
 
 
-            var poly_line_913c831d0160bbfd5aaf2b603d31d587 = L.polyline(
+            var poly_line_65ddfd8d5b6e563fb994bfbb393f1e73 = L.polyline(
                 [[48.86653565369396, 2.3647427558898926], [48.86660622956524, 2.3650002479553223], [48.866987337550164, 2.365509867668152], [48.86619159489603, 2.369627058506012]],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#fff&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: false, &quot;fillColor&quot;: &quot;#fff&quot;, &quot;fillOpacity&quot;: 0.2, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;noClip&quot;: false, &quot;opacity&quot;: 1, &quot;smoothFactor&quot;: 1.0, &quot;stroke&quot;: true, &quot;weight&quot;: 24}
-            ).addTo(feature_group_a2e436b4b4d2f969fdfe3926fc7bfe1f);
+            ).addTo(feature_group_cef521d3483ffe145172de1bc1c9363a);
 
 
-            var poly_line_2828e877f226223fbf256904d96bdf5c = L.polyline(
+            var poly_line_22844e4426812afef66a2b131e445fce = L.polyline(
                 [[48.86619159489603, 2.369627058506012], [48.865702850895744, 2.372349500656128]],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#fff&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: false, &quot;fillColor&quot;: &quot;#fff&quot;, &quot;fillOpacity&quot;: 0.2, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;noClip&quot;: false, &quot;opacity&quot;: 1, &quot;smoothFactor&quot;: 1.0, &quot;stroke&quot;: true, &quot;weight&quot;: 10}
-            ).addTo(feature_group_a2e436b4b4d2f969fdfe3926fc7bfe1f);
+            ).addTo(feature_group_cef521d3483ffe145172de1bc1c9363a);
 
 
-            feature_group_a2e436b4b4d2f969fdfe3926fc7bfe1f.addTo(map_2b226a11acea832115a12f48258de3e2);
+            feature_group_cef521d3483ffe145172de1bc1c9363a.addTo(map_057775f032088cfbb81ebce89c0a7aab);
 
 
-            var feature_group_c7df71bb547694527a70bad0af800245 = L.featureGroup(
+            var feature_group_1d807794d9a857aa65eda807fa5f42cc = L.featureGroup(
                 {
 }
             );
 
 
-            var poly_line_offset_009af59be8e8f90bef53719d02d80bbc = L.polyline(
+            var poly_line_offset_413c2801eab1cd50efbf47e2c62f58d3 = L.polyline(
                 [[48.87621773324153, 2.357919216156006], [48.874834693731664, 2.357339859008789], [48.86855408432749, 2.362983226776123], [48.86796126699168, 2.362382411956787], [48.86735432768131, 2.3633265495300293]],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;red&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: false, &quot;fillColor&quot;: &quot;red&quot;, &quot;fillOpacity&quot;: 0.2, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;noClip&quot;: false, &quot;offset&quot;: -3.5, &quot;opacity&quot;: 1, &quot;smoothFactor&quot;: 1.0, &quot;stroke&quot;: true, &quot;weight&quot;: 6}
-            ).addTo(feature_group_c7df71bb547694527a70bad0af800245);
+            ).addTo(feature_group_1d807794d9a857aa65eda807fa5f42cc);
 
 
-            var poly_line_offset_fdde1827f0eb2d7f73349788f552d3e0 = L.polyline(
+            var poly_line_offset_11fef97ed3407f3420478e335c395a80 = L.polyline(
                 [[48.87621773324153, 2.357919216156006], [48.874834693731664, 2.357339859008789], [48.86855408432749, 2.362983226776123], [48.86796126699168, 2.362382411956787], [48.86735432768131, 2.3633265495300293]],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#08f&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: false, &quot;fillColor&quot;: &quot;#08f&quot;, &quot;fillOpacity&quot;: 0.2, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;noClip&quot;: false, &quot;offset&quot;: 3.5, &quot;opacity&quot;: 1, &quot;smoothFactor&quot;: 1.0, &quot;stroke&quot;: true, &quot;weight&quot;: 6}
-            ).addTo(feature_group_c7df71bb547694527a70bad0af800245);
+            ).addTo(feature_group_1d807794d9a857aa65eda807fa5f42cc);
 
 
-            var poly_line_offset_316d93ddd36d410b2266bfe508e918ea = L.polyline(
+            var poly_line_offset_21cb035700836aeb802cfd820ad26add = L.polyline(
                 [[48.86443950493823, 2.351503372192383], [48.866775611250205, 2.361609935760498], [48.86735432768131, 2.3633265495300293]],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#0c0&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: false, &quot;fillColor&quot;: &quot;#0c0&quot;, &quot;fillOpacity&quot;: 0.2, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;noClip&quot;: false, &quot;offset&quot;: -3.5, &quot;opacity&quot;: 1, &quot;smoothFactor&quot;: 1.0, &quot;stroke&quot;: true, &quot;weight&quot;: 6}
-            ).addTo(feature_group_c7df71bb547694527a70bad0af800245);
+            ).addTo(feature_group_1d807794d9a857aa65eda807fa5f42cc);
 
 
-            var poly_line_offset_a266098b6b2000bf1e7ca1aefb831996 = L.polyline(
+            var poly_line_offset_729343960c8aebf1340822f25d3e8b14 = L.polyline(
                 [[48.86443950493823, 2.351503372192383], [48.866775611250205, 2.361609935760498], [48.86735432768131, 2.3633265495300293]],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#f80&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: false, &quot;fillColor&quot;: &quot;#f80&quot;, &quot;fillOpacity&quot;: 0.2, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;noClip&quot;: false, &quot;offset&quot;: 3.5, &quot;opacity&quot;: 1, &quot;smoothFactor&quot;: 1.0, &quot;stroke&quot;: true, &quot;weight&quot;: 6}
-            ).addTo(feature_group_c7df71bb547694527a70bad0af800245);
+            ).addTo(feature_group_1d807794d9a857aa65eda807fa5f42cc);
 
 
-            var poly_line_offset_5830aede2176c90748b45f4a78c40212 = L.polyline(
+            var poly_line_offset_8d2ad80aaf6d1abc8bd5c7be98162801 = L.polyline(
                 [[48.86619159489603, 2.369627058506012], [48.8626397112042, 2.3724031448364253], [48.8616233285001, 2.3728322982788086], [48.86080456075567, 2.372767925262451]],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#08f&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: false, &quot;fillColor&quot;: &quot;#08f&quot;, &quot;fillOpacity&quot;: 0.2, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;noClip&quot;: false, &quot;offset&quot;: -3.5, &quot;opacity&quot;: 1, &quot;smoothFactor&quot;: 1.0, &quot;stroke&quot;: true, &quot;weight&quot;: 6}
-            ).addTo(feature_group_c7df71bb547694527a70bad0af800245);
+            ).addTo(feature_group_1d807794d9a857aa65eda807fa5f42cc);
 
 
-            var poly_line_offset_e353d598b21b161f3c8c245cc48cde41 = L.polyline(
+            var poly_line_offset_f7f518f8fef9c9fe13b62572609c1b26 = L.polyline(
                 [[48.86619159489603, 2.369627058506012], [48.8626397112042, 2.3724031448364253], [48.8616233285001, 2.3728322982788086], [48.86080456075567, 2.372767925262451]],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#0c0&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: false, &quot;fillColor&quot;: &quot;#0c0&quot;, &quot;fillOpacity&quot;: 0.2, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;noClip&quot;: false, &quot;offset&quot;: 3.5, &quot;opacity&quot;: 1, &quot;smoothFactor&quot;: 1.0, &quot;stroke&quot;: true, &quot;weight&quot;: 6}
-            ).addTo(feature_group_c7df71bb547694527a70bad0af800245);
+            ).addTo(feature_group_1d807794d9a857aa65eda807fa5f42cc);
 
 
-            var poly_line_offset_41f860b50d37e846774c85f8d4128626 = L.polyline(
+            var poly_line_offset_c58857552f56c0fe55ec2aafafaefbc3 = L.polyline(
                 [[48.86653565369396, 2.3647427558898926], [48.86630981023694, 2.3647642135620117], [48.86314789481612, 2.3666739463806152], [48.86066339254944, 2.3673176765441895]],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;red&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: false, &quot;fillColor&quot;: &quot;red&quot;, &quot;fillOpacity&quot;: 0.2, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;noClip&quot;: false, &quot;offset&quot;: 0.0, &quot;opacity&quot;: 1, &quot;smoothFactor&quot;: 1.0, &quot;stroke&quot;: true, &quot;weight&quot;: 6}
-            ).addTo(feature_group_c7df71bb547694527a70bad0af800245);
+            ).addTo(feature_group_1d807794d9a857aa65eda807fa5f42cc);
 
 
-            var poly_line_offset_38bdcdc0beecf74c0d530017d4445fa9 = L.polyline(
+            var poly_line_offset_63395eab572d3f3c9d86a79dd5a2f325 = L.polyline(
                 [[48.86735432768131, 2.3633265495300293], [48.86653565369396, 2.3647427558898926]],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;red&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: false, &quot;fillColor&quot;: &quot;red&quot;, &quot;fillOpacity&quot;: 0.2, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;noClip&quot;: false, &quot;offset&quot;: -10.5, &quot;opacity&quot;: 1, &quot;smoothFactor&quot;: 1.0, &quot;stroke&quot;: true, &quot;weight&quot;: 6}
-            ).addTo(feature_group_c7df71bb547694527a70bad0af800245);
+            ).addTo(feature_group_1d807794d9a857aa65eda807fa5f42cc);
 
 
-            var poly_line_offset_284130bfc5d006c895bfc82b42de53bb = L.polyline(
+            var poly_line_offset_ab1792929e5ee528c6d0e9d6785848e5 = L.polyline(
                 [[48.86735432768131, 2.3633265495300293], [48.86653565369396, 2.3647427558898926]],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#08f&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: false, &quot;fillColor&quot;: &quot;#08f&quot;, &quot;fillOpacity&quot;: 0.2, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;noClip&quot;: false, &quot;offset&quot;: -3.5, &quot;opacity&quot;: 1, &quot;smoothFactor&quot;: 1.0, &quot;stroke&quot;: true, &quot;weight&quot;: 6}
-            ).addTo(feature_group_c7df71bb547694527a70bad0af800245);
+            ).addTo(feature_group_1d807794d9a857aa65eda807fa5f42cc);
 
 
-            var poly_line_offset_3c0c94938d280937a42fe4f4c95f8f40 = L.polyline(
+            var poly_line_offset_1d7ecc1c8fb700c2cfd896556b209615 = L.polyline(
                 [[48.86735432768131, 2.3633265495300293], [48.86653565369396, 2.3647427558898926]],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#0c0&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: false, &quot;fillColor&quot;: &quot;#0c0&quot;, &quot;fillOpacity&quot;: 0.2, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;noClip&quot;: false, &quot;offset&quot;: 3.5, &quot;opacity&quot;: 1, &quot;smoothFactor&quot;: 1.0, &quot;stroke&quot;: true, &quot;weight&quot;: 6}
-            ).addTo(feature_group_c7df71bb547694527a70bad0af800245);
+            ).addTo(feature_group_1d807794d9a857aa65eda807fa5f42cc);
 
 
-            var poly_line_offset_3f9ce4f1f0fdd064e237ce40e24e4a42 = L.polyline(
+            var poly_line_offset_ca1c95de794faa2291e464d88bb3f697 = L.polyline(
                 [[48.86735432768131, 2.3633265495300293], [48.86653565369396, 2.3647427558898926]],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#f80&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: false, &quot;fillColor&quot;: &quot;#f80&quot;, &quot;fillOpacity&quot;: 0.2, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;noClip&quot;: false, &quot;offset&quot;: 10.5, &quot;opacity&quot;: 1, &quot;smoothFactor&quot;: 1.0, &quot;stroke&quot;: true, &quot;weight&quot;: 6}
-            ).addTo(feature_group_c7df71bb547694527a70bad0af800245);
+            ).addTo(feature_group_1d807794d9a857aa65eda807fa5f42cc);
 
 
-            var poly_line_offset_560b9c0eb3000d0728a2c68bca835f29 = L.polyline(
+            var poly_line_offset_993625ec4cc879c2f1a3cce40bb18fad = L.polyline(
                 [[48.86653565369396, 2.3647427558898926], [48.86660622956524, 2.3650002479553223], [48.866987337550164, 2.365509867668152], [48.86619159489603, 2.369627058506012]],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#08f&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: false, &quot;fillColor&quot;: &quot;#08f&quot;, &quot;fillOpacity&quot;: 0.2, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;noClip&quot;: false, &quot;offset&quot;: -7.0, &quot;opacity&quot;: 1, &quot;smoothFactor&quot;: 1.0, &quot;stroke&quot;: true, &quot;weight&quot;: 6}
-            ).addTo(feature_group_c7df71bb547694527a70bad0af800245);
+            ).addTo(feature_group_1d807794d9a857aa65eda807fa5f42cc);
 
 
-            var poly_line_offset_43032d075de6d09807737a047804270f = L.polyline(
+            var poly_line_offset_a5214042831a0cc368f64d3955f90079 = L.polyline(
                 [[48.86653565369396, 2.3647427558898926], [48.86660622956524, 2.3650002479553223], [48.866987337550164, 2.365509867668152], [48.86619159489603, 2.369627058506012]],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#0c0&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: false, &quot;fillColor&quot;: &quot;#0c0&quot;, &quot;fillOpacity&quot;: 0.2, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;noClip&quot;: false, &quot;offset&quot;: 0.0, &quot;opacity&quot;: 1, &quot;smoothFactor&quot;: 1.0, &quot;stroke&quot;: true, &quot;weight&quot;: 6}
-            ).addTo(feature_group_c7df71bb547694527a70bad0af800245);
+            ).addTo(feature_group_1d807794d9a857aa65eda807fa5f42cc);
 
 
-            var poly_line_offset_0b8e755be1fbbad52679cc9780336367 = L.polyline(
+            var poly_line_offset_e3cdee630272ee093f7c76e8896e96a1 = L.polyline(
                 [[48.86653565369396, 2.3647427558898926], [48.86660622956524, 2.3650002479553223], [48.866987337550164, 2.365509867668152], [48.86619159489603, 2.369627058506012]],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#f80&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: false, &quot;fillColor&quot;: &quot;#f80&quot;, &quot;fillOpacity&quot;: 0.2, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;noClip&quot;: false, &quot;offset&quot;: 7.0, &quot;opacity&quot;: 1, &quot;smoothFactor&quot;: 1.0, &quot;stroke&quot;: true, &quot;weight&quot;: 6}
-            ).addTo(feature_group_c7df71bb547694527a70bad0af800245);
+            ).addTo(feature_group_1d807794d9a857aa65eda807fa5f42cc);
 
 
-            var poly_line_offset_9f2713dad3607240f2f38308b9b55988 = L.polyline(
+            var poly_line_offset_612258b38a83b8e56eaf66d256f4bf92 = L.polyline(
                 [[48.86619159489603, 2.369627058506012], [48.865702850895744, 2.372349500656128]],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#f80&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: false, &quot;fillColor&quot;: &quot;#f80&quot;, &quot;fillOpacity&quot;: 0.2, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;noClip&quot;: false, &quot;offset&quot;: 0.0, &quot;opacity&quot;: 1, &quot;smoothFactor&quot;: 1.0, &quot;stroke&quot;: true, &quot;weight&quot;: 6}
-            ).addTo(feature_group_c7df71bb547694527a70bad0af800245);
+            ).addTo(feature_group_1d807794d9a857aa65eda807fa5f42cc);
 
 
-            feature_group_c7df71bb547694527a70bad0af800245.addTo(map_2b226a11acea832115a12f48258de3e2);
+            feature_group_1d807794d9a857aa65eda807fa5f42cc.addTo(map_057775f032088cfbb81ebce89c0a7aab);
 
 
-            var feature_group_08bf461880d54fff3b721a009260dd62 = L.featureGroup(
+            var feature_group_c34ba31da1f519d816de45d9b3388096 = L.featureGroup(
                 {
 }
             );
 
 
-            var circle_marker_c3808223225c95386a508d23497bcd52 = L.circleMarker(
+            var circle_marker_51e849919648dfa4c3b61a0f2e942f90 = L.circleMarker(
                 [48.87621773324153, 2.357919216156006],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#000&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#ccc&quot;, &quot;fillOpacity&quot;: 1, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1, &quot;radius&quot;: 10, &quot;stroke&quot;: true, &quot;weight&quot;: 4}
-            ).addTo(feature_group_08bf461880d54fff3b721a009260dd62);
+            ).addTo(feature_group_c34ba31da1f519d816de45d9b3388096);
 
 
-            var circle_marker_63d1e509d901a644ac776f53bdc312c8 = L.circleMarker(
+            var circle_marker_ee704e20b3a80e6837839d0fe96ebd20 = L.circleMarker(
                 [48.86735432768131, 2.3633265495300293],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#000&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#ccc&quot;, &quot;fillOpacity&quot;: 1, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1, &quot;radius&quot;: 10, &quot;stroke&quot;: true, &quot;weight&quot;: 4}
-            ).addTo(feature_group_08bf461880d54fff3b721a009260dd62);
+            ).addTo(feature_group_c34ba31da1f519d816de45d9b3388096);
 
 
-            var circle_marker_75afffecbd88c06666de1fbb70dc4cf4 = L.circleMarker(
+            var circle_marker_97dac70efc198a42cef329d970769b56 = L.circleMarker(
                 [48.86443950493823, 2.351503372192383],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#000&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#ccc&quot;, &quot;fillOpacity&quot;: 1, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1, &quot;radius&quot;: 10, &quot;stroke&quot;: true, &quot;weight&quot;: 4}
-            ).addTo(feature_group_08bf461880d54fff3b721a009260dd62);
+            ).addTo(feature_group_c34ba31da1f519d816de45d9b3388096);
 
 
-            var circle_marker_ff65c6b6fea6236db9ec5bc59bd06ce9 = L.circleMarker(
+            var circle_marker_acadf58c7674aea18bff0baa3eac8ddb = L.circleMarker(
                 [48.86735432768131, 2.3633265495300293],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#000&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#ccc&quot;, &quot;fillOpacity&quot;: 1, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1, &quot;radius&quot;: 10, &quot;stroke&quot;: true, &quot;weight&quot;: 4}
-            ).addTo(feature_group_08bf461880d54fff3b721a009260dd62);
+            ).addTo(feature_group_c34ba31da1f519d816de45d9b3388096);
 
 
-            var circle_marker_f0dd656aaf686433ec6c64cd4c9e589f = L.circleMarker(
+            var circle_marker_d89b990aa47c880f2055cc49233de877 = L.circleMarker(
                 [48.86619159489603, 2.369627058506012],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#000&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#ccc&quot;, &quot;fillOpacity&quot;: 1, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1, &quot;radius&quot;: 10, &quot;stroke&quot;: true, &quot;weight&quot;: 4}
-            ).addTo(feature_group_08bf461880d54fff3b721a009260dd62);
+            ).addTo(feature_group_c34ba31da1f519d816de45d9b3388096);
 
 
-            var circle_marker_db7e4933a4726632736eb502a38bb24a = L.circleMarker(
+            var circle_marker_b0a92b18174b6f02d3e53558c5390f9d = L.circleMarker(
                 [48.86080456075567, 2.372767925262451],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#000&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#ccc&quot;, &quot;fillOpacity&quot;: 1, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1, &quot;radius&quot;: 10, &quot;stroke&quot;: true, &quot;weight&quot;: 4}
-            ).addTo(feature_group_08bf461880d54fff3b721a009260dd62);
+            ).addTo(feature_group_c34ba31da1f519d816de45d9b3388096);
 
 
-            var circle_marker_12fdf57f1c170e5d5f4a58c33dd810ed = L.circleMarker(
+            var circle_marker_7cf98ab25f1d000cc92e7ff438b23826 = L.circleMarker(
                 [48.86653565369396, 2.3647427558898926],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#000&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#ccc&quot;, &quot;fillOpacity&quot;: 1, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1, &quot;radius&quot;: 10, &quot;stroke&quot;: true, &quot;weight&quot;: 4}
-            ).addTo(feature_group_08bf461880d54fff3b721a009260dd62);
+            ).addTo(feature_group_c34ba31da1f519d816de45d9b3388096);
 
 
-            var circle_marker_c1086635975826ff4d6a70f826b2a0db = L.circleMarker(
+            var circle_marker_426918122b550cb272d9b42ecad50712 = L.circleMarker(
                 [48.86066339254944, 2.3673176765441895],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#000&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#ccc&quot;, &quot;fillOpacity&quot;: 1, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1, &quot;radius&quot;: 10, &quot;stroke&quot;: true, &quot;weight&quot;: 4}
-            ).addTo(feature_group_08bf461880d54fff3b721a009260dd62);
+            ).addTo(feature_group_c34ba31da1f519d816de45d9b3388096);
 
 
-            var circle_marker_8f02c955ce12e87e460843bb2925b006 = L.circleMarker(
+            var circle_marker_a9a46c9536c19a2cd930def388fafeaa = L.circleMarker(
                 [48.86735432768131, 2.3633265495300293],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#000&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#ccc&quot;, &quot;fillOpacity&quot;: 1, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1, &quot;radius&quot;: 10, &quot;stroke&quot;: true, &quot;weight&quot;: 4}
-            ).addTo(feature_group_08bf461880d54fff3b721a009260dd62);
+            ).addTo(feature_group_c34ba31da1f519d816de45d9b3388096);
 
 
-            var circle_marker_8ed2fddb3a09abc92c1476791dfaf28d = L.circleMarker(
+            var circle_marker_614a95f9d88f993e5fbbab25fd4dbd3d = L.circleMarker(
                 [48.86653565369396, 2.3647427558898926],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#000&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#ccc&quot;, &quot;fillOpacity&quot;: 1, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1, &quot;radius&quot;: 10, &quot;stroke&quot;: true, &quot;weight&quot;: 4}
-            ).addTo(feature_group_08bf461880d54fff3b721a009260dd62);
+            ).addTo(feature_group_c34ba31da1f519d816de45d9b3388096);
 
 
-            var circle_marker_2667224ddc89aa458968f1b6defc6b94 = L.circleMarker(
+            var circle_marker_4c573dda34887fe34d628d3165ad5815 = L.circleMarker(
                 [48.86653565369396, 2.3647427558898926],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#000&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#ccc&quot;, &quot;fillOpacity&quot;: 1, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1, &quot;radius&quot;: 10, &quot;stroke&quot;: true, &quot;weight&quot;: 4}
-            ).addTo(feature_group_08bf461880d54fff3b721a009260dd62);
+            ).addTo(feature_group_c34ba31da1f519d816de45d9b3388096);
 
 
-            var circle_marker_bfcddea2b60d170d9607a5271b8de72b = L.circleMarker(
+            var circle_marker_9e9c3429da0a05734480baf833aed670 = L.circleMarker(
                 [48.86619159489603, 2.369627058506012],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#000&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#ccc&quot;, &quot;fillOpacity&quot;: 1, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1, &quot;radius&quot;: 10, &quot;stroke&quot;: true, &quot;weight&quot;: 4}
-            ).addTo(feature_group_08bf461880d54fff3b721a009260dd62);
+            ).addTo(feature_group_c34ba31da1f519d816de45d9b3388096);
 
 
-            var circle_marker_cca7ea369a29e87fead3ad45cb953037 = L.circleMarker(
+            var circle_marker_bcf0270a445a0d5eee20ae4a50fc9d9a = L.circleMarker(
                 [48.86619159489603, 2.369627058506012],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#000&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#ccc&quot;, &quot;fillOpacity&quot;: 1, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1, &quot;radius&quot;: 10, &quot;stroke&quot;: true, &quot;weight&quot;: 4}
-            ).addTo(feature_group_08bf461880d54fff3b721a009260dd62);
+            ).addTo(feature_group_c34ba31da1f519d816de45d9b3388096);
 
 
-            var circle_marker_aa042bec725299f40476723e38938f33 = L.circleMarker(
+            var circle_marker_9d987df937814b9531c008030c1bd471 = L.circleMarker(
                 [48.865702850895744, 2.372349500656128],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#000&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#ccc&quot;, &quot;fillOpacity&quot;: 1, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1, &quot;radius&quot;: 10, &quot;stroke&quot;: true, &quot;weight&quot;: 4}
-            ).addTo(feature_group_08bf461880d54fff3b721a009260dd62);
+            ).addTo(feature_group_c34ba31da1f519d816de45d9b3388096);
 
 
-            feature_group_08bf461880d54fff3b721a009260dd62.addTo(map_2b226a11acea832115a12f48258de3e2);
+            feature_group_c34ba31da1f519d816de45d9b3388096.addTo(map_057775f032088cfbb81ebce89c0a7aab);
 
 &lt;/script&gt;
 &lt;/html&gt;" style="position:absolute;width:100%;height:100%;left:0;top:0;border:none !important;" allowfullscreen webkitallowfullscreen mozallowfullscreen></iframe></div></div></div>

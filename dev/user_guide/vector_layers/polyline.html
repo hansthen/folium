@@ -564,9 +564,9 @@
 
 <span class="n">folium</span><span class="o">.</span><span class="n">PolyLine</span><span class="p">(</span>
     <span class="n">locations</span><span class="o">=</span><span class="n">coordinates</span><span class="p">,</span>
-    <span class="n">color</span><span class="o">=</span><span class="s2">&quot;#FF0000&quot;</span><span class="p">,</span>
+    <span class="n">color</span><span class="o">=</span><span class="s2">"#FF0000"</span><span class="p">,</span>
     <span class="n">weight</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span>
-    <span class="n">tooltip</span><span class="o">=</span><span class="s2">&quot;From Boston to San Francisco&quot;</span><span class="p">,</span>
+    <span class="n">tooltip</span><span class="o">=</span><span class="s2">"From Boston to San Francisco"</span><span class="p">,</span>
 <span class="p">)</span><span class="o">.</span><span class="n">add_to</span><span class="p">(</span><span class="n">m</span><span class="p">)</span>
 
 <span class="n">m</span>
@@ -597,7 +597,7 @@
             &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no&quot; /&gt;
             &lt;style&gt;
-                #map_04c4a3199ca1c86f1c140e3f8443adcb {
+                #map_6a64dab7986c1b4204a0324426955b84 {
                     position: relative;
                     width: 100.0vw;
                     height: 100.0vh;
@@ -635,14 +635,14 @@
 &lt;body&gt;
 
 
-            &lt;div class=&quot;folium-map&quot; id=&quot;map_04c4a3199ca1c86f1c140e3f8443adcb&quot; &gt;&lt;/div&gt;
+            &lt;div class=&quot;folium-map&quot; id=&quot;map_6a64dab7986c1b4204a0324426955b84&quot; &gt;&lt;/div&gt;
 
 &lt;/body&gt;
 &lt;script&gt;
 
 
-            var map_04c4a3199ca1c86f1c140e3f8443adcb = L.map(
-                &quot;map_04c4a3199ca1c86f1c140e3f8443adcb&quot;,
+            var map_6a64dab7986c1b4204a0324426955b84 = L.map(
+                &quot;map_6a64dab7986c1b4204a0324426955b84&quot;,
                 {
                     center: [41.9, -97.3],
                     crs: L.CRS.EPSG3857,
@@ -659,7 +659,7 @@
 
 
 
-            var tile_layer_14790a97d36576101d5c8e07dcfd36ac = L.tileLayer(
+            var tile_layer_c1a277575c77b2d08467fe87fd037c7f = L.tileLayer(
                 &quot;https://tile.openstreetmap.org/{z}/{x}/{y}.png&quot;,
                 {
   &quot;minZoom&quot;: 0,
@@ -676,16 +676,16 @@
             );
 
 
-            tile_layer_14790a97d36576101d5c8e07dcfd36ac.addTo(map_04c4a3199ca1c86f1c140e3f8443adcb);
+            tile_layer_c1a277575c77b2d08467fe87fd037c7f.addTo(map_6a64dab7986c1b4204a0324426955b84);
 
 
-            var poly_line_0db3936e86715c676d24e4d937db87cc = L.polyline(
+            var poly_line_da719af3faa0f1cb3cd0d922836ad04c = L.polyline(
                 [[42.3581, -71.0636], [42.82995815, -74.78991444], [43.17929819, -78.56603306], [43.40320216, -82.37774519], [43.49975489, -86.20965845], [43.46811941, -90.04569087], [43.30857071, -93.86961818], [43.02248456, -97.66563267], [42.61228259, -101.41886832], [42.08133868, -105.11585198], [41.4338549, -108.74485069], [40.67471747, -112.29609954], [39.8093434, -115.76190821], [38.84352776, -119.13665678], [37.7833, -122.4167]],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#FF0000&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: false, &quot;fillColor&quot;: &quot;#FF0000&quot;, &quot;fillOpacity&quot;: 0.2, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;noClip&quot;: false, &quot;opacity&quot;: 1.0, &quot;smoothFactor&quot;: 1.0, &quot;stroke&quot;: true, &quot;weight&quot;: 5}
-            ).addTo(map_04c4a3199ca1c86f1c140e3f8443adcb);
+            ).addTo(map_6a64dab7986c1b4204a0324426955b84);
 
 
-            poly_line_0db3936e86715c676d24e4d937db87cc.bindTooltip(
+            poly_line_da719af3faa0f1cb3cd0d922836ad04c.bindTooltip(
                 `&lt;div&gt;
                      From Boston to San Francisco
                  &lt;/div&gt;`,
@@ -709,8 +709,8 @@
 <span class="n">folium</span><span class="o">.</span><span class="n">PolyLine</span><span class="p">(</span>
     <span class="n">smooth_factor</span><span class="o">=</span><span class="mi">50</span><span class="p">,</span>
     <span class="n">locations</span><span class="o">=</span><span class="n">coordinates</span><span class="p">,</span>
-    <span class="n">color</span><span class="o">=</span><span class="s2">&quot;grey&quot;</span><span class="p">,</span>
-    <span class="n">tooltip</span><span class="o">=</span><span class="s2">&quot;Too much smoothing?&quot;</span><span class="p">,</span>
+    <span class="n">color</span><span class="o">=</span><span class="s2">"grey"</span><span class="p">,</span>
+    <span class="n">tooltip</span><span class="o">=</span><span class="s2">"Too much smoothing?"</span><span class="p">,</span>
     <span class="n">weight</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span>
 <span class="p">)</span><span class="o">.</span><span class="n">add_to</span><span class="p">(</span><span class="n">m</span><span class="p">)</span>
 
@@ -742,7 +742,7 @@
             &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no&quot; /&gt;
             &lt;style&gt;
-                #map_1e26316e0dcfaef6e1f67a63fe2f84e1 {
+                #map_af026998c73fcebf262df9df48e889d4 {
                     position: relative;
                     width: 100.0vw;
                     height: 100.0vh;
@@ -780,14 +780,14 @@
 &lt;body&gt;
 
 
-            &lt;div class=&quot;folium-map&quot; id=&quot;map_1e26316e0dcfaef6e1f67a63fe2f84e1&quot; &gt;&lt;/div&gt;
+            &lt;div class=&quot;folium-map&quot; id=&quot;map_af026998c73fcebf262df9df48e889d4&quot; &gt;&lt;/div&gt;
 
 &lt;/body&gt;
 &lt;script&gt;
 
 
-            var map_1e26316e0dcfaef6e1f67a63fe2f84e1 = L.map(
-                &quot;map_1e26316e0dcfaef6e1f67a63fe2f84e1&quot;,
+            var map_af026998c73fcebf262df9df48e889d4 = L.map(
+                &quot;map_af026998c73fcebf262df9df48e889d4&quot;,
                 {
                     center: [41.9, -97.3],
                     crs: L.CRS.EPSG3857,
@@ -804,7 +804,7 @@
 
 
 
-            var tile_layer_f5bab747e47b06c792d5ac3bd2ab0fb6 = L.tileLayer(
+            var tile_layer_aa9ea6055d20019e05aa30daec64ab6e = L.tileLayer(
                 &quot;https://tile.openstreetmap.org/{z}/{x}/{y}.png&quot;,
                 {
   &quot;minZoom&quot;: 0,
@@ -821,16 +821,16 @@
             );
 
 
-            tile_layer_f5bab747e47b06c792d5ac3bd2ab0fb6.addTo(map_1e26316e0dcfaef6e1f67a63fe2f84e1);
+            tile_layer_aa9ea6055d20019e05aa30daec64ab6e.addTo(map_af026998c73fcebf262df9df48e889d4);
 
 
-            var poly_line_6dd4c2962affe3f7b43b490d3110d589 = L.polyline(
+            var poly_line_8be48c57f3f1f9e914ed1fd658c56b15 = L.polyline(
                 [[42.3581, -71.0636], [42.82995815, -74.78991444], [43.17929819, -78.56603306], [43.40320216, -82.37774519], [43.49975489, -86.20965845], [43.46811941, -90.04569087], [43.30857071, -93.86961818], [43.02248456, -97.66563267], [42.61228259, -101.41886832], [42.08133868, -105.11585198], [41.4338549, -108.74485069], [40.67471747, -112.29609954], [39.8093434, -115.76190821], [38.84352776, -119.13665678], [37.7833, -122.4167]],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;grey&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: false, &quot;fillColor&quot;: &quot;grey&quot;, &quot;fillOpacity&quot;: 0.2, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;noClip&quot;: false, &quot;opacity&quot;: 1.0, &quot;smoothFactor&quot;: 50, &quot;stroke&quot;: true, &quot;weight&quot;: 5}
-            ).addTo(map_1e26316e0dcfaef6e1f67a63fe2f84e1);
+            ).addTo(map_af026998c73fcebf262df9df48e889d4);
 
 
-            poly_line_6dd4c2962affe3f7b43b490d3110d589.bindTooltip(
+            poly_line_8be48c57f3f1f9e914ed1fd658c56b15.bindTooltip(
                 `&lt;div&gt;
                      Too much smoothing?
                  &lt;/div&gt;`,
@@ -855,35 +855,35 @@
 
 <span class="n">m</span> <span class="o">=</span> <span class="n">folium</span><span class="o">.</span><span class="n">Map</span><span class="p">(</span><span class="n">location</span><span class="o">=</span><span class="p">[</span><span class="n">lat</span><span class="p">,</span> <span class="n">lon</span><span class="p">],</span> <span class="n">zoom_start</span><span class="o">=</span><span class="n">zoom_start</span><span class="p">)</span>
 
-<span class="n">kw</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;opacity&quot;</span><span class="p">:</span> <span class="mf">1.0</span><span class="p">,</span> <span class="s2">&quot;weight&quot;</span><span class="p">:</span> <span class="mi">6</span><span class="p">}</span>
+<span class="n">kw</span> <span class="o">=</span> <span class="p">{</span><span class="s2">"opacity"</span><span class="p">:</span> <span class="mf">1.0</span><span class="p">,</span> <span class="s2">"weight"</span><span class="p">:</span> <span class="mi">6</span><span class="p">}</span>
 <span class="n">folium</span><span class="o">.</span><span class="n">PolyLine</span><span class="p">(</span>
     <span class="n">locations</span><span class="o">=</span><span class="p">[(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">179</span><span class="p">),</span> <span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="o">-</span><span class="mi">179</span><span class="p">)],</span>
-    <span class="n">tooltip</span><span class="o">=</span><span class="s2">&quot;Wrong&quot;</span><span class="p">,</span>
-    <span class="n">color</span><span class="o">=</span><span class="s2">&quot;red&quot;</span><span class="p">,</span>
-    <span class="n">line_cap</span><span class="o">=</span><span class="s2">&quot;round&quot;</span><span class="p">,</span>
+    <span class="n">tooltip</span><span class="o">=</span><span class="s2">"Wrong"</span><span class="p">,</span>
+    <span class="n">color</span><span class="o">=</span><span class="s2">"red"</span><span class="p">,</span>
+    <span class="n">line_cap</span><span class="o">=</span><span class="s2">"round"</span><span class="p">,</span>
     <span class="o">**</span><span class="n">kw</span><span class="p">,</span>
 <span class="p">)</span><span class="o">.</span><span class="n">add_to</span><span class="p">(</span><span class="n">m</span><span class="p">)</span>
 
 <span class="n">folium</span><span class="o">.</span><span class="n">PolyLine</span><span class="p">(</span>
     <span class="n">locations</span><span class="o">=</span><span class="p">[(</span><span class="o">-</span><span class="mi">2</span><span class="p">,</span> <span class="mi">179</span><span class="p">),</span> <span class="p">(</span><span class="o">-</span><span class="mi">2</span><span class="p">,</span> <span class="mi">181</span><span class="p">)],</span>
-    <span class="n">tooltip</span><span class="o">=</span><span class="s2">&quot;Correct&quot;</span><span class="p">,</span>
-    <span class="n">line_cap</span><span class="o">=</span><span class="s2">&quot;butt&quot;</span><span class="p">,</span>
-    <span class="n">color</span><span class="o">=</span><span class="s2">&quot;blue&quot;</span><span class="p">,</span>
+    <span class="n">tooltip</span><span class="o">=</span><span class="s2">"Correct"</span><span class="p">,</span>
+    <span class="n">line_cap</span><span class="o">=</span><span class="s2">"butt"</span><span class="p">,</span>
+    <span class="n">color</span><span class="o">=</span><span class="s2">"blue"</span><span class="p">,</span>
     <span class="o">**</span><span class="n">kw</span><span class="p">,</span>
 <span class="p">)</span><span class="o">.</span><span class="n">add_to</span><span class="p">(</span><span class="n">m</span><span class="p">)</span>
 
 <span class="n">folium</span><span class="o">.</span><span class="n">PolyLine</span><span class="p">(</span>
     <span class="n">locations</span><span class="o">=</span><span class="p">[(</span><span class="o">-</span><span class="mi">6</span><span class="p">,</span> <span class="o">-</span><span class="mi">179</span><span class="p">),</span> <span class="p">(</span><span class="o">-</span><span class="mi">6</span><span class="p">,</span> <span class="mi">179</span><span class="p">)],</span>
-    <span class="n">line_cap</span><span class="o">=</span><span class="s2">&quot;square&quot;</span><span class="p">,</span>
-    <span class="n">color</span><span class="o">=</span><span class="s2">&quot;green&quot;</span><span class="p">,</span>
-    <span class="n">tooltip</span><span class="o">=</span><span class="s2">&quot;Correct&quot;</span><span class="p">,</span>
+    <span class="n">line_cap</span><span class="o">=</span><span class="s2">"square"</span><span class="p">,</span>
+    <span class="n">color</span><span class="o">=</span><span class="s2">"green"</span><span class="p">,</span>
+    <span class="n">tooltip</span><span class="o">=</span><span class="s2">"Correct"</span><span class="p">,</span>
     <span class="o">**</span><span class="n">kw</span><span class="p">,</span>
 <span class="p">)</span><span class="o">.</span><span class="n">add_to</span><span class="p">(</span><span class="n">m</span><span class="p">)</span>
 
 <span class="n">folium</span><span class="o">.</span><span class="n">PolyLine</span><span class="p">(</span>
     <span class="n">locations</span><span class="o">=</span><span class="p">[(</span><span class="mi">12</span><span class="p">,</span> <span class="o">-</span><span class="mi">179</span><span class="p">),</span> <span class="p">(</span><span class="mi">12</span><span class="p">,</span> <span class="mi">190</span><span class="p">)],</span>
-    <span class="n">color</span><span class="o">=</span><span class="s2">&quot;orange&quot;</span><span class="p">,</span>
-    <span class="n">tooltip</span><span class="o">=</span><span class="s2">&quot;Artifact?&quot;</span><span class="p">,</span>
+    <span class="n">color</span><span class="o">=</span><span class="s2">"orange"</span><span class="p">,</span>
+    <span class="n">tooltip</span><span class="o">=</span><span class="s2">"Artifact?"</span><span class="p">,</span>
     <span class="o">**</span><span class="n">kw</span><span class="p">,</span>
 <span class="p">)</span><span class="o">.</span><span class="n">add_to</span><span class="p">(</span><span class="n">m</span><span class="p">)</span>
 
@@ -915,7 +915,7 @@
             &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no&quot; /&gt;
             &lt;style&gt;
-                #map_5ce8fd9fabd33858ccc8ead17e16a027 {
+                #map_43009c6eb1e5dcb73f8f26f57b1f2aa3 {
                     position: relative;
                     width: 100.0vw;
                     height: 100.0vh;
@@ -953,14 +953,14 @@
 &lt;body&gt;
 
 
-            &lt;div class=&quot;folium-map&quot; id=&quot;map_5ce8fd9fabd33858ccc8ead17e16a027&quot; &gt;&lt;/div&gt;
+            &lt;div class=&quot;folium-map&quot; id=&quot;map_43009c6eb1e5dcb73f8f26f57b1f2aa3&quot; &gt;&lt;/div&gt;
 
 &lt;/body&gt;
 &lt;script&gt;
 
 
-            var map_5ce8fd9fabd33858ccc8ead17e16a027 = L.map(
-                &quot;map_5ce8fd9fabd33858ccc8ead17e16a027&quot;,
+            var map_43009c6eb1e5dcb73f8f26f57b1f2aa3 = L.map(
+                &quot;map_43009c6eb1e5dcb73f8f26f57b1f2aa3&quot;,
                 {
                     center: [0.0, 0.0],
                     crs: L.CRS.EPSG3857,
@@ -977,7 +977,7 @@
 
 
 
-            var tile_layer_a5a6ddcaaf1d11fbcc7cf02a493f44de = L.tileLayer(
+            var tile_layer_1641e0395310be21f0309a84f48144a7 = L.tileLayer(
                 &quot;https://tile.openstreetmap.org/{z}/{x}/{y}.png&quot;,
                 {
   &quot;minZoom&quot;: 0,
@@ -994,16 +994,16 @@
             );
 
 
-            tile_layer_a5a6ddcaaf1d11fbcc7cf02a493f44de.addTo(map_5ce8fd9fabd33858ccc8ead17e16a027);
+            tile_layer_1641e0395310be21f0309a84f48144a7.addTo(map_43009c6eb1e5dcb73f8f26f57b1f2aa3);
 
 
-            var poly_line_8402db72df361fdf7c4b5dadf6384e58 = L.polyline(
+            var poly_line_12b4279ef8c84081c58fb3744ad4a47e = L.polyline(
                 [[2.0, 179.0], [2.0, -179.0]],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;red&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: false, &quot;fillColor&quot;: &quot;red&quot;, &quot;fillOpacity&quot;: 0.2, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;noClip&quot;: false, &quot;opacity&quot;: 1.0, &quot;smoothFactor&quot;: 1.0, &quot;stroke&quot;: true, &quot;weight&quot;: 6}
-            ).addTo(map_5ce8fd9fabd33858ccc8ead17e16a027);
+            ).addTo(map_43009c6eb1e5dcb73f8f26f57b1f2aa3);
 
 
-            poly_line_8402db72df361fdf7c4b5dadf6384e58.bindTooltip(
+            poly_line_12b4279ef8c84081c58fb3744ad4a47e.bindTooltip(
                 `&lt;div&gt;
                      Wrong
                  &lt;/div&gt;`,
@@ -1013,13 +1013,13 @@
             );
 
 
-            var poly_line_b2105a3e349900dc91b5d2bcdb26d70a = L.polyline(
+            var poly_line_4b7a363bf410c58cab75f97ca946dff5 = L.polyline(
                 [[-2.0, 179.0], [-2.0, 181.0]],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;blue&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: false, &quot;fillColor&quot;: &quot;blue&quot;, &quot;fillOpacity&quot;: 0.2, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;butt&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;noClip&quot;: false, &quot;opacity&quot;: 1.0, &quot;smoothFactor&quot;: 1.0, &quot;stroke&quot;: true, &quot;weight&quot;: 6}
-            ).addTo(map_5ce8fd9fabd33858ccc8ead17e16a027);
+            ).addTo(map_43009c6eb1e5dcb73f8f26f57b1f2aa3);
 
 
-            poly_line_b2105a3e349900dc91b5d2bcdb26d70a.bindTooltip(
+            poly_line_4b7a363bf410c58cab75f97ca946dff5.bindTooltip(
                 `&lt;div&gt;
                      Correct
                  &lt;/div&gt;`,
@@ -1029,13 +1029,13 @@
             );
 
 
-            var poly_line_14a8456d7aacf0355866ad1cdec12bd3 = L.polyline(
+            var poly_line_8a81b8e1199d4af965c66e36024c124d = L.polyline(
                 [[-6.0, -179.0], [-6.0, 179.0]],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;green&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: false, &quot;fillColor&quot;: &quot;green&quot;, &quot;fillOpacity&quot;: 0.2, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;square&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;noClip&quot;: false, &quot;opacity&quot;: 1.0, &quot;smoothFactor&quot;: 1.0, &quot;stroke&quot;: true, &quot;weight&quot;: 6}
-            ).addTo(map_5ce8fd9fabd33858ccc8ead17e16a027);
+            ).addTo(map_43009c6eb1e5dcb73f8f26f57b1f2aa3);
 
 
-            poly_line_14a8456d7aacf0355866ad1cdec12bd3.bindTooltip(
+            poly_line_8a81b8e1199d4af965c66e36024c124d.bindTooltip(
                 `&lt;div&gt;
                      Correct
                  &lt;/div&gt;`,
@@ -1045,13 +1045,13 @@
             );
 
 
-            var poly_line_6ded168631ea8263b2300564b128dc74 = L.polyline(
+            var poly_line_756d451038dee947378d8de82c18aef1 = L.polyline(
                 [[12.0, -179.0], [12.0, 190.0]],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;orange&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: false, &quot;fillColor&quot;: &quot;orange&quot;, &quot;fillOpacity&quot;: 0.2, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;noClip&quot;: false, &quot;opacity&quot;: 1.0, &quot;smoothFactor&quot;: 1.0, &quot;stroke&quot;: true, &quot;weight&quot;: 6}
-            ).addTo(map_5ce8fd9fabd33858ccc8ead17e16a027);
+            ).addTo(map_43009c6eb1e5dcb73f8f26f57b1f2aa3);
 
 
-            poly_line_6ded168631ea8263b2300564b128dc74.bindTooltip(
+            poly_line_756d451038dee947378d8de82c18aef1.bindTooltip(
                 `&lt;div&gt;
                      Artifact?
                  &lt;/div&gt;`,
@@ -1077,7 +1077,7 @@
 
 <span class="n">m</span> <span class="o">=</span> <span class="n">folium</span><span class="o">.</span><span class="n">Map</span><span class="p">(</span><span class="n">location</span><span class="o">=</span><span class="p">[</span><span class="n">lat</span><span class="p">,</span> <span class="n">lon</span><span class="p">],</span> <span class="n">zoom_start</span><span class="o">=</span><span class="n">zoom_start</span><span class="p">)</span>
 
-<span class="n">kw</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;color&quot;</span><span class="p">:</span> <span class="s2">&quot;red&quot;</span><span class="p">,</span> <span class="s2">&quot;fill&quot;</span><span class="p">:</span> <span class="kc">True</span><span class="p">,</span> <span class="s2">&quot;radius&quot;</span><span class="p">:</span> <span class="mi">20</span><span class="p">}</span>
+<span class="n">kw</span> <span class="o">=</span> <span class="p">{</span><span class="s2">"color"</span><span class="p">:</span> <span class="s2">"red"</span><span class="p">,</span> <span class="s2">"fill"</span><span class="p">:</span> <span class="kc">True</span><span class="p">,</span> <span class="s2">"radius"</span><span class="p">:</span> <span class="mi">20</span><span class="p">}</span>
 
 <span class="n">folium</span><span class="o">.</span><span class="n">CircleMarker</span><span class="p">([</span><span class="mf">38.89415</span><span class="p">,</span> <span class="o">-</span><span class="mf">77.03738</span><span class="p">],</span> <span class="o">**</span><span class="n">kw</span><span class="p">)</span><span class="o">.</span><span class="n">add_to</span><span class="p">(</span><span class="n">m</span><span class="p">)</span>
 <span class="n">folium</span><span class="o">.</span><span class="n">CircleMarker</span><span class="p">([</span><span class="mf">38.89415</span><span class="p">,</span> <span class="o">-</span><span class="mf">77.03578</span><span class="p">],</span> <span class="o">**</span><span class="n">kw</span><span class="p">)</span><span class="o">.</span><span class="n">add_to</span><span class="p">(</span><span class="n">m</span><span class="p">)</span>
@@ -1124,7 +1124,7 @@
 
 <span class="n">folium</span><span class="o">.</span><span class="n">PolyLine</span><span class="p">(</span>
     <span class="n">locations</span><span class="o">=</span><span class="n">locations</span><span class="p">,</span>
-    <span class="n">color</span><span class="o">=</span><span class="s2">&quot;orange&quot;</span><span class="p">,</span>
+    <span class="n">color</span><span class="o">=</span><span class="s2">"orange"</span><span class="p">,</span>
     <span class="n">weight</span><span class="o">=</span><span class="mi">8</span><span class="p">,</span>
     <span class="n">opacity</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span>
     <span class="n">smooth_factor</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span>
@@ -1158,7 +1158,7 @@
             &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no&quot; /&gt;
             &lt;style&gt;
-                #map_a18c77af30dbf59eaf66708483aa6d7a {
+                #map_7187784aed2f0dc028071cf67c77ba98 {
                     position: relative;
                     width: 100.0vw;
                     height: 100.0vh;
@@ -1196,14 +1196,14 @@
 &lt;body&gt;
 
 
-            &lt;div class=&quot;folium-map&quot; id=&quot;map_a18c77af30dbf59eaf66708483aa6d7a&quot; &gt;&lt;/div&gt;
+            &lt;div class=&quot;folium-map&quot; id=&quot;map_7187784aed2f0dc028071cf67c77ba98&quot; &gt;&lt;/div&gt;
 
 &lt;/body&gt;
 &lt;script&gt;
 
 
-            var map_a18c77af30dbf59eaf66708483aa6d7a = L.map(
-                &quot;map_a18c77af30dbf59eaf66708483aa6d7a&quot;,
+            var map_7187784aed2f0dc028071cf67c77ba98 = L.map(
+                &quot;map_7187784aed2f0dc028071cf67c77ba98&quot;,
                 {
                     center: [38.89399, -77.03659],
                     crs: L.CRS.EPSG3857,
@@ -1220,7 +1220,7 @@
 
 
 
-            var tile_layer_a5cd6127d4f550aa0fd8dd4ff2d819ec = L.tileLayer(
+            var tile_layer_d8ba5441775501317ebefce9398a2731 = L.tileLayer(
                 &quot;https://tile.openstreetmap.org/{z}/{x}/{y}.png&quot;,
                 {
   &quot;minZoom&quot;: 0,
@@ -1237,25 +1237,25 @@
             );
 
 
-            tile_layer_a5cd6127d4f550aa0fd8dd4ff2d819ec.addTo(map_a18c77af30dbf59eaf66708483aa6d7a);
+            tile_layer_d8ba5441775501317ebefce9398a2731.addTo(map_7187784aed2f0dc028071cf67c77ba98);
 
 
-            var circle_marker_4bee44d4cc33c07bea13c4f9958bb0c0 = L.circleMarker(
+            var circle_marker_55851fb36c8158088348220c38ed3ab7 = L.circleMarker(
                 [38.89415, -77.03738],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;red&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;red&quot;, &quot;fillOpacity&quot;: 0.2, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 20, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
-            ).addTo(map_a18c77af30dbf59eaf66708483aa6d7a);
+            ).addTo(map_7187784aed2f0dc028071cf67c77ba98);
 
 
-            var circle_marker_f301adc87d910dabdd8d1683e0c3c9b0 = L.circleMarker(
+            var circle_marker_fb68d9c96c1ee8bb688d19e38a3344b6 = L.circleMarker(
                 [38.89415, -77.03578],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;red&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;red&quot;, &quot;fillOpacity&quot;: 0.2, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 20, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
-            ).addTo(map_a18c77af30dbf59eaf66708483aa6d7a);
+            ).addTo(map_7187784aed2f0dc028071cf67c77ba98);
 
 
-            var poly_line_a3586c3c4844652700c586d1f9bdb115 = L.polyline(
+            var poly_line_ff7e150e08d389f22c232ce0d93dd94d = L.polyline(
                 [[[38.893596444352134, -77.0381498336792], [38.89337933372204, -77.03792452812195]], [[38.89337933372204, -77.03792452812195], [38.89316222242831, -77.03761339187622]], [[38.89316222242831, -77.03761339187622], [38.893028615148424, -77.03731298446655]], [[38.893028615148424, -77.03731298446655], [38.892920059048464, -77.03691601753235]], [[38.892920059048464, -77.03691601753235], [38.892903358095296, -77.03637957572937]], [[38.892903358095296, -77.03637957572937], [38.89301191422077, -77.03592896461487]], [[38.89301191422077, -77.03592896461487], [38.89316222242831, -77.03549981117249]], [[38.89316222242831, -77.03549981117249], [38.89340438498248, -77.03514575958252]], [[38.89340438498248, -77.03514575958252], [38.893596444352134, -77.0349633693695]]],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;orange&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: false, &quot;fillColor&quot;: &quot;orange&quot;, &quot;fillOpacity&quot;: 0.2, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;noClip&quot;: false, &quot;opacity&quot;: 1, &quot;smoothFactor&quot;: 0, &quot;stroke&quot;: true, &quot;weight&quot;: 8}
-            ).addTo(map_a18c77af30dbf59eaf66708483aa6d7a);
+            ).addTo(map_7187784aed2f0dc028071cf67c77ba98);
 
 &lt;/script&gt;
 &lt;/html&gt;" style="position:absolute;width:100%;height:100%;left:0;top:0;border:none !important;" allowfullscreen webkitallowfullscreen mozallowfullscreen></iframe></div></div></div>
