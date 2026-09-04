@@ -559,6 +559,15 @@
 </pre></div>
 </div>
 </div>
+<div class="nboutput docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area stderr docutils container">
+<div class="highlight"><pre>
+/home/runner/work/folium/folium/folium/raster_layers.py:128: UserWarning: CartoDB tiles now require an API key. Please provide one to continue using the tiles. You can request the key at https://carto.com/basemaps/apikey/.
+  tiles = tiles.build_url(fill_subdomain=False, scale_factor=&#34;{r}&#34;)  # type: ignore
+</pre></div></div>
+</div>
 <div class="nboutput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[2]:
 </pre></div>
@@ -583,7 +592,7 @@
             &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no&quot; /&gt;
             &lt;style&gt;
-                #map_1af2a215644d981eb7a3d164950fee4a {
+                #map_28f7550583832db993e4894d7e931f57 {
                     position: relative;
                     width: 100.0vw;
                     height: 100.0vh;
@@ -621,14 +630,14 @@
 &lt;body&gt;
 
 
-            &lt;div class=&quot;folium-map&quot; id=&quot;map_1af2a215644d981eb7a3d164950fee4a&quot; &gt;&lt;/div&gt;
+            &lt;div class=&quot;folium-map&quot; id=&quot;map_28f7550583832db993e4894d7e931f57&quot; &gt;&lt;/div&gt;
 
 &lt;/body&gt;
 &lt;script&gt;
 
 
-            var map_1af2a215644d981eb7a3d164950fee4a = L.map(
-                &quot;map_1af2a215644d981eb7a3d164950fee4a&quot;,
+            var map_28f7550583832db993e4894d7e931f57 = L.map(
+                &quot;map_28f7550583832db993e4894d7e931f57&quot;,
                 {
                     center: [41.0, -70.0],
                     crs: L.CRS.EPSG3857,
@@ -645,7 +654,7 @@
 
 
 
-            var tile_layer_d7cd16e2afd403a86d39ad09725e38b0 = L.tileLayer(
+            var tile_layer_3818ca4214939fd1b9e538563c846929 = L.tileLayer(
                 &quot;https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png&quot;,
                 {
   &quot;minZoom&quot;: 0,
@@ -662,35 +671,35 @@
             );
 
 
-            tile_layer_d7cd16e2afd403a86d39ad09725e38b0.addTo(map_1af2a215644d981eb7a3d164950fee4a);
+            tile_layer_3818ca4214939fd1b9e538563c846929.addTo(map_28f7550583832db993e4894d7e931f57);
 
 
-            var macro_element_e18bc5e0d8bc52eebb767b60573fbd40 = L.tileLayer.wms(
+            var macro_element_2a59df073b25ecbb5b7d9c8c95fb47de = L.tileLayer.wms(
                 &quot;https://mesonet.agron.iastate.edu/cgi-bin/wms/nexrad/n0r.cgi&quot;,
                 {&quot;attribution&quot;: &quot;Weather data \u00a9 2012 IEM Nexrad&quot;, &quot;format&quot;: &quot;image/png&quot;, &quot;layers&quot;: &quot;nexrad-n0r-900913&quot;, &quot;styles&quot;: &quot;&quot;, &quot;transparent&quot;: true, &quot;version&quot;: &quot;1.1.1&quot;}
             );
 
 
-            macro_element_e18bc5e0d8bc52eebb767b60573fbd40.addTo(map_1af2a215644d981eb7a3d164950fee4a);
+            macro_element_2a59df073b25ecbb5b7d9c8c95fb47de.addTo(map_28f7550583832db993e4894d7e931f57);
 
 
-            var layer_control_b09954b9041fe8f5d8dfedf1066cb9bc_layers = {
+            var layer_control_841f36f0bd30724c1f1e2277f89bd605_layers = {
                 base_layers : {
-                    &quot;cartodbpositron&quot; : tile_layer_d7cd16e2afd403a86d39ad09725e38b0,
+                    &quot;cartodbpositron&quot; : tile_layer_3818ca4214939fd1b9e538563c846929,
                 },
                 overlays :  {
-                    &quot;test&quot; : macro_element_e18bc5e0d8bc52eebb767b60573fbd40,
+                    &quot;test&quot; : macro_element_2a59df073b25ecbb5b7d9c8c95fb47de,
                 },
             };
-            let layer_control_b09954b9041fe8f5d8dfedf1066cb9bc = L.control.layers(
-                layer_control_b09954b9041fe8f5d8dfedf1066cb9bc_layers.base_layers,
-                layer_control_b09954b9041fe8f5d8dfedf1066cb9bc_layers.overlays,
+            let layer_control_841f36f0bd30724c1f1e2277f89bd605 = L.control.layers(
+                layer_control_841f36f0bd30724c1f1e2277f89bd605_layers.base_layers,
+                layer_control_841f36f0bd30724c1f1e2277f89bd605_layers.overlays,
                 {
   &quot;position&quot;: &quot;topright&quot;,
   &quot;collapsed&quot;: true,
   &quot;autoZIndex&quot;: true,
 }
-            ).addTo(map_1af2a215644d981eb7a3d164950fee4a);
+            ).addTo(map_28f7550583832db993e4894d7e931f57);
 
 
 &lt;/script&gt;

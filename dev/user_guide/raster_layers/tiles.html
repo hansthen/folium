@@ -583,7 +583,7 @@
             &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no&quot; /&gt;
             &lt;style&gt;
-                #map_d548cd1bc11a79168d8312364672df06 {
+                #map_050ea5e7b1ff5c9ef8931b85d18dcf2f {
                     position: relative;
                     width: 100.0vw;
                     height: 100.0vh;
@@ -621,14 +621,14 @@
 &lt;body&gt;
 
 
-            &lt;div class=&quot;folium-map&quot; id=&quot;map_d548cd1bc11a79168d8312364672df06&quot; &gt;&lt;/div&gt;
+            &lt;div class=&quot;folium-map&quot; id=&quot;map_050ea5e7b1ff5c9ef8931b85d18dcf2f&quot; &gt;&lt;/div&gt;
 
 &lt;/body&gt;
 &lt;script&gt;
 
 
-            var map_d548cd1bc11a79168d8312364672df06 = L.map(
-                &quot;map_d548cd1bc11a79168d8312364672df06&quot;,
+            var map_050ea5e7b1ff5c9ef8931b85d18dcf2f = L.map(
+                &quot;map_050ea5e7b1ff5c9ef8931b85d18dcf2f&quot;,
                 {
                     center: [-12.875, -38.625],
                     crs: L.CRS.EPSG3857,
@@ -645,7 +645,7 @@
 
 
 
-            var tile_layer_36da43c2d741e915ed05d3511941bd0f = L.tileLayer(
+            var tile_layer_f67c90db7a76b72cd971f8d7b5fcf783 = L.tileLayer(
                 &quot;https://tile.openstreetmap.org/{z}/{x}/{y}.png&quot;,
                 {
   &quot;minZoom&quot;: 0,
@@ -662,7 +662,7 @@
             );
 
 
-            tile_layer_36da43c2d741e915ed05d3511941bd0f.addTo(map_d548cd1bc11a79168d8312364672df06);
+            tile_layer_f67c90db7a76b72cd971f8d7b5fcf783.addTo(map_050ea5e7b1ff5c9ef8931b85d18dcf2f);
 
 &lt;/script&gt;
 &lt;/html&gt;" style="position:absolute;width:100%;height:100%;left:0;top:0;border:none !important;" allowfullscreen webkitallowfullscreen mozallowfullscreen></iframe></div></div></div>
@@ -674,6 +674,15 @@
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">folium</span><span class="o">.</span><span class="n">Map</span><span class="p">(</span><span class="n">location</span><span class="o">=</span><span class="p">[</span><span class="n">lat</span><span class="p">,</span> <span class="n">lon</span><span class="p">],</span> <span class="n">tiles</span><span class="o">=</span><span class="s2">"Cartodb Positron"</span><span class="p">,</span> <span class="n">zoom_start</span><span class="o">=</span><span class="n">zoom_start</span><span class="p">)</span>
 </pre></div>
 </div>
+</div>
+<div class="nboutput docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area stderr docutils container">
+<div class="highlight"><pre>
+/home/runner/work/folium/folium/folium/raster_layers.py:128: UserWarning: CartoDB tiles now require an API key. Please provide one to continue using the tiles. You can request the key at https://carto.com/basemaps/apikey/.
+  tiles = tiles.build_url(fill_subdomain=False, scale_factor=&#34;{r}&#34;)  # type: ignore
+</pre></div></div>
 </div>
 <div class="nboutput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[3]:
@@ -699,7 +708,7 @@
             &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no&quot; /&gt;
             &lt;style&gt;
-                #map_633ee041b62a55d095699a3d59a4fecb {
+                #map_79ccb2eac02ce36a84e7f3b0d6317a77 {
                     position: relative;
                     width: 100.0vw;
                     height: 100.0vh;
@@ -737,14 +746,14 @@
 &lt;body&gt;
 
 
-            &lt;div class=&quot;folium-map&quot; id=&quot;map_633ee041b62a55d095699a3d59a4fecb&quot; &gt;&lt;/div&gt;
+            &lt;div class=&quot;folium-map&quot; id=&quot;map_79ccb2eac02ce36a84e7f3b0d6317a77&quot; &gt;&lt;/div&gt;
 
 &lt;/body&gt;
 &lt;script&gt;
 
 
-            var map_633ee041b62a55d095699a3d59a4fecb = L.map(
-                &quot;map_633ee041b62a55d095699a3d59a4fecb&quot;,
+            var map_79ccb2eac02ce36a84e7f3b0d6317a77 = L.map(
+                &quot;map_79ccb2eac02ce36a84e7f3b0d6317a77&quot;,
                 {
                     center: [-12.875, -38.625],
                     crs: L.CRS.EPSG3857,
@@ -761,7 +770,7 @@
 
 
 
-            var tile_layer_e74702e9c46d72fd342feff68d0c6a71 = L.tileLayer(
+            var tile_layer_0f40935f9af9344e54375cfaaf028cab = L.tileLayer(
                 &quot;https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png&quot;,
                 {
   &quot;minZoom&quot;: 0,
@@ -778,7 +787,7 @@
             );
 
 
-            tile_layer_e74702e9c46d72fd342feff68d0c6a71.addTo(map_633ee041b62a55d095699a3d59a4fecb);
+            tile_layer_0f40935f9af9344e54375cfaaf028cab.addTo(map_79ccb2eac02ce36a84e7f3b0d6317a77);
 
 &lt;/script&gt;
 &lt;/html&gt;" style="position:absolute;width:100%;height:100%;left:0;top:0;border:none !important;" allowfullscreen webkitallowfullscreen mozallowfullscreen></iframe></div></div></div>
@@ -815,7 +824,7 @@
             &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no&quot; /&gt;
             &lt;style&gt;
-                #map_b04f0b9ea7f40dca5c352367e7448e06 {
+                #map_fb662859582e637b5e5120bf06d910a7 {
                     position: relative;
                     width: 100.0vw;
                     height: 100.0vh;
@@ -853,14 +862,14 @@
 &lt;body&gt;
 
 
-            &lt;div class=&quot;folium-map&quot; id=&quot;map_b04f0b9ea7f40dca5c352367e7448e06&quot; &gt;&lt;/div&gt;
+            &lt;div class=&quot;folium-map&quot; id=&quot;map_fb662859582e637b5e5120bf06d910a7&quot; &gt;&lt;/div&gt;
 
 &lt;/body&gt;
 &lt;script&gt;
 
 
-            var map_b04f0b9ea7f40dca5c352367e7448e06 = L.map(
-                &quot;map_b04f0b9ea7f40dca5c352367e7448e06&quot;,
+            var map_fb662859582e637b5e5120bf06d910a7 = L.map(
+                &quot;map_fb662859582e637b5e5120bf06d910a7&quot;,
                 {
                     center: [-12.875, -38.625],
                     crs: L.CRS.EPSG3857,
@@ -877,7 +886,7 @@
 
 
 
-            var tile_layer_552581d512469ad1c2f234619703f291 = L.tileLayer(
+            var tile_layer_271dbdf736ef4b881e36ddb23cf68afb = L.tileLayer(
                 &quot;https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png&quot;,
                 {
   &quot;minZoom&quot;: 0,
@@ -894,7 +903,7 @@
             );
 
 
-            tile_layer_552581d512469ad1c2f234619703f291.addTo(map_b04f0b9ea7f40dca5c352367e7448e06);
+            tile_layer_271dbdf736ef4b881e36ddb23cf68afb.addTo(map_fb662859582e637b5e5120bf06d910a7);
 
 &lt;/script&gt;
 &lt;/html&gt;" style="position:absolute;width:100%;height:100%;left:0;top:0;border:none !important;" allowfullscreen webkitallowfullscreen mozallowfullscreen></iframe></div></div></div>
@@ -942,7 +951,7 @@
             &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no&quot; /&gt;
             &lt;style&gt;
-                #map_9a7453fd987489e46b56b0d9e880eb89 {
+                #map_a3ebe0cc100adeb0513d7a22882c4460 {
                     position: relative;
                     width: 100.0vw;
                     height: 100.0vh;
@@ -980,14 +989,14 @@
 &lt;body&gt;
 
 
-            &lt;div class=&quot;folium-map&quot; id=&quot;map_9a7453fd987489e46b56b0d9e880eb89&quot; &gt;&lt;/div&gt;
+            &lt;div class=&quot;folium-map&quot; id=&quot;map_a3ebe0cc100adeb0513d7a22882c4460&quot; &gt;&lt;/div&gt;
 
 &lt;/body&gt;
 &lt;script&gt;
 
 
-            var map_9a7453fd987489e46b56b0d9e880eb89 = L.map(
-                &quot;map_9a7453fd987489e46b56b0d9e880eb89&quot;,
+            var map_a3ebe0cc100adeb0513d7a22882c4460 = L.map(
+                &quot;map_a3ebe0cc100adeb0513d7a22882c4460&quot;,
                 {
                     center: [-12.875, -38.625],
                     crs: L.CRS.EPSG3857,
@@ -1004,7 +1013,7 @@
 
 
 
-            var tile_layer_7875cc2474ae706dfa15847953b94f30 = L.tileLayer(
+            var tile_layer_e4c1cde38e1921258e76e4ed381b9c4c = L.tileLayer(
                 &quot;https://{s}.basemaps.cartocdn.com/light_nolabels/{z}/{x}/{y}.png&quot;,
                 {
   &quot;minZoom&quot;: 0,
@@ -1021,7 +1030,7 @@
             );
 
 
-            tile_layer_7875cc2474ae706dfa15847953b94f30.addTo(map_9a7453fd987489e46b56b0d9e880eb89);
+            tile_layer_e4c1cde38e1921258e76e4ed381b9c4c.addTo(map_a3ebe0cc100adeb0513d7a22882c4460);
 
 &lt;/script&gt;
 &lt;/html&gt;" style="position:absolute;width:100%;height:100%;left:0;top:0;border:none !important;" allowfullscreen webkitallowfullscreen mozallowfullscreen></iframe></div></div></div>
