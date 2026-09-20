@@ -589,7 +589,7 @@
             &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no&quot; /&gt;
             &lt;style&gt;
-                #map_4e0fd40e9dcef6db4b5107c7d91978b9 {
+                #map_bb72ea26da5a2ebdd1fac79ddd4aee00 {
                     position: relative;
                     width: 100.0vw;
                     height: 100.0vh;
@@ -629,14 +629,14 @@
 &lt;body&gt;
 
 
-            &lt;div class=&quot;folium-map&quot; id=&quot;map_4e0fd40e9dcef6db4b5107c7d91978b9&quot; &gt;&lt;/div&gt;
+            &lt;div class=&quot;folium-map&quot; id=&quot;map_bb72ea26da5a2ebdd1fac79ddd4aee00&quot; &gt;&lt;/div&gt;
 
 &lt;/body&gt;
 &lt;script&gt;
 
 
-            var map_4e0fd40e9dcef6db4b5107c7d91978b9 = L.map(
-                &quot;map_4e0fd40e9dcef6db4b5107c7d91978b9&quot;,
+            var map_bb72ea26da5a2ebdd1fac79ddd4aee00 = L.map(
+                &quot;map_bb72ea26da5a2ebdd1fac79ddd4aee00&quot;,
                 {
                     center: [45.5236, -122.675],
                     crs: L.CRS.EPSG3857,
@@ -653,7 +653,7 @@
 
 
 
-            var tile_layer_aed53c459eb1eb497e02547835005976 = L.tileLayer(
+            var tile_layer_4f5b87e4688317fed82f880f76622284 = L.tileLayer(
                 &quot;https://tile.openstreetmap.org/{z}/{x}/{y}.png&quot;,
                 {
   &quot;minZoom&quot;: 0,
@@ -670,40 +670,40 @@
             );
 
 
-            tile_layer_aed53c459eb1eb497e02547835005976.addTo(map_4e0fd40e9dcef6db4b5107c7d91978b9);
+            tile_layer_4f5b87e4688317fed82f880f76622284.addTo(map_bb72ea26da5a2ebdd1fac79ddd4aee00);
 
 
             /* ensure the name is usable */
-            var geo_man_d5604765be1c60b270209ab04201b529 = map_4e0fd40e9dcef6db4b5107c7d91978b9.pm;
+            var geo_man_1b5e5d745a44b65c8c89ba1727e4390b = map_bb72ea26da5a2ebdd1fac79ddd4aee00.pm;
                 // FeatureGroup is to store editable layers.
-                var drawnItems_geo_man_d5604765be1c60b270209ab04201b529 =
+                var drawnItems_geo_man_1b5e5d745a44b65c8c89ba1727e4390b =
                     new L.featureGroup().addTo(
-                        map_4e0fd40e9dcef6db4b5107c7d91978b9
+                        map_bb72ea26da5a2ebdd1fac79ddd4aee00
                     );
 
             /* The global variable below is needed to prevent streamlit-folium
                from barfing :-(
             */
-            var drawnItems = drawnItems_geo_man_d5604765be1c60b270209ab04201b529;
+            var drawnItems = drawnItems_geo_man_1b5e5d745a44b65c8c89ba1727e4390b;
 
-            geo_man_d5604765be1c60b270209ab04201b529.addControls(
+            geo_man_1b5e5d745a44b65c8c89ba1727e4390b.addControls(
                 {
   &quot;position&quot;: &quot;topleft&quot;,
 }
             )
 
-            drawnItems_geo_man_d5604765be1c60b270209ab04201b529.eachLayer(function(layer){
+            drawnItems_geo_man_1b5e5d745a44b65c8c89ba1727e4390b.eachLayer(function(layer){
                 L.PM.reInitLayer(layer);
             });
 
-            var new_element_handler_geo_man_d5604765be1c60b270209ab04201b529 = function(e) {
+            var new_element_handler_geo_man_1b5e5d745a44b65c8c89ba1727e4390b = function(e) {
                 var layer = e.layer,
                     type = e.layerType;
-                drawnItems_geo_man_d5604765be1c60b270209ab04201b529.addLayer(layer);
+                drawnItems_geo_man_1b5e5d745a44b65c8c89ba1727e4390b.addLayer(layer);
             };
 
-            map_4e0fd40e9dcef6db4b5107c7d91978b9.on(&quot;pm:create&quot;, new_element_handler_geo_man_d5604765be1c60b270209ab04201b529);
-            map_4e0fd40e9dcef6db4b5107c7d91978b9.on(&quot;pm:cut&quot;, new_element_handler_geo_man_d5604765be1c60b270209ab04201b529);
+            map_bb72ea26da5a2ebdd1fac79ddd4aee00.on(&quot;pm:create&quot;, new_element_handler_geo_man_1b5e5d745a44b65c8c89ba1727e4390b);
+            map_bb72ea26da5a2ebdd1fac79ddd4aee00.on(&quot;pm:cut&quot;, new_element_handler_geo_man_1b5e5d745a44b65c8c89ba1727e4390b);
 
 
 &lt;/script&gt;
@@ -767,7 +767,7 @@
             &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no&quot; /&gt;
             &lt;style&gt;
-                #map_66afa56dc723ac56571ea8a4a4cfb84d {
+                #map_db86221c165e5384deb8d1667eca08de {
                     position: relative;
                     width: 100.0vw;
                     height: 100.0vh;
@@ -807,14 +807,14 @@
 &lt;body&gt;
 
 
-            &lt;div class=&quot;folium-map&quot; id=&quot;map_66afa56dc723ac56571ea8a4a4cfb84d&quot; &gt;&lt;/div&gt;
+            &lt;div class=&quot;folium-map&quot; id=&quot;map_db86221c165e5384deb8d1667eca08de&quot; &gt;&lt;/div&gt;
 
 &lt;/body&gt;
 &lt;script&gt;
 
 
-            var map_66afa56dc723ac56571ea8a4a4cfb84d = L.map(
-                &quot;map_66afa56dc723ac56571ea8a4a4cfb84d&quot;,
+            var map_db86221c165e5384deb8d1667eca08de = L.map(
+                &quot;map_db86221c165e5384deb8d1667eca08de&quot;,
                 {
                     center: [45.5236, -122.675],
                     crs: L.CRS.EPSG3857,
@@ -831,7 +831,7 @@
 
 
 
-            var tile_layer_13da433328c378d7b9332bcc529cd321 = L.tileLayer(
+            var tile_layer_c5a02e80808a1a651ac958625a003c61 = L.tileLayer(
                 &quot;https://tile.openstreetmap.org/{z}/{x}/{y}.png&quot;,
                 {
   &quot;minZoom&quot;: 0,
@@ -848,23 +848,23 @@
             );
 
 
-            tile_layer_13da433328c378d7b9332bcc529cd321.addTo(map_66afa56dc723ac56571ea8a4a4cfb84d);
+            tile_layer_c5a02e80808a1a651ac958625a003c61.addTo(map_db86221c165e5384deb8d1667eca08de);
 
 
             /* ensure the name is usable */
-            var geo_man_d06d0c6fa0fa4827b1e9eff04f2c6436 = map_66afa56dc723ac56571ea8a4a4cfb84d.pm;
+            var geo_man_3cf2df689b0b9131d90a61ac0506d63e = map_db86221c165e5384deb8d1667eca08de.pm;
                 // FeatureGroup is to store editable layers.
-                var drawnItems_geo_man_d06d0c6fa0fa4827b1e9eff04f2c6436 =
+                var drawnItems_geo_man_3cf2df689b0b9131d90a61ac0506d63e =
                     new L.featureGroup().addTo(
-                        map_66afa56dc723ac56571ea8a4a4cfb84d
+                        map_db86221c165e5384deb8d1667eca08de
                     );
 
             /* The global variable below is needed to prevent streamlit-folium
                from barfing :-(
             */
-            var drawnItems = drawnItems_geo_man_d06d0c6fa0fa4827b1e9eff04f2c6436;
+            var drawnItems = drawnItems_geo_man_3cf2df689b0b9131d90a61ac0506d63e;
 
-            geo_man_d06d0c6fa0fa4827b1e9eff04f2c6436.addControls(
+            geo_man_3cf2df689b0b9131d90a61ac0506d63e.addControls(
                 {
   &quot;position&quot;: &quot;topright&quot;,
   &quot;drawMarker&quot;: true,
@@ -882,18 +882,18 @@
 }
             )
 
-            drawnItems_geo_man_d06d0c6fa0fa4827b1e9eff04f2c6436.eachLayer(function(layer){
+            drawnItems_geo_man_3cf2df689b0b9131d90a61ac0506d63e.eachLayer(function(layer){
                 L.PM.reInitLayer(layer);
             });
 
-            var new_element_handler_geo_man_d06d0c6fa0fa4827b1e9eff04f2c6436 = function(e) {
+            var new_element_handler_geo_man_3cf2df689b0b9131d90a61ac0506d63e = function(e) {
                 var layer = e.layer,
                     type = e.layerType;
-                drawnItems_geo_man_d06d0c6fa0fa4827b1e9eff04f2c6436.addLayer(layer);
+                drawnItems_geo_man_3cf2df689b0b9131d90a61ac0506d63e.addLayer(layer);
             };
 
-            map_66afa56dc723ac56571ea8a4a4cfb84d.on(&quot;pm:create&quot;, new_element_handler_geo_man_d06d0c6fa0fa4827b1e9eff04f2c6436);
-            map_66afa56dc723ac56571ea8a4a4cfb84d.on(&quot;pm:cut&quot;, new_element_handler_geo_man_d06d0c6fa0fa4827b1e9eff04f2c6436);
+            map_db86221c165e5384deb8d1667eca08de.on(&quot;pm:create&quot;, new_element_handler_geo_man_3cf2df689b0b9131d90a61ac0506d63e);
+            map_db86221c165e5384deb8d1667eca08de.on(&quot;pm:cut&quot;, new_element_handler_geo_man_3cf2df689b0b9131d90a61ac0506d63e);
 
 
 &lt;/script&gt;
