@@ -7,7 +7,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>WebGL Earth &#8212; Folium 0.1.dev2160+g293736071 documentation</title>
+    <title>WebGL Earth &#8212; Folium 0.1.dev2209+gb40203431 documentation</title>
   
   
   
@@ -39,7 +39,7 @@
   <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=64cc4de3f052d77215f0" />
 <link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=64cc4de3f052d77215f0" />
 
-    <script src="../../_static/documentation_options.js?v=f8d40540"></script>
+    <script src="../../_static/documentation_options.js?v=5dfdd4a5"></script>
     <script src="../../_static/doctools.js?v=fd6eb6e6"></script>
     <script src="../../_static/sphinx_highlight.js?v=6ffebe34"></script>
     <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
@@ -60,7 +60,7 @@
     <link rel="prev" title="Vector tiles using VectorGridProtobuf" href="vector_tiles.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
-  <meta name="docsearch:version" content="0.1.dev2160+g293736071" />
+  <meta name="docsearch:version" content="0.1.dev2209+gb40203431" />
   
     
     <script src="../../_static/searchtools.js"></script>
@@ -570,11 +570,11 @@
 &lt;head&gt;
 
     &lt;meta http-equiv=&quot;content-type&quot; content=&quot;text/html; charset=UTF-8&quot; /&gt;
-    &lt;script src=&quot;https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.js&quot;&gt;&lt;/script&gt;
     &lt;script src=&quot;https://code.jquery.com/jquery-3.7.1.min.js&quot;&gt;&lt;/script&gt;
     &lt;script src=&quot;https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js&quot;&gt;&lt;/script&gt;
     &lt;script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js&quot;&gt;&lt;/script&gt;
-    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css&quot;/&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.css&quot;/&gt;
     &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css&quot;/&gt;
     &lt;link rel=&quot;stylesheet&quot; href=&quot;https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css&quot;/&gt;
     &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css&quot;/&gt;
@@ -584,7 +584,7 @@
             &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no&quot; /&gt;
             &lt;style&gt;
-                #map_d6d7f4c452e7c9d39d669565740a2e2d {
+                #map_360834ab1f5332a6273244e4ee3b1339 {
                     position: relative;
                     width: 100.0vw;
                     height: 100.0vh;
@@ -603,15 +603,6 @@
             }
             &lt;/style&gt;
 
-            &lt;style&gt;#map {
-                position:absolute;
-                top:0;
-                bottom:0;
-                right:0;
-                left:0;
-                }
-            &lt;/style&gt;
-
             &lt;script&gt;
                 L_NO_TOUCH = false;
                 L_DISABLE_3D = false;
@@ -621,10 +612,10 @@
     &lt;script src=&quot;https://www.webglearth.com/v2/api.js&quot;&gt;&lt;/script&gt;
 
             &lt;style&gt;
-                #map_d6d7f4c452e7c9d39d669565740a2e2d {
+                #map_360834ab1f5332a6273244e4ee3b1339 {
                     display: none !important;
                 }
-                #webgl-earth-web_gl_earth_a4292b14e19d9a4b6a707949dd63854d {
+                #webgl-earth-web_gl_earth_812d2b60d95219768926691f1137b2ed {
                     height: 600px;
                     width: 100%;
                     position: relative;
@@ -651,14 +642,14 @@
 &lt;body&gt;
 
 
-            &lt;div class=&quot;folium-map&quot; id=&quot;map_d6d7f4c452e7c9d39d669565740a2e2d&quot; &gt;&lt;/div&gt;
+            &lt;div class=&quot;folium-map&quot; id=&quot;map_360834ab1f5332a6273244e4ee3b1339&quot; &gt;&lt;/div&gt;
 
 
             &lt;div style=&quot;position: relative;&quot;&gt;
-                &lt;div id=&quot;webgl-earth-web_gl_earth_a4292b14e19d9a4b6a707949dd63854d&quot;&gt;&lt;/div&gt;
+                &lt;div id=&quot;webgl-earth-web_gl_earth_812d2b60d95219768926691f1137b2ed&quot;&gt;&lt;/div&gt;
                 &lt;button
                     class=&quot;webgl-earth-reset-btn&quot;
-                    onclick=&quot;web_gl_earth_a4292b14e19d9a4b6a707949dd63854d.setView(
+                    onclick=&quot;web_gl_earth_812d2b60d95219768926691f1137b2ed.setView(
                         [20.0, 0.0],
                         2
                     )&quot;
@@ -671,8 +662,8 @@
 &lt;script&gt;
 
 
-            var map_d6d7f4c452e7c9d39d669565740a2e2d = L.map(
-                &quot;map_d6d7f4c452e7c9d39d669565740a2e2d&quot;,
+            var map_360834ab1f5332a6273244e4ee3b1339 = L.map(
+                &quot;map_360834ab1f5332a6273244e4ee3b1339&quot;,
                 {
                     center: [0.0, 0.0],
                     crs: L.CRS.EPSG3857,
@@ -689,7 +680,7 @@
 
 
 
-            var tile_layer_daef7227f35771f9c4d1fea131c0b0ea = L.tileLayer(
+            var tile_layer_4aadc61a11eb4c1b93f24e394815f24c = L.tileLayer(
                 &quot;https://tile.openstreetmap.org/{z}/{x}/{y}.png&quot;,
                 {
   &quot;minZoom&quot;: 0,
@@ -706,11 +697,11 @@
             );
 
 
-            tile_layer_daef7227f35771f9c4d1fea131c0b0ea.addTo(map_d6d7f4c452e7c9d39d669565740a2e2d);
+            tile_layer_4aadc61a11eb4c1b93f24e394815f24c.addTo(map_360834ab1f5332a6273244e4ee3b1339);
 
 
-            var web_gl_earth_a4292b14e19d9a4b6a707949dd63854d = WE.map(
-                &#x27;webgl-earth-web_gl_earth_a4292b14e19d9a4b6a707949dd63854d&#x27;,
+            var web_gl_earth_812d2b60d95219768926691f1137b2ed = WE.map(
+                &#x27;webgl-earth-web_gl_earth_812d2b60d95219768926691f1137b2ed&#x27;,
                 {
   &quot;center&quot;: [
 20.0,
@@ -727,11 +718,11 @@
                     attribution: &#x27;&amp;copy; OpenStreetMap contributors&#x27;,
                     subdomains: [&quot;a&quot;, &quot;b&quot;, &quot;c&quot;]
                 }
-            ).addTo(web_gl_earth_a4292b14e19d9a4b6a707949dd63854d);
+            ).addTo(web_gl_earth_812d2b60d95219768926691f1137b2ed);
 
             // Block right-click tilt
             (function() {
-                var container = document.getElementById(&#x27;webgl-earth-web_gl_earth_a4292b14e19d9a4b6a707949dd63854d&#x27;);
+                var container = document.getElementById(&#x27;webgl-earth-web_gl_earth_812d2b60d95219768926691f1137b2ed&#x27;);
                 container.addEventListener(&#x27;contextmenu&#x27;, function(e) {
                     e.preventDefault();
                     e.stopPropagation();
@@ -745,27 +736,27 @@
             })();
 
 
-            var web_gl_earth_marker_72c4308d2e7daca04ffe7e5214f64ec5 = WE.marker(
+            var web_gl_earth_marker_700ca4b789a3b7972fbaf35ae524f2cc = WE.marker(
                 [48.8566, 2.3522]
-            ).addTo(web_gl_earth_a4292b14e19d9a4b6a707949dd63854d);
+            ).addTo(web_gl_earth_812d2b60d95219768926691f1137b2ed);
 
-            web_gl_earth_marker_72c4308d2e7daca04ffe7e5214f64ec5.bindPopup(&quot;Paris&quot;);
+            web_gl_earth_marker_700ca4b789a3b7972fbaf35ae524f2cc.bindPopup(&quot;Paris&quot;);
 
 
 
-            var web_gl_earth_marker_b3348c501bb6b4301bd01fa234bf0e0a = WE.marker(
+            var web_gl_earth_marker_c149f10adb5e7f8f971a82af221c205a = WE.marker(
                 [35.6762, 139.6503]
-            ).addTo(web_gl_earth_a4292b14e19d9a4b6a707949dd63854d);
+            ).addTo(web_gl_earth_812d2b60d95219768926691f1137b2ed);
 
-            web_gl_earth_marker_b3348c501bb6b4301bd01fa234bf0e0a.bindPopup(&quot;Tokyo&quot;);
+            web_gl_earth_marker_c149f10adb5e7f8f971a82af221c205a.bindPopup(&quot;Tokyo&quot;);
 
 
 
-            var web_gl_earth_marker_7d581d34a2907c9d5f4d4123ec1a07c2 = WE.marker(
+            var web_gl_earth_marker_f409e853c8bd402dc38e19a8df7323de = WE.marker(
                 [40.7128, -74.006]
-            ).addTo(web_gl_earth_a4292b14e19d9a4b6a707949dd63854d);
+            ).addTo(web_gl_earth_812d2b60d95219768926691f1137b2ed);
 
-            web_gl_earth_marker_7d581d34a2907c9d5f4d4123ec1a07c2.bindPopup(&quot;New York&quot;);
+            web_gl_earth_marker_f409e853c8bd402dc38e19a8df7323de.bindPopup(&quot;New York&quot;);
 
 
 &lt;/script&gt;
@@ -807,11 +798,11 @@
 &lt;head&gt;
 
     &lt;meta http-equiv=&quot;content-type&quot; content=&quot;text/html; charset=UTF-8&quot; /&gt;
-    &lt;script src=&quot;https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.js&quot;&gt;&lt;/script&gt;
     &lt;script src=&quot;https://code.jquery.com/jquery-3.7.1.min.js&quot;&gt;&lt;/script&gt;
     &lt;script src=&quot;https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js&quot;&gt;&lt;/script&gt;
     &lt;script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js&quot;&gt;&lt;/script&gt;
-    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css&quot;/&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.css&quot;/&gt;
     &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css&quot;/&gt;
     &lt;link rel=&quot;stylesheet&quot; href=&quot;https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css&quot;/&gt;
     &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css&quot;/&gt;
@@ -821,7 +812,7 @@
             &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no&quot; /&gt;
             &lt;style&gt;
-                #map_74c299400041c3f6f874d7c0847d9033 {
+                #map_b8930b33c48918466d6ef62e9b1e3b23 {
                     position: relative;
                     width: 100.0vw;
                     height: 100.0vh;
@@ -840,15 +831,6 @@
             }
             &lt;/style&gt;
 
-            &lt;style&gt;#map {
-                position:absolute;
-                top:0;
-                bottom:0;
-                right:0;
-                left:0;
-                }
-            &lt;/style&gt;
-
             &lt;script&gt;
                 L_NO_TOUCH = false;
                 L_DISABLE_3D = false;
@@ -858,10 +840,10 @@
     &lt;script src=&quot;https://www.webglearth.com/v2/api.js&quot;&gt;&lt;/script&gt;
 
             &lt;style&gt;
-                #map_74c299400041c3f6f874d7c0847d9033 {
+                #map_b8930b33c48918466d6ef62e9b1e3b23 {
                     display: none !important;
                 }
-                #webgl-earth-web_gl_earth_17b6898790cbb4b9353f5c1f4e4a41ea {
+                #webgl-earth-web_gl_earth_270efd2c72e09f78dbb593d98cbacb00 {
                     height: 600px;
                     width: 100%;
                     position: relative;
@@ -888,14 +870,14 @@
 &lt;body&gt;
 
 
-            &lt;div class=&quot;folium-map&quot; id=&quot;map_74c299400041c3f6f874d7c0847d9033&quot; &gt;&lt;/div&gt;
+            &lt;div class=&quot;folium-map&quot; id=&quot;map_b8930b33c48918466d6ef62e9b1e3b23&quot; &gt;&lt;/div&gt;
 
 
             &lt;div style=&quot;position: relative;&quot;&gt;
-                &lt;div id=&quot;webgl-earth-web_gl_earth_17b6898790cbb4b9353f5c1f4e4a41ea&quot;&gt;&lt;/div&gt;
+                &lt;div id=&quot;webgl-earth-web_gl_earth_270efd2c72e09f78dbb593d98cbacb00&quot;&gt;&lt;/div&gt;
                 &lt;button
                     class=&quot;webgl-earth-reset-btn&quot;
-                    onclick=&quot;web_gl_earth_17b6898790cbb4b9353f5c1f4e4a41ea.setView(
+                    onclick=&quot;web_gl_earth_270efd2c72e09f78dbb593d98cbacb00.setView(
                         [20.0, 0.0],
                         2
                     )&quot;
@@ -908,8 +890,8 @@
 &lt;script&gt;
 
 
-            var map_74c299400041c3f6f874d7c0847d9033 = L.map(
-                &quot;map_74c299400041c3f6f874d7c0847d9033&quot;,
+            var map_b8930b33c48918466d6ef62e9b1e3b23 = L.map(
+                &quot;map_b8930b33c48918466d6ef62e9b1e3b23&quot;,
                 {
                     center: [0.0, 0.0],
                     crs: L.CRS.EPSG3857,
@@ -926,7 +908,7 @@
 
 
 
-            var tile_layer_7a83cd56ab01524ed10772007cb37977 = L.tileLayer(
+            var tile_layer_041ce83fcdbb08b3391b9640e62f779f = L.tileLayer(
                 &quot;https://tile.openstreetmap.org/{z}/{x}/{y}.png&quot;,
                 {
   &quot;minZoom&quot;: 0,
@@ -943,11 +925,11 @@
             );
 
 
-            tile_layer_7a83cd56ab01524ed10772007cb37977.addTo(map_74c299400041c3f6f874d7c0847d9033);
+            tile_layer_041ce83fcdbb08b3391b9640e62f779f.addTo(map_b8930b33c48918466d6ef62e9b1e3b23);
 
 
-            var web_gl_earth_17b6898790cbb4b9353f5c1f4e4a41ea = WE.map(
-                &#x27;webgl-earth-web_gl_earth_17b6898790cbb4b9353f5c1f4e4a41ea&#x27;,
+            var web_gl_earth_270efd2c72e09f78dbb593d98cbacb00 = WE.map(
+                &#x27;webgl-earth-web_gl_earth_270efd2c72e09f78dbb593d98cbacb00&#x27;,
                 {
   &quot;center&quot;: [
 20.0,
@@ -964,11 +946,11 @@
                     attribution: &#x27;&amp;copy; OpenStreetMap contributors&#x27;,
                     subdomains: [&quot;a&quot;, &quot;b&quot;, &quot;c&quot;]
                 }
-            ).addTo(web_gl_earth_17b6898790cbb4b9353f5c1f4e4a41ea);
+            ).addTo(web_gl_earth_270efd2c72e09f78dbb593d98cbacb00);
 
             // Block right-click tilt
             (function() {
-                var container = document.getElementById(&#x27;webgl-earth-web_gl_earth_17b6898790cbb4b9353f5c1f4e4a41ea&#x27;);
+                var container = document.getElementById(&#x27;webgl-earth-web_gl_earth_270efd2c72e09f78dbb593d98cbacb00&#x27;);
                 container.addEventListener(&#x27;contextmenu&#x27;, function(e) {
                     e.preventDefault();
                     e.stopPropagation();
@@ -982,7 +964,7 @@
             })();
 
 
-            var web_gl_earth_tile_layer_43b1773f41249d2f8b2507da161474b0 = WE.tileLayer(
+            var web_gl_earth_tile_layer_c0e7d8e965d9d7cf6e3d3e6c00eff939 = WE.tileLayer(
                 &quot;https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png&quot;,
                 {
   &quot;attribution&quot;: &quot;\u00a9 OpenStreetMap contributors&quot;,
@@ -993,7 +975,7 @@
 ],
   &quot;opacity&quot;: 0.5,
 }
-            ).addTo(web_gl_earth_17b6898790cbb4b9353f5c1f4e4a41ea);
+            ).addTo(web_gl_earth_270efd2c72e09f78dbb593d98cbacb00);
 
 &lt;/script&gt;
 &lt;/html&gt;" style="position:absolute;width:100%;height:100%;left:0;top:0;border:none !important;" allowfullscreen webkitallowfullscreen mozallowfullscreen></iframe></div></div></div>
@@ -1048,11 +1030,11 @@
 &lt;head&gt;
 
     &lt;meta http-equiv=&quot;content-type&quot; content=&quot;text/html; charset=UTF-8&quot; /&gt;
-    &lt;script src=&quot;https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.js&quot;&gt;&lt;/script&gt;
     &lt;script src=&quot;https://code.jquery.com/jquery-3.7.1.min.js&quot;&gt;&lt;/script&gt;
     &lt;script src=&quot;https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js&quot;&gt;&lt;/script&gt;
     &lt;script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js&quot;&gt;&lt;/script&gt;
-    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css&quot;/&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.css&quot;/&gt;
     &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css&quot;/&gt;
     &lt;link rel=&quot;stylesheet&quot; href=&quot;https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css&quot;/&gt;
     &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css&quot;/&gt;
@@ -1062,7 +1044,7 @@
             &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no&quot; /&gt;
             &lt;style&gt;
-                #map_5ac49737c4b249d2191b6f9054566967 {
+                #map_17bfdeb89b2f0d2b6b8680bc1a1779e6 {
                     position: relative;
                     width: 100.0vw;
                     height: 100.0vh;
@@ -1081,15 +1063,6 @@
             }
             &lt;/style&gt;
 
-            &lt;style&gt;#map {
-                position:absolute;
-                top:0;
-                bottom:0;
-                right:0;
-                left:0;
-                }
-            &lt;/style&gt;
-
             &lt;script&gt;
                 L_NO_TOUCH = false;
                 L_DISABLE_3D = false;
@@ -1099,10 +1072,10 @@
     &lt;script src=&quot;https://www.webglearth.com/v2/api.js&quot;&gt;&lt;/script&gt;
 
             &lt;style&gt;
-                #map_5ac49737c4b249d2191b6f9054566967 {
+                #map_17bfdeb89b2f0d2b6b8680bc1a1779e6 {
                     display: none !important;
                 }
-                #webgl-earth-web_gl_earth_ae6449e9bfd9941e11482e3e961c36da {
+                #webgl-earth-web_gl_earth_104ba295c68b8686afa0e5da723e2bb0 {
                     height: 600px;
                     width: 100%;
                     position: relative;
@@ -1129,14 +1102,14 @@
 &lt;body&gt;
 
 
-            &lt;div class=&quot;folium-map&quot; id=&quot;map_5ac49737c4b249d2191b6f9054566967&quot; &gt;&lt;/div&gt;
+            &lt;div class=&quot;folium-map&quot; id=&quot;map_17bfdeb89b2f0d2b6b8680bc1a1779e6&quot; &gt;&lt;/div&gt;
 
 
             &lt;div style=&quot;position: relative;&quot;&gt;
-                &lt;div id=&quot;webgl-earth-web_gl_earth_ae6449e9bfd9941e11482e3e961c36da&quot;&gt;&lt;/div&gt;
+                &lt;div id=&quot;webgl-earth-web_gl_earth_104ba295c68b8686afa0e5da723e2bb0&quot;&gt;&lt;/div&gt;
                 &lt;button
                     class=&quot;webgl-earth-reset-btn&quot;
-                    onclick=&quot;web_gl_earth_ae6449e9bfd9941e11482e3e961c36da.setView(
+                    onclick=&quot;web_gl_earth_104ba295c68b8686afa0e5da723e2bb0.setView(
                         [0.0, 0.0],
                         1.8
                     )&quot;
@@ -1149,8 +1122,8 @@
 &lt;script&gt;
 
 
-            var map_5ac49737c4b249d2191b6f9054566967 = L.map(
-                &quot;map_5ac49737c4b249d2191b6f9054566967&quot;,
+            var map_17bfdeb89b2f0d2b6b8680bc1a1779e6 = L.map(
+                &quot;map_17bfdeb89b2f0d2b6b8680bc1a1779e6&quot;,
                 {
                     center: [0.0, 0.0],
                     crs: L.CRS.EPSG3857,
@@ -1167,7 +1140,7 @@
 
 
 
-            var tile_layer_3def9225fa1c68f3da568ab517b6663e = L.tileLayer(
+            var tile_layer_d7a0d6ff21537ca9d4ffe9f39f1dbb5f = L.tileLayer(
                 &quot;https://tile.openstreetmap.org/{z}/{x}/{y}.png&quot;,
                 {
   &quot;minZoom&quot;: 0,
@@ -1184,11 +1157,11 @@
             );
 
 
-            tile_layer_3def9225fa1c68f3da568ab517b6663e.addTo(map_5ac49737c4b249d2191b6f9054566967);
+            tile_layer_d7a0d6ff21537ca9d4ffe9f39f1dbb5f.addTo(map_17bfdeb89b2f0d2b6b8680bc1a1779e6);
 
 
-            var web_gl_earth_ae6449e9bfd9941e11482e3e961c36da = WE.map(
-                &#x27;webgl-earth-web_gl_earth_ae6449e9bfd9941e11482e3e961c36da&#x27;,
+            var web_gl_earth_104ba295c68b8686afa0e5da723e2bb0 = WE.map(
+                &#x27;webgl-earth-web_gl_earth_104ba295c68b8686afa0e5da723e2bb0&#x27;,
                 {
   &quot;center&quot;: [
 0.0,
@@ -1205,11 +1178,11 @@
                     attribution: &#x27;&amp;copy; OpenStreetMap contributors&#x27;,
                     subdomains: [&quot;a&quot;, &quot;b&quot;, &quot;c&quot;]
                 }
-            ).addTo(web_gl_earth_ae6449e9bfd9941e11482e3e961c36da);
+            ).addTo(web_gl_earth_104ba295c68b8686afa0e5da723e2bb0);
 
             // Block right-click tilt
             (function() {
-                var container = document.getElementById(&#x27;webgl-earth-web_gl_earth_ae6449e9bfd9941e11482e3e961c36da&#x27;);
+                var container = document.getElementById(&#x27;webgl-earth-web_gl_earth_104ba295c68b8686afa0e5da723e2bb0&#x27;);
                 container.addEventListener(&#x27;contextmenu&#x27;, function(e) {
                     e.preventDefault();
                     e.stopPropagation();
@@ -1224,8 +1197,8 @@
 
 
             (function() {
-                var earth = web_gl_earth_ae6449e9bfd9941e11482e3e961c36da;
-                function web_gl_earth_realtime_505fc65bc178a98efaf543639896c373_update() {
+                var earth = web_gl_earth_104ba295c68b8686afa0e5da723e2bb0;
+                function web_gl_earth_realtime_c75ff3f7ace6872f5cdaa9ecca878541_update() {
                     fetch(&quot;https://api.wheretheiss.at/v1/satellites/25544&quot;)
                         .then(function(response) { return response.json(); })
                         .then(function(data) {
@@ -1249,8 +1222,8 @@
                             console.warn(&#x27;WebGLEarthRealtime error:&#x27;, err);
                         });
                 }
-                web_gl_earth_realtime_505fc65bc178a98efaf543639896c373_update();
-                setInterval(web_gl_earth_realtime_505fc65bc178a98efaf543639896c373_update, 3000);
+                web_gl_earth_realtime_c75ff3f7ace6872f5cdaa9ecca878541_update();
+                setInterval(web_gl_earth_realtime_c75ff3f7ace6872f5cdaa9ecca878541_update, 3000);
             })();
 
 &lt;/script&gt;
@@ -1343,7 +1316,7 @@
     <div class="footer-items__start">
       
         <div class="footer-item"><!-- This will display the version of the docs -->
-Folium version 0.1.dev2160+g293736071</div>
+Folium version 0.1.dev2209+gb40203431</div>
       
         <div class="footer-item">
 
